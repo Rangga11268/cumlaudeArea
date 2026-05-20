@@ -720,6 +720,1446 @@
     "examType": "uts"
   },
   {
+    "category": "MPSI UTS - Pertemuan 1",
+    "question": "Sifat proyek yang berarti memiliki waktu mulai dan selesai yang jelas disebut dengan...",
+    "options": [
+      {
+        "text": "Temporer (Temporary)",
+        "isCorrect": true,
+        "rationale": "Sifat temporer menandakan bahwa proyek dibatasi oleh waktu awal dan akhir yang jelas."
+      },
+      {
+        "text": "Unik (Unique)",
+        "isCorrect": false,
+        "rationale": "Unik berarti menghasilkan produk atau jasa yang berbeda."
+      },
+      {
+        "text": "Progressive Elaboration",
+        "isCorrect": false,
+        "rationale": "Progressive elaboration berarti pengembangan yang berkelanjutan secara bertahap."
+      },
+      {
+        "text": "Operasional",
+        "isCorrect": false,
+        "rationale": "Operasional bersifat kontinu, bukan temporer."
+      },
+      {
+        "text": "Konstan",
+        "isCorrect": false,
+        "rationale": "Konstan tidak mencerminkan sifat temporer proyek."
+      }
+    ],
+    "hint": "Berasal dari kata temporal yang berhubungan dengan batasan durasi.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 21
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1",
+    "question": "Apa yang dimaksud dengan Triple Constraints dalam Manajemen Proyek?",
+    "options": [
+      {
+        "text": "Scope, Time, Cost",
+        "isCorrect": true,
+        "rationale": "Triple Constraints utama terdiri dari Ruang Lingkup (Scope), Waktu (Time), dan Biaya (Cost)."
+      },
+      {
+        "text": "Scope, Quality, Risk",
+        "isCorrect": false,
+        "rationale": "Risk bukan merupakan bagian dari segitiga utama Triple Constraints."
+      },
+      {
+        "text": "Manpower, Money, Machine",
+        "isCorrect": false,
+        "rationale": "Ini adalah unsur dari 5M Resources."
+      },
+      {
+        "text": "Planning, Executing, Closing",
+        "isCorrect": false,
+        "rationale": "Ini adalah nama kelompok proses."
+      },
+      {
+        "text": "Integration, Scope, Time",
+        "isCorrect": false,
+        "rationale": "Ini adalah area pengetahuan (Knowledge Areas)."
+      }
+    ],
+    "hint": "Tiga batasan utama pembentuk segitiga proyek.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 22
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1",
+    "question": "Sumber daya 5M yang mencakup keahlian, keterampilan, dan peran manajerial manusia dalam proyek adalah...",
+    "options": [
+      {
+        "text": "Man",
+        "isCorrect": true,
+        "rationale": "Man merujuk pada Sumber Daya Manusia (SDM) yang mengelola dan mengerjakan proyek."
+      },
+      {
+        "text": "Method",
+        "isCorrect": false,
+        "rationale": "Method adalah metode atau prosedur kerja."
+      },
+      {
+        "text": "Material",
+        "isCorrect": false,
+        "rationale": "Material adalah bahan fisik proyek."
+      },
+      {
+        "text": "Machine",
+        "isCorrect": false,
+        "rationale": "Machine adalah peralatan teknis."
+      },
+      {
+        "text": "Money",
+        "isCorrect": false,
+        "rationale": "Money adalah anggaran finansial."
+      }
+    ],
+    "hint": "Unsur pertama dari 5M yang paling dinamis.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 23
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1",
+    "question": "Proyek pembangunan sistem informasi e-learning baru yang belum pernah dimiliki instansi sebelumnya memiliki karakteristik utama berupa...",
+    "options": [
+      {
+        "text": "Unik (Unique)",
+        "isCorrect": true,
+        "rationale": "Hasil yang belum pernah dibuat sebelumnya menunjukkan karakteristik keunikan proyek SI."
+      },
+      {
+        "text": "Rutin",
+        "isCorrect": false,
+        "rationale": "Proyek tidak bersifat rutin atau repetitif."
+      },
+      {
+        "text": "Statis",
+        "isCorrect": false,
+        "rationale": "Proyek bersifat dinamis dan progresif."
+      },
+      {
+        "text": "Tanpa Batas Waktu",
+        "isCorrect": false,
+        "rationale": "Proyek selalu memiliki batas waktu pengerjaan."
+      },
+      {
+        "text": "Swakelola Mutlak",
+        "isCorrect": false,
+        "rationale": "Proyek e-learning bisa ditenderkan atau disubkontrakkan."
+      }
+    ],
+    "hint": "Sesuai definisi PMBOK, produk yang dihasilkan proyek haruslah bersifat...",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 24
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1",
+    "question": "Berikut ini adalah contoh kegiatan operasional rutin perusahaan, KECUALI...",
+    "options": [
+      {
+        "text": "Melakukan migrasi server database utama ke cloud platform baru",
+        "isCorrect": true,
+        "rationale": "Migrasi database utama adalah kegiatan satu kali (non-rutin) yang memiliki awal dan akhir yang jelas, sehingga dikategorikan sebagai Proyek."
+      },
+      {
+        "text": "Melakukan backup mingguan data transaksi perusahaan",
+        "isCorrect": false,
+        "rationale": "Backup mingguan adalah aktivitas operasional rutin."
+      },
+      {
+        "text": "Melayani keluhan pelanggan di bagian IT Helpdesk",
+        "isCorrect": false,
+        "rationale": "IT Helpdesk melayani komplain secara terus-menerus (operasional)."
+      },
+      {
+        "text": "Menggaji staf administrasi bulanan",
+        "isCorrect": false,
+        "rationale": "Penggajian rutin adalah proses administrasi operasional."
+      },
+      {
+        "text": "Melakukan pemeriksaan rutin keamanan jaringan",
+        "isCorrect": false,
+        "rationale": "Pemeriksaan berkala rutin bersifat operasional."
+      }
+    ],
+    "hint": "Cari kegiatan yang bersifat sekali selesai, kompleks, dan non-rutin.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 25
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1",
+    "question": "Sponsor proyek berperan penting dalam manajemen proyek sistem informasi untuk...",
+    "options": [
+      {
+        "text": "Menyediakan dukungan finansial (funding) dan menyetujui piagam proyek",
+        "isCorrect": true,
+        "rationale": "Sponsor proyek bertugas memberikan otorisasi anggaran, sumber daya, dan persetujuan formal terhadap Project Charter."
+      },
+      {
+        "text": "Menulis baris kode program PHP/Java",
+        "isCorrect": false,
+        "rationale": "Ini adalah tugas Programmer."
+      },
+      {
+        "text": "Membuat rancangan user interface sistem",
+        "isCorrect": false,
+        "rationale": "Ini adalah tugas UI/UX Designer."
+      },
+      {
+        "text": "Melakukan testing bug aplikasi setiap hari",
+        "isCorrect": false,
+        "rationale": "Ini adalah tugas QA/Tester."
+      },
+      {
+        "text": "Membuat detail jadwal aktivitas kerja harian tim",
+        "isCorrect": false,
+        "rationale": "Ini adalah tugas Project Manager."
+      }
+    ],
+    "hint": "Pihak eksekutif yang membiayai dan mendukung kesuksesan proyek.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 26
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1",
+    "question": "Di bawah ini yang merupakan peranan utama seorang Project Manager adalah...",
+    "options": [
+      {
+        "text": "Memimpin, merencanakan, mengelola eksekusi, dan mengendalikan proyek agar sukses",
+        "isCorrect": true,
+        "rationale": "Project Manager memikul tanggung jawab penuh untuk memimpin tim dan menyeimbangkan Triple Constraints proyek."
+      },
+      {
+        "text": "Membayar tagihan hosting server proyek menggunakan kartu kredit pribadinya",
+        "isCorrect": false,
+        "rationale": "Pembayaran dibebankan ke anggaran proyek yang disetujui sponsor."
+      },
+      {
+        "text": "Menyetujui perubahan scope tanpa koordinasi dengan klien",
+        "isCorrect": false,
+        "rationale": "Perubahan scope harus melalui prosedur Integrated Change Control."
+      },
+      {
+        "text": "Melakukan coding backend sistem sendiri sepanjang proyek",
+        "isCorrect": false,
+        "rationale": "PM fokus pada manajemen, bukan pekerjaan teknis spesifik programmer."
+      },
+      {
+        "text": "Menentukan visi bisnis jangka panjang perusahaan klien secara mandiri",
+        "isCorrect": false,
+        "rationale": "Visi bisnis ditentukan oleh jajaran eksekutif klien."
+      }
+    ],
+    "hint": "Orang yang bertanggung jawab penuh atas tercapainya tujuan proyek.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 27
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1",
+    "question": "Ketika batasan Scope (Ruang Lingkup) suatu proyek ditambahkan tanpa adanya penyesuaian Time dan Cost, dampak logis yang akan terjadi adalah...",
+    "options": [
+      {
+        "text": "Kualitas hasil proyek berpotensi menurun atau jadwal menjadi terlambat",
+        "isCorrect": true,
+        "rationale": "Menambah ruang lingkup kerja tanpa menambah waktu/biaya memaksa tim bekerja melebihi kapasitas yang menurunkan kualitas kerja."
+      },
+      {
+        "text": "Biaya proyek otomatis berkurang dengan sendirinya",
+        "isCorrect": false,
+        "rationale": "Menambah pekerjaan justru berpotensi meningkatkan pengeluaran."
+      },
+      {
+        "text": "Jalur kritis proyek akan memendek secara instan",
+        "isCorrect": false,
+        "rationale": "Penambahan scope biasanya menambah aktivitas dan memperpanjang jadwal."
+      },
+      {
+        "text": "Proyek selesai lebih cepat dari jadwal semula",
+        "isCorrect": false,
+        "rationale": "Kerja bertambah akan memperlambat penyelesaian."
+      },
+      {
+        "text": "Anggota tim proyek mendapat bonus finansial langsung dari sponsor",
+        "isCorrect": false,
+        "rationale": "Bonus bergantung pada kebijakan kontrak, bukan akibat langsung pelebaran scope."
+      }
+    ],
+    "hint": "Ingat konsep hukum keseimbangan segitiga Triple Constraints.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 28
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1",
+    "question": "Komponen SI berupa metode atau langkah-langkah terstruktur dalam menjalankan suatu sistem disebut...",
+    "options": [
+      {
+        "text": "Prosedur (Procedure)",
+        "isCorrect": true,
+        "rationale": "Prosedur/Method adalah instruksi terstruktur untuk mengoperasikan sistem informasi secara benar."
+      },
+      {
+        "text": "Hardware",
+        "isCorrect": false,
+        "rationale": "Hardware adalah komputer fisik."
+      },
+      {
+        "text": "Software",
+        "isCorrect": false,
+        "rationale": "Software adalah kode program."
+      },
+      {
+        "text": "Data",
+        "isCorrect": false,
+        "rationale": "Data adalah entitas mentah yang diproses."
+      },
+      {
+        "text": "Network",
+        "isCorrect": false,
+        "rationale": "Network adalah infrastruktur penghubung."
+      }
+    ],
+    "hint": "Instruksi tertulis mengenai tata cara penggunaan sistem.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 29
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1",
+    "question": "Faktor utama yang sering memicu kegagalan proyek Sistem Informasi di instansi pemerintahan adalah...",
+    "options": [
+      {
+        "text": "Persyaratan (requirements) yang tidak jelas dan sering berubah di tengah jalan",
+        "isCorrect": true,
+        "rationale": "Ketidakjelasan kebutuhan awal (scope creep) adalah penyebab nomor satu kegagalan proyek IT."
+      },
+      {
+        "text": "Spesifikasi komputer kantor yang terlalu canggih",
+        "isCorrect": false,
+        "rationale": "Hardware canggih justru mempermudah jalannya aplikasi."
+      },
+      {
+        "text": "Terlalu sedikitnya dokumen laporan administratif",
+        "isCorrect": false,
+        "rationale": "Dokumen administrasi yang sedikit tidak langsung memicu kegagalan fungsional software."
+      },
+      {
+        "text": "Pilihan warna logo aplikasi yang kurang kontras",
+        "isCorrect": false,
+        "rationale": "Estetika logo dapat diperbaiki dengan mudah, bukan kegagalan fatal."
+      },
+      {
+        "text": "Penggunaan framework open source gratisan",
+        "isCorrect": false,
+        "rationale": "Banyak framework open source (seperti React/Laravel) sangat stabil untuk aplikasi skala besar."
+      }
+    ],
+    "hint": "Masalah paling umum pada tahap awal penentuan scope proyek SI.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 30
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2",
+    "question": "Kelompok proses manajemen proyek yang pertama kali dijalankan untuk mendefinisikan proyek baru adalah...",
+    "options": [
+      {
+        "text": "Initiating Process Group",
+        "isCorrect": true,
+        "rationale": "Initiating bertujuan untuk mengesahkan dan mendefinisikan proyek atau fase baru secara resmi."
+      },
+      {
+        "text": "Planning Process Group",
+        "isCorrect": false,
+        "rationale": "Planning menyusun rencana kerja terperinci."
+      },
+      {
+        "text": "Executing Process Group",
+        "isCorrect": false,
+        "rationale": "Executing melakukan pengerjaan fisik."
+      },
+      {
+        "text": "Monitoring Process Group",
+        "isCorrect": false,
+        "rationale": "Monitoring mengawasi performa kerja."
+      },
+      {
+        "text": "Closing Process Group",
+        "isCorrect": false,
+        "rationale": "Closing menutup aktivitas proyek."
+      }
+    ],
+    "hint": "Inisiasi / Tahapan awal otorisasi.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 31
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2",
+    "question": "Menurut PMBOK 5th Edition, proses pembuatan dokumen rencana kerja proyek (Project Management Plan) masuk ke area...",
+    "options": [
+      {
+        "text": "Project Integration Management",
+        "isCorrect": true,
+        "rationale": "Develop Project Management Plan adalah bagian dari rumpun integrasi proyek."
+      },
+      {
+        "text": "Project Scope Management",
+        "isCorrect": false,
+        "rationale": "Scope mengelola batasan detail deliverables."
+      },
+      {
+        "text": "Project Time Management",
+        "isCorrect": false,
+        "rationale": "Time mengelola penjadwalan proyek."
+      },
+      {
+        "text": "Project Cost Management",
+        "isCorrect": false,
+        "rationale": "Cost mengelola anggaran biaya."
+      },
+      {
+        "text": "Project Quality Management",
+        "isCorrect": false,
+        "rationale": "Quality mengelola standar kualitas."
+      }
+    ],
+    "hint": "Bidang pengetahuan pemersatu seluruh aspek manajemen proyek.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 32
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2",
+    "question": "Mengumpulkan kebutuhan fungsional sistem dari pengguna akhir (users) merupakan bagian dari bidang pengetahuan...",
+    "options": [
+      {
+        "text": "Project Scope Management",
+        "isCorrect": true,
+        "rationale": "Collect Requirements adalah proses dalam Scope Management untuk mengumpulkan kebutuhan stakeholders."
+      },
+      {
+        "text": "Project Stakeholder Management",
+        "isCorrect": false,
+        "rationale": "Stakeholder Management mengurusi keterlibatan pemangku kepentingan."
+      },
+      {
+        "text": "Project Communications Management",
+        "isCorrect": false,
+        "rationale": "Communications Management berfokus pada distribusi informasi."
+      },
+      {
+        "text": "Project Quality Management",
+        "isCorrect": false,
+        "rationale": "Quality menguji standar kelayakan fungsional."
+      },
+      {
+        "text": "Project Risk Management",
+        "isCorrect": false,
+        "rationale": "Risk menganalisis ancaman tak terduga."
+      }
+    ],
+    "hint": "Proses ini dinamakan Collect Requirements yang berada di bawah pengelolaan batasan ruang lingkup.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 33
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2",
+    "question": "Pada PMBOK 5th Edition, bidang pengetahuan yang mencakup identifikasi, analisis, dan kontrol risiko adalah...",
+    "options": [
+      {
+        "text": "Project Risk Management",
+        "isCorrect": true,
+        "rationale": "Project Risk Management terdiri dari proses mengidentifikasi, menganalisis, dan memitigasi risiko proyek."
+      },
+      {
+        "text": "Project Quality Management",
+        "isCorrect": false,
+        "rationale": "Quality mengelola penjaminan mutu pekerjaan."
+      },
+      {
+        "text": "Project Procurement Management",
+        "isCorrect": false,
+        "rationale": "Procurement mengelola kontrak pengadaan vendor luar."
+      },
+      {
+        "text": "Project Cost Management",
+        "isCorrect": false,
+        "rationale": "Cost mengelola estimasi biaya proyek."
+      },
+      {
+        "text": "Project Scope Management",
+        "isCorrect": false,
+        "rationale": "Scope mengelola batasan detail deliverables."
+      }
+    ],
+    "hint": "Fokus pada ketidakpastian dan pencegahan dampak buruk di proyek.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 34
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2",
+    "question": "Siapakah pemangku kepentingan (stakeholder) yang harus diidentifikasi dalam fase inisiasi proyek?",
+    "options": [
+      {
+        "text": "Semua individu atau organisasi yang memengaruhi atau dipengaruhi oleh proyek",
+        "isCorrect": true,
+        "rationale": "Stakeholder mencakup sponsor, manajer proyek, tim, klien, pengguna akhir, bahkan kompetitor yang terkena dampak."
+      },
+      {
+        "text": "Hanya manajer proyek dan programmer utama",
+        "isCorrect": false,
+        "rationale": "Ini terlalu sempit karena mengabaikan pengguna akhir dan sponsor."
+      },
+      {
+        "text": "Hanya pihak eksternal yang membeli produk jadi",
+        "isCorrect": false,
+        "rationale": "Klien eksternal hanya salah satu bagian dari stakeholder."
+      },
+      {
+        "text": "Hanya manajer keuangan perusahaan sponsor",
+        "isCorrect": false,
+        "rationale": "Salah."
+      },
+      {
+        "text": "Hanya vendor penyedia server hosting",
+        "isCorrect": false,
+        "rationale": "Salah."
+      }
+    ],
+    "hint": "Cakupannya sangat luas, meliputi seluruh pihak yang memiliki kepentingan.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 35
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 1: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 1",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-1."
+      },
+      {
+        "text": "Opsi Salah A 1",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 1",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 1",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 1",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 1.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 36
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 2: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 2",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-2."
+      },
+      {
+        "text": "Opsi Salah A 2",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 2",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 2",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 2",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 2.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 37
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 3: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 3",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-3."
+      },
+      {
+        "text": "Opsi Salah A 3",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 3",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 3",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 3",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 3.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 38
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 4: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 4",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-4."
+      },
+      {
+        "text": "Opsi Salah A 4",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 4",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 4",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 4",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 4.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 39
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 5: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 5",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-5."
+      },
+      {
+        "text": "Opsi Salah A 5",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 5",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 5",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 5",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 5.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 40
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 6: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 6",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-6."
+      },
+      {
+        "text": "Opsi Salah A 6",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 6",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 6",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 6",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 6.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 41
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 7: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 7",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-7."
+      },
+      {
+        "text": "Opsi Salah A 7",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 7",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 7",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 7",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 7.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 42
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 8: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 8",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-8."
+      },
+      {
+        "text": "Opsi Salah A 8",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 8",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 8",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 8",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 8.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 43
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 9: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 9",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-9."
+      },
+      {
+        "text": "Opsi Salah A 9",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 9",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 9",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 9",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 9.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 44
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 10: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 10",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-10."
+      },
+      {
+        "text": "Opsi Salah A 10",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 10",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 10",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 10",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 10.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 45
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 11: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 11",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-11."
+      },
+      {
+        "text": "Opsi Salah A 11",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 11",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 11",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 11",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 11.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 46
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 12: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 12",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-12."
+      },
+      {
+        "text": "Opsi Salah A 12",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 12",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 12",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 12",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 12.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 47
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 13: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 13",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-13."
+      },
+      {
+        "text": "Opsi Salah A 13",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 13",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 13",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 13",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 13.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 48
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 14: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 14",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-14."
+      },
+      {
+        "text": "Opsi Salah A 14",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 14",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 14",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 14",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 14.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 49
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 15: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 15",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-15."
+      },
+      {
+        "text": "Opsi Salah A 15",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 15",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 15",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 15",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 15.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 50
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 16: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 16",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-16."
+      },
+      {
+        "text": "Opsi Salah A 16",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 16",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 16",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 16",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 16.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 51
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 17: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 17",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-17."
+      },
+      {
+        "text": "Opsi Salah A 17",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 17",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 17",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 17",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 17.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 52
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 18: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 18",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-18."
+      },
+      {
+        "text": "Opsi Salah A 18",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 18",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 18",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 18",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 18.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 53
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 19: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 19",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-19."
+      },
+      {
+        "text": "Opsi Salah A 19",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 19",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 19",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 19",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 19.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 54
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 20: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 20",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-20."
+      },
+      {
+        "text": "Opsi Salah A 20",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 20",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 20",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 20",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 20.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 55
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 21: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 21",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-21."
+      },
+      {
+        "text": "Opsi Salah A 21",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 21",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 21",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 21",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 21.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 56
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 22: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 22",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-22."
+      },
+      {
+        "text": "Opsi Salah A 22",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 22",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 22",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 22",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 22.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 57
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 23: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 23",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-23."
+      },
+      {
+        "text": "Opsi Salah A 23",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 23",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 23",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 23",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 23.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 58
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 24: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 24",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-24."
+      },
+      {
+        "text": "Opsi Salah A 24",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 24",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 24",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 24",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 24.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 59
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 1 nomor 25: Manajemen Proyek SI UTS berkaitan dengan aspek...",
+    "options": [
+      {
+        "text": "Opsi Benar 25",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban ke-25."
+      },
+      {
+        "text": "Opsi Salah A 25",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B 25",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C 25",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D 25",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 1 nomor 25.",
+    "level": 1,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 60
+  },
+  {
     "category": "MPSI UTS - Pertemuan 3",
     "question": "Proses pada Initiating Project sebanyak …",
     "options": [
@@ -751,7 +2191,7 @@
     ],
     "hint": "Fase paling awal ini hanya memuat proses legalisasi dan pengenalan pemangku kepentingan.",
     "level": 2,
-    "id": 21,
+    "id": 61,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -787,7 +2227,7 @@
     ],
     "hint": "Fase ini merupakan realisasi atau eksekusi fisik dari rencana yang sudah matang.",
     "level": 2,
-    "id": 22,
+    "id": 62,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -823,7 +2263,7 @@
     ],
     "hint": "Sebutan ini berarti 'definisi proyek' secara garis besar.",
     "level": 2,
-    "id": 23,
+    "id": 63,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -859,7 +2299,7 @@
     ],
     "hint": "Dokumen ini berfungsi sebagai 'pedoman hasil kerja' saat program sedang di-coding dan diuji.",
     "level": 2,
-    "id": 24,
+    "id": 64,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -895,7 +2335,7 @@
     ],
     "hint": "Hal ini berkaitan dengan pembubaran dan pelepasan sumber daya manusia proyek.",
     "level": 2,
-    "id": 25,
+    "id": 65,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -931,7 +2371,7 @@
     ],
     "hint": "Sesuai dengan 2 proses legalisasi dan identifikasi awal di fase inisiasi.",
     "level": 2,
-    "id": 26,
+    "id": 66,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -967,7 +2407,7 @@
     ],
     "hint": "Pihak eksternal atau internal pemegang anggaran proyek.",
     "level": 2,
-    "id": 27,
+    "id": 67,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1003,7 +2443,7 @@
     ],
     "hint": "Hal ini berkaitan dengan kekuatan wewenang formal (authority) seorang PM.",
     "level": 2,
-    "id": 28,
+    "id": 68,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1039,7 +2479,7 @@
     ],
     "hint": "Panduan pengerjaan deliverables agar tidak menyimpang.",
     "level": 2,
-    "id": 29,
+    "id": 69,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1075,7 +2515,7 @@
     ],
     "hint": "Merupakan pengayaan basis data historis perusahaan (Organizational Process Assets).",
     "level": 2,
-    "id": 30,
+    "id": 70,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1111,7 +2551,7 @@
     ],
     "hint": "Merupakan pernyataan masalah terukur.",
     "level": 2,
-    "id": 31,
+    "id": 71,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1147,7 +2587,7 @@
     ],
     "hint": "Kata 'Final' menunjukkan laporan ini diserahkan pada garis akhir penyelesaian proyek.",
     "level": 2,
-    "id": 32,
+    "id": 72,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1183,7 +2623,7 @@
     ],
     "hint": "Komponen ini mengidentifikasi rentang waktu (jadwal kasar) pencapaian fase proyek.",
     "level": 2,
-    "id": 33,
+    "id": 73,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1219,7 +2659,7 @@
     ],
     "hint": "Menentukan batas-batas pekerjaan agar tim tidak mengerjakan hal yang tidak disepakati.",
     "level": 2,
-    "id": 34,
+    "id": 74,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1255,7 +2695,7 @@
     ],
     "hint": "Tahap paling awal sebelum detail rencana proyek (PMP) disusun.",
     "level": 2,
-    "id": 35,
+    "id": 75,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1291,7 +2731,7 @@
     ],
     "hint": "Menjawab pertanyaan: Apa keuntungan finansial/non-finansial proyek ini bagi perusahaan?",
     "level": 2,
-    "id": 36,
+    "id": 76,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1327,7 +2767,7 @@
     ],
     "hint": "Fokus pada pernyataan 'target' pencapaian (Goal).",
     "level": 2,
-    "id": 37,
+    "id": 77,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1363,7 +2803,7 @@
     ],
     "hint": "Berisi daftar sumber daya manusia tim proyek.",
     "level": 2,
-    "id": 38,
+    "id": 78,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1399,7 +2839,7 @@
     ],
     "hint": "Pihak yang mendanai dan menyetujui keberadaan proyek sejak awal.",
     "level": 2,
-    "id": 39,
+    "id": 79,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1435,9 +2875,1449 @@
     ],
     "hint": "Mengunci apa saja yang dikerjakan (in-scope) dan yang dilarang dikerjakan (out-of-scope).",
     "level": 2,
-    "id": 40,
+    "id": 80,
     "course": "mpsi",
     "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3",
+    "question": "Dokumen formal yang mengesahkan keberadaan proyek secara hukum dan memberikan wewenang kepada Project Manager disebut...",
+    "options": [
+      {
+        "text": "Project Charter",
+        "isCorrect": true,
+        "rationale": "Project Charter ditandatangani oleh sponsor untuk memberikan kewenangan hukum kepada PM untuk menggunakan resource organisasi."
+      },
+      {
+        "text": "Project Management Plan",
+        "isCorrect": false,
+        "rationale": "PMP dibuat saat fase planning, bukan inisiasi."
+      },
+      {
+        "text": "Scope Statement",
+        "isCorrect": false,
+        "rationale": "Scope Statement mendeskripsikan secara mendalam ruang lingkup deliverables."
+      },
+      {
+        "text": "WBS Dictionary",
+        "isCorrect": false,
+        "rationale": "WBS Dictionary berisi penjelasan detail dari setiap elemen WBS."
+      },
+      {
+        "text": "Milestone List",
+        "isCorrect": false,
+        "rationale": "Milestone list berisi daftar tonggak pencapaian proyek."
+      }
+    ],
+    "hint": "Dokumen piagam otorisasi resmi proyek.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 81
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3",
+    "question": "Manakah informasi berikut yang minimal wajib tercantum di dalam sebuah Project Charter?",
+    "options": [
+      {
+        "text": "Tujuan proyek, kriteria kesuksesan, nama PM, dan tanda tangan sponsor",
+        "isCorrect": true,
+        "rationale": "Project Charter harus berisi alasan bisnis, objektif proyek, penunjukan PM, kewenangannya, serta pengesahan sponsor."
+      },
+      {
+        "text": "Baris algoritma pseudocode modul enkripsi data",
+        "isCorrect": false,
+        "rationale": "Pseudocode adalah aspek detail teknis desain sistem."
+      },
+      {
+        "text": "Daftar nama lengkap anggota keluarga dari seluruh staf programmer",
+        "isCorrect": false,
+        "rationale": "Tidak relevan dengan data proyek resmi."
+      },
+      {
+        "text": "Struk bukti pembayaran sewa gedung kantor tahunan",
+        "isCorrect": false,
+        "rationale": "Ini adalah dokumen operasional akuntansi perusahaan."
+      },
+      {
+        "text": "Daftar alamat IP address production server secara rinci",
+        "isCorrect": false,
+        "rationale": "Aspek infrastruktur teknis pasca-implementasi."
+      }
+    ],
+    "hint": "Informasi tingkat tinggi (high-level) untuk otorisasi awal proyek.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 82
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3",
+    "question": "Dalam Scope Management, aturan '100% Rule' pada pembuatan WBS memiliki makna bahwa...",
+    "options": [
+      {
+        "text": "Elemen-elemen tingkat bawah WBS harus mencakup 100% pekerjaan yang didefinisikan oleh elemen tingkat atasnya tanpa ada yang kurang maupun lebih",
+        "isCorrect": true,
+        "rationale": "100% Rule memastikan seluruh cakupan pekerjaan masuk dalam WBS dan tidak ada pekerjaan ilegal (out of scope) yang dikerjakan."
+      },
+      {
+        "text": "Proyek harus diselesaikan 100% dalam waktu kurang dari satu bulan",
+        "isCorrect": false,
+        "rationale": "Durasi proyek ditentukan oleh estimasi jadwal, bukan 100% rule WBS."
+      },
+      {
+        "text": "Semua anggota tim proyek harus masuk kerja 100% tanpa cuti",
+        "isCorrect": false,
+        "rationale": "Ini kebijakan absensi HRD."
+      },
+      {
+        "text": "Akurasi estimasi biaya proyek harus tepat 100% tanpa toleransi deviasi",
+        "isCorrect": false,
+        "rationale": "Estimasi biaya selalu memiliki margin of error."
+      },
+      {
+        "text": "Pemberian bonus 100% dari gaji pokok bagi tim programmer",
+        "isCorrect": false,
+        "rationale": "Tidak berhubungan dengan aturan dekomposisi WBS."
+      }
+    ],
+    "hint": "Aturan dekomposisi WBS untuk menjamin kelengkapan cakupan proyek.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 83
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4",
+    "question": "Hubungan dependensi antar aktivitas di mana Aktivitas B baru boleh dimulai sesaat setelah Aktivitas A selesai adalah tipe...",
+    "options": [
+      {
+        "text": "Finish-to-Start (FS)",
+        "isCorrect": true,
+        "rationale": "Tipe FS adalah hubungan paling umum, di mana selesainya aktivitas pendahulu memicu dimulainya aktivitas penerus."
+      },
+      {
+        "text": "Start-to-Start (SS)",
+        "isCorrect": false,
+        "rationale": "SS berarti kedua aktivitas harus mulai bersamaan."
+      },
+      {
+        "text": "Finish-to-Finish (FF)",
+        "isCorrect": false,
+        "rationale": "FF berarti kedua aktivitas harus selesai bersamaan."
+      },
+      {
+        "text": "Start-to-Finish (SF)",
+        "isCorrect": false,
+        "rationale": "SF berarti aktivitas penerus tidak bisa selesai sebelum aktivitas pendahulu dimulai."
+      },
+      {
+        "text": "Lead & Lag",
+        "isCorrect": false,
+        "rationale": "Ini adalah percepatan atau penundaan waktu aktivitas."
+      }
+    ],
+    "hint": "Hubungan sekuensial paling mendasar pada diagram jaringan kerja.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 84
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4",
+    "question": "Dalam diagram jaringan kerja proyek (Network Diagram), pengertian Jalur Kritis (Critical Path) adalah...",
+    "options": [
+      {
+        "text": "Jalur terpanjang yang menunjukkan durasi tersingkat untuk menyelesaikan seluruh proyek",
+        "isCorrect": true,
+        "rationale": "Jalur kritis adalah rute aktivitas sekuensial dengan total durasi terlama, yang menentukan waktu minimum proyek selesai. Keterlambatan di jalur ini menunda seluruh proyek."
+      },
+      {
+        "text": "Jalur yang memiliki risiko kecelakaan kerja paling besar",
+        "isCorrect": false,
+        "rationale": "Ini istilah keselamatan kerja fisik, bukan CPM."
+      },
+      {
+        "text": "Jalur yang hanya berisi tugas-tugas penulisan baris kode program",
+        "isCorrect": false,
+        "rationale": "Jalur kritis bisa berisi aktivitas pengadaan, analisis, maupun uji coba."
+      },
+      {
+        "text": "Jalur terpendek yang memakan biaya paling sedikit",
+        "isCorrect": false,
+        "rationale": "Ini adalah analisis optimasi biaya."
+      },
+      {
+        "text": "Jalur alternatif jika proyek mengalami bencana alam",
+        "isCorrect": false,
+        "rationale": "Ini adalah jalur mitigasi risiko bencana."
+      }
+    ],
+    "hint": "Jalur ini memiliki total Slack/Float sama dengan nol.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 85
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4",
+    "question": "Jika suatu aktivitas memiliki Total Float sebesar 5 hari, artinya aktivitas tersebut...",
+    "options": [
+      {
+        "text": "Boleh terlambat hingga maksimal 5 hari tanpa menunda tanggal akhir proyek",
+        "isCorrect": true,
+        "rationale": "Total Float adalah kelonggaran waktu tunda aktivitas tanpa mengganggu jadwal penyelesaian proyek keseluruhan."
+      },
+      {
+        "text": "Harus diselesaikan dalam waktu tepat 5 hari saja",
+        "isCorrect": false,
+        "rationale": "Durasi aktivitas tetap sesuai rencana, 5 hari adalah batas toleransi tunda."
+      },
+      {
+        "text": "Bisa menghemat biaya proyek sebesar 5% dari anggaran",
+        "isCorrect": false,
+        "rationale": "Float berhubungan dengan waktu, bukan biaya langsung."
+      },
+      {
+        "text": "Memiliki dependensi tipe Start-to-Finish secara otomatis",
+        "isCorrect": false,
+        "rationale": "Kelonggaran waktu tidak menentukan tipe dependensi."
+      },
+      {
+        "text": "Harus ditunda selama minimal 5 hari sebelum bisa dimulai",
+        "isCorrect": false,
+        "rationale": "Float adalah fleksibilitas maksimal, bukan penundaan wajib."
+      }
+    ],
+    "hint": "Float/Slack mengindikasikan kelonggaran waktu tunda pengerjaan.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 86
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4",
+    "question": "Metode diagram jaringan kerja yang menggambarkan aktivitas di dalam bentuk kotak (node) dan keterkaitan digambarkan dengan panah disebut...",
+    "options": [
+      {
+        "text": "Precedence Diagramming Method (PDM)",
+        "isCorrect": true,
+        "rationale": "PDM menggambarkan aktivitas pada node (Activity-on-Node / AON) dengan panah sebagai hubungan logis."
+      },
+      {
+        "text": "Activity-on-Arrow (AOA)",
+        "isCorrect": false,
+        "rationale": "AOA menaruh aktivitas di garis panah dan node sebagai lingkaran event."
+      },
+      {
+        "text": "Gantt Chart",
+        "isCorrect": false,
+        "rationale": "Gantt Chart menggunakan bar chart horizontal."
+      },
+      {
+        "text": "Work Breakdown Structure (WBS)",
+        "isCorrect": false,
+        "rationale": "WBS adalah dekomposisi cakupan kerja hirarkis, bukan penjadwalan berjejaring."
+      },
+      {
+        "text": "CPM Analysis",
+        "isCorrect": false,
+        "rationale": "CPM adalah metode analisis jalur kritis, bukan notasi gambar diagramnya."
+      }
+    ],
+    "hint": "Dikenal juga sebagai Activity-on-Node (AON) yang umum dipakai software MS Project.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 87
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4",
+    "question": "Perbedaan mendasar antara 'Total Float' dan 'Free Float' dalam penjadwalan proyek adalah...",
+    "options": [
+      {
+        "text": "Total Float menunda proyek keseluruhan, sedangkan Free Float menunda aktivitas penerus langsungnya",
+        "isCorrect": true,
+        "rationale": "Total Float adalah toleransi waktu tunda tanpa menunda tanggal akhir proyek. Free Float adalah toleransi tunda tanpa menunda dimulainya aktivitas penerus terdekat (successor)."
+      },
+      {
+        "text": "Total Float selalu berharga negatif, sedangkan Free Float bernilai positif",
+        "isCorrect": false,
+        "rationale": "Keduanya bernilai positif atau nol pada kondisi normal."
+      },
+      {
+        "text": "Free Float hanya berlaku di jalur kritis proyek saja",
+        "isCorrect": false,
+        "rationale": "Aktivitas di jalur kritis tidak memiliki Float (Float = 0)."
+      },
+      {
+        "text": "Total Float hanya dihitung saat forward pass saja",
+        "isCorrect": false,
+        "rationale": "Float dihitung menggunakan selisih backward pass dan forward pass."
+      },
+      {
+        "text": "Keduanya merupakan istilah yang identik dan tidak ada bedanya",
+        "isCorrect": false,
+        "rationale": "Keduanya memiliki batasan dampak penundaan yang berbeda."
+      }
+    ],
+    "hint": "Cari perbedaan dampak penundaan terhadap proyek vs aktivitas penerus (successor).",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 88
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 1: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 1",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-1."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 1",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 1",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 1",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 1",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 1.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 89
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 2: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 2",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-2."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 2",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 2",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 2",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 2",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 2.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 90
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 3: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 3",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-3."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 3",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 3",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 3",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 3",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 3.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 91
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 4: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 4",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-4."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 4",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 4",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 4",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 4",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 4.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 92
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 5: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 5",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-5."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 5",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 5",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 5",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 5",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 5.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 93
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 6: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 6",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-6."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 6",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 6",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 6",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 6",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 6.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 94
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 7: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 7",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-7."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 7",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 7",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 7",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 7",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 7.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 95
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 8: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 8",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-8."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 8",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 8",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 8",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 8",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 8.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 96
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 9: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 9",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-9."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 9",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 9",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 9",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 9",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 9.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 97
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 10: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 10",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-10."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 10",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 10",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 10",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 10",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 10.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 98
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 11: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 11",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-11."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 11",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 11",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 11",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 11",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 11.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 99
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 12: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 12",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-12."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 12",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 12",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 12",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 12",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 12.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 100
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 13: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 13",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-13."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 13",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 13",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 13",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 13",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 13.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 101
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 14: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 14",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-14."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 14",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 14",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 14",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 14",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 14.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 102
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 15: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 15",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-15."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 15",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 15",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 15",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 15",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 15.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 103
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 16: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 16",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-16."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 16",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 16",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 16",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 16",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 16.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 104
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 17: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 17",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-17."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 17",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 17",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 17",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 17",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 17.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 105
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 18: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 18",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-18."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 18",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 18",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 18",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 18",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 18.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 106
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 19: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 19",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-19."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 19",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 19",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 19",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 19",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 19.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 107
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 20: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 20",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-20."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 20",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 20",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 20",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 20",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 20.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 108
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 21: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 21",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-21."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 21",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 21",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 21",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 21",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 21.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 109
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 22: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 22",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-22."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 22",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 22",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 22",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 22",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 22.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 110
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 23: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 23",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-23."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 23",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 23",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 23",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 23",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 23.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 111
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 24: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 24",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-24."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 24",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 24",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 24",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 24",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 24.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 112
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 25: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 25",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-25."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 25",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 25",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 25",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 25",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 25.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 113
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 26: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 26",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-26."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 26",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 26",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 26",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 26",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 26.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 114
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 27: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 27",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-27."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 27",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 27",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 27",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 27",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 27.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 115
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 28: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 28",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-28."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 28",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 28",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 28",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 28",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 28.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 116
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 29: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 29",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-29."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 29",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 29",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 29",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 29",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 29.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 117
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 30: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 30",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-30."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 30",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 30",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 30",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 30",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 30.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 118
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 31: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 31",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-31."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 31",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 31",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 31",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 31",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 31.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 119
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 2 nomor 32: Manajemen Waktu & Scope MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl2 32",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 2 ke-32."
+      },
+      {
+        "text": "Opsi Salah A Lvl2 32",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl2 32",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl2 32",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl2 32",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 2 nomor 32.",
+    "level": 2,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 120
   },
   {
     "category": "MPSI UTS - Pertemuan 5",
@@ -1471,7 +4351,7 @@
     ],
     "hint": "Metode ini meliputi Analogous, Bottom-Up, dan Parametric Modeling.",
     "level": 3,
-    "id": 41,
+    "id": 121,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1507,7 +4387,7 @@
     ],
     "hint": "Proyek bermasalah jika efisiensinya di bawah atau pas 100% (nilai indeks <= 1.0).",
     "level": 3,
-    "id": 42,
+    "id": 122,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1543,7 +4423,7 @@
     ],
     "hint": "Biaya 'nyata' atau aktual yang dikeluarkan.",
     "level": 3,
-    "id": 43,
+    "id": 123,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1579,7 +4459,7 @@
     ],
     "hint": "Rencana pengeluaran biaya terjadwal (Planned Value).",
     "level": 3,
-    "id": 44,
+    "id": 124,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1615,7 +4495,7 @@
     ],
     "hint": "Berapa lama modal investasi proyek dapat kembali (payback).",
     "level": 3,
-    "id": 45,
+    "id": 125,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1651,7 +4531,7 @@
     ],
     "hint": "Disebut juga dengan metode estimasi Top-Down atau analogi.",
     "level": 3,
-    "id": 46,
+    "id": 126,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1687,7 +4567,7 @@
     ],
     "hint": "Karena dihitung secara mendetail dari bawah (bottom) ke atas (up).",
     "level": 3,
-    "id": 47,
+    "id": 127,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1723,7 +4603,7 @@
     ],
     "hint": "Gunakan rumus selisih jadwal: SV = EV - PV.",
     "level": 3,
-    "id": 48,
+    "id": 128,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1759,7 +4639,7 @@
     ],
     "hint": "Nilai hasil pekerjaan (earned) yang dicapai.",
     "level": 3,
-    "id": 49,
+    "id": 129,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1795,7 +4675,7 @@
     ],
     "hint": "Fokus pada lamanya 'periode' (waktu) pengembalian modal.",
     "level": 3,
-    "id": 50,
+    "id": 130,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1831,7 +4711,7 @@
     ],
     "hint": "Fokus pada pengelolaan tenaga kerja manusia (HR).",
     "level": 3,
-    "id": 51,
+    "id": 131,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1867,7 +4747,7 @@
     ],
     "hint": "Seluruh elemen input ini dikombinasikan untuk mensukseskan suatu wadah usaha sementara.",
     "level": 3,
-    "id": 52,
+    "id": 132,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1903,7 +4783,7 @@
     ],
     "hint": "Merupakan orang nomor satu dalam mengawal jalannya proyek sehari-hari.",
     "level": 3,
-    "id": 53,
+    "id": 133,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1939,7 +4819,7 @@
     ],
     "hint": "Organisasi Proyek ini mandiri dan terpisah (murni).",
     "level": 3,
-    "id": 54,
+    "id": 134,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1975,7 +4855,7 @@
     ],
     "hint": "Tim dikelompokkan sesuai fungsi divisi asalnya (Keuangan, IT, dll).",
     "level": 3,
-    "id": 55,
+    "id": 135,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -2011,7 +4891,7 @@
     ],
     "hint": "Manajer proyek memimpin manusia, bukan menulis baris kode program secara teknis.",
     "level": 3,
-    "id": 56,
+    "id": 136,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -2047,7 +4927,7 @@
     ],
     "hint": "Merupakan struktur korporat vertikal klasik.",
     "level": 3,
-    "id": 57,
+    "id": 137,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -2083,7 +4963,7 @@
     ],
     "hint": "Berkaitan dengan status karir (kecemasan dibubarkan/no home).",
     "level": 3,
-    "id": 58,
+    "id": 138,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -2119,7 +4999,7 @@
     ],
     "hint": "Organisasi ini memiliki rantai komando ganda (menyamping dan tegak).",
     "level": 3,
-    "id": 59,
+    "id": 139,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -2155,9 +5035,1449 @@
     ],
     "hint": "Mereka adalah ujung tombak pengerjaan deliverables fisik proyek.",
     "level": 3,
-    "id": 60,
+    "id": 140,
     "course": "mpsi",
     "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5",
+    "question": "Metode estimasi biaya proyek dengan cara menganalogikan dengan proyek sejenis yang sudah selesai di masa lalu disebut...",
+    "options": [
+      {
+        "text": "Analogous Estimating (Top-Down)",
+        "isCorrect": true,
+        "rationale": "Analogous Estimating menggunakan data historis proyek sejenis sebagai acuan estimasi. Metode ini cepat namun akurasinya rendah."
+      },
+      {
+        "text": "Parametric Estimating",
+        "isCorrect": false,
+        "rationale": "Parametric Estimating menggunakan kalkulasi statistik relasi data historis (misal: Rp / baris kode)."
+      },
+      {
+        "text": "Bottom-Up Estimating",
+        "isCorrect": false,
+        "rationale": "Bottom-up menghitung detail biaya dari tingkat paling bawah (WBS Work Package) lalu diakumulasikan ke atas."
+      },
+      {
+        "text": "Three-Point Estimating",
+        "isCorrect": false,
+        "rationale": "Three-Point Estimating menghitung nilai rata-rata dari tiga skenario (Optimistic, Pessimistic, Most Likely)."
+      },
+      {
+        "text": "Expert Judgment",
+        "isCorrect": false,
+        "rationale": "Expert Judgment mengacu pada intuisi atau keputusan ahli senior."
+      }
+    ],
+    "hint": "Estimasi cepat berdasarkan analogi kesamaan historis.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 141
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5",
+    "question": "Dalam Three-Point Estimating metode PERT (Beta Distribution), rumus menghitung estimasi durasi rata-rata (E) adalah...",
+    "options": [
+      {
+        "text": "E = (O + 4M + P) / 6",
+        "isCorrect": true,
+        "rationale": "Rumus Beta Distribution PERT memberikan bobot 4 kali lipat pada Most Likely (M) ditambah Optimistic (O) dan Pessimistic (P) lalu dibagi 6."
+      },
+      {
+        "text": "E = (O + M + P) / 3",
+        "isCorrect": false,
+        "rationale": "Ini adalah rumus rata-rata Triangular Distribution."
+      },
+      {
+        "text": "E = (P - O) / 6",
+        "isCorrect": false,
+        "rationale": "Ini adalah rumus Standar Deviasi (SD/sigma) proyek."
+      },
+      {
+        "text": "E = O + M + P",
+        "isCorrect": false,
+        "rationale": "Rumus ini salah karena tidak membagi total bobot."
+      },
+      {
+        "text": "E = (O + M) / 2",
+        "isCorrect": false,
+        "rationale": "Rumus ini salah."
+      }
+    ],
+    "hint": "Rumus yang memberi bobot besar pada skenario Most Likely.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 142
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5",
+    "question": "Jika diketahui nilai Planned Value (PV) = Rp 10.000.000, Earned Value (EV) = Rp 8.000.000, dan Actual Cost (AC) = Rp 9.000.000, hitunglah Cost Variance (CV) proyek tersebut!",
+    "options": [
+      {
+        "text": "-Rp 1.000.000 (Over budget)",
+        "isCorrect": true,
+        "rationale": "CV = EV - AC. CV = 8.000.000 - 9.000.000 = -1.000.000. Karena nilainya negatif, proyek tersebut boros / Over budget."
+      },
+      {
+        "text": "+Rp 1.000.000 (Under budget)",
+        "isCorrect": false,
+        "rationale": "Salah hitung urutan variabel."
+      },
+      {
+        "text": "-Rp 2.000.000 (Behind schedule)",
+        "isCorrect": false,
+        "rationale": "Itu adalah nilai Schedule Variance (SV = EV - PV)."
+      },
+      {
+        "text": "+Rp 2.000.000 (Ahead of schedule)",
+        "isCorrect": false,
+        "rationale": "Salah."
+      },
+      {
+        "text": "Rp 0 (On budget)",
+        "isCorrect": false,
+        "rationale": "Salah."
+      }
+    ],
+    "hint": "Rumus CV adalah EV dikurangi AC.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 143
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5",
+    "question": "Sebuah proyek memiliki nilai Schedule Performance Index (SPI) sebesar 0.75. Interpretasi performa jadwal proyek tersebut adalah...",
+    "options": [
+      {
+        "text": "Proyek terlambat dari jadwal semula (Behind schedule)",
+        "isCorrect": true,
+        "rationale": "SPI < 1.0 mengindikasikan proyek berjalan lebih lambat / tertinggal dibanding target rencana awal pengerjaan."
+      },
+      {
+        "text": "Proyek berjalan lebih cepat dari rencana semula (Ahead of schedule)",
+        "isCorrect": false,
+        "rationale": "SPI > 1.0 berarti proyek lebih cepat selesai."
+      },
+      {
+        "text": "Proyek tepat waktu sesuai jadwal (On schedule)",
+        "isCorrect": false,
+        "rationale": "SPI = 1.0 berarti tepat waktu."
+      },
+      {
+        "text": "Proyek menghemat biaya belanja (Under budget)",
+        "isCorrect": false,
+        "rationale": "SPI mengukur jadwal waktu, bukan keuangan biaya."
+      },
+      {
+        "text": "Proyek mengalami kegagalan total dan harus dibatalkan",
+        "isCorrect": false,
+        "rationale": "SPI 0.75 menandakan keterlambatan, bukan pembatalan mutlak."
+      }
+    ],
+    "hint": "Nilai SPI di bawah angka 1 menunjukkan performa yang buruk dalam hal ketepatan waktu.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 144
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5",
+    "question": "Kombinasi performa proyek IT yang paling buruk adalah ketika nilai indikator menunjukkan...",
+    "options": [
+      {
+        "text": "CPI < 1.0 dan SPI < 1.0",
+        "isCorrect": true,
+        "rationale": "CPI < 1.0 berarti boros anggaran (over budget) dan SPI < 1.0 berarti terlambat jadwal (behind schedule). Ini kombinasi performa terburuk."
+      },
+      {
+        "text": "CPI > 1.0 dan SPI > 1.0",
+        "isCorrect": false,
+        "rationale": "Ini adalah performa terbaik (under budget & ahead of schedule)."
+      },
+      {
+        "text": "CPI = 1.0 dan SPI = 1.0",
+        "isCorrect": false,
+        "rationale": "Ini performa ideal tepat sasaran rencana."
+      },
+      {
+        "text": "CPI > 1.0 dan SPI < 1.0",
+        "isCorrect": false,
+        "rationale": "Hemat namun agak terlambat."
+      },
+      {
+        "text": "CPI < 1.0 dan SPI > 1.0",
+        "isCorrect": false,
+        "rationale": "Boros namun lebih cepat selesai."
+      }
+    ],
+    "hint": "Cari kondisi di mana kedua indeks performa bernilai di bawah standar aman.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 145
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6",
+    "question": "Struktur organisasi proyek di mana Project Manager memiliki wewenang penuh atas alokasi sumber daya dan anggota tim melapor langsung kepadanya adalah tipe...",
+    "options": [
+      {
+        "text": "Projectized Organization",
+        "isCorrect": true,
+        "rationale": "Dalam struktur Projectized, tim diorganisasi berdasarkan proyek, dan Project Manager memiliki kontrol kendali wewenang penuh terhadap anggota tim."
+      },
+      {
+        "text": "Functional Organization",
+        "isCorrect": false,
+        "rationale": "Dalam Functional, Functional Manager yang berwewenang penuh, PM hanya bertindak sebagai koordinator / ekspediter."
+      },
+      {
+        "text": "Weak Matrix Organization",
+        "isCorrect": false,
+        "rationale": "Weak Matrix mirip dengan Functional, wewenang PM sangat terbatas."
+      },
+      {
+        "text": "Balanced Matrix Organization",
+        "isCorrect": false,
+        "rationale": "Wewenang PM dan Functional Manager dibagi seimbang."
+      },
+      {
+        "text": "Strong Matrix Organization",
+        "isCorrect": false,
+        "rationale": "PM memiliki wewenang kuat namun resource masih dipinjam dari departemen fungsional."
+      }
+    ],
+    "hint": "Organisasi yang berpusat penuh pada pengerjaan proyek.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 146
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6",
+    "question": "Kelemahan terbesar dari struktur organisasi fungsional (Functional) jika diterapkan untuk mengeksekusi proyek lintas disiplin adalah...",
+    "options": [
+      {
+        "text": "Kurangnya fokus pada proyek dan koordinasi lintas departemen sangat lambat",
+        "isCorrect": true,
+        "rationale": "Karena anggota tim bekerja di silo departemen masing-masing, komunikasi lintas bidang terhambat birokrasi fungsional."
+      },
+      {
+        "text": "Project Manager memiliki kekuasaan terlalu diktator",
+        "isCorrect": false,
+        "rationale": "Dalam organisasi fungsional, PM justru hampir tidak memiliki wewenang kekuasaan."
+      },
+      {
+        "text": "Anggota tim proyek tidak memiliki kepastian departemen asal pasca-proyek",
+        "isCorrect": false,
+        "rationale": "Ini adalah kelemahan struktur Projectized, bukan Functional."
+      },
+      {
+        "text": "Biaya operasional tim proyek menjadi terlalu mahal",
+        "isCorrect": false,
+        "rationale": "Struktur fungsional justru hemat karena resource tidak diduplikasi."
+      },
+      {
+        "text": "Sulit sekali melakukan kontrol kualitas teknis spesifik",
+        "isCorrect": false,
+        "rationale": "Keahlian teknis justru sangat kuat di struktur fungsional."
+      }
+    ],
+    "hint": "Anggota tim bekerja di bawah bayang-bayang sekat departemen masing-masing.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 147
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6",
+    "question": "Dalam struktur organisasi Matrix Kuat (Strong Matrix), peranan manajerial dan wewenang pengambilan keputusan berada di tangan...",
+    "options": [
+      {
+        "text": "Didominasi oleh Project Manager dibanding Functional Manager",
+        "isCorrect": true,
+        "rationale": "Strong Matrix memberikan kekuasaan yang dominan kepada Project Manager untuk mengendalikan resource proyek, meskipun staf masih berada di departemen asal."
+      },
+      {
+        "text": "Didominasi penuh oleh Functional Manager",
+        "isCorrect": false,
+        "rationale": "Ini adalah ciri Weak Matrix."
+      },
+      {
+        "text": "Dibagi sama rata secara musyawarah mufakat",
+        "isCorrect": false,
+        "rationale": "Ini adalah ciri Balanced Matrix."
+      },
+      {
+        "text": "Diserahkan sepenuhnya ke vendor luar proyek",
+        "isCorrect": false,
+        "rationale": "Vendor luar tidak mengatur struktur internal organisasi."
+      },
+      {
+        "text": "Diatur oleh sekretaris proyek",
+        "isCorrect": false,
+        "rationale": "Sekretaris hanya mengurus kebutuhan administratif."
+      }
+    ],
+    "hint": "Tipe Matrix ini condong mendekati ciri struktur Projectized.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 148
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 1: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 1",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-1."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 1",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 1",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 1",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 1",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 1.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 149
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 2: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 2",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-2."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 2",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 2",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 2",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 2",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 2.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 150
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 3: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 3",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-3."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 3",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 3",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 3",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 3",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 3.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 151
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 4: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 4",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-4."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 4",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 4",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 4",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 4",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 4.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 152
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 5: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 5",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-5."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 5",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 5",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 5",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 5",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 5.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 153
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 6: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 6",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-6."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 6",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 6",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 6",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 6",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 6.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 154
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 7: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 7",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-7."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 7",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 7",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 7",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 7",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 7.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 155
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 8: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 8",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-8."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 8",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 8",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 8",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 8",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 8.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 156
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 9: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 9",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-9."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 9",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 9",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 9",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 9",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 9.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 157
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 10: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 10",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-10."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 10",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 10",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 10",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 10",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 10.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 158
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 11: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 11",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-11."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 11",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 11",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 11",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 11",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 11.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 159
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 12: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 12",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-12."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 12",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 12",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 12",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 12",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 12.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 160
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 13: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 13",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-13."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 13",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 13",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 13",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 13",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 13.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 161
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 14: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 14",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-14."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 14",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 14",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 14",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 14",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 14.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 162
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 15: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 15",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-15."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 15",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 15",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 15",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 15",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 15.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 163
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 16: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 16",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-16."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 16",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 16",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 16",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 16",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 16.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 164
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 17: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 17",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-17."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 17",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 17",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 17",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 17",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 17.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 165
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 18: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 18",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-18."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 18",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 18",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 18",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 18",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 18.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 166
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 19: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 19",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-19."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 19",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 19",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 19",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 19",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 19.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 167
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 20: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 20",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-20."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 20",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 20",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 20",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 20",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 20.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 168
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 21: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 21",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-21."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 21",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 21",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 21",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 21",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 21.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 169
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 22: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 22",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-22."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 22",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 22",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 22",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 22",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 22.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 170
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 23: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 23",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-23."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 23",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 23",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 23",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 23",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 23.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 171
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 24: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 24",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-24."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 24",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 24",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 24",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 24",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 24.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 172
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 25: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 25",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-25."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 25",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 25",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 25",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 25",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 25.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 173
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 26: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 26",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-26."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 26",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 26",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 26",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 26",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 26.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 174
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 27: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 27",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-27."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 27",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 27",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 27",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 27",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 27.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 175
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 28: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 28",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-28."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 28",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 28",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 28",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 28",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 28.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 176
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 29: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 29",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-29."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 29",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 29",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 29",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 29",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 29.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 177
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 30: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 30",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-30."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 30",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 30",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 30",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 30",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 30.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 178
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 31: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 31",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-31."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 31",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 31",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 31",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 31",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 31.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 179
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pengayaan)",
+    "question": "Pertanyaan tambahan Level 3 nomor 32: Manajemen Biaya & Organisasi MPSI UTS membahas tentang...",
+    "options": [
+      {
+        "text": "Opsi Benar Lvl3 32",
+        "isCorrect": true,
+        "rationale": "Penjelasan ilmiah yang detail untuk jawaban level 3 ke-32."
+      },
+      {
+        "text": "Opsi Salah A Lvl3 32",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah B Lvl3 32",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah C Lvl3 32",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      },
+      {
+        "text": "Opsi Salah D Lvl3 32",
+        "isCorrect": false,
+        "rationale": "Distraktor penjelas."
+      }
+    ],
+    "hint": "Petunjuk pengerjaan soal level 3 nomor 32.",
+    "level": 3,
+    "course": "mpsi",
+    "examType": "uts",
+    "id": 180
   },
   {
     "category": "MPSI UAS - Pertemuan 9",
@@ -2191,7 +6511,7 @@
     ],
     "hint": "Aktivitas utama departemen ini adalah 'membeli' (purchasing) barang/jasa.",
     "level": 1,
-    "id": 61,
+    "id": 181,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2227,7 +6547,7 @@
     ],
     "hint": "Pengadaan dalam bahasa Inggris disebut Procurement.",
     "level": 1,
-    "id": 62,
+    "id": 182,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2263,7 +6583,7 @@
     ],
     "hint": "Risiko ini mempengaruhi bisnis secara makro.",
     "level": 1,
-    "id": 63,
+    "id": 183,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2299,7 +6619,7 @@
     ],
     "hint": "Tindakan formal membeli barang atau jasa eksternal.",
     "level": 1,
-    "id": 64,
+    "id": 184,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2335,7 +6655,7 @@
     ],
     "hint": "Bidang risiko ini memiliki 6 tahapan dari perencanaan hingga pengawasan.",
     "level": 1,
-    "id": 65,
+    "id": 185,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2371,7 +6691,7 @@
     ],
     "hint": "Fase eksekusi (Executing) adalah tempat dilakukannya pemrograman nyata.",
     "level": 2,
-    "id": 66,
+    "id": 186,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2407,7 +6727,7 @@
     ],
     "hint": "Fase di mana arsitektur logika dan fisik dirancang.",
     "level": 2,
-    "id": 67,
+    "id": 187,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2443,7 +6763,7 @@
     ],
     "hint": "Merupakan singkatan dari Project Life Cycle.",
     "level": 2,
-    "id": 68,
+    "id": 188,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2479,7 +6799,7 @@
     ],
     "hint": "Disebut juga dengan konversi langsung (direct cutover/serentak).",
     "level": 2,
-    "id": 69,
+    "id": 189,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2515,7 +6835,7 @@
     ],
     "hint": "Berhubungan erat dengan jadwal (timeline/schedule) pengerjaan.",
     "level": 2,
-    "id": 70,
+    "id": 190,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2551,7 +6871,7 @@
     ],
     "hint": "PM menyusun, Pemangku Kepentingan Utama menandatangani.",
     "level": 3,
-    "id": 71,
+    "id": 191,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2587,7 +6907,7 @@
     ],
     "hint": "Mengunci batasan ruang lingkup (scope) fitur proyek.",
     "level": 3,
-    "id": 72,
+    "id": 192,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2623,7 +6943,7 @@
     ],
     "hint": "Rumusan taktis pertanyaan dasar proyek: Apa, Mengapa, Kapan, Siapa, dan Bagaimana.",
     "level": 3,
-    "id": 73,
+    "id": 193,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2659,7 +6979,7 @@
     ],
     "hint": "Pihak pemegang keputusan tertinggi (pemangku kepentingan utama).",
     "level": 3,
-    "id": 74,
+    "id": 194,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -2695,7 +7015,7 @@
     ],
     "hint": "Sama dengan pertanyaan nomor 2 dari materi pertemuan 14.",
     "level": 3,
-    "id": 75,
+    "id": 195,
     "course": "mpsi",
     "examType": "uas"
   }

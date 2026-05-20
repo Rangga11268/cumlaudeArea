@@ -1434,3 +1434,123 @@ input:checked + .slider:before { transform: translateX(18px); }
 
 
 
+
+/* ==========================================
+   MOBILE RESPONSIVENESS OVERRIDES (HP)
+   ========================================== */
+@media (max-width: 768px) {
+  .cumulative-stats-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 10px;
+  }
+  .navbar {
+    margin-bottom: 15px;
+    padding: 12px;
+  }
+  .navbar-tagline {
+    display: none; /* Hide tagline on mobile for clean header space */
+  }
+  .user-info {
+    align-items: center;
+  }
+  .hero-section {
+    padding: 20px 15px;
+  }
+  .hero-title {
+    font-size: 1.35rem;
+  }
+  .hero-desc {
+    font-size: 0.85rem;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .levels-header h3 {
+    font-size: 1.15rem;
+  }
+  .levels-header p {
+    font-size: 0.8rem;
+  }
+  .level-card {
+    padding: 15px;
+  }
+  .level-card p {
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+  }
+  .history-table th, .history-table td {
+    padding: 8px 10px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .hero-actions button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+  .btn-primary, .btn-outline {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+  .question-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .option-btn {
+    padding: 10px 12px;
+    font-size: 0.8rem;
+  }
+  .feedback-box {
+    padding: 12px;
+  }
+  .feedback-box p {
+    font-size: 0.8rem;
+  }
+  .review-header {
+    padding: 12px;
+  }
+  .review-status-badge {
+    padding: 2px 4px;
+    font-size: 0.65rem;
+  }
+  .review-question-text {
+    font-size: 0.8rem;
+  }
+  .review-option-pill {
+    padding: 8px 10px;
+    font-size: 0.75rem;
+  }
+  .review-rationale-box {
+    font-size: 0.75rem;
+    padding: 10px 12px;
+  }
+  .result-card h1 {
+    font-size: 1.35rem;
+  }
+  .result-card p {
+    font-size: 0.85rem;
+  }
+  .flashcard-wrapper {
+    height: 200px;
+  }
+  .flashcard-face h3 {
+    font-size: 1rem;
+  }
+  .flashcard-back ul {
+    font-size: 0.75rem;
+  }
+}

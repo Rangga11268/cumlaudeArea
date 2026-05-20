@@ -235,11 +235,18 @@ export default function CumlaudeArea() {
     setUserAnswers({});
     setExpandedReview({});
     
-    // Scale timer based on question count: 1 minute (60 seconds) per question
     const qCount = QUESTIONS_DATABASE.filter(
       q => q.course === selectedCourse && q.examType === selectedExamType && (level !== null ? q.level === level : true)
     ).length;
-    setTimeLeft(qCount * 60);
+
+    // Scale timer difficulty based on level:
+    // Level 1 = 60s/q, Level 2 = 45s/q, Level 3 = 30s/q, Full Exam (null) = 45s/q
+    let secondsPerQuestion = 45;
+    if (level === 1) secondsPerQuestion = 60;
+    else if (level === 2) secondsPerQuestion = 45;
+    else if (level === 3) secondsPerQuestion = 30;
+
+    setTimeLeft(qCount * secondsPerQuestion);
   };
 
   const renderNavbar = (activeTab) => (
