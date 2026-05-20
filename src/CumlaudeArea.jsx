@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // ==========================================
 // DATABASE 60 SOAL MANAJEMEN PROYEK (MPSI)
@@ -2813,6 +2813,23 @@ export default function CumlaudeArea() {
   const [selectedExamType, setSelectedExamType] = useState('uts');
   const [selectedLevel, setSelectedLevel] = useState(null);
 
+  // New States for interactive features
+  const [timeLeft, setTimeLeft] = useState(0);
+  const [userAnswers, setUserAnswers] = useState({});
+  const [flippedCards, setFlippedCards] = useState({});
+  const [expandedReview, setExpandedReview] = useState({});
+  const [unlockedLevels, setUnlockedLevels] = useState(() => {
+    const saved = localStorage.getItem(`unlockedLevels_${selectedCourse}_${selectedExamType}`);
+    return saved ? JSON.parse(saved) : [1];
+  });
+
+  // Keep unlockedLevels in sync with selection
+  useEffect(() => {
+    const saved = localStorage.getItem(`unlockedLevels_${selectedCourse}_${selectedExamType}`);
+    setUnlockedLevels(saved ? JSON.parse(saved) : [1]);
+  }, [selectedCourse, selectedExamType]);
+
+  // Derived state for questions
   const activeQuestions = QUESTIONS_DATABASE.filter(
     q => q.course === selectedCourse && q.examType === selectedExamType && (selectedLevel !== null ? q.level === selectedLevel : true)
   );
@@ -2825,6 +2842,43 @@ export default function CumlaudeArea() {
   const lvl2Count = QUESTIONS_DATABASE.filter(q => q.course === selectedCourse && q.examType === selectedExamType && q.level === 2).length;
   const lvl3Count = QUESTIONS_DATABASE.filter(q => q.course === selectedCourse && q.examType === selectedExamType && q.level === 3).length;
 
+  // Countdown timer hook
+  useEffect(() => {
+    if (view !== 'quiz' || timeLeft <= 0) return;
+    const timer = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev <= 1) {
+          clearInterval(timer);
+          setView('result');
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [view, timeLeft]);
+
+  // Handle progressive level unlock upon reaching result page
+  useEffect(() => {
+    if (view === 'result' && selectedLevel !== null) {
+      const percentage = (score / activeQuestions.length) * 100;
+      if (percentage >= 60) {
+        const nextLevel = selectedLevel + 1;
+        if (nextLevel <= 3 && !unlockedLevels.includes(nextLevel)) {
+          const updated = [...unlockedLevels, nextLevel];
+          setUnlockedLevels(updated);
+          localStorage.setItem(`unlockedLevels_${selectedCourse}_${selectedExamType}`, JSON.stringify(updated));
+        }
+      }
+    }
+  }, [view]);
+
+  const formatTime = (seconds) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+  };
+
   const startQuiz = (level = null) => {
     setSelectedLevel(level);
     setView('quiz');
@@ -2832,10 +2886,18 @@ export default function CumlaudeArea() {
     setScore(0);
     setSelectedOption(null);
     setIsAnswered(false);
+    setUserAnswers({});
+    setExpandedReview({});
+    
+    // Scale timer based on question count: 1 minute (60 seconds) per question
+    const qCount = QUESTIONS_DATABASE.filter(
+      q => q.course === selectedCourse && q.examType === selectedExamType && (level !== null ? q.level === level : true)
+    ).length;
+    setTimeLeft(qCount * 60);
   };
 
   const renderNavbar = (activeTab) => (
-    <header className="navbar">
+    <header className="navbar glass-panel">
       <div className="nav-left">
         <img src="/cumlaude_logo.png" alt="Cumlaude Area Logo" className="navbar-logo" />
         <div className="nav-titles">
@@ -2859,6 +2921,7 @@ export default function CumlaudeArea() {
     if (isAnswered) return;
     setSelectedOption(optionIndex);
     setIsAnswered(true);
+    setUserAnswers(prev => ({ ...prev, [currentQuestionIndex]: optionIndex }));
     if (isCorrect) setScore(score + 1);
   };
 
@@ -2872,29 +2935,47 @@ export default function CumlaudeArea() {
     }
   };
 
+  const toggleFlashcard = (idx) => {
+    setFlippedCards(prev => ({ ...prev, [idx]: !prev[idx] }));
+  };
+
+  const toggleReview = (idx) => {
+    setExpandedReview(prev => ({ ...prev, [idx]: !prev[idx] }));
+  };
+
   if (view === 'materi') {
     const activeMateri = selectedExamType === 'uts' ? MATERI_KILAT_UTS : MATERI_KILAT_UAS;
     return (
-      <div className="app-container">
+      <div className="app-container fade-in">
         {renderNavbar('materi')}
 
         <main className="quiz-main">
-          <div className="materi-card">
+          <div className="materi-card glass-panel">
             <div className="materi-header">
-              <h2>Ringkasan Materi Ujian</h2>
-              <p>Poin-poin penting yang wajib Anda pahami sebelum memulai ujian.</p>
+              <h2>Flashcards Belajar Interaktif</h2>
+              <p>Pilih dan klik kartu untuk membalik dan melihat ringkasan materi penting.</p>
             </div>
             
-            {activeMateri.map((materi, idx) => (
-              <div key={idx} className="materi-section">
-                <h3>{materi.title}</h3>
-                <ul className="materi-list">
-                  {materi.points.map((point, pIdx) => (
-                    <li key={pIdx}>{point}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            <div className="flashcards-container">
+              {activeMateri.map((materi, idx) => (
+                <div key={idx} className="flashcard-wrapper" onClick={() => toggleFlashcard(idx)}>
+                  <div className={`flashcard ${flippedCards[idx] ? 'flipped' : ''}`}>
+                    <div className="flashcard-face flashcard-front">
+                      <h3>{materi.title}</h3>
+                      <p style={{ marginTop: '15px', color: '#3b82f6', fontWeight: '500' }}>Klik untuk Membalik ➔</p>
+                    </div>
+                    <div className="flashcard-face flashcard-back">
+                      <h4>{materi.title}</h4>
+                      <ul>
+                        {materi.points.map((point, pIdx) => (
+                          <li key={pIdx}>{point}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
 
             <div className="hero-actions" style={{marginTop: '40px', alignItems: 'center'}}>
               <button className="btn-primary" onClick={() => startQuiz(null)}>Sudah Paham, Mulai Ujian ➔</button>
@@ -2911,19 +2992,25 @@ export default function CumlaudeArea() {
     const progress = ((currentQuestionIndex + 1) / activeQuestions.length) * 100;
     
     return (
-      <div className="app-container">
-        <header className="navbar">
+      <div className="app-container fade-in">
+        <header className="navbar glass-panel">
           <div className="nav-left">
             <img src="/cumlaude_logo.png" alt="Cumlaude Area Logo" className="navbar-logo" />
             <div className="nav-titles">
               <span className="navbar-tagline">Simulasi Ujian MPSI</span>
             </div>
           </div>
+          <div className="nav-center" style={{ gap: '15px' }}>
+            <div className={`timer-badge ${timeLeft < 5 * 60 ? 'warning' : ''}`}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '4px'}}><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>{formatTime(timeLeft)}</span>
+            </div>
+          </div>
           <button className="btn-outline" onClick={() => setView('dashboard')}>Kembali</button>
         </header>
         
         <main className="quiz-main">
-          <div className="quiz-card">
+          <div className="quiz-card glass-panel">
             <div className="quiz-header">
               <span className="category-badge">{currentQuestion.category}</span>
               <span className="question-tracker">Soal {currentQuestionIndex + 1} / {activeQuestions.length}</span>
@@ -2965,19 +3052,101 @@ export default function CumlaudeArea() {
 
   if (view === 'result') {
     const percentage = Math.round((score / activeQuestions.length) * 100);
+    const radius = 55;
+    const circumference = 2 * Math.PI * radius;
+    const strokeDashoffset = circumference - (percentage / 100) * circumference;
+
     return (
-      <div className="app-container flex-center">
-        <div className="result-card">
-          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginBottom: '20px'}}><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"/><path d="M12 2a6 6 0 0 1 6 6v5a6 6 0 0 1-6 6 6 6 0 0 1-6-6V8a6 6 0 0 1 6-6z"/></svg>
-          <h1>Ujian Selesai!</h1>
-          <div className="score-display">
-            <span className={percentage >= 60 ? 'score-pass' : 'score-fail'}>{percentage}</span>
-            <small>/ 100</small>
+      <div className="app-container flex-center fade-in">
+        <div className="result-card glass-panel scale-up" style={{ width: '100%', maxWidth: '680px' }}>
+          
+          <div className="progress-ring-container">
+            <svg className="progress-ring" width="140" height="140">
+              <circle
+                stroke="rgba(226, 232, 240, 0.8)"
+                strokeWidth="10"
+                fill="transparent"
+                r={radius}
+                cx="70"
+                cy="70"
+              />
+              <circle
+                className="progress-ring-circle"
+                stroke={percentage >= 60 ? '#10b981' : '#ef4444'}
+                strokeWidth="10"
+                fill="transparent"
+                r={radius}
+                cx="70"
+                cy="70"
+                strokeDasharray={circumference}
+                strokeDashoffset={strokeDashoffset}
+              />
+            </svg>
+            <div className="progress-ring-text" style={{ color: percentage >= 60 ? '#10b981' : '#ef4444' }}>
+              {percentage}%
+            </div>
           </div>
-          <p>Anda menjawab benar <strong>{score}</strong> dari <strong>{activeQuestions.length}</strong> soal.</p>
-          <div className="hero-actions" style={{justifyContent: 'center', marginTop: '30px'}}>
+
+          <h1>{percentage >= 60 ? 'Selamat, Anda Lulus!' : 'Coba Lagi, Tetap Semangat!'}</h1>
+          <p style={{ marginTop: '10px' }}>
+            Anda menjawab benar <strong>{score}</strong> dari <strong>{activeQuestions.length}</strong> soal.
+          </p>
+
+          <div className="hero-actions" style={{justifyContent: 'center', marginTop: '30px', flexDirection: 'row'}}>
             <button className="btn-outline" onClick={() => setView('dashboard')}>Ke Dashboard</button>
             <button className="btn-primary" onClick={() => startQuiz(selectedLevel)}>Ulangi Ujian</button>
+          </div>
+
+          {/* Detailed Review Section */}
+          <div className="review-section">
+            <h3 className="review-title">Tinjau Pembahasan Soal</h3>
+            <div className="review-list">
+              {activeQuestions.map((q, idx) => {
+                const userAnsIndex = userAnswers[idx];
+                const isUserCorrect = q.options[userAnsIndex]?.isCorrect || false;
+                const isExpanded = expandedReview[idx];
+                
+                return (
+                  <div key={idx} className="review-item">
+                    <div className="review-header" onClick={() => toggleReview(idx)}>
+                      <div className="review-header-left">
+                        <span className={`review-status-badge ${isUserCorrect ? 'correct' : 'incorrect'}`}>
+                          {isUserCorrect ? 'Benar' : 'Salah'}
+                        </span>
+                        <span className="review-question-text">{idx + 1}. {q.question.substring(0, 75)}...</span>
+                      </div>
+                      <span style={{ fontSize: '0.8rem', color: '#64748b' }}>{isExpanded ? '▲' : '▼'}</span>
+                    </div>
+                    
+                    {isExpanded && (
+                      <div className="review-body fade-in">
+                        <p style={{ fontWeight: '600', marginBottom: '15px', color: '#0f172a' }}>{q.question}</p>
+                        <div className="review-options-list">
+                          {q.options.map((opt, oIdx) => {
+                            let pillClass = "review-option-pill";
+                            if (opt.isCorrect) {
+                              pillClass += " correct-ans";
+                            } else if (oIdx === userAnsIndex) {
+                              pillClass += " user-incorrect-ans";
+                            }
+                            return (
+                              <div key={oIdx} className={pillClass}>
+                                {opt.text}
+                                {opt.isCorrect && " ✓"}
+                                {oIdx === userAnsIndex && !opt.isCorrect && " ✗"}
+                              </div>
+                            );
+                          })}
+                        </div>
+                        <div className="review-rationale-box">
+                          <strong>Penjelasan:</strong> {q.options[userAnsIndex]?.rationale || q.options.find(o => o.isCorrect).rationale}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
         <Footer />
@@ -2985,15 +3154,19 @@ export default function CumlaudeArea() {
     );
   }
 
+  // Dashboard Locking Indicators
+  const isLvl2Locked = !unlockAll && !unlockedLevels.includes(2);
+  const isLvl3Locked = !unlockAll && !unlockedLevels.includes(3);
+
   return (
-    <div className="app-container">
+    <div className="app-container fade-in">
       {/* Navbar */}
       {renderNavbar('dashboard')}
 
       {/* Main Content */}
       <main className="main-content">
         {/* Selection Panel (Mata Kuliah & Jenis Ujian) */}
-        <div className="selection-panel">
+        <div className="selection-panel glass-panel">
           <div className="exam-type-selector">
             {EXAM_TYPES.map(type => (
               <button 
@@ -3026,7 +3199,7 @@ export default function CumlaudeArea() {
           </div>
         </div>
 
-        <div className="hero-section">
+        <div className="hero-section glass-panel" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%)' }}>
           <div className="hero-content">
             <span className="badge">Sistem Simulasi {selectedExamType.toUpperCase()} MPSI Resmi</span>
             <h2 className="hero-title">Optimalkan Nilai {selectedExamType.toUpperCase()} Manajemen Proyek</h2>
@@ -3048,19 +3221,19 @@ export default function CumlaudeArea() {
 
         {/* Stats Grid */}
         <div className="stats-grid">
-          <div className="stat-card">
+          <div className="stat-card glass-card">
             <span className="stat-label">Total Database Soal</span>
             <strong className="stat-value">{totalExamQuestions} Soal</strong>
           </div>
-          <div className="stat-card">
+          <div className="stat-card glass-card">
             <span className="stat-label">Durasi Penuh {selectedExamType.toUpperCase()}</span>
             <strong className="stat-value green-text">{selectedExamType === 'uts' ? '60' : '30'} Menit</strong>
           </div>
-          <div className="stat-card">
+          <div className="stat-card glass-card">
             <span className="stat-label">Tingkatan Kesulitan</span>
             <strong className="stat-value purple-text">3 Level</strong>
           </div>
-          <div className="stat-card">
+          <div className="stat-card glass-card">
             <span className="stat-label">Aturan Kelulusan</span>
             <strong className="stat-value orange-text">Skor &gt;= 60</strong>
           </div>
@@ -3082,7 +3255,7 @@ export default function CumlaudeArea() {
         </div>
 
         <div className="levels-grid">
-          <div className="level-card">
+          <div className="level-card glass-card">
             <div className="level-head">
               <h4>Level 1 - Inisiasi</h4>
               <span className="level-count">{lvl1Count} Soal</span>
@@ -3095,7 +3268,7 @@ export default function CumlaudeArea() {
             <button className="btn-level outline" onClick={() => startQuiz(1)}>Mulai Level 1</button>
           </div>
           
-          <div className={"level-card " + (!unlockAll ? "locked" : "")}>
+          <div className={"level-card glass-card " + (isLvl2Locked ? "locked" : "")}>
             <div className="level-head">
               <h4>Level 2 - Eksekusi</h4>
               <span className="level-count">{lvl2Count} Soal</span>
@@ -3105,8 +3278,8 @@ export default function CumlaudeArea() {
                 ? 'Inisiasi, Sasaran Proyek, Project Charter, dan Scope.' 
                 : 'Siklus Hidup Proyek (PLC) dan Penerapan SDLC.'}
             </p>
-            <button className="btn-level outline" disabled={!unlockAll} onClick={() => startQuiz(2)}>
-              {!unlockAll ? (
+            <button className="btn-level outline" disabled={isLvl2Locked} onClick={() => startQuiz(2)}>
+              {isLvl2Locked ? (
                 <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                   Terkunci
@@ -3115,7 +3288,7 @@ export default function CumlaudeArea() {
             </button>
           </div>
 
-          <div className={"level-card " + (!unlockAll ? "locked" : "")}>
+          <div className={"level-card glass-card " + (isLvl3Locked ? "locked" : "")}>
             <div className="level-head">
               <h4>Level 3 - Penutupan</h4>
               <span className="level-count">{lvl3Count} Soal</span>
@@ -3125,8 +3298,8 @@ export default function CumlaudeArea() {
                 ? 'Estimasi Biaya (Analogous, Bottom-Up, Parametric), EVM, dan Struktur Organisasi.' 
                 : 'Project Management Plan (PMP), Scope Baseline, dan 4W+1H.'}
             </p>
-            <button className="btn-level outline" disabled={!unlockAll} onClick={() => startQuiz(3)}>
-              {!unlockAll ? (
+            <button className="btn-level outline" disabled={isLvl3Locked} onClick={() => startQuiz(3)}>
+              {isLvl3Locked ? (
                 <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                   Terkunci
