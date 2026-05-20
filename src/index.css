@@ -651,12 +651,7 @@ input:checked + .slider:before { transform: translateX(18px); }
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
-}
+
 
 /* NAVBAR LOGO STYLING */
 .navbar-logo {
@@ -802,14 +797,170 @@ input:checked + .slider:before { transform: translateX(18px); }
   font-weight: 600;
 }
 
+/* RESPONSIVE DESIGN - MEDIA QUERIES */
+
 @media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .levels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .course-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+@media (max-width: 768px) {
+  /* App container adjustments */
+  .app-container {
+    padding: 15px 10px;
+  }
+
+  /* Navbar Stack */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    align-items: stretch;
+    text-align: center;
+  }
+  
+  .nav-left {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .navbar-tagline {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 0.8rem;
+  }
+
+  .nav-center {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-btn {
+    flex: 1;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 10px 8px;
+  }
+
+  .nav-right {
+    text-align: center;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 10px;
+  }
+
+  /* Hero Section Stack */
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+    gap: 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  /* Levels Header Stack */
+  .levels-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .toggle-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* Cards Padding */
+  .quiz-card, .materi-card, .result-card {
+    padding: 25px 15px;
+  }
+
+  .materi-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .question-text {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+  }
+
+  .option-btn {
+    padding: 12px 16px;
+    font-size: 0.95rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
 @media (max-width: 600px) {
+  .levels-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
   .course-grid {
     grid-template-columns: 1fr;
   }
+  
+  .result-card h1 {
+    font-size: 1.6rem;
+  }
+
+  .selection-panel {
+    padding: 15px;
+  }
+
+  .exam-type-selector {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    gap: 10px;
+  }
+
+  .exam-type-btn {
+    font-size: 0.95rem;
+    padding: 6px 12px;
+  }
+
+  .exam-type-btn.active::after {
+    bottom: -12px;
+  }
 }
+
