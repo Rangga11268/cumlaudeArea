@@ -2813,7 +2813,7 @@ export default function CumlaudeArea() {
   const [selectedExamType, setSelectedExamType] = useState('uts');
   const [selectedLevel, setSelectedLevel] = useState(null);
 
-  // New States for interactive features
+  // States for interactive features
   const [timeLeft, setTimeLeft] = useState(0);
   const [userAnswers, setUserAnswers] = useState({});
   const [flippedCards, setFlippedCards] = useState({});
@@ -2821,6 +2821,12 @@ export default function CumlaudeArea() {
   const [unlockedLevels, setUnlockedLevels] = useState(() => {
     const saved = localStorage.getItem(`unlockedLevels_${selectedCourse}_${selectedExamType}`);
     return saved ? JSON.parse(saved) : [1];
+  });
+
+  // Local storage history state
+  const [examHistory, setExamHistory] = useState(() => {
+    const saved = localStorage.getItem('cumlaude_exam_history');
+    return saved ? JSON.parse(saved) : [];
   });
 
   // Keep unlockedLevels in sync with selection
@@ -2858,20 +2864,60 @@ export default function CumlaudeArea() {
     return () => clearInterval(timer);
   }, [view, timeLeft]);
 
-  // Handle progressive level unlock upon reaching result page
+  // Handle progressive level unlock and logging attempts upon reaching result page
   useEffect(() => {
-    if (view === 'result' && selectedLevel !== null) {
-      const percentage = (score / activeQuestions.length) * 100;
-      if (percentage >= 60) {
+    if (view === 'result') {
+      const percentage = Math.round((score / activeQuestions.length) * 100);
+      const isPassed = percentage >= 60;
+      const attemptId = `attempt_${Date.now()}`;
+
+      // Build attempt item
+      const newAttempt = {
+        id: attemptId,
+        timestamp: new Date().toLocaleString('id-ID', {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit'
+        }),
+        course: selectedCourse.toUpperCase(),
+        examType: selectedExamType.toUpperCase(),
+        level: selectedLevel !== null ? `Level ${selectedLevel}` : 'Semua Level',
+        score: score,
+        total: activeQuestions.length,
+        percentage: percentage,
+        passed: isPassed
+      };
+
+      // Push to history state safely preventing strict mode double execution
+      setExamHistory(prev => {
+        if (prev.some(item => item.id.split('_')[1] === attemptId.split('_')[1] || (Date.now() - parseInt(item.id.split('_')[1] || 0) < 1000))) {
+          return prev;
+        }
+        const updated = [newAttempt, ...prev].slice(0, 10);
+        localStorage.setItem('cumlaude_exam_history', JSON.stringify(updated));
+        return updated;
+      });
+
+      // Auto unlock next level
+      if (selectedLevel !== null && isPassed) {
         const nextLevel = selectedLevel + 1;
         if (nextLevel <= 3 && !unlockedLevels.includes(nextLevel)) {
-          const updated = [...unlockedLevels, nextLevel];
-          setUnlockedLevels(updated);
-          localStorage.setItem(`unlockedLevels_${selectedCourse}_${selectedExamType}`, JSON.stringify(updated));
+          const updatedLevels = [...unlockedLevels, nextLevel];
+          setUnlockedLevels(updatedLevels);
+          localStorage.setItem(`unlockedLevels_${selectedCourse}_${selectedExamType}`, JSON.stringify(updatedLevels));
         }
       }
     }
   }, [view]);
+
+  const clearHistory = () => {
+    if (window.confirm("Apakah Anda yakin ingin menghapus semua riwayat ujian?")) {
+      setExamHistory([]);
+      localStorage.removeItem('cumlaude_exam_history');
+    }
+  };
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);
@@ -2942,6 +2988,11 @@ export default function CumlaudeArea() {
   const toggleReview = (idx) => {
     setExpandedReview(prev => ({ ...prev, [idx]: !prev[idx] }));
   };
+
+  // Cumulative statistics calculations
+  const passedCount = examHistory.filter(item => item.passed).length;
+  const passingRate = examHistory.length > 0 ? Math.round((passedCount / examHistory.length) * 100) : 0;
+  const avgScore = examHistory.length > 0 ? Math.round(examHistory.reduce((acc, item) => acc + item.percentage, 0) / examHistory.length) : 0;
 
   if (view === 'materi') {
     const activeMateri = selectedExamType === 'uts' ? MATERI_KILAT_UTS : MATERI_KILAT_UAS;
@@ -3239,6 +3290,22 @@ export default function CumlaudeArea() {
           </div>
         </div>
 
+        {/* Cumulative Statistics & History Panels */}
+        <div className="cumulative-stats-container">
+          <div className="cumulative-stat-card glass-card">
+            <span className="cum-stat-label">Total Ujian Diikuti</span>
+            <strong className="cum-stat-value">{examHistory.length} Kali</strong>
+          </div>
+          <div className="cumulative-stat-card glass-card">
+            <span className="cum-stat-label">Rata-Rata Skor</span>
+            <strong className="cum-stat-value" style={{ color: avgScore >= 60 ? '#10b981' : '#ef4444' }}>{avgScore}%</strong>
+          </div>
+          <div className="cumulative-stat-card glass-card">
+            <span className="cum-stat-label">Rasio Kelulusan</span>
+            <strong className="cum-stat-value" style={{ color: passingRate >= 60 ? '#10b981' : '#ef4444' }}>{passingRate}%</strong>
+          </div>
+        </div>
+
         {/* Levels Section */}
         <div className="levels-header">
           <div className="levels-title-area">
@@ -3306,6 +3373,59 @@ export default function CumlaudeArea() {
                 </span>
               ) : 'Mulai Level 3'}
             </button>
+          </div>
+        </div>
+
+        {/* History Table */}
+        <div className="history-section">
+          <div className="history-card glass-panel">
+            <div className="history-title-area">
+              <h3>Riwayat Ujian Terakhir (Simulasi Database Lokal)</h3>
+              {examHistory.length > 0 && (
+                <button className="btn-danger-outline" onClick={clearHistory}>
+                  Hapus Riwayat
+                </button>
+              )}
+            </div>
+            
+            <div className="history-table-wrapper">
+              {examHistory.length === 0 ? (
+                <div className="no-history-text">
+                  Belum ada riwayat ujian. Selesaikan ujian pertama Anda untuk melihat statistik!
+                </div>
+              ) : (
+                <table className="history-table">
+                  <thead>
+                    <tr>
+                      <th>Tanggal</th>
+                      <th>Mata Kuliah</th>
+                      <th>Tipe</th>
+                      <th>Tingkat</th>
+                      <th>Skor</th>
+                      <th>Persentase</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {examHistory.map((item) => (
+                      <tr key={item.id}>
+                        <td>{item.timestamp}</td>
+                        <td><strong>{item.course}</strong></td>
+                        <td>{item.examType}</td>
+                        <td>{item.level}</td>
+                        <td>{item.score} / {item.total}</td>
+                        <td>{item.percentage}%</td>
+                        <td>
+                          <span className={`badge-status ${item.passed ? 'lulus' : 'gagal'}`}>
+                            {item.passed ? 'Lulus' : 'Gagal'}
+                          </span>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
+            </div>
           </div>
         </div>
       </main>
