@@ -3380,7 +3380,7 @@ export default function CumlaudeArea() {
         <div className="history-section">
           <div className="history-card glass-panel">
             <div className="history-title-area">
-              <h3>Riwayat Ujian Terakhir (Simulasi Database Lokal)</h3>
+              <h3>Riwayat Ujian Terakhir</h3>
               {examHistory.length > 0 && (
                 <button className="btn-danger-outline" onClick={clearHistory}>
                   Hapus Riwayat
