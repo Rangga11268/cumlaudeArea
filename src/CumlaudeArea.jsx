@@ -824,9 +824,9 @@ const MATERI_KILAT = [
 
 const COURSES = [
   { id: 'mpsi', name: 'Manajemen Proyek Sistem Informasi', code: 'MPSI', active: true },
-  { id: 'soon1', name: 'Mata Kuliah Baru', code: 'SOON', active: false },
-  { id: 'soon2', name: 'Mata Kuliah Baru', code: 'SOON', active: false },
-  { id: 'soon3', name: 'Mata Kuliah Baru', code: 'SOON', active: false }
+  { id: 'soon1', name: 'Next Course', code: 'SOON', active: false },
+  { id: 'soon2', name: 'Next Course', code: 'SOON', active: false },
+  { id: 'soon3', name: 'Next Course', code: 'SOON', active: false }
 ];
 
 const EXAM_TYPES = [
