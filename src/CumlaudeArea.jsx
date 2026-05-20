@@ -415,98 +415,102 @@ export default function CumlaudeArea() {
     const strokeDashoffset = circumference - (percentage / 100) * circumference;
 
     return (
-      <div className="app-container flex-center fade-in">
-        <div className="result-card glass-panel scale-up" style={{ width: '100%', maxWidth: '680px' }}>
-          
-          <div className="progress-ring-container">
-            <svg className="progress-ring" width="140" height="140">
-              <circle
-                stroke="rgba(226, 232, 240, 0.8)"
-                strokeWidth="10"
-                fill="transparent"
-                r={radius}
-                cx="70"
-                cy="70"
-              />
-              <circle
-                className="progress-ring-circle"
-                stroke={percentage >= 60 ? '#10b981' : '#ef4444'}
-                strokeWidth="10"
-                fill="transparent"
-                r={radius}
-                cx="70"
-                cy="70"
-                strokeDasharray={circumference}
-                strokeDashoffset={strokeDashoffset}
-              />
-            </svg>
-            <div className="progress-ring-text" style={{ color: percentage >= 60 ? '#10b981' : '#ef4444' }}>
-              {percentage}%
+      <div className="app-container fade-in">
+        {renderNavbar('dashboard')}
+        
+        <main className="quiz-main" style={{ marginTop: '20px' }}>
+          <div className="result-card glass-panel scale-up" style={{ width: '100%', maxWidth: '680px', margin: '0 auto' }}>
+            
+            <div className="progress-ring-container">
+              <svg className="progress-ring" width="140" height="140">
+                <circle
+                  stroke="rgba(226, 232, 240, 0.8)"
+                  strokeWidth="10"
+                  fill="transparent"
+                  r={radius}
+                  cx="70"
+                  cy="70"
+                />
+                <circle
+                  className="progress-ring-circle"
+                  stroke={percentage >= 60 ? '#10b981' : '#ef4444'}
+                  strokeWidth="10"
+                  fill="transparent"
+                  r={radius}
+                  cx="70"
+                  cy="70"
+                  strokeDasharray={circumference}
+                  strokeDashoffset={strokeDashoffset}
+                />
+              </svg>
+              <div className="progress-ring-text" style={{ color: percentage >= 60 ? '#10b981' : '#ef4444' }}>
+                {percentage}%
+              </div>
             </div>
-          </div>
 
-          <h1>{percentage >= 60 ? 'Selamat, Anda Lulus!' : 'Coba Lagi, Tetap Semangat!'}</h1>
-          <p style={{ marginTop: '10px' }}>
-            Anda menjawab benar <strong>{score}</strong> dari <strong>{activeQuestions.length}</strong> soal.
-          </p>
+            <h1 className="result-title-text" style={{ color: '#0f172a' }}>{percentage >= 60 ? 'Selamat, Anda Lulus!' : 'Coba Lagi, Tetap Semangat!'}</h1>
+            <p style={{ marginTop: '10px' }}>
+              Anda menjawab benar <strong>{score}</strong> dari <strong>{activeQuestions.length}</strong> soal.
+            </p>
 
-          <div className="hero-actions" style={{justifyContent: 'center', marginTop: '30px', flexDirection: 'row'}}>
-            <button className="btn-outline" onClick={() => setView('dashboard')}>Ke Dashboard</button>
-            <button className="btn-primary" onClick={() => startQuiz(selectedLevel)}>Ulangi Ujian</button>
-          </div>
+            <div className="result-actions">
+              <button className="btn-outline" onClick={() => setView('dashboard')}>Ke Dashboard</button>
+              <button className="btn-primary" onClick={() => startQuiz(selectedLevel)}>Ulangi Ujian</button>
+            </div>
 
-          {/* Detailed Review Section */}
-          <div className="review-section">
-            <h3 className="review-title">Tinjau Pembahasan Soal</h3>
-            <div className="review-list">
-              {activeQuestions.map((q, idx) => {
-                const userAnsIndex = userAnswers[idx];
-                const isUserCorrect = q.options[userAnsIndex]?.isCorrect || false;
-                const isExpanded = expandedReview[idx];
-                
-                return (
-                  <div key={idx} className="review-item">
-                    <div className="review-header" onClick={() => toggleReview(idx)}>
-                      <div className="review-header-left">
-                        <span className={`review-status-badge ${isUserCorrect ? 'correct' : 'incorrect'}`}>
-                          {isUserCorrect ? 'Benar' : 'Salah'}
-                        </span>
-                        <span className="review-question-text">{idx + 1}. {q.question.substring(0, 75)}...</span>
+            {/* Detailed Review Section */}
+            <div className="review-section">
+              <h3 className="review-title">Tinjau Pembahasan Soal</h3>
+              <div className="review-list">
+                {activeQuestions.map((q, idx) => {
+                  const userAnsIndex = userAnswers[idx];
+                  const isUserCorrect = q.options[userAnsIndex]?.isCorrect || false;
+                  const isExpanded = expandedReview[idx];
+                  
+                  return (
+                    <div key={idx} className="review-item">
+                      <div className="review-header" onClick={() => toggleReview(idx)}>
+                        <div className="review-header-left">
+                          <span className={`review-status-badge ${isUserCorrect ? 'correct' : 'incorrect'}`}>
+                            {isUserCorrect ? 'Benar' : 'Salah'}
+                          </span>
+                          <span className="review-question-text">{idx + 1}. {q.question.substring(0, 75)}...</span>
+                        </div>
+                        <span style={{ fontSize: '0.8rem', color: '#64748b' }}>{isExpanded ? '▲' : '▼'}</span>
                       </div>
-                      <span style={{ fontSize: '0.8rem', color: '#64748b' }}>{isExpanded ? '▲' : '▼'}</span>
+                      
+                      {isExpanded && (
+                        <div className="review-body fade-in">
+                          <p style={{ fontWeight: '600', marginBottom: '15px', color: '#0f172a' }}>{q.question}</p>
+                          <div className="review-options-list">
+                            {q.options.map((opt, oIdx) => {
+                              let pillClass = "review-option-pill";
+                              if (opt.isCorrect) {
+                                pillClass += " correct-ans";
+                              } else if (oIdx === userAnsIndex) {
+                                pillClass += " user-incorrect-ans";
+                              }
+                              return (
+                                <div key={oIdx} className={pillClass}>
+                                  {opt.text}
+                                  {opt.isCorrect && " ✓"}
+                                  {oIdx === userAnsIndex && !opt.isCorrect && " ✗"}
+                                </div>
+                              );
+                            })}
+                          </div>
+                          <div className="review-rationale-box">
+                            <strong>Penjelasan:</strong> {q.options[userAnsIndex]?.rationale || q.options.find(o => o.isCorrect).rationale}
+                          </div>
+                        </div>
+                      )}
                     </div>
-                    
-                    {isExpanded && (
-                      <div className="review-body fade-in">
-                        <p style={{ fontWeight: '600', marginBottom: '15px', color: '#0f172a' }}>{q.question}</p>
-                        <div className="review-options-list">
-                          {q.options.map((opt, oIdx) => {
-                            let pillClass = "review-option-pill";
-                            if (opt.isCorrect) {
-                              pillClass += " correct-ans";
-                            } else if (oIdx === userAnsIndex) {
-                              pillClass += " user-incorrect-ans";
-                            }
-                            return (
-                              <div key={oIdx} className={pillClass}>
-                                {opt.text}
-                                {opt.isCorrect && " ✓"}
-                                {oIdx === userAnsIndex && !opt.isCorrect && " ✗"}
-                              </div>
-                            );
-                          })}
-                        </div>
-                        <div className="review-rationale-box">
-                          <strong>Penjelasan:</strong> {q.options[userAnsIndex]?.rationale || q.options.find(o => o.isCorrect).rationale}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
           </div>
-        </div>
+        </main>
         <Footer />
       </div>
     );

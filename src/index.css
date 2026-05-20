@@ -1553,4 +1553,22 @@ input:checked + .slider:before { transform: translateX(18px); }
   .flashcard-back ul {
     font-size: 0.75rem;
   }
+  .result-actions {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  .result-actions button {
+    width: 100%;
+  }
+  .result-title-text {
+    font-size: 1.3rem;
+  }
+}
+
+.result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
 }
