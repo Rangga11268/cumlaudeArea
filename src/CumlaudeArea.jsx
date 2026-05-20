@@ -185,6 +185,186 @@ const QUESTIONS_DATABASE = [
     "examType": "uts"
   },
   {
+    "category": "MPSI UTS - Pertemuan 1 (Pendalaman)",
+    "question": "Dalam manajemen proyek, singkatan 5M yang menjadi unsur sumber daya proyek adalah...",
+    "options": [
+      {
+        "text": "Man, Material, Machine, Method, Money",
+        "isCorrect": true,
+        "rationale": "Unsur 5M mencakup Man (Manusia), Material (Bahan), Machine (Peralatan), Method (Metode Kerja), dan Money (Anggaran)."
+      },
+      {
+        "text": "Management, Market, Money, Material, Man",
+        "isCorrect": false,
+        "rationale": "Market adalah eksternal bisnis, bukan resource internal proyek."
+      },
+      {
+        "text": "Method, Machine, Market, Management, Money",
+        "isCorrect": false,
+        "rationale": "Management adalah teknik pengelolaan, bukan resource langsung."
+      },
+      {
+        "text": "Man, Machine, Material, Media, Money",
+        "isCorrect": false,
+        "rationale": "Media bukan bagian dari unsur 5M proyek standar BSI."
+      },
+      {
+        "text": "Management, Material, Machine, Media, Market",
+        "isCorrect": false,
+        "rationale": "Salah."
+      }
+    ],
+    "hint": "Merupakan lima pilar resource fisik dan finansial dalam proyek.",
+    "level": 1,
+    "id": 6,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pendalaman)",
+    "question": "Ciri utama dari operasional rutin perusahaan yang membedakannya secara mendasar dengan kegiatan proyek adalah...",
+    "options": [
+      {
+        "text": "Bersifat sementara dan unik",
+        "isCorrect": false,
+        "rationale": "Ini adalah ciri proyek."
+      },
+      {
+        "text": "Berulang-ulang dan berkelanjutan",
+        "isCorrect": true,
+        "rationale": "Operasional rutin bersifat repetitif, terus-menerus, dan stabil volume kerjanya."
+      },
+      {
+        "text": "Memiliki jadwal awal dan akhir yang kaku",
+        "isCorrect": false,
+        "rationale": "Ini adalah ciri proyek."
+      },
+      {
+        "text": "Dibatasi oleh triple constraints",
+        "isCorrect": false,
+        "rationale": "Ini adalah ciri proyek."
+      },
+      {
+        "text": "Membutuhkan tim lintas fungsional",
+        "isCorrect": false,
+        "rationale": "Operasional biasanya dikerjakan dalam departemen silo."
+      }
+    ],
+    "hint": "Operasional tidak pernah berhenti saat tujuan jangka pendek tercapai.",
+    "level": 1,
+    "id": 7,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pendalaman)",
+    "question": "Komponen sistem informasi yang berupa brainware merujuk pada...",
+    "options": [
+      {
+        "text": "Perangkat keras server",
+        "isCorrect": false,
+        "rationale": "Itu adalah Hardware."
+      },
+      {
+        "text": "Program aplikasi database",
+        "isCorrect": false,
+        "rationale": "Itu adalah Software."
+      },
+      {
+        "text": "Prosedur penggunaan sistem",
+        "isCorrect": false,
+        "rationale": "Itu adalah Prosedur/Metode."
+      },
+      {
+        "text": "Jaringan internet",
+        "isCorrect": false,
+        "rationale": "Itu adalah Infrastruktur."
+      },
+      {
+        "text": "Manusia atau pengguna yang terlibat dalam sistem",
+        "isCorrect": true,
+        "rationale": "Brainware adalah SDM yang mengoperasikan, mengelola, atau menggunakan sistem informasi tersebut."
+      }
+    ],
+    "hint": "Fokus pada unsur manusia dalam segitiga pilar TI.",
+    "level": 1,
+    "id": 8,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pendalaman)",
+    "question": "Berdasarkan modul MPSI, yang dimaksud dengan keberhasilan suatu proyek sistem informasi diukur dari...",
+    "options": [
+      {
+        "text": "Tercapainya sasaran waktu, biaya, ruang lingkup, dan kepuasan pelanggan",
+        "isCorrect": true,
+        "rationale": "Keberhasilan diukur dari tercapainya Triple Constraints ditambah dengan kepuasan stakeholders/pelanggan."
+      },
+      {
+        "text": "Banyaknya programmer yang dilibatkan",
+        "isCorrect": false,
+        "rationale": "Banyaknya staf justru meningkatkan kompleksitas komunikasi."
+      },
+      {
+        "text": "Bagusnya spesifikasi komputer server",
+        "isCorrect": false,
+        "rationale": "Hardware canggih tidak menjamin keselarasan bisnis proyek."
+      },
+      {
+        "text": "Jumlah baris kode program yang ditulis",
+        "isCorrect": false,
+        "rationale": "Kuantitas kode tidak mencerminkan kualitas fungsional sistem."
+      },
+      {
+        "text": "Keuntungan finansial perusahaan pembuat secara sepihak",
+        "isCorrect": false,
+        "rationale": "Kepuasan klien tetap merupakan parameter keberhasilan utama."
+      }
+    ],
+    "hint": "Kunci keberhasilan proyek tidak hanya mencakup dimensi waktu/biaya, tapi juga kualitas & kepuasan.",
+    "level": 1,
+    "id": 9,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 1 (Pendalaman)",
+    "question": "Mengapa rekayasa perangkat lunak dikategorikan sebagai bagian penting dalam MPSI?",
+    "options": [
+      {
+        "text": "Karena perangkat lunak adalah wujud fisik paling dominan dalam representasi sistem informasi",
+        "isCorrect": true,
+        "rationale": "Sistem informasi modern direpresentasikan secara dominan melalui modul-modul perangkat lunak (software) fungsional."
+      },
+      {
+        "text": "Karena perangkat lunak tidak membutuhkan biaya pemeliharaan",
+        "isCorrect": false,
+        "rationale": "Perangkat lunak membutuhkan biaya pemeliharaan yang cukup tinggi."
+      },
+      {
+        "text": "Karena perangkat lunak tidak memiliki masa kedaluwarsa",
+        "isCorrect": false,
+        "rationale": "Sistem operasi dan bahasa pemrograman terus berkembang (usang)."
+      },
+      {
+        "text": "Karena perangkat lunak mudah dibuat tanpa perencanaan",
+        "isCorrect": false,
+        "rationale": "Tanpa perencanaan, pengembangan perangkat lunak rentan mengalami kegagalan fatal."
+      },
+      {
+        "text": "Karena perangkat lunak hanya diurus oleh manajer proyek",
+        "isCorrect": false,
+        "rationale": "Programmer dan analis adalah pembuat utamanya."
+      }
+    ],
+    "hint": "Sistem informasi modern digerakkan oleh kode program logis.",
+    "level": 1,
+    "id": 10,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
     "category": "MPSI UTS - Pertemuan 2",
     "question": "Terdiri dari \u2026. Process Group Project",
     "options": [
@@ -216,7 +396,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Kelompok proses ini merentang dari inisiasi hingga penutupan proyek.",
     "level": 1,
-    "id": 6,
+    "id": 11,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -252,7 +432,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Pikirkan tentang struktur pohon pemecahan kerja yang bertingkat-tingkat.",
     "level": 1,
-    "id": 7,
+    "id": 12,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -288,7 +468,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Proses ini fokus pada pengawasan ancaman dan peluang yang belum terjadi (risiko).",
     "level": 1,
-    "id": 8,
+    "id": 13,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -324,7 +504,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Bidang pengetahuan ini disingkat HR (Human Resources).",
     "level": 1,
-    "id": 9,
+    "id": 14,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -360,7 +540,187 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Ingat referensi PMBOK Edisi 5 yang diajarkan pada modul MPSI.",
     "level": 1,
-    "id": 10,
+    "id": 15,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pendalaman)",
+    "question": "Di dalam PMBOK 5th Edition, total terdapat berapa Knowledge Area (Bidang Pengetahuan) manajemen proyek?",
+    "options": [
+      {
+        "text": "5 Bidang Pengetahuan",
+        "isCorrect": false,
+        "rationale": "5 adalah jumlah Process Groups, bukan Knowledge Areas."
+      },
+      {
+        "text": "9 Bidang Pengetahuan",
+        "isCorrect": false,
+        "rationale": "9 adalah jumlah di PMBOK edisi lama."
+      },
+      {
+        "text": "10 Bidang Pengetahuan",
+        "isCorrect": true,
+        "rationale": "Ada 10 Bidang Pengetahuan: Integration, Scope, Time, Cost, Quality, Human Resource, Communications, Risk, Procurement, dan Stakeholder Management."
+      },
+      {
+        "text": "12 Bidang Pengetahuan",
+        "isCorrect": false,
+        "rationale": "Salah."
+      },
+      {
+        "text": "47 Bidang Pengetahuan",
+        "isCorrect": false,
+        "rationale": "47 adalah jumlah proses di PMBOK 5."
+      }
+    ],
+    "hint": "Merupakan klasifikasi rumpun keilmuan manajemen proyek PMBOK 5.",
+    "level": 1,
+    "id": 16,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pendalaman)",
+    "question": "Kelompok proses yang bertujuan untuk memantau kemajuan proyek secara berkala dan mengidentifikasi penyimpangan rencana adalah...",
+    "options": [
+      {
+        "text": "Initiating Process Group",
+        "isCorrect": false,
+        "rationale": "Untuk memulai dan mengotorisasi proyek."
+      },
+      {
+        "text": "Planning Process Group",
+        "isCorrect": false,
+        "rationale": "Untuk merencanakan baseline."
+      },
+      {
+        "text": "Executing Process Group",
+        "isCorrect": false,
+        "rationale": "Untuk pengerjaan fisik produk."
+      },
+      {
+        "text": "Monitoring & Controlling Process Group",
+        "isCorrect": true,
+        "rationale": "Grup proses ini mengawasi, meninjau, dan meregulasi kemajuan serta kinerja proyek agar sesuai rencana."
+      },
+      {
+        "text": "Closing Process Group",
+        "isCorrect": false,
+        "rationale": "Untuk penutupan proyek."
+      }
+    ],
+    "hint": "Fokus pada kata kunci 'memantau' (monitoring) dan 'mengidentifikasi penyimpangan' (controlling).",
+    "level": 1,
+    "id": 17,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pendalaman)",
+    "question": "Bidang pengetahuan yang bertindak sebagai pemersatu, pengoordinasi, dan pengintegrasi seluruh area manajemen proyek lainnya adalah...",
+    "options": [
+      {
+        "text": "Project Scope Management",
+        "isCorrect": false,
+        "rationale": "Mengelola batasan fitur."
+      },
+      {
+        "text": "Project Cost Management",
+        "isCorrect": false,
+        "rationale": "Mengelola anggaran belanja."
+      },
+      {
+        "text": "Project Integration Management",
+        "isCorrect": true,
+        "rationale": "Integration Management berfungsi mengidentifikasi, menetapkan, menyatukan, dan mengoordinasikan berbagai proses manajemen proyek."
+      },
+      {
+        "text": "Project Quality Management",
+        "isCorrect": false,
+        "rationale": "Mengelola mutu pekerjaan."
+      },
+      {
+        "text": "Project Communication Management",
+        "isCorrect": false,
+        "rationale": "Mengelola distribusi informasi."
+      }
+    ],
+    "hint": "Area ini mencakup pembuatan Project Charter dan Project Management Plan.",
+    "level": 1,
+    "id": 18,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pendalaman)",
+    "question": "Berikut ini yang merupakan bagian dari 5 kelompok proses (Process Group) manajemen proyek, KECUALI...",
+    "options": [
+      {
+        "text": "Initiating",
+        "isCorrect": false,
+        "rationale": "Merupakan kelompok proses pertama."
+      },
+      {
+        "text": "Planning",
+        "isCorrect": false,
+        "rationale": "Merupakan kelompok proses kedua."
+      },
+      {
+        "text": "Executing",
+        "isCorrect": false,
+        "rationale": "Merupakan kelompok proses ketiga."
+      },
+      {
+        "text": "Designing",
+        "isCorrect": true,
+        "rationale": "Designing adalah fase rekayasa teknis sistem/SDLC, bukan kelompok proses manajerial proyek PMBOK."
+      },
+      {
+        "text": "Closing",
+        "isCorrect": false,
+        "rationale": "Merupakan kelompok proses kelima."
+      }
+    ],
+    "hint": "Kelompok proses PMBOK bersifat manajerial, bukan langkah teknis software design.",
+    "level": 1,
+    "id": 19,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 2 (Pendalaman)",
+    "question": "Proses penutupan kontrak pengadaan dan serah terima akhir deliverables proyek dikelola dalam kelompok proses...",
+    "options": [
+      {
+        "text": "Initiating",
+        "isCorrect": false,
+        "rationale": "Fase awal otorisasi proyek."
+      },
+      {
+        "text": "Planning",
+        "isCorrect": false,
+        "rationale": "Fase penyusunan rencana baseline."
+      },
+      {
+        "text": "Executing",
+        "isCorrect": false,
+        "rationale": "Fase pelaksanaan tugas coding/testing."
+      },
+      {
+        "text": "Monitoring",
+        "isCorrect": false,
+        "rationale": "Fase pengawasan berkala."
+      },
+      {
+        "text": "Closing",
+        "isCorrect": true,
+        "rationale": "Kelompok proses Penutupan (Closing) menangani serah terima resmi produk dan penutupan administratif kontrak vendor."
+      }
+    ],
+    "hint": "Fase akhir yang menutup semua aktivitas.",
+    "level": 1,
+    "id": 20,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -396,7 +756,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Fase paling awal ini hanya memuat proses legalisasi dan pengenalan pemangku kepentingan.",
     "level": 2,
-    "id": 11,
+    "id": 21,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -432,7 +792,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Fase ini merupakan realisasi atau eksekusi fisik dari rencana yang sudah matang.",
     "level": 2,
-    "id": 12,
+    "id": 22,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -468,7 +828,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Sebutan ini berarti 'definisi proyek' secara garis besar.",
     "level": 2,
-    "id": 13,
+    "id": 23,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -504,7 +864,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Dokumen ini berfungsi sebagai 'pedoman hasil kerja' saat program sedang di-coding dan diuji.",
     "level": 2,
-    "id": 14,
+    "id": 24,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -540,7 +900,187 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Hal ini berkaitan dengan pembubaran dan pelepasan sumber daya manusia proyek.",
     "level": 2,
-    "id": 15,
+    "id": 25,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pendalaman)",
+    "question": "Dua proses utama yang terjadi di dalam kelompok proses Inisiasi (Initiating) proyek adalah...",
+    "options": [
+      {
+        "text": "Develop Project Charter dan Identify Stakeholders",
+        "isCorrect": true,
+        "rationale": "Inisiasi mencakup pembuatan dokumen legalitas awal (Charter) dan pendataan pemangku kepentingan (Identify Stakeholders)."
+      },
+      {
+        "text": "Develop PMP dan Define Scope",
+        "isCorrect": false,
+        "rationale": "Ini terjadi di fase Planning."
+      },
+      {
+        "text": "Create WBS dan Estimate Costs",
+        "isCorrect": false,
+        "rationale": "Ini terjadi di fase Planning."
+      },
+      {
+        "text": "Direct & Manage Project Work dan Monitor Risks",
+        "isCorrect": false,
+        "rationale": "Ini terjadi masing-masing di Executing dan Monitoring."
+      },
+      {
+        "text": "Close Project dan Close Procurements",
+        "isCorrect": false,
+        "rationale": "Ini terjadi di fase Closing."
+      }
+    ],
+    "hint": "Sesuai dengan 2 proses legalisasi dan identifikasi awal di fase inisiasi.",
+    "level": 2,
+    "id": 26,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pendalaman)",
+    "question": "Siapakah yang memiliki otoritas tertinggi untuk memberikan persetujuan akhir (sign-off) dan mendanai suatu Project Charter?",
+    "options": [
+      {
+        "text": "Project Manager",
+        "isCorrect": false,
+        "rationale": "PM ditunjuk oleh charter, tidak mengesahkan dirinya sendiri."
+      },
+      {
+        "text": "Programmer",
+        "isCorrect": false,
+        "rationale": "Staf pelaksana teknis."
+      },
+      {
+        "text": "System Analyst",
+        "isCorrect": false,
+        "rationale": "Perancang sistem."
+      },
+      {
+        "text": "Project Sponsor",
+        "isCorrect": true,
+        "rationale": "Sponsor adalah penyedia dana/investasi utama yang melegalkan Project Charter."
+      },
+      {
+        "text": "Database Administrator",
+        "isCorrect": false,
+        "rationale": "Pengelola database."
+      }
+    ],
+    "hint": "Pihak eksternal atau internal pemegang anggaran proyek.",
+    "level": 2,
+    "id": 27,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pendalaman)",
+    "question": "Mengapa Manajer Proyek (PM) harus ditunjuk sejak awal pada fase inisiasi proyek?",
+    "options": [
+      {
+        "text": "Agar PM dapat menulis kode program sejak hari pertama",
+        "isCorrect": false,
+        "rationale": "Menulis program adalah tugas programmer."
+      },
+      {
+        "text": "Agar PM memiliki wewenang resmi mengalokasikan sumber daya organisasi sejak awal",
+        "isCorrect": true,
+        "rationale": "Develop Project Charter menunjuk PM secara resmi untuk memberikan wewenang alokasi dana dan staf ke aktivitas proyek."
+      },
+      {
+        "text": "Agar PM bisa langsung membayar gaji tim pengembang",
+        "isCorrect": false,
+        "rationale": "Gaji dibayar rutin oleh bagian keuangan perusahaan."
+      },
+      {
+        "text": "Agar PM dapat membeli server database sendiri",
+        "isCorrect": false,
+        "rationale": "Pembelian server harus melalui bagian pengadaan."
+      },
+      {
+        "text": "Agar PM dapat menyusun laporan keuangan tahunan perusahaan",
+        "isCorrect": false,
+        "rationale": "Tugas akuntan korporasi."
+      }
+    ],
+    "hint": "Hal ini berkaitan dengan kekuatan wewenang formal (authority) seorang PM.",
+    "level": 2,
+    "id": 28,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pendalaman)",
+    "question": "Dokumen penunjuk arah atau 'Work Result Guideline' yang digunakan saat eksekusi proyek bertujuan untuk...",
+    "options": [
+      {
+        "text": "Menghitung variansi anggaran bulanan",
+        "isCorrect": false,
+        "rationale": "Tugas analisis EVM."
+      },
+      {
+        "text": "Memandu tim agar hasil pekerjaan sesuai dengan target rencana baseline",
+        "isCorrect": true,
+        "rationale": "Pedoman ini memastikan tim eksekusi menghasilkan deliverables sesuai target mutu/biaya/waktu yang disepakati."
+      },
+      {
+        "text": "Mencatar daftar hadir rapat mingguan",
+        "isCorrect": false,
+        "rationale": "Minutes of meeting."
+      },
+      {
+        "text": "Menyusun diagram jaringan kerja CPM",
+        "isCorrect": false,
+        "rationale": "Tugas perencanaan jadwal."
+      },
+      {
+        "text": "Mengidentifikasi risiko baru yang muncul",
+        "isCorrect": false,
+        "rationale": "Tugas monitoring risiko."
+      }
+    ],
+    "hint": "Panduan pengerjaan deliverables agar tidak menyimpang.",
+    "level": 2,
+    "id": 29,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 3 (Pendalaman)",
+    "question": "Dalam fase penutupan (Closing), serah terima arsip dokumentasi proyek bertujuan untuk...",
+    "options": [
+      {
+        "text": "Menyembunyikan kegagalan proyek dari publik",
+        "isCorrect": false,
+        "rationale": "Tindakan tidak etis."
+      },
+      {
+        "text": "Menjadi aset proses organisasi (OPA) dan basis pembelajaran proyek di masa depan",
+        "isCorrect": true,
+        "rationale": "Pengarsipan dokumen, lessons learned, dan riwayat proyek berguna sebagai modal aset (OPA) proyek serupa berikutnya."
+      },
+      {
+        "text": "Memotong anggaran bonus tim pengembang",
+        "isCorrect": false,
+        "rationale": "Salah."
+      },
+      {
+        "text": "Menghapus hak cipta atas program yang dibuat",
+        "isCorrect": false,
+        "rationale": "Hak cipta tetap diatur secara legal."
+      },
+      {
+        "text": "Menghindari penagihan pajak pemerintah",
+        "isCorrect": false,
+        "rationale": "Salah."
+      }
+    ],
+    "hint": "Merupakan pengayaan basis data historis perusahaan (Organizational Process Assets).",
+    "level": 2,
+    "id": 30,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -576,7 +1116,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Merupakan pernyataan masalah terukur.",
     "level": 2,
-    "id": 16,
+    "id": 31,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -612,7 +1152,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Kata 'Final' menunjukkan laporan ini diserahkan pada garis akhir penyelesaian proyek.",
     "level": 2,
-    "id": 17,
+    "id": 32,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -648,7 +1188,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Komponen ini mengidentifikasi rentang waktu (jadwal kasar) pencapaian fase proyek.",
     "level": 2,
-    "id": 18,
+    "id": 33,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -684,7 +1224,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Menentukan batas-batas pekerjaan agar tim tidak mengerjakan hal yang tidak disepakati.",
     "level": 2,
-    "id": 19,
+    "id": 34,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -720,7 +1260,187 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Tahap paling awal sebelum detail rencana proyek (PMP) disusun.",
     "level": 2,
-    "id": 20,
+    "id": 35,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pendalaman)",
+    "question": "Komponen dalam Project Charter yang menjabarkan tentang alasan strategis mengapa proyek tersebut perlu dijalankan bagi bisnis organisasi disebut...",
+    "options": [
+      {
+        "text": "Problem Statement",
+        "isCorrect": false,
+        "rationale": "Menjabarkan masalah secara kuantitatif."
+      },
+      {
+        "text": "Business Case",
+        "isCorrect": true,
+        "rationale": "Business Case menjabarkan kelayakan ekonomi, justifikasi bisnis, dan ROI strategis mengapa proyek didanai."
+      },
+      {
+        "text": "Goal Statement",
+        "": false,
+        "rationale": "Menjabarkan target kuantitatif."
+      },
+      {
+        "text": "Timeline",
+        "isCorrect": false,
+        "rationale": "Menjabarkan lini waktu fase selesai."
+      },
+      {
+        "text": "Scope",
+        "isCorrect": false,
+        "rationale": "Menjabarkan batasan kerja masuk/keluar."
+      }
+    ],
+    "hint": "Menjawab pertanyaan: Apa keuntungan finansial/non-finansial proyek ini bagi perusahaan?",
+    "level": 2,
+    "id": 36,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pendalaman)",
+    "question": "Pernyataan target kuantitatif yang ingin dicapai oleh proyek, seperti peningkatan efisiensi sistem sebesar 30%, dimasukkan dalam komponen...",
+    "options": [
+      {
+        "text": "Problem Statement",
+        "isCorrect": false,
+        "rationale": "Definisi masalah awal."
+      },
+      {
+        "text": "Business Case",
+        "isCorrect": false,
+        "rationale": "Justifikasi ekonomi proyek."
+      },
+      {
+        "text": "Goal Statement",
+        "isCorrect": true,
+        "rationale": "Goal Statement merumuskan sasaran/target terukur yang harus diraih proyek."
+      },
+      {
+        "text": "Timeline",
+        "isCorrect": false,
+        "rationale": "Perkiraan jadwal fase."
+      },
+      {
+        "text": "Team Members",
+        "isCorrect": false,
+        "rationale": "Daftar nama pelaksana."
+      }
+    ],
+    "hint": "Fokus pada pernyataan 'target' pencapaian (Goal).",
+    "level": 2,
+    "id": 37,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pendalaman)",
+    "question": "Daftar nama personil inti beserta peran dan tanggung jawabnya masing-masing di dalam struktur organisasi proyek dicatat pada komponen...",
+    "options": [
+      {
+        "text": "Problem Statement",
+        "isCorrect": false,
+        "rationale": "Masalah bisnis."
+      },
+      {
+        "text": "Goal Statement",
+        "isCorrect": false,
+        "rationale": "Target sasaran."
+      },
+      {
+        "text": "Timeline",
+        "isCorrect": false,
+        "rationale": "Lini waktu."
+      },
+      {
+        "text": "Scope",
+        "isCorrect": false,
+        "rationale": "Batasan kerja."
+      },
+      {
+        "text": "Team Members",
+        "isCorrect": true,
+        "rationale": "Komponen Team Members mendaftarkan profil staff beserta perannya dalam struktur proyek."
+      }
+    ],
+    "hint": "Berisi daftar sumber daya manusia tim proyek.",
+    "level": 2,
+    "id": 38,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pendalaman)",
+    "question": "Laporan penutupan proyek secara menyeluruh (Final Report) diserahkan oleh Manajer Proyek kepada...",
+    "options": [
+      {
+        "text": "Programmer Junior",
+        "isCorrect": false,
+        "rationale": "Programmer junior tidak menerima laporan baseline."
+      },
+      {
+        "text": "Kepala Gudang",
+        "isCorrect": false,
+        "rationale": "Tidak terkait manajemen proyek."
+      },
+      {
+        "text": "Project Sponsor / Key Stakeholders",
+        "isCorrect": true,
+        "rationale": "Final Report diserahkan kepada Sponsor dan Stakeholders utama sebagai bukti formal pertanggungjawaban PM bahwa proyek telah rampung."
+      },
+      {
+        "text": "Masyarakat Umum",
+        "isCorrect": false,
+        "rationale": "Bersifat rahasia perusahaan."
+      },
+      {
+        "text": "Vendor Pengadaan Server",
+        "isCorrect": false,
+        "rationale": "Hanya pihak ketiga penyedia barang."
+      }
+    ],
+    "hint": "Pihak yang mendanai dan menyetujui keberadaan proyek sejak awal.",
+    "level": 2,
+    "id": 39,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 4 (Pendalaman)",
+    "question": "Pengertian 'Scope' dalam penyusunan Project Charter merujuk pada...",
+    "options": [
+      {
+        "text": "Perkiraan biaya total pengerjaan proyek",
+        "isCorrect": false,
+        "rationale": "Itu adalah Cost/Budget."
+      },
+      {
+        "text": "Batasan fitur-fitur dan pekerjaan yang termasuk maupun tidak termasuk dalam proyek",
+        "isCorrect": true,
+        "rationale": "Scope (ruang lingkup) memperjelas batasan fitur sistem informasi agar kerja tim terfokus."
+      },
+      {
+        "text": "Daftar resiko yang mungkin terjadi selama pengkodean",
+        "isCorrect": false,
+        "rationale": "Itu adalah Risk."
+      },
+      {
+        "text": "Nama-nama komputer server yang akan dibeli",
+        "isCorrect": false,
+        "rationale": "Itu adalah hardware pengadaan."
+      },
+      {
+        "text": "SOP penanganan crash database",
+        "isCorrect": false,
+        "rationale": "Itu adalah prosedur mitigasi operasional."
+      }
+    ],
+    "hint": "Mengunci apa saja yang dikerjakan (in-scope) dan yang dilarang dikerjakan (out-of-scope).",
+    "level": 2,
+    "id": 40,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -756,7 +1476,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Metode ini meliputi Analogous, Bottom-Up, dan Parametric Modeling.",
     "level": 3,
-    "id": 21,
+    "id": 41,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -792,7 +1512,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Proyek bermasalah jika efisiensinya di bawah atau pas 100% (nilai indeks <= 1.0).",
     "level": 3,
-    "id": 22,
+    "id": 42,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -828,7 +1548,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Biaya 'nyata' atau aktual yang dikeluarkan.",
     "level": 3,
-    "id": 23,
+    "id": 43,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -864,7 +1584,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Rencana pengeluaran biaya terjadwal (Planned Value).",
     "level": 3,
-    "id": 24,
+    "id": 44,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -900,7 +1620,187 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Berapa lama modal investasi proyek dapat kembali (payback).",
     "level": 3,
-    "id": 25,
+    "id": 45,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pendalaman)",
+    "question": "Metode estimasi biaya proyek dengan cara menggunakan biaya aktual dari proyek serupa di masa lalu sebagai basis estimasi proyek saat ini disebut...",
+    "options": [
+      {
+        "text": "Analogous Estimating",
+        "isCorrect": true,
+        "rationale": "Analogous Estimating (top-down) mengandalkan data historis proyek terdahulu yang mirip untuk mengestimasi biaya proyek baru secara cepat."
+      },
+      {
+        "text": "Bottom-Up Estimating",
+        "isCorrect": false,
+        "rationale": "Menghitung secara detail dari komponen WBS terkecil."
+      },
+      {
+        "text": "Parametric Modeling",
+        "isCorrect": false,
+        "rationale": "Menggunakan hubungan matematika/statistik variabel kerja."
+      },
+      {
+        "text": "Computerized Estimating",
+        "isCorrect": false,
+        "rationale": "Menggunakan software estimasi saja."
+      },
+      {
+        "text": "Expert Judgment",
+        "isCorrect": false,
+        "rationale": "Mengandalkan opini subyektif dari ahli."
+      }
+    ],
+    "hint": "Disebut juga dengan metode estimasi Top-Down atau analogi.",
+    "level": 3,
+    "id": 46,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pendalaman)",
+    "question": "Dalam teknik estimasi biaya, kelebihan utama dari metode 'Bottom-Up Estimating' dibandingkan metode lainnya adalah...",
+    "options": [
+      {
+        "text": "Proses estimasi sangat cepat selesai",
+        "isCorrect": false,
+        "rationale": "Sebaliknya, metode ini memakan waktu paling lama."
+      },
+      {
+        "text": "Biaya pengerjaan sangat murah",
+        "isCorrect": false,
+        "rationale": "Metode estimasi tidak memengaruhi biaya fisik proyek."
+      },
+      {
+        "text": "Membutuhkan data proyek masa lalu paling sedikit",
+        "isCorrect": false,
+        "rationale": "Membutuhkan detail WBS yang sangat rinci."
+      },
+      {
+        "text": "Tingkat akurasi hasil estimasi yang sangat tinggi",
+        "isCorrect": true,
+        "rationale": "Bottom-Up sangat akurat karena menjumlahkan estimasi mikro dari setiap paket kerja terkecil di WBS."
+      },
+      {
+        "text": "Tidak memerlukan persetujuan sponsor",
+        "isCorrect": false,
+        "rationale": "Semua baseline biaya memerlukan persetujuan sponsor."
+      }
+    ],
+    "hint": "Karena dihitung secara mendetail dari bawah (bottom) ke atas (up).",
+    "level": 3,
+    "id": 47,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pendalaman)",
+    "question": "Jika nilai Planned Value (PV) proyek adalah Rp 100 Juta dan Earned Value (EV) adalah Rp 80 Juta, berapakah nilai Schedule Variance (SV) proyek tersebut?",
+    "options": [
+      {
+        "text": "Rp 20 Juta",
+        "isCorrect": false,
+        "rationale": "SV bernilai negatif karena EV < PV."
+      },
+      {
+        "text": "-Rp 20 Juta",
+        "isCorrect": true,
+        "rationale": "Rumus SV = EV - PV. Maka Rp 80 Juta - Rp 100 Juta = -Rp 20 Juta. Nilai minus mengindikasikan status terlambat (behind schedule)."
+      },
+      {
+        "text": "Rp 180 Juta",
+        "isCorrect": false,
+        "rationale": "Ini adalah penjumlahan, bukan pengurangan."
+      },
+      {
+        "text": "Rp 1.25",
+        "isCorrect": false,
+        "rationale": "Ini adalah rasio pembagian, bukan variance."
+      },
+      {
+        "text": "0.8",
+        "isCorrect": false,
+        "rationale": "Ini nilai SPI (EV / PV = 80/100 = 0.8)."
+      }
+    ],
+    "hint": "Gunakan rumus selisih jadwal: SV = EV - PV.",
+    "level": 3,
+    "id": 48,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pendalaman)",
+    "question": "Nilai Earned Value (EV) dalam konsep manajemen biaya proyek merepresentasikan...",
+    "options": [
+      {
+        "text": "Anggaran yang direncanakan untuk dihabiskan",
+        "isCorrect": false,
+        "rationale": "Itu adalah Planned Value (PV)."
+      },
+      {
+        "text": "Biaya nyata yang telah dikeluarkan secara tunai",
+        "isCorrect": false,
+        "rationale": "Itu adalah Actual Cost (AC)."
+      },
+      {
+        "text": "Nilai atau harga dari pekerjaan yang telah selesai dikerjakan secara nyata",
+        "isCorrect": true,
+        "rationale": "Earned Value (EV) mengukur nilai moneter pekerjaan yang telah benar-benar dituntaskan sampai tanggal pelaporan."
+      },
+      {
+        "text": "Proyeksi kerugian total proyek di akhir tahun",
+        "isCorrect": false,
+        "rationale": "Salah."
+      },
+      {
+        "text": "Dana cadangan darurat (reserves) proyek",
+        "isCorrect": false,
+        "rationale": "Itu adalah Contingency Reserve."
+      }
+    ],
+    "hint": "Nilai hasil pekerjaan (earned) yang dicapai.",
+    "level": 3,
+    "id": 49,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 5 (Pendalaman)",
+    "question": "Metode evaluasi investasi proyek yang menghitung waktu yang dibutuhkan agar nilai arus kas masuk menyamai nilai investasi awal disebut...",
+    "options": [
+      {
+        "text": "Net Present Value",
+        "isCorrect": false,
+        "rationale": "NPV mengukur nilai bersih kas saat ini."
+      },
+      {
+        "text": "Return On Investment",
+        "isCorrect": false,
+        "rationale": "ROI mengukur rasio pengembalian modal."
+      },
+      {
+        "text": "Payback Period",
+        "isCorrect": true,
+        "rationale": "Payback Period mengukur durasi waktu pengembalian modal investasi awal."
+      },
+      {
+        "text": "Internal Rate of Return",
+        "isCorrect": false,
+        "rationale": "IRR mengukur tingkat pengembalian internal."
+      },
+      {
+        "text": "Earned Value Management",
+        "isCorrect": false,
+        "rationale": "EVM digunakan untuk memantau kemajuan biaya proyek berjalan."
+      }
+    ],
+    "hint": "Fokus pada lamanya 'periode' (waktu) pengembalian modal.",
+    "level": 3,
+    "id": 50,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -936,7 +1836,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Fokus pada pengelolaan tenaga kerja manusia (HR).",
     "level": 3,
-    "id": 26,
+    "id": 51,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -972,7 +1872,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Seluruh elemen input ini dikombinasikan untuk mensukseskan suatu wadah usaha sementara.",
     "level": 3,
-    "id": 27,
+    "id": 52,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1008,7 +1908,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Merupakan orang nomor satu dalam mengawal jalannya proyek sehari-hari.",
     "level": 3,
-    "id": 28,
+    "id": 53,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1024,7 +1924,7 @@ const QUESTIONS_DATABASE = [
       {
         "text": "OP. Matriks",
         "isCorrect": false,
-        "rationale": "Matriks membagi wewenang antara PM dan Manajer Fungsional."
+        "rationale": "Matriks membagi wewenang antara PM and Manajer Fungsional."
       },
       {
         "text": "OP. Area",
@@ -1044,7 +1944,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Organisasi Proyek ini mandiri dan terpisah (murni).",
     "level": 3,
-    "id": 29,
+    "id": 54,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1080,7 +1980,187 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Tim dikelompokkan sesuai fungsi divisi asalnya (Keuangan, IT, dll).",
     "level": 3,
-    "id": 30,
+    "id": 55,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pendalaman)",
+    "question": "Manajer Proyek harus memiliki keterampilan interpersonal yang baik karena tugas utamanya sebagian besar berfokus pada...",
+    "options": [
+      {
+        "text": "Menulis kode program database",
+        "isCorrect": false,
+        "rationale": "Itu adalah tugas programmer."
+      },
+      {
+        "text": "Melakukan testing bug sistem",
+        "isCorrect": false,
+        "rationale": "Itu adalah tugas QA."
+      },
+      {
+        "text": "Komunikasi, koordinasi, dan negosiasi dengan berbagai stakeholder",
+        "isCorrect": true,
+        "rationale": "Sebanyak 90% waktu seorang PM habis untuk melakukan komunikasi dan koordinasi dengan stakeholders."
+      },
+      {
+        "text": "Membeli perangkat keras komputer",
+        "isCorrect": false,
+        "rationale": "Itu adalah tugas bagian pengadaan."
+      },
+      {
+        "text": "Merancang arsitektur jaringan LAN",
+        "isCorrect": false,
+        "rationale": "Itu adalah tugas network engineer."
+      }
+    ],
+    "hint": "Manajer proyek memimpin manusia, bukan menulis baris kode program secara teknis.",
+    "level": 3,
+    "id": 56,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pendalaman)",
+    "question": "Struktur organisasi di mana staf dikelompokkan berdasarkan keahlian khusus mereka (seperti divisi IT, divisi Keuangan) dan melapor pada kepala divisi tersebut adalah...",
+    "options": [
+      {
+        "text": "Organisasi Proyek Fungsional",
+        "isCorrect": true,
+        "rationale": "Merupakan ciri khas Organisasi Fungsional Tradisional di mana tim diatur per departemen fungsional."
+      },
+      {
+        "text": "Organisasi Proyek Murni",
+        "isCorrect": false,
+        "rationale": "Tim dipisahkan penuh dari divisi asal dan melapor ke PM."
+      },
+      {
+        "text": "Organisasi Proyek Matriks Kuat",
+        "isCorrect": false,
+        "rationale": "PM memiliki otoritas lebih tinggi dari manajer fungsional."
+      },
+      {
+        "text": "Organisasi Proyek Matriks Lemah",
+        "isCorrect": false,
+        "rationale": "Manajer fungsional memegang kendali utama, tetapi tetap melibatkan koordinator proyek."
+      },
+      {
+        "text": "Organisasi Proyek Mandiri",
+        "isCorrect": false,
+        "rationale": "Bukan istilah standar."
+      }
+    ],
+    "hint": "Merupakan struktur korporat vertikal klasik.",
+    "level": 3,
+    "id": 57,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pendalaman)",
+    "question": "Kelemahan utama dari Struktur Organisasi Proyek Murni bagi anggota tim proyek adalah...",
+    "options": [
+      {
+        "text": "Manajer proyek tidak memiliki otoritas sama sekali",
+        "isCorrect": false,
+        "rationale": "Sebaliknya, PM memiliki otoritas penuh."
+      },
+      {
+        "text": "Jalur komunikasi tim sangat lambat",
+        "isCorrect": false,
+        "rationale": "Jalur komunikasi tim justru sangat cepat karena mereka otonom."
+      },
+      {
+        "text": "Rasa cemas akan nasib pekerjaan setelah proyek selesai dan dibubarkan (no home)",
+        "isCorrect": true,
+        "rationale": "Kelemahan OP Murni adalah ketidakpastian karir staf pasca proyek selesai karena mereka tidak memiliki divisi fungsional asal untuk pulang (no home)."
+      },
+      {
+        "text": "Beban kerja harian yang terlalu santai",
+        "isCorrect": false,
+        "rationale": "Salah."
+      },
+      {
+        "text": "Sulit berkoordinasi dalam tim internal proyek",
+        "isCorrect": false,
+        "rationale": "Koordinasi internal justru sangat mudah."
+      }
+    ],
+    "hint": "Berkaitan dengan status karir (kecemasan dibubarkan/no home).",
+    "level": 3,
+    "id": 58,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pendalaman)",
+    "question": "Struktur organisasi yang mencoba menggabungkan kelebihan organisasi fungsional dan organisasi proyek murni disebut...",
+    "options": [
+      {
+        "text": "Organisasi Proyek Matriks",
+        "isCorrect": true,
+        "rationale": "Organisasi Matriks adalah hibrida yang menumpangkan struktur berorientasi proyek ke atas struktur fungsional vertikal."
+      },
+      {
+        "text": "Organisasi Proyek Tradisional",
+        "isCorrect": false,
+        "rationale": "Merupakan organisasi fungsional murni."
+      },
+      {
+        "text": "Organisasi Proyek Vertikal",
+        "isCorrect": false,
+        "rationale": "Salah."
+      },
+      {
+        "text": "Organisasi Proyek Horizontal",
+        "isCorrect": false,
+        "rationale": "Salah."
+      },
+      {
+        "text": "Organisasi Proyek Otonom",
+        "isCorrect": false,
+        "rationale": "Sama dengan OP Murni."
+      }
+    ],
+    "hint": "Organisasi ini memiliki rantai komando ganda (menyamping dan tegak).",
+    "level": 3,
+    "id": 59,
+    "course": "mpsi",
+    "examType": "uts"
+  },
+  {
+    "category": "MPSI UTS - Pertemuan 6 (Pendalaman)",
+    "question": "Yang merupakan peran utama dari anggota tim proyek (Project Team Members) dalam siklus hidup proyek adalah...",
+    "options": [
+      {
+        "text": "Mendanai seluruh anggaran belanja proyek",
+        "isCorrect": false,
+        "rationale": "Tugas Project Sponsor."
+      },
+      {
+        "text": "Menyetujui baseline rencana secara sepihak",
+        "isCorrect": false,
+        "rationale": "Tugas Key Stakeholder / Sponsor."
+      },
+      {
+        "text": "Melaksanakan tugas-tugas teknis proyek sesuai pembagian peran (coding, testing, dll)",
+        "isCorrect": true,
+        "rationale": "Anggota tim proyek berkontribusi keahlian spesifik mereka untuk merampungkan paket-paket kerja proyek."
+      },
+      {
+        "text": "Menandatangani kontrak pengadaan legal eksternal",
+        "isCorrect": false,
+        "rationale": "Tugas divisi legal / pengadaaan korporat."
+      },
+      {
+        "text": "Membubarkan proyek saat mengalami kendala",
+        "isCorrect": false,
+        "rationale": "Tugas sponsor."
+      }
+    ],
+    "hint": "Mereka adalah ujung tombak pengerjaan deliverables fisik proyek.",
+    "level": 3,
+    "id": 60,
     "course": "mpsi",
     "examType": "uts"
   },
@@ -1116,7 +2196,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Aktivitas utama departemen ini adalah 'membeli' (purchasing) barang/jasa.",
     "level": 1,
-    "id": 31,
+    "id": 61,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1152,7 +2232,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Pengadaan dalam bahasa Inggris disebut Procurement.",
     "level": 1,
-    "id": 32,
+    "id": 62,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1188,7 +2268,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Risiko ini mempengaruhi bisnis secara makro.",
     "level": 1,
-    "id": 33,
+    "id": 63,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1224,7 +2304,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Tindakan formal membeli barang atau jasa eksternal.",
     "level": 1,
-    "id": 34,
+    "id": 64,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1260,7 +2340,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Bidang risiko ini memiliki 6 tahapan dari perencanaan hingga pengawasan.",
     "level": 1,
-    "id": 35,
+    "id": 65,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1296,7 +2376,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Fase eksekusi (Executing) adalah tempat dilakukannya pemrograman nyata.",
     "level": 2,
-    "id": 36,
+    "id": 66,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1332,7 +2412,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Fase di mana arsitektur logika dan fisik dirancang.",
     "level": 2,
-    "id": 37,
+    "id": 67,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1368,7 +2448,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Merupakan singkatan dari Project Life Cycle.",
     "level": 2,
-    "id": 38,
+    "id": 68,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1404,7 +2484,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Disebut juga dengan konversi langsung (direct cutover/serentak).",
     "level": 2,
-    "id": 39,
+    "id": 69,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1440,7 +2520,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Berhubungan erat dengan jadwal (timeline/schedule) pengerjaan.",
     "level": 2,
-    "id": 40,
+    "id": 70,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1476,7 +2556,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "PM menyusun, Pemangku Kepentingan Utama menandatangani.",
     "level": 3,
-    "id": 41,
+    "id": 71,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1512,7 +2592,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Mengunci batasan ruang lingkup (scope) fitur proyek.",
     "level": 3,
-    "id": 42,
+    "id": 72,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1548,7 +2628,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Rumusan taktis pertanyaan dasar proyek: Apa, Mengapa, Kapan, Siapa, dan Bagaimana.",
     "level": 3,
-    "id": 43,
+    "id": 73,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1584,7 +2664,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Pihak pemegang keputusan tertinggi (pemangku kepentingan utama).",
     "level": 3,
-    "id": 44,
+    "id": 74,
     "course": "mpsi",
     "examType": "uas"
   },
@@ -1620,7 +2700,7 @@ const QUESTIONS_DATABASE = [
     ],
     "hint": "Sama dengan pertanyaan nomor 2 dari materi pertemuan 14.",
     "level": 3,
-    "id": 45,
+    "id": 75,
     "course": "mpsi",
     "examType": "uas"
   }
