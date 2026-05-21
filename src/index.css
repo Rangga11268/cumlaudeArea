@@ -1192,6 +1192,16 @@ input:checked + .slider:before { transform: translateX(18px); }
   padding: 4px;
   border-radius: 10px;
   border: 1px solid #e2e8f0;
+  overflow-x: auto;
+  white-space: nowrap;
+  max-width: 100%;
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar IE */
+  -webkit-overflow-scrolling: touch;
+}
+
+.filter-tabs::-webkit-scrollbar {
+  display: none; /* Hide scrollbar Chrome/Safari */
 }
 
 .filter-tab {
@@ -1204,6 +1214,7 @@ input:checked + .slider:before { transform: translateX(18px); }
   font-size: 0.85rem;
   cursor: pointer;
   transition: all 0.2s ease;
+  flex: 0 0 auto;
 }
 
 .filter-tab:hover {
@@ -1873,6 +1884,17 @@ input:checked + .slider:before { transform: translateX(18px); }
   .cumulative-stats-container {
     grid-template-columns: 1fr;
     gap: 12px;
+  }
+  .flashcard-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .filter-tabs {
+    width: 100%;
+  }
+  .search-bar-container {
+    max-width: 100%;
   }
 }
 
