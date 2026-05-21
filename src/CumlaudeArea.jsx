@@ -743,6 +743,16 @@ export default function CumlaudeArea() {
   if (view === 'quiz') {
     const currentQuestion = activeQuestions[currentQuestionIndex];
     const progress = ((currentQuestionIndex + 1) / activeQuestions.length) * 100;
+    const optionLetters = ['A', 'B', 'C', 'D', 'E'];
+
+    const handleExitQuiz = () => {
+      if (window.confirm("Apakah Anda yakin ingin membatalkan simulasi ujian? Semua progres pengerjaan Anda pada sesi ini akan hilang.")) {
+        setView('dashboard');
+      }
+    };
+    
+    const chosenOption = currentQuestion.options[selectedOption];
+    const isCorrectAnswer = chosenOption?.isCorrect;
     
     return (
       <div className="app-container fade-in">
@@ -759,7 +769,7 @@ export default function CumlaudeArea() {
               <span>{formatTime(timeLeft)}</span>
             </div>
           </div>
-          <button className="btn-outline" onClick={() => setView('dashboard')}>Kembali</button>
+          <button className="btn-outline" onClick={handleExitQuiz}>Kembali</button>
         </header>
         
         <main className="quiz-main">
@@ -782,18 +792,36 @@ export default function CumlaudeArea() {
                 }
                 return (
                   <button key={idx} className={optClass} onClick={() => handleOptionClick(idx, option.isCorrect)} disabled={isAnswered}>
-                    {option.text}
+                    <span className="option-letter">{optionLetters[idx]}</span>
+                    <span className="option-text">{option.text}</span>
                   </button>
                 );
               })}
             </div>
             
             {isAnswered && (
-              <div className="feedback-box fade-in">
-                <p><strong>Penjelasan:</strong> {currentQuestion.options[selectedOption]?.rationale || currentQuestion.options.find(o=>o.isCorrect).rationale}</p>
-                <button className="btn-primary" onClick={handleNextQuestion}>
-                  {currentQuestionIndex === activeQuestions.length - 1 ? 'Selesai' : 'Lanjut ➔'}
-                </button>
+              <div className={`feedback-box fade-in ${isCorrectAnswer ? 'correct' : 'incorrect'}`}>
+                <div className="feedback-status-row">
+                  {isCorrectAnswer ? (
+                    <span className="feedback-status-badge correct">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '6px'}}><polyline points="20 6 9 17 4 12"/></svg>
+                      Jawaban Anda Benar!
+                    </span>
+                  ) : (
+                    <span className="feedback-status-badge incorrect">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '6px'}}><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                      Jawaban Kurang Tepat!
+                    </span>
+                  )}
+                </div>
+                <p style={{ marginTop: '10px' }}>
+                  <strong>Penjelasan:</strong> {chosenOption?.rationale || currentQuestion.options.find(o=>o.isCorrect).rationale}
+                </p>
+                <div style={{ marginTop: '15px', display: 'flex', justifyContent: 'flex-end' }}>
+                  <button className="btn-primary" onClick={handleNextQuestion}>
+                    {currentQuestionIndex === activeQuestions.length - 1 ? 'Selesai' : 'Lanjut ➔'}
+                  </button>
+                </div>
               </div>
             )}
           </div>
@@ -1145,9 +1173,22 @@ export default function CumlaudeArea() {
             <div className="changelog-list">
               <div className="changelog-item">
                 <div className="changelog-meta">
-                  <span className="changelog-version">v1.2.0</span>
+                  <span className="changelog-version">v1.3.0</span>
                   <span className="changelog-date">21 Mei 2026</span>
                   <span className="changelog-tag current">Terbaru</span>
+                </div>
+                <ul className="changelog-details">
+                  <li><strong>Halaman Flashcards Interaktif & Filter:</strong> Menambahkan fitur pencarian real-time, filter tab berdasarkan tingkat kesulitan, dan status progress bar belajar yang tersimpan secara lokal.</li>
+                  <li><strong>Ekspansi Materi UAS MPSI:</strong> Meningkatkan jumlah kartu materi UAS MPSI menjadi 12 kartu terstruktur untuk menyamai materi UTS dan mencakup seluruh indikator kompetensi utama.</li>
+                  <li><strong>Penyempurnaan Ujian & Responsivitas:</strong> Menambahkan penanda opsi huruf (A, B, C, D) dengan efek hover/active modern, status box jawaban (Benar/Salah) yang dinamis pada penjelasan, serta dialog konfirmasi keluar ujian.</li>
+                  <li><strong>Aksen Visual Premium:</strong> Optimalisasi tata letak grid dan keselarasan elemen visual pada berbagai perangkat seluler (smartphone).</li>
+                </ul>
+              </div>
+
+              <div className="changelog-item">
+                <div className="changelog-meta">
+                  <span className="changelog-version">v1.2.0</span>
+                  <span className="changelog-date">21 Mei 2026</span>
                 </div>
                 <ul className="changelog-details">
                   <li><strong>Penggabungan Bank Soal UTS:</strong> Soal dari Pertemuan 1-6 kini digabungkan per tingkat kesulitan (Level 1 - Mudah, Level 2 - Sedang, Level 3 - Sulit) untuk mempermudah pemahaman komprehensif.</li>
