@@ -65,46 +65,7 @@ export const MATERI_KILAT_UTS = [
   {
     "id": "uts_lvl2_card2",
     "level": 2,
-    "title": "6. Ketergantungan (Sequencing & PDM/ADM)",
-    "points": [
-      "Finish-to-Start (FS): Aktivitas B baru bisa mulai setelah Aktivitas A selesai (tipe paling umum).",
-      "Start-to-Start (SS): Aktivitas B baru bisa mulai setelah Aktivitas A dimulai.",
-      "Finish-to-Finish (FF): Aktivitas B baru bisa selesai setelah Aktivitas A selesai.",
-      "Start-to-Finish (SF): Aktivitas B baru bisa selesai setelah Aktivitas A dimulai.",
-      "Precedence Diagramming Method (PDM / AON) menggambarkan aktivitas di dalam kotak (node) dan dependensi menggunakan anak panah.",
-      "Arrow Diagramming Method (ADM / AOA) menggambarkan aktivitas pada anak panah (arrow) dan lingkaran (node) sebagai penanda kejadian (event).",
-      "Aktivitas Dummy dalam diagram AOA digambarkan dengan garis putus-putus, berdurasi 0 hari, dan tidak mengonsumsi biaya/sumber daya; gunanya hanya mempertahankan logika dependensi."
-    ]
-  },
-  {
-    "id": "uts_lvl2_card3",
-    "level": 2,
-    "title": "7. Jalur Kritis (Critical Path Method - CPM)",
-    "points": [
-      "Jalur Kritis (Critical Path) adalah jalur terpanjang dalam diagram jaringan proyek yang menentukan waktu penyelesaian proyek tercepat.",
-      "Seluruh aktivitas yang berada di sepanjang Jalur Kritis memiliki nilai Float (Slack) = 0 (Nol).",
-      "Penundaan waktu pengerjaan pada aktivitas kritis akan langsung menunda tanggal penyelesaian akhir proyek secara keseluruhan.",
-      "Perhitungan Maju (Forward Pass) berjalan dari awal ke akhir untuk menghitung Early Start (ES) dan Early Finish (EF).",
-      "Perhitungan Mundur (Backward Pass) berjalan dari akhir ke awal untuk menghitung Late Start (LS) dan Late Finish (LF)."
-    ]
-  },
-  {
-    "id": "uts_lvl2_card4",
-    "level": 2,
-    "title": "8. Kelonggaran Waktu, Lag/Lead & Kompresi",
-    "points": [
-      "Total Float (Slack) adalah waktu kelonggaran aktivitas tanpa menunda tanggal penyelesaian akhir proyek keseluruhan. Rumus: Float = LS - ES atau Float = LF - EF.",
-      "Free Float adalah kelonggaran waktu aktivitas tanpa menunda tanggal Early Start dari aktivitas penerus (successor) terdekat.",
-      "Lag (Jeda Waktu) adalah waktu tunggu wajib (delay positif) di antara pendahulu dan penerus.",
-      "Lead (Waktu Mendahului) adalah waktu tumpang tindih (delay negatif) di antara dua aktivitas.",
-      "Crashing mempercepat jadwal dengan menambahkan sumber daya pada jalur kritis dengan konsekuensi peningkatan biaya.",
-      "Fast Tracking mempercepat jadwal dengan menjalankan aktivitas kritis secara paralel (meningkatkan risiko rework)."
-    ]
-  },
-  {
-    "id": "uts_lvl3_card1",
-    "level": 3,
-    "title": "9. Teknik Estimasi Biaya & Durasi",
+    "title": "6. Teknik Estimasi Biaya & Durasi",
     "points": [
       "Analogous Estimating (Top-Down) menggunakan biaya/durasi proyek historis serupa sebagai acuan. Cepat, murah, namun akurasinya rendah.",
       "Bottom-Up Estimating menaksir biaya/durasi elemen WBS terendah lalu dijumlahkan ke atas. Sangat akurat namun memakan waktu dan biaya pengerjaan yang besar.",
@@ -114,9 +75,22 @@ export const MATERI_KILAT_UTS = [
     ]
   },
   {
-    "id": "uts_lvl3_card2",
+    "id": "uts_lvl2_card3",
+    "level": 2,
+    "title": "7. Struktur Organisasi Proyek (OP)",
+    "points": [
+      "Organisasi Proyek Murni (Projectized): Tim proyek dipisahkan secara mandiri, wewenang Manajer Proyek mutlak/penuh, dan staf tidak memiliki divisi asal (home-base).",
+      "Organisasi Fungsional: Staf dikelompokkan berdasarkan divisi spesialisasi fungsional vertikal, jalur koordinasi bersifat birokratis, dan PM memiliki wewenang sangat minim/nol.",
+      "Organisasi Matriks (Matrix Organization): Menggabungkan struktur fungsional dan fungsional proyek. Memiliki dua jalur komando (PM dan Manajer Fungsional).",
+      "Weak Matrix: PM bertindak sebagai koordinator/expediter dengan wewenang minim.",
+      "Balanced Matrix: PM dan Manajer Fungsional berbagi wewenang secara setara.",
+      "Strong Matrix: PM memiliki wewenang lebih dominan dibanding Manajer Fungsional."
+    ]
+  },
+  {
+    "id": "uts_lvl3_card1",
     "level": 3,
-    "title": "10. Earned Value Management (EVM) - Indikator Dasar",
+    "title": "8. Earned Value Management (EVM) - Indikator Dasar",
     "points": [
       "Planned Value (PV) / BCWS: Anggaran disetujui yang direncanakan untuk diselesaikan pada tanggal evaluasi.",
       "Earned Value (EV) / BCWP: Nilai pekerjaan yang telah diselesaikan secara nyata hingga tanggal evaluasi.",
@@ -126,28 +100,15 @@ export const MATERI_KILAT_UTS = [
     ]
   },
   {
-    "id": "uts_lvl3_card3",
+    "id": "uts_lvl3_card2",
     "level": 3,
-    "title": "11. EVM - Indeks Kinerja & Prakiraan Lanjutan",
+    "title": "9. EVM - Indeks Kinerja & Prakiraan Lanjutan",
     "points": [
       "Cost Performance Index (CPI): Indeks kinerja efisiensi biaya. Rumus: CPI = EV / AC (CPI < 1.0 berarti biaya tidak efisien).",
       "Schedule Performance Index (SPI): Indeks kinerja efisiensi waktu. Rumus: SPI = EV / PV (SPI < 1.0 berarti pengerjaan lambat).",
       "Estimate at Completion (EAC): Prakiraan total biaya akhir proyek jika kinerja saat ini berlanjut. Rumus standar: EAC = BAC / CPI.",
       "Estimate to Complete (ETC): Prakiraan biaya tambahan untuk menyelesaikan sisa pekerjaan. Rumus: ETC = EAC - AC atau ETC = (BAC - EV) / CPI.",
       "To-Complete Performance Index (TCPI): Indeks kinerja biaya yang harus dicapai untuk menyelesaikan sisa proyek sesuai anggaran. Rumus: TCPI = (BAC - EV) / (BAC - AC)."
-    ]
-  },
-  {
-    "id": "uts_lvl3_card4",
-    "level": 3,
-    "title": "12. Struktur Organisasi Proyek (OP)",
-    "points": [
-      "Organisasi Proyek Murni (Projectized): Tim proyek dipisahkan secara mandiri, wewenang Manajer Proyek mutlak/penuh, dan staf tidak memiliki divisi asal (home-base).",
-      "Organisasi Fungsional: Staf dikelompokkan berdasarkan divisi spesialisasi fungsional vertikal, jalur koordinasi bersifat birokratis, dan PM memiliki wewenang sangat minim/nol.",
-      "Organisasi Matriks (Matrix Organization): Menggabungkan struktur fungsional dan fungsional proyek. Memiliki dua jalur komando (PM dan Manajer Fungsional).",
-      "Weak Matrix: PM bertindak sebagai koordinator/expediter dengan wewenang minim.",
-      "Balanced Matrix: PM dan Manajer Fungsional berbagi wewenang secara setara.",
-      "Strong Matrix: PM memiliki wewenang lebih dominan dibanding Manajer Fungsional."
     ]
   }
 ];
@@ -197,9 +158,19 @@ export const MATERI_KILAT_UAS = [
     ]
   },
   {
+    "id": "uas_lvl1_card5",
+    "level": 1,
+    "title": "5. Project Life Cycle (PLC) vs SDLC",
+    "points": [
+      "Project Life Cycle (PLC): Rangkaian fase dari awal hingga penutupan proyek (Initiation, Planning, Execution, Monitoring, Closing).",
+      "Systems Development Life Cycle (SDLC): Metodologi pengembangan software untuk membangun produk sistem informasi.",
+      "Keterkaitan: Fase rekayasa teknis SDLC (analisis, desain, coding, testing) dieksekusi di dalam fase Execution dari PLC proyek."
+    ]
+  },
+  {
     "id": "uas_lvl2_card1",
     "level": 2,
-    "title": "5. Analisis Risiko Kualitatif & Kuantitatif",
+    "title": "6. Analisis Risiko Kualitatif & Kuantitatif",
     "points": [
       "Qualitative Risk Analysis: Menilai probabilitas & dampak tiap risiko menggunakan skala deskriptif (Low, Medium, High) untuk memprioritaskan risiko.",
       "Quantitative Risk Analysis: Menganalisis dampak numerik dari risiko gabungan pada target proyek secara matematis.",
@@ -209,7 +180,7 @@ export const MATERI_KILAT_UAS = [
   {
     "id": "uas_lvl2_card2",
     "level": 2,
-    "title": "6. Strategi Respons Risiko (Threat & Opportunity)",
+    "title": "7. Strategi Respons Risiko (Threat & Opportunity)",
     "points": [
       "Respons Ancaman (Threats): Avoid (Menghindari risiko), Transfer (Memindahkan risiko ke pihak ketiga/asuransi), Mitigate (Mengurangi dampak), dan Accept (Menerima risiko).",
       "Respons Peluang (Opportunities): Exploit (Memastikan peluang terjadi), Share (Membagi peluang dengan pihak ketiga), Enhance (Meningkatkan probabilitas), dan Accept (Menerima peluang)."
@@ -217,16 +188,6 @@ export const MATERI_KILAT_UAS = [
   },
   {
     "id": "uas_lvl2_card3",
-    "level": 2,
-    "title": "7. Project Life Cycle (PLC) vs SDLC",
-    "points": [
-      "Project Life Cycle (PLC): Rangkaian fase dari awal hingga penutupan proyek (Initiation, Planning, Execution, Monitoring, Closing).",
-      "Systems Development Life Cycle (SDLC): Metodologi pengembangan software untuk membangun produk sistem informasi.",
-      "Keterkaitan: Fase rekayasa teknis SDLC (analisis, desain, coding, testing) dieksekusi di dalam fase Execution dari PLC proyek."
-    ]
-  },
-  {
-    "id": "uas_lvl2_card4",
     "level": 2,
     "title": "8. Studi Kelayakan Pengembangan Sistem",
     "points": [
@@ -237,9 +198,48 @@ export const MATERI_KILAT_UAS = [
     ]
   },
   {
+    "id": "uas_lvl2_card4",
+    "level": 2,
+    "title": "9. Ketergantungan (Sequencing & PDM/ADM)",
+    "points": [
+      "Finish-to-Start (FS): Aktivitas B baru bisa mulai setelah Aktivitas A selesai (tipe paling umum).",
+      "Start-to-Start (SS): Aktivitas B baru bisa mulai setelah Aktivitas A dimulai.",
+      "Finish-to-Finish (FF): Aktivitas B baru bisa selesai setelah Aktivitas A selesai.",
+      "Start-to-Finish (SF): Aktivitas B baru bisa selesai setelah Aktivitas A dimulai.",
+      "Precedence Diagramming Method (PDM / AON) menggambarkan aktivitas di dalam kotak (node) dan dependensi menggunakan anak panah.",
+      "Arrow Diagramming Method (ADM / AOA) menggambarkan aktivitas pada anak panah (arrow) dan lingkaran (node) sebagai penanda kejadian (event).",
+      "Aktivitas Dummy dalam diagram AOA digambarkan dengan garis putus-putus, berdurasi 0 hari, dan tidak mengonsumsi biaya/sumber daya; gunanya hanya mempertahankan logika dependensi."
+    ]
+  },
+  {
+    "id": "uas_lvl2_card5",
+    "level": 2,
+    "title": "10. Jalur Kritis (Critical Path Method - CPM)",
+    "points": [
+      "Jalur Kritis (Critical Path) adalah jalur terpanjang dalam diagram jaringan proyek yang menentukan waktu penyelesaian proyek tercepat.",
+      "Seluruh aktivitas yang berada di sepanjang Jalur Kritis memiliki nilai Float (Slack) = 0 (Nol).",
+      "Penundaan waktu pengerjaan pada aktivitas kritis akan langsung menunda tanggal penyelesaian akhir proyek secara keseluruhan.",
+      "Perhitungan Maju (Forward Pass) berjalan dari awal ke akhir untuk menghitung Early Start (ES) dan Early Finish (EF).",
+      "Perhitungan Mundur (Backward Pass) berjalan dari akhir ke awal untuk menghitung Late Start (LS) dan Late Finish (LF)."
+    ]
+  },
+  {
     "id": "uas_lvl3_card1",
     "level": 3,
-    "title": "9. Metode Konversi Sistem (System Conversion)",
+    "title": "11. Kelonggaran Waktu, Lag/Lead & Kompresi",
+    "points": [
+      "Total Float (Slack) adalah waktu kelonggaran aktivitas tanpa menunda tanggal penyelesaian akhir proyek keseluruhan. Rumus: Float = LS - ES atau Float = LF - EF.",
+      "Free Float adalah kelonggaran waktu aktivitas tanpa menunda tanggal Early Start dari aktivitas penerus (successor) terdekat.",
+      "Lag (Jeda Waktu) adalah waktu tunggu wajib (delay positif) di antara pendahulu dan penerus.",
+      "Lead (Waktu Mendahului) adalah waktu tumpang tindih (delay negatif) di antara dua aktivitas.",
+      "Crashing mempercepat jadwal dengan menambahkan sumber daya pada jalur kritis dengan konsekuensi peningkatan biaya.",
+      "Fast Tracking mempercepat jadwal dengan menjalankan aktivitas kritis secara paralel (meningkatkan risiko rework)."
+    ]
+  },
+  {
+    "id": "uas_lvl3_card2",
+    "level": 3,
+    "title": "12. Metode Konversi Sistem (System Conversion)",
     "points": [
       "Direct Cutover: Penghentian total sistem lama secara instan dan langsung mengaktifkan sistem baru. Cepat, murah, namun memiliki risiko kegagalan tertinggi.",
       "Parallel Conversion: Menjalankan sistem lama dan sistem baru secara bersamaan hingga sistem baru terbukti stabil. Paling aman, namun memakan biaya & tenaga ganda.",
@@ -248,9 +248,19 @@ export const MATERI_KILAT_UAS = [
     ]
   },
   {
-    "id": "uas_lvl3_card2",
+    "id": "uas_lvl3_card3",
     "level": 3,
-    "title": "10. Project Management Plan (PMP) & 4W+1H",
+    "title": "13. Penutupan Proyek & Serah Terima",
+    "points": [
+      "Close Project: Fase formal untuk memverifikasi seluruh deliverable telah selesai, diterima pelanggan, dan mendokumentasikan pelajaran berharga (lessons learned).",
+      "Administrative Closure: Pengarsipan file proyek, pembubaran tim proyek (release of resources), dan penyelesaian kewajiban kontrak vendor.",
+      "Acceptance Criteria: Kriteria formal tertulis yang disepakati dengan pelanggan untuk menyatakan bahwa deliverables memenuhi standar kualitas yang diinginkan."
+    ]
+  },
+  {
+    "id": "uas_lvl3_card4",
+    "level": 3,
+    "title": "14. Project Management Plan (PMP) & 4W+1H",
     "points": [
       "Project Management Plan (PMP): Dokumen induk resmi yang mengintegrasikan seluruh rencana area pengetahuan untuk mengarahkan eksekusi dan kontrol proyek.",
       "Formulasi PMP (4W + 1H): What (tujuan/deliverable), Why (alasan/kasus bisnis), When (milestone/jadwal), Who (tim/organisasi), dan How (metode/manajemen).",
@@ -258,23 +268,13 @@ export const MATERI_KILAT_UAS = [
     ]
   },
   {
-    "id": "uas_lvl3_card3",
+    "id": "uas_lvl3_card5",
     "level": 3,
-    "title": "11. Scope Baseline & CCB",
+    "title": "15. Scope Baseline & CCB",
     "points": [
       "Scope Baseline terdiri atas 3 dokumen utama: Project Scope Statement (deskripsi ruang lingkup), WBS (struktur dekomposisi), dan WBS Dictionary.",
       "Change Control Board (CCB): Kelompok pemangku kepentingan formal yang bertanggung jawab meninjau, mengevaluasi, menyetujui, atau menolak perubahan baseline proyek.",
       "Cost of Changes: Biaya untuk melakukan perubahan scope meningkat secara eksponensial seiring berjalannya fase proyek menuju akhir."
-    ]
-  },
-  {
-    "id": "uas_lvl3_card4",
-    "level": 3,
-    "title": "12. Penutupan Proyek & Serah Terima",
-    "points": [
-      "Close Project: Fase formal untuk memverifikasi seluruh deliverable telah selesai, diterima pelanggan, dan mendokumentasikan pelajaran berharga (lessons learned).",
-      "Administrative Closure: Pengarsipan file proyek, pembubaran tim proyek (release of resources), dan penyelesaian kewajiban kontrak vendor.",
-      "Acceptance Criteria: Kriteria formal tertulis yang disepakati dengan pelanggan untuk menyatakan bahwa deliverables memenuhi standar kualitas yang diinginkan."
     ]
   }
 ];

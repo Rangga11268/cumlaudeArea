@@ -2988,7 +2988,7 @@
     "id": 83
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Hubungan dependensi antar aktivitas di mana Aktivitas B baru boleh dimulai sesaat setelah Aktivitas A selesai adalah tipe...",
     "options": [
       {
@@ -3020,11 +3020,11 @@
     "hint": "Hubungan sekuensial paling mendasar pada diagram jaringan kerja.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 84
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Dalam diagram jaringan kerja proyek (Network Diagram), pengertian Jalur Kritis (Critical Path) adalah...",
     "options": [
       {
@@ -3056,11 +3056,11 @@
     "hint": "Jalur ini memiliki total Slack/Float sama dengan nol.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 85
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Jika suatu aktivitas memiliki Total Float sebesar 5 hari, artinya aktivitas tersebut...",
     "options": [
       {
@@ -3092,11 +3092,11 @@
     "hint": "Float/Slack mengindikasikan kelonggaran waktu tunda pengerjaan.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 86
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Metode diagram jaringan kerja yang menggambarkan aktivitas di dalam bentuk kotak (node) dan keterkaitan digambarkan dengan panah disebut...",
     "options": [
       {
@@ -3128,11 +3128,11 @@
     "hint": "Dikenal juga sebagai Activity-on-Node (AON) yang umum dipakai software MS Project.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 87
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Perbedaan mendasar antara 'Total Float' dan 'Free Float' dalam penjadwalan proyek adalah...",
     "options": [
       {
@@ -3164,7 +3164,7 @@
     "hint": "Cari perbedaan dampak penundaan terhadap proyek vs aktivitas penerus (successor).",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 88
   },
   {
@@ -3240,7 +3240,7 @@
     "id": 90
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Dalam diagram jaringan proyek, Precedence Diagramming Method (PDM) menggunakan representasi visual berupa...",
     "options": [
       {
@@ -3272,11 +3272,11 @@
     "hint": "Aktivitas pada node (Activity-on-Node / AON).",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 91
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Dalam Arrow on Arrow (AOA) diagram, hubungan antar aktivitas direpresentasikan oleh...",
     "options": [
       {
@@ -3308,11 +3308,11 @@
     "hint": "Aktivitas pada panah (Activity-on-Arrow).",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 92
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Hubungan dependensi di mana Aktivitas B tidak dapat dimulai sebelum Aktivitas A selesai disebut...",
     "options": [
       {
@@ -3344,11 +3344,11 @@
     "hint": "Selesai dahulu baru Mulai (Finish to Start).",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 93
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Hubungan dependensi di mana Aktivitas B tidak dapat selesai sebelum Aktivitas A selesai disebut...",
     "options": [
       {
@@ -3380,11 +3380,11 @@
     "hint": "Selesai bersama Selesai (Finish to Finish).",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 94
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Hubungan dependensi di mana Aktivitas B tidak dapat dimulai sebelum Aktivitas A dimulai disebut...",
     "options": [
       {
@@ -3416,11 +3416,11 @@
     "hint": "Mulai bersama Mulai (Start to Start).",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 95
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Hubungan dependensi di mana Aktivitas B tidak dapat selesai sebelum Aktivitas A dimulai disebut...",
     "options": [
       {
@@ -3452,11 +3452,11 @@
     "hint": "Mulai memicu Selesai (Start to Finish).",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 96
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Apa fungsi dari aktivitas Dummy dalam diagram jaringan proyek AOA?",
     "options": [
       {
@@ -3488,11 +3488,11 @@
     "hint": "Representasi relasi semu yang berdurasi 0 hari.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 97
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Jalur terpanjang dalam diagram jaringan proyek yang menentukan durasi total proyek tercepat disebut...",
     "options": [
       {
@@ -3524,11 +3524,11 @@
     "hint": "Jalur dengan waktu kelonggaran nol.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 98
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Berapakah nilai total Float (Slack) dari suatu aktivitas yang berada pada Jalur Kritis?",
     "options": [
       {
@@ -3560,11 +3560,11 @@
     "hint": "Aktivitas kritis tidak memiliki kelonggaran waktu tunda.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 99
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Jika suatu aktivitas memiliki Early Start (ES) pada hari ke-5 dan Late Start (LS) pada hari ke-9, berapakah Total Float aktivitas tersebut?",
     "options": [
       {
@@ -3596,11 +3596,11 @@
     "hint": "Gunakan rumus: Float = Late Start - Early Start.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 100
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Selisih waktu antara Early Start (ES) dan Late Start (LS), atau Early Finish (EF) dan Late Finish (LF) suatu aktivitas disebut...",
     "options": [
       {
@@ -3632,11 +3632,11 @@
     "hint": "Mengukur kelonggaran waktu aktivitas terhadap jadwal akhir proyek.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 101
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Jumlah waktu di mana suatu aktivitas dapat ditunda tanpa menunda Early Start dari aktivitas penerus (successor) terdekatnya disebut...",
     "options": [
       {
@@ -3668,11 +3668,11 @@
     "hint": "Kelonggaran waktu yang hanya memengaruhi aktivitas penerus terdekat.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 102
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Teknik mempercepat jadwal proyek dengan menambahkan sumber daya tambahan ke aktivitas jalur kritis dengan biaya tambahan seminimal mungkin disebut...",
     "options": [
       {
@@ -3704,11 +3704,11 @@
     "hint": "Menambahkan orang atau lembur (mengorbankan biaya demi waktu).",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 103
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Teknik mempercepat jadwal proyek dengan menjalankan aktivitas-aktivitas yang biasanya berurutan secara paralel atau tumpang tindih disebut...",
     "options": [
       {
@@ -3740,11 +3740,11 @@
     "hint": "Menjalankan tugas secara tumpang tindih (mengorbankan risiko demi waktu).",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 104
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Waktu tunggu yang sengaja disisipkan di antara dua aktivitas yang bergantung (misalnya, menunggu semen kering selama 2 hari sebelum memasang ubin) disebut...",
     "options": [
       {
@@ -3776,11 +3776,11 @@
     "hint": "Merupakan delay positif (waktu tunggu logis).",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 105
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Waktu tumpang tindih di mana aktivitas penerus dapat dimulai sebelum aktivitas pendahulu selesai sepenuhnya disebut...",
     "options": [
       {
@@ -3812,11 +3812,11 @@
     "hint": "Lawan dari kata Lag (delay negatif).",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 106
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Dalam analisis Critical Path Method (CPM), perhitungan maju (Forward Pass) dilakukan untuk menentukan...",
     "options": [
       {
@@ -3848,11 +3848,11 @@
     "hint": "Menghitung nilai tercepat dimulainya suatu pekerjaan proyek.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 107
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Dalam analisis Critical Path Method (CPM), perhitungan mundur (Backward Pass) dilakukan untuk menentukan...",
     "options": [
       {
@@ -3884,7 +3884,7 @@
     "hint": "Menghitung nilai paling lambat dimulainya suatu pekerjaan tanpa menunda proyek.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 108
   },
   {
@@ -3996,7 +3996,7 @@
     "id": 111
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Manakah dari pernyataan berikut yang benar mengenai Jalur Kritis (Critical Path) proyek?",
     "options": [
       {
@@ -4028,11 +4028,11 @@
     "hint": "Pikirkan tentang konsekuensi logis jika ada beberapa jalur yang sama-sama sensitif waktu.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 112
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Jika durasi proyek diperpanjang karena adanya penundaan pada aktivitas non-kritis melebihi nilai total float-nya, maka...",
     "options": [
       {
@@ -4064,11 +4064,11 @@
     "hint": "Batas float adalah kapasitas maksimal toleransi penundaan aktivitas.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 113
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Dalam PDM, jika Aktivitas A memiliki durasi 4 hari dan Aktivitas B memiliki hubungan SS dengan lag 2 hari terhadap A, kapan B paling cepat dapat dimulai jika A mulai pada hari ke-0?",
     "options": [
       {
@@ -4100,7 +4100,7 @@
     "hint": "Gunakan tipe relasi: Start B = Start A + Lag.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 114
   },
   {
@@ -4176,7 +4176,7 @@
     "id": 116
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Jika suatu aktivitas memiliki Early Start (ES) = 2 dan durasi = 5 hari, maka Early Finish (EF) aktivitas tersebut adalah...",
     "options": [
       {
@@ -4208,11 +4208,11 @@
     "hint": "Rumus dasar Forward Pass: EF = ES + Durasi.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 117
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Jika suatu aktivitas memiliki Late Finish (LF) = 12 dan durasi = 3 hari, maka Late Start (LS) aktivitas tersebut adalah...",
     "options": [
       {
@@ -4244,11 +4244,11 @@
     "hint": "Rumus dasar Backward Pass: LS = LF - Durasi.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 118
   },
   {
-    "category": "MPSI UTS - Level 2 (Sedang)",
+    "category": "MPSI UAS - Level 2 (Sedang)",
     "question": "Apa perbedaan utama antara Total Float dan Free Float?",
     "options": [
       {
@@ -4280,7 +4280,7 @@
     "hint": "Pikirkan dampak tunda terhadap aktivitas penerus vs dampak terhadap seluruh proyek.",
     "level": 2,
     "course": "mpsi",
-    "examType": "uts",
+    "examType": "uas",
     "id": 119
   },
   {

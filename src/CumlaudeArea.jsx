@@ -203,7 +203,7 @@ export default function CumlaudeArea() {
     if (cat.includes('karakteristik') || cat.includes('ciri proyek') || cat.includes('konsep proyek')) return 1;
     if (cat.includes('proses') || cat.includes('pmbok')) return 2;
     if (cat.includes('charter') || cat.includes('inisiasi')) return 3;
-    if (cat.includes('scope') || cat.includes('wbs') || cat.includes('cpm') || cat.includes('ketergantungan') || cat.includes('float') || cat.includes('jalur kritis')) return 4;
+    if (cat.includes('scope') || cat.includes('wbs')) return 4;
     if (cat.includes('estimasi') || cat.includes('evm') || cat.includes('earned value') || cat.includes('pert')) return 5;
     if (cat.includes('organisasi')) return 6;
     if (cat.includes('pengadaan') || cat.includes('procurement') || cat.includes('kontrak')) return 9;
@@ -211,6 +211,8 @@ export default function CumlaudeArea() {
     if (cat.includes('risiko') || cat.includes('risk') || cat.includes('emv')) {
       return (cat.includes('kualitatif') || cat.includes('kuantitatif')) ? 12 : 11;
     }
+    if (cat.includes('cpm') || cat.includes('float') || cat.includes('jalur kritis') || cat.includes('lag') || cat.includes('lead') || cat.includes('kompresi')) return 12;
+    if (cat.includes('ketergantungan') || cat.includes('pdm') || cat.includes('adm') || cat.includes('aoa') || cat.includes('aon') || cat.includes('dummy') || cat.includes('sequencing')) return 11;
     if (cat.includes('konversi') || cat.includes('serah terima') || cat.includes('penutupan')) return 13;
     if (cat.includes('pmp') || cat.includes('project management plan') || cat.includes('baseline')) return 14;
     if (q.examType === 'uts') { if (q.level === 1) return 1; if (q.level === 2) return 4; return 5; }
@@ -229,13 +231,13 @@ export default function CumlaudeArea() {
         const type = String(q.examType).toLowerCase();
         const lvl = parseInt(q.level);
         if (type === 'uts') {
-          if (lvl === 1) topic = "UTS L1: Konsep Proyek & Kelompok Proses (P1-P3)";
-          else if (lvl === 2) topic = "UTS L2: Scope Management & CPM Jalur Kritis (P4)";
-          else if (lvl === 3) topic = "UTS L3: EVM, PERT & Struktur Organisasi (P5-P6)";
+          if (lvl === 1) topic = "UTS L1: Konsep Proyek, PMBOK & Project Charter (P1-P3)";
+          else if (lvl === 2) topic = "UTS L2: Manajemen Scope, WBS & Work Package (P4)";
+          else if (lvl === 3) topic = "UTS L3: Estimasi Biaya, EVM & Struktur Organisasi (P5-P6)";
         } else if (type === 'uas') {
-          if (lvl === 1) topic = "UAS L1: Manajemen Pengadaan & Risiko Proyek (P9-P10)";
-          else if (lvl === 2) topic = "UAS L2: PLC vs SDLC & Analisis Kelayakan Sistem";
-          else if (lvl === 3) topic = "UAS L3: Konversi Sistem, PMP & Penutupan (P14)";
+          if (lvl === 1) topic = "UAS L1: Manajemen Pengadaan, Tipe Kontrak & Risiko (P9, P11)";
+          else if (lvl === 2) topic = "UAS L2: Analisis Kelayakan, Ketergantungan PDM/ADM & CPM (P10-P12)";
+          else if (lvl === 3) topic = "UAS L3: Lag/Lead/Kompresi, Konversi, PMP & Penutupan (P10, P12-P14)";
         }
       }
       topicCounts[topic] = (topicCounts[topic] || 0) + 1;

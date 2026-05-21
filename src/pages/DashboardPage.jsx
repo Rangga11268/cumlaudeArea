@@ -182,8 +182,8 @@ const DashboardPage = ({
             </div>
             <p>
               {selectedExamType === 'uts'
-                ? 'Konsep Dasar Proyek, Kelompok Proses, & Otorisasi Project Charter.'
-                : 'Pengenalan Pengadaan Barang (Procurement) dan Manajemen Risiko Proyek.'}
+                ? 'Konsep Dasar Proyek, Kelompok Proses (PMBOK), & Otorisasi Project Charter (P1-P3).'
+                : 'Manajemen Pengadaan, Tipe Kontrak, & Manajemen Risiko Proyek (P9, P11).'}
             </p>
             <button className="btn-level outline" onClick={() => startQuiz(1)}>Mulai Level 1</button>
           </div>
@@ -195,8 +195,8 @@ const DashboardPage = ({
             </div>
             <p>
               {selectedExamType === 'uts'
-                ? 'Manajemen Scope (WBS), Dependensi (FS/SS/FF/SF), & Critical Path Method.'
-                : 'Project Life Cycle (PLC) & Metode Konversi Sistem dalam SDLC.'}
+                ? 'Manajemen Scope, WBS, & Work Package (P4).'
+                : 'Analisis Kelayakan, Ketergantungan PDM/ADM & CPM Jalur Kritis (P10-P12).'}
             </p>
             <button className="btn-level outline" disabled={isLvl2Locked} onClick={() => startQuiz(2)}>
               {isLvl2Locked ? (
@@ -217,8 +217,8 @@ const DashboardPage = ({
             </div>
             <p>
               {selectedExamType === 'uts'
-                ? 'Estimasi Biaya PERT (Triangular/Beta), EVM (CPI/SPI/EAC), & Organisasi Proyek.'
-                : 'Penyusunan Project Management Plan (PMP), Scope Baseline, & 4W+1H.'}
+                ? 'Teknik Estimasi Biaya, EVM (Earned Value), & Struktur Organisasi Proyek (P5-P6).'
+                : 'Lag/Lead & Kompresi, Konversi Sistem, PMP (4W+1H), & Penutupan Proyek (P10, P12-P14).'}
             </p>
             <button className="btn-level outline" disabled={isLvl3Locked} onClick={() => startQuiz(3)}>
               {isLvl3Locked ? (
