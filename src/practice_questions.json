@@ -1,0 +1,2627 @@
+[
+  {
+    "id": "p1_q1",
+    "type": "pertemuan",
+    "pertemuan": 1,
+    "category": "Latihan Pertemuan 1",
+    "question": "Bercorak dinamis, non rutin, relatif pendek, periodenya berubah-ubah, jadwalnya telah ditentukan, membutuhkan macam-macam disiplin ilmu serta keperluan sumberdaya berubah-ubah baik macam ataupun volumenya adalah ciri dari...",
+    "options": [
+      {
+        "text": "Kegiatan Administrasi",
+        "isCorrect": false,
+        "rationale": "Kegiatan administrasi bersifat rutin dan berulang."
+      },
+      {
+        "text": "Kegiatan Operasional",
+        "isCorrect": false,
+        "rationale": "Kegiatan operasional bersifat rutin, terus-menerus, dan berulang."
+      },
+      {
+        "text": "Kegiatan Pemasaran",
+        "isCorrect": false,
+        "rationale": "Kegiatan pemasaran adalah bagian dari operasional rutin."
+      },
+      {
+        "text": "Kegiatan Keuangan",
+        "isCorrect": false,
+        "rationale": "Kegiatan keuangan bersifat rutin dan administratif."
+      },
+      {
+        "text": "Kegiatan Proyek",
+        "isCorrect": true,
+        "rationale": "Kegiatan proyek bercorak dinamis, non-rutin, memiliki awal dan akhir yang jelas, serta kebutuhan sumber daya yang dinamis."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p1_q2",
+    "type": "pertemuan",
+    "pertemuan": 1,
+    "category": "Latihan Pertemuan 1",
+    "question": "Sudah jelas macam pekerjaan yang harus ditangani. Dalam kondisi seperti ini biasanya tidak ada proses tender sehingga tidak ada suasana kompetitif dalam perebutan proyek. Adalah tipe proyek dari...",
+    "options": [
+      {
+        "text": "Proyek yang berasal dari klien yang ditawarkan ke suatu konsultan",
+        "isCorrect": false,
+        "rationale": "Ini membutuhkan negosiasi atau tender."
+      },
+      {
+        "text": "Ide proyek muncul karena ada tawaran dana dari instansi",
+        "isCorrect": false,
+        "rationale": "Ini biasanya melibatkan proposal kompetitif."
+      },
+      {
+        "text": "Proyek muncul karena adanya tawaran lelang",
+        "isCorrect": false,
+        "rationale": "Proyek lelang sangat kompetitif."
+      },
+      {
+        "text": "Proyek berasal dari dalam perusahaan sendiri",
+        "isCorrect": true,
+        "rationale": "Proyek internal/swakelola (in-house) dikerjakan langsung tanpa melalui proses tender eksternal."
+      },
+      {
+        "text": "Proyek berasal dari lembaga keuangan",
+        "isCorrect": false,
+        "rationale": "Melibatkan proses pendanaan formal."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p1_q3",
+    "type": "pertemuan",
+    "pertemuan": 1,
+    "category": "Latihan Pertemuan 1",
+    "question": "Usaha sementara yang dilakukan untuk menciptakan produk atau hasil yang unik disebut...",
+    "options": [
+      {
+        "text": "Unik",
+        "isCorrect": false,
+        "rationale": "Unik adalah karakteristik dari hasil proyek."
+      },
+      {
+        "text": "Sementara",
+        "isCorrect": false,
+        "rationale": "Sementara (temporary) adalah sifat durasi proyek."
+      },
+      {
+        "text": "Project",
+        "isCorrect": true,
+        "rationale": "Berdasarkan definisi PMBOK, proyek (project) adalah usaha sementara yang dilakukan untuk menciptakan produk, jasa, atau hasil yang unik."
+      },
+      {
+        "text": "Teknik",
+        "isCorrect": false,
+        "rationale": "Teknik adalah cara pelaksanaan pekerjaan."
+      },
+      {
+        "text": "Planning",
+        "isCorrect": false,
+        "rationale": "Planning adalah salah satu kelompok proses."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p1_q4",
+    "type": "pertemuan",
+    "pertemuan": 1,
+    "category": "Latihan Pertemuan 1",
+    "question": "Tidak ada proses tender sehingga tidak ada suasana kompetitif dalam perebutan proyek adalah ciri dari...",
+    "options": [
+      {
+        "text": "Proyek yang berasal dari klien yang ditawarkan ke suatu konsultan",
+        "isCorrect": false,
+        "rationale": "Ini melibatkan proses penawaran resmi."
+      },
+      {
+        "text": "Proyek muncul karena ada tawaran dana dari instansi",
+        "isCorrect": false,
+        "rationale": "Ini melibatkan seleksi proposal."
+      },
+      {
+        "text": "Proyek muncul karena adanya tawaran lelang",
+        "isCorrect": false,
+        "rationale": "Tender lelang sangat kompetitif."
+      },
+      {
+        "text": "Proyek berasal dari dalam perusahaan sendiri",
+        "isCorrect": true,
+        "rationale": "Sama dengan konsep proyek in-house, pengerjaannya dilakukan secara internal tanpa kompetisi tender."
+      },
+      {
+        "text": "Proyek investasi",
+        "isCorrect": false,
+        "rationale": "Proyek investasi biasanya memiliki studi kelayakan komparatif."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p1_q5",
+    "type": "pertemuan",
+    "pertemuan": 1,
+    "category": "Latihan Pertemuan 1",
+    "question": "Representasi dari sistem informasi secara logis dan teknis adalah...",
+    "options": [
+      {
+        "text": "Hardware",
+        "isCorrect": false,
+        "rationale": "Hardware adalah perangkat fisik pendukung."
+      },
+      {
+        "text": "Brainware",
+        "isCorrect": false,
+        "rationale": "Brainware adalah manusia yang mengoperasikan sistem."
+      },
+      {
+        "text": "Perangkat Mesin",
+        "isCorrect": false,
+        "rationale": "Perangkat mesin bersifat mekanis fisik."
+      },
+      {
+        "text": "Perangkat Lunak",
+        "isCorrect": true,
+        "rationale": "Perangkat lunak (software) memuat instruksi logis dan kode pemrograman yang merepresentasikan sistem informasi."
+      },
+      {
+        "text": "Perangkat Keras",
+        "isCorrect": false,
+        "rationale": "Sama dengan hardware, ini merupakan komponen fisik."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p2_q1",
+    "type": "pertemuan",
+    "pertemuan": 2,
+    "category": "Latihan Pertemuan 2",
+    "question": "Berdasarkan PMBOK Edisi 5, manajemen proyek terdiri dari ... Process Group.",
+    "options": [
+      {
+        "text": "3",
+        "isCorrect": false,
+        "rationale": "Terlalu sedikit."
+      },
+      {
+        "text": "4",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "5",
+        "isCorrect": true,
+        "rationale": "Terdiri dari 5 Process Group: Initiating, Planning, Executing, Monitoring & Controlling, dan Closing."
+      },
+      {
+        "text": "10",
+        "isCorrect": false,
+        "rationale": "10 adalah jumlah Knowledge Areas."
+      },
+      {
+        "text": "47",
+        "isCorrect": false,
+        "rationale": "47 adalah jumlah sub-proses."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p2_q2",
+    "type": "pertemuan",
+    "pertemuan": 2,
+    "category": "Latihan Pertemuan 2",
+    "question": "Menjabarkan scope statement menjadi suatu susunan deliverable yang mudah di-manage, serta dikelompokkan berdasarkan deliverable utama disebut sebagai...",
+    "options": [
+      {
+        "text": "create project charter",
+        "isCorrect": false,
+        "rationale": "Project charter mengesahkan proyek."
+      },
+      {
+        "text": "create document plan",
+        "isCorrect": false,
+        "rationale": "Bukan istilah resmi PMBOK."
+      },
+      {
+        "text": "create WBS",
+        "isCorrect": true,
+        "rationale": "Work Breakdown Structure (WBS) adalah dekomposisi hierarkis dari total lingkup kerja proyek yang harus diselesaikan."
+      },
+      {
+        "text": "create scope",
+        "isCorrect": false,
+        "rationale": "Create scope tidak memecah deliverable."
+      },
+      {
+        "text": "create risk",
+        "isCorrect": false,
+        "rationale": "Ini berkaitan dengan manajemen risiko."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p2_q3",
+    "type": "pertemuan",
+    "pertemuan": 2,
+    "category": "Latihan Pertemuan 2",
+    "question": "Memonitor risiko yang sudah teridentifikasi dan mengidentifikasi munculnya risiko baru dan mengontrol dampaknya adalah...",
+    "options": [
+      {
+        "text": "control risk",
+        "isCorrect": true,
+        "rationale": "Control risks adalah proses memantau implementasi rencana respon risiko, melacak risiko teridentifikasi, dan mengevaluasi efektivitas proses risiko."
+      },
+      {
+        "text": "control procurement",
+        "isCorrect": false,
+        "rationale": "Control procurement mengelola hubungan pengadaan."
+      },
+      {
+        "text": "control communication",
+        "isCorrect": false,
+        "rationale": "Control communication memantau komunikasi proyek."
+      },
+      {
+        "text": "control scope",
+        "isCorrect": false,
+        "rationale": "Control scope mengendalikan perubahan ruang lingkup."
+      },
+      {
+        "text": "control human resource",
+        "isCorrect": false,
+        "rationale": "Manage project team mengelola kinerja tim."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p2_q4",
+    "type": "pertemuan",
+    "pertemuan": 2,
+    "category": "Latihan Pertemuan 2",
+    "question": "Bidang Pengetahuan yang mengatur pengelolaan sumber daya manusia dalam proyek adalah...",
+    "options": [
+      {
+        "text": "Project Quality Management",
+        "isCorrect": false,
+        "rationale": "Mengelola kualitas produk dan proses."
+      },
+      {
+        "text": "Project Human Resources Management",
+        "isCorrect": true,
+        "rationale": "Mengatur proses organisasi, rekrutmen, pengembangan, dan manajemen tim proyek."
+      },
+      {
+        "text": "Project Risk Management",
+        "isCorrect": false,
+        "rationale": "Mengelola risiko proyek."
+      },
+      {
+        "text": "Project Procurement Management",
+        "isCorrect": false,
+        "rationale": "Mengelola pengadaan barang/jasa dari luar."
+      },
+      {
+        "text": "Project Communication Management",
+        "isCorrect": false,
+        "rationale": "Mengelola distribusi informasi proyek."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p2_q5",
+    "type": "pertemuan",
+    "pertemuan": 2,
+    "category": "Latihan Pertemuan 2",
+    "question": "Bidang Pengetahuan Manajemen Integrasi Proyek (Project Integration Management) pada PMBOK 5 memiliki ... proses.",
+    "options": [
+      {
+        "text": "3 Process",
+        "isCorrect": false,
+        "rationale": "Terlalu sedikit."
+      },
+      {
+        "text": "4 Process",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "5 Process",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "6 Process",
+        "isCorrect": true,
+        "rationale": "Memiliki 6 proses: Develop Project Charter, Develop PMP, Direct & Manage Project Work, Monitor & Control Project Work, Perform Integrated Change Control, Close Project or Phase."
+      },
+      {
+        "text": "7 Process",
+        "isCorrect": false,
+        "rationale": "MPSI Integration memiliki 6 proses."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p3_q1",
+    "type": "pertemuan",
+    "pertemuan": 3,
+    "category": "Latihan Pertemuan 3",
+    "question": "Proses pada Kelompok Proses Inisiasi (Initiating Project Group) sebanyak...",
+    "options": [
+      {
+        "text": "2 proses",
+        "isCorrect": true,
+        "rationale": "Kelompok proses inisiasi terdiri dari 2 sub-proses: Develop Project Charter dan Identify Stakeholders."
+      },
+      {
+        "text": "3 proses",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "4 proses",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "5 proses",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "6 proses",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p3_q2",
+    "type": "pertemuan",
+    "pertemuan": 3,
+    "category": "Latihan Pertemuan 3",
+    "question": "Mewujudkan perencanaan proyek yang telah dibuat pada rencana manajemen proyek merupakan...",
+    "options": [
+      {
+        "text": "Tujuan penutupan proyek",
+        "isCorrect": false,
+        "rationale": "Closing adalah mengakhiri proyek."
+      },
+      {
+        "text": "Tujuan merencanakan proyek",
+        "isCorrect": false,
+        "rationale": "Planning adalah merancang rencana."
+      },
+      {
+        "text": "Tujuan pelaksanaan proyek",
+        "isCorrect": true,
+        "rationale": "Executing (pelaksanaan) bertujuan untuk merealisasikan rencana manajemen proyek menjadi hasil kerja nyata."
+      },
+      {
+        "text": "Mekanisme penutupan proyek",
+        "isCorrect": false,
+        "rationale": "Mekanisme serah terima."
+      },
+      {
+        "text": "Fungsi perencanaan proyek",
+        "isCorrect": false,
+        "rationale": "Fungsi merancang alokasi sumber daya."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p3_q3",
+    "type": "pertemuan",
+    "pertemuan": 3,
+    "category": "Latihan Pertemuan 3",
+    "question": "Sebutan lain dari dokumen Project Charter yaitu...",
+    "options": [
+      {
+        "text": "Formulir Meeting",
+        "isCorrect": false,
+        "rationale": "Formulir meeting mencatat jalannya rapat."
+      },
+      {
+        "text": "Project Definition",
+        "isCorrect": true,
+        "rationale": "Dokumen Project Charter juga dikenal sebagai Project Definition Document karena mendefinisikan awal proyek."
+      },
+      {
+        "text": "Project Management Plan",
+        "isCorrect": false,
+        "rationale": "PMP adalah rencana pengelolaan terintegrasi, dibuat setelah Charter."
+      },
+      {
+        "text": "Formulir Permintaan Perubahan",
+        "isCorrect": false,
+        "rationale": "Formulir ini digunakan untuk mengubah baseline."
+      },
+      {
+        "text": "Work Result Guideline",
+        "isCorrect": false,
+        "rationale": "Panduan eksekusi pengerjaan fisik."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p3_q4",
+    "type": "pertemuan",
+    "pertemuan": 3,
+    "category": "Latihan Pertemuan 3",
+    "question": "Dokumen pendukung pada tahap eksekusi (executing phase) yang berisi pedoman hasil kerja adalah...",
+    "options": [
+      {
+        "text": "Project Charter",
+        "isCorrect": false,
+        "rationale": "Dibuat saat inisiasi."
+      },
+      {
+        "text": "Work Result Guideline",
+        "isCorrect": true,
+        "rationale": "Work Result Guideline (Pedoman Hasil Kerja) digunakan sebagai referensi instruksional pelaksanaan pekerjaan fisik."
+      },
+      {
+        "text": "Project Management Plan",
+        "isCorrect": false,
+        "rationale": "Merupakan baseline rencana induk."
+      },
+      {
+        "text": "Formulir Permintaan Perubahan",
+        "isCorrect": false,
+        "rationale": "Digunakan untuk mengontrol deviasi."
+      },
+      {
+        "text": "Formulir Meeting",
+        "isCorrect": false,
+        "rationale": "Digunakan untuk notulensi rapat."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p3_q5",
+    "type": "pertemuan",
+    "pertemuan": 3,
+    "category": "Latihan Pertemuan 3",
+    "question": "Salah satu tujuan utama kelompok proses penutupan (closing project group) adalah...",
+    "options": [
+      {
+        "text": "Menentukan tujuan proyek secara rinci",
+        "isCorrect": false,
+        "rationale": "Ini adalah tujuan inisiasi/perencanaan."
+      },
+      {
+        "text": "Merevisinya aktivitas-aktivitas",
+        "isCorrect": false,
+        "rationale": "Ini dilakukan saat monitoring & control."
+      },
+      {
+        "text": "Mengontrol pelaksanaan proyek",
+        "isCorrect": false,
+        "rationale": "Ini dilakukan saat monitoring & control."
+      },
+      {
+        "text": "Mengeksekusi kegiatan-kegiatan",
+        "isCorrect": false,
+        "rationale": "Ini dilakukan saat executing."
+      },
+      {
+        "text": "Mengakhiri penugasan anggota tim proyek",
+        "isCorrect": true,
+        "rationale": "Fase closing memverifikasi penyelesaian kerja kontrak dan melakukan pelepasan tim proyek (release of resources)."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p4_q1",
+    "type": "pertemuan",
+    "pertemuan": 4,
+    "category": "Latihan Pertemuan 4",
+    "question": "Masalah proyek yang ditangkap dan dirumuskan dalam bentuk pengukuran kuantitatif disebut dengan...",
+    "options": [
+      {
+        "text": "Problem Statement",
+        "isCorrect": true,
+        "rationale": "Problem statement mendefinisikan masalah proyek secara jelas dan terukur dari awal."
+      },
+      {
+        "text": "Business Case",
+        "isCorrect": false,
+        "rationale": "Business case meninjau nilai ekonomi/bisnis proyek."
+      },
+      {
+        "text": "Goal Statement",
+        "isCorrect": false,
+        "rationale": "Goal statement mendefinisikan target pencapaian."
+      },
+      {
+        "text": "Timeline",
+        "isCorrect": false,
+        "rationale": "Timeline menunjukkan target waktu."
+      },
+      {
+        "text": "Team Members",
+        "isCorrect": false,
+        "rationale": "Struktur personil tim."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p4_q2",
+    "type": "pertemuan",
+    "pertemuan": 4,
+    "category": "Latihan Pertemuan 4",
+    "question": "Final Report (Laporan Akhir Proyek) merupakan dokumen proyek yang diserahkan pada fase...",
+    "options": [
+      {
+        "text": "Initiating",
+        "isCorrect": false,
+        "rationale": "Menghasilkan Project Charter."
+      },
+      {
+        "text": "Planning",
+        "isCorrect": false,
+        "rationale": "Menghasilkan rencana pengelolaan proyek."
+      },
+      {
+        "text": "Executing",
+        "isCorrect": false,
+        "rationale": "Menghasilkan deliverable proyek."
+      },
+      {
+        "text": "Monitoring",
+        "isCorrect": false,
+        "rationale": "Menghasilkan laporan performa."
+      },
+      {
+        "text": "Closing",
+        "isCorrect": true,
+        "rationale": "Laporan akhir (Final Report) diselesaikan pada kelompok proses closing untuk serah terima formal."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p4_q3",
+    "type": "pertemuan",
+    "pertemuan": 4,
+    "category": "Latihan Pertemuan 4",
+    "question": "Keterangan kapan setiap fase proyek akan selesai merupakan komponen Project Charter bagian...",
+    "options": [
+      {
+        "text": "Problem Statement",
+        "isCorrect": false,
+        "rationale": "Deskripsi masalah terukur."
+      },
+      {
+        "text": "Business Case",
+        "isCorrect": false,
+        "rationale": "Kelayakan bisnis."
+      },
+      {
+        "text": "Goal Statement",
+        "isCorrect": false,
+        "rationale": "Target performa."
+      },
+      {
+        "text": "Timeline",
+        "isCorrect": true,
+        "rationale": "Timeline / Milestone Schedule mendeskripsikan jadwal kasar target penyelesaian fase-fase penting."
+      },
+      {
+        "text": "Team Members",
+        "isCorrect": false,
+        "rationale": "Daftar personil."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p4_q4",
+    "type": "pertemuan",
+    "pertemuan": 4,
+    "category": "Latihan Pertemuan 4",
+    "question": "Definisi tentang apa saja yang termasuk di dalam dan di luar batas proyek (in and out of boundaries) adalah bagian dari...",
+    "options": [
+      {
+        "text": "Problem Statement",
+        "isCorrect": false,
+        "rationale": "Deskripsi kendala utama."
+      },
+      {
+        "text": "Business Case",
+        "isCorrect": false,
+        "rationale": "Kelayakan ekonomi."
+      },
+      {
+        "text": "Goal Statement",
+        "isCorrect": false,
+        "rationale": "Target proyek."
+      },
+      {
+        "text": "Scope",
+        "isCorrect": true,
+        "rationale": "Scope (ruang lingkup) mendefinisikan apa yang dikerjakan (in-scope) dan apa yang tidak dikerjakan (out-of-scope)."
+      },
+      {
+        "text": "Team Members",
+        "isCorrect": false,
+        "rationale": "Daftar personil."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p4_q5",
+    "type": "pertemuan",
+    "pertemuan": 4,
+    "category": "Latihan Pertemuan 4",
+    "question": "Project Charter dirancang dan disetujui secara resmi pada tahap...",
+    "options": [
+      {
+        "text": "Closing Project",
+        "isCorrect": false,
+        "rationale": "Ini tahap penutupan."
+      },
+      {
+        "text": "Planning Project",
+        "isCorrect": false,
+        "rationale": "Ini tahap perancangan rencana."
+      },
+      {
+        "text": "Executing Project",
+        "isCorrect": false,
+        "rationale": "Ini tahap pelaksanaan."
+      },
+      {
+        "text": "Controlling Project",
+        "isCorrect": false,
+        "rationale": "Ini tahap pengendalian."
+      },
+      {
+        "text": "Initiating Project",
+        "isCorrect": true,
+        "rationale": "Project Charter dibuat dan disetujui pada kelompok proses inisiasi (Initiating) untuk meresmikan proyek."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q1",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "Secara umum, terdapat berapa tahapan/kategori utama dalam tools & techniques estimasi biaya (Cost Estimation)?",
+    "options": [
+      {
+        "text": "ada 7 tahapan",
+        "isCorrect": false,
+        "rationale": "Terlalu banyak."
+      },
+      {
+        "text": "ada 6 tahapan",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "ada 5 tahapan",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "ada 4 tahapan",
+        "isCorrect": true,
+        "rationale": "Umumnya diklasifikasikan ke dalam 4 metode utama: Analogous, Parametric, Bottom-up, dan Three-point Estimating."
+      },
+      {
+        "text": "ada 3 tahapan",
+        "isCorrect": false,
+        "rationale": "Terlalu sedikit."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q2",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "Dalam Earned Value Management, deviasi/masalah kinerja biaya dan jadwal terindikasi apabila...",
+    "options": [
+      {
+        "text": "CPI dan SPI ≥ 100%",
+        "isCorrect": false,
+        "rationale": "Ini berarti performa sangat baik (hemat dan cepat)."
+      },
+      {
+        "text": "CPI dan SPI ≤ 100%",
+        "isCorrect": true,
+        "rationale": "CPI dan SPI kurang dari 100% (atau < 1.0) menunjukkan bahwa proyek mengalami keborosan anggaran dan keterlambatan jadwal."
+      },
+      {
+        "text": "CPI dan SPI = 100%",
+        "isCorrect": false,
+        "rationale": "Ini berarti performa tepat sasaran."
+      },
+      {
+        "text": "CPI dan SPI < 0",
+        "isCorrect": false,
+        "rationale": "Indeks performa tidak mungkin bernilai negatif."
+      },
+      {
+        "text": "CPI dan SPI ÷ 100%",
+        "isCorrect": false,
+        "rationale": "Ini bukan ekspresi perbandingan matematis."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q3",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "Biaya total (baik langsung maupun tidak langsung) yang dihabiskan untuk menyelesaikan pekerjaan hingga tanggal evaluasi disebut...",
+    "options": [
+      {
+        "text": "Actual Cost (AC)",
+        "isCorrect": true,
+        "rationale": "Actual Cost (AC) adalah total biaya yang benar-benar dikeluarkan untuk menyelesaikan pekerjaan proyek."
+      },
+      {
+        "text": "Planned Value (PV)",
+        "isCorrect": false,
+        "rationale": "Planned Value adalah anggaran rencana awal."
+      },
+      {
+        "text": "Schedule Variance (SV)",
+        "isCorrect": false,
+        "rationale": "Schedule Variance adalah penyimpangan jadwal."
+      },
+      {
+        "text": "Earned Value (EV)",
+        "isCorrect": false,
+        "rationale": "Earned Value adalah nilai hasil kerja aktual."
+      },
+      {
+        "text": "Cost Variance (CV)",
+        "isCorrect": false,
+        "rationale": "Cost Variance adalah penyimpangan biaya."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q4",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "Rencana porsi total estimasi biaya yang disetujui untuk dikeluarkan pada sebuah aktivitas tertentu disebut...",
+    "options": [
+      {
+        "text": "Actual Cost (AC)",
+        "isCorrect": false,
+        "rationale": "Biaya aktual pengeluaran."
+      },
+      {
+        "text": "Planned Value (PV)",
+        "isCorrect": true,
+        "rationale": "Planned Value (PV) / BCWS adalah rencana anggaran yang dialokasikan untuk menyelesaikan suatu tugas sesuai jadwal."
+      },
+      {
+        "text": "Schedule Variance (SV)",
+        "isCorrect": false,
+        "rationale": "Penyimpangan jadwal."
+      },
+      {
+        "text": "Earned Value (EV)",
+        "isCorrect": false,
+        "rationale": "Nilai kerja yang dihasilkan."
+      },
+      {
+        "text": "Cost Variance (CV)",
+        "isCorrect": false,
+        "rationale": "Penyimpangan biaya."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q5",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "Metode analisis untuk menghitung waktu yang dibutuhkan untuk mengembalikan investasi awal proyek disebut...",
+    "options": [
+      {
+        "text": "Payback Period",
+        "isCorrect": true,
+        "rationale": "Payback Period mengukur durasi waktu pengembalian modal investasi awal."
+      },
+      {
+        "text": "Net Present Value",
+        "isCorrect": false,
+        "rationale": "NPV mengukur nilai bersih arus kas saat ini."
+      },
+      {
+        "text": "Return On Investment",
+        "isCorrect": false,
+        "rationale": "ROI mengukur persentase rasio pengembalian."
+      },
+      {
+        "text": "Internal Rate of Return",
+        "isCorrect": false,
+        "rationale": "IRR mengukur tingkat pengembalian bunga internal."
+      },
+      {
+        "text": "Cost Variance",
+        "isCorrect": false,
+        "rationale": "Penyimpangan biaya."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p6_q1",
+    "type": "pertemuan",
+    "pertemuan": 6,
+    "category": "Latihan Pertemuan 6",
+    "question": "Bidang pengetahuan Project Human Resources Management dalam terminologi Indonesia diterjemahkan sebagai...",
+    "options": [
+      {
+        "text": "Manajemen Risiko",
+        "isCorrect": false,
+        "rationale": "Project Risk Management."
+      },
+      {
+        "text": "Manajemen Pemangku Kepentingan",
+        "isCorrect": false,
+        "rationale": "Project Stakeholder Management."
+      },
+      {
+        "text": "Manajemen Komunikasi",
+        "isCorrect": false,
+        "rationale": "Project Communication Management."
+      },
+      {
+        "text": "Manajemen Pengadaan",
+        "isCorrect": false,
+        "rationale": "Project Procurement Management."
+      },
+      {
+        "text": "Manajemen Sumber Daya Manusia",
+        "isCorrect": true,
+        "rationale": "Project Human Resources Management diterjemahkan menjadi Manajemen Sumber Daya Manusia."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p6_q2",
+    "type": "pertemuan",
+    "pertemuan": 6,
+    "category": "Latihan Pertemuan 6",
+    "question": "Sumber daya proyek (Resource) yang terdiri dari manusia, material, mesin-mesin, dan metode kerja dikelola di dalam...",
+    "options": [
+      {
+        "text": "proses",
+        "isCorrect": false,
+        "rationale": "Proses adalah alur aktivitas."
+      },
+      {
+        "text": "Manajemen",
+        "isCorrect": false,
+        "rationale": "Manajemen adalah proses pengelolaan umum."
+      },
+      {
+        "text": "Proyek",
+        "isCorrect": true,
+        "rationale": "Seluruh sumber daya (5M) dialokasikan dan dikonsumsi di dalam pengerjaan Proyek (Project)."
+      },
+      {
+        "text": "Inisiasi",
+        "isCorrect": false,
+        "rationale": "Tahap awal otorisasi."
+      },
+      {
+        "text": "Anggaran",
+        "isCorrect": false,
+        "rationale": "Batas pengeluaran keuangan."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p6_q3",
+    "type": "pertemuan",
+    "pertemuan": 6,
+    "category": "Latihan Pertemuan 6",
+    "question": "Manakah pernyataan di bawah ini yang paling tepat mendefinisikan peran Manajer Proyek?",
+    "options": [
+      {
+        "text": "Seseorang yang ditunjuk atau ditetapkan untuk bertanggungjawab terhadap kegiatan harian pengelolaan proyek untuk kepentingan proyek",
+        "isCorrect": true,
+        "rationale": "Definisi formal PM adalah individu yang bertanggung jawab atas kesuksesan pengelolaan proyek sehari-hari."
+      },
+      {
+        "text": "Seseorang yang memiliki sertifikat PMP saja",
+        "isCorrect": false,
+        "rationale": "Sertifikasi adalah kualifikasi pendukung, bukan definisi peran."
+      },
+      {
+        "text": "Seseorang yang berpengalaman minimal 2 tahun dalam menangani proyek",
+        "isCorrect": false,
+        "rationale": "Pengalaman adalah kualifikasi, bukan definisi peran."
+      },
+      {
+        "text": "Seseorang yang mendanai proyek",
+        "isCorrect": false,
+        "rationale": "Itu adalah peran Sponsor Proyek."
+      },
+      {
+        "text": "Seseorang yang memiliki latar belakang pendidikan khusus TI",
+        "isCorrect": false,
+        "rationale": "Latar belakang pendidikan bervariasi."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p6_q4",
+    "type": "pertemuan",
+    "pertemuan": 6,
+    "category": "Latihan Pertemuan 6",
+    "question": "Struktur organisasi proyek di mana tim proyek dipisahkan secara mandiri dan Manajer Proyek mempunyai otoritas penuh adalah...",
+    "options": [
+      {
+        "text": "OP. Fungsional",
+        "isCorrect": false,
+        "rationale": "Otoritas PM sangat rendah."
+      },
+      {
+        "text": "OP. Matriks",
+        "isCorrect": false,
+        "rationale": "Otoritas terbagi dengan fungsional."
+      },
+      {
+        "text": "OP. Area",
+        "isCorrect": false,
+        "rationale": "Bukan jenis struktur organisasi PMBOK."
+      },
+      {
+        "text": "OP. Murni",
+        "isCorrect": true,
+        "rationale": "Organisasi Proyek Murni (Projectized) memberikan kontrol dan otoritas 100% kepada Manajer Proyek atas tim proyek."
+      },
+      {
+        "text": "OP. Strategis",
+        "isCorrect": false,
+        "rationale": "Bukan jenis organisasi formal PMBOK."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p6_q5",
+    "type": "pertemuan",
+    "pertemuan": 6,
+    "category": "Latihan Pertemuan 6",
+    "question": "Struktur organisasi yang stafnya dikelompokkan menurut fungsinya (seperti Keuangan, Pemasaran, TI) dengan konsep otoritas vertikal adalah...",
+    "options": [
+      {
+        "text": "OP. Fungsional",
+        "isCorrect": true,
+        "rationale": "Organisasi Fungsional didasarkan pada pembagian divisi keahlian fungsional secara vertikal."
+      },
+      {
+        "text": "OP. Matriks",
+        "isCorrect": false,
+        "rationale": "Memiliki struktur komando ganda."
+      },
+      {
+        "text": "OP. Murni",
+        "isCorrect": false,
+        "rationale": "Didominasi oleh proyek."
+      },
+      {
+        "text": "OP. Area",
+        "isCorrect": false,
+        "rationale": "Pembagian regional."
+      },
+      {
+        "text": "OP. Strategis",
+        "isCorrect": false,
+        "rationale": "Orientasi jangka panjang."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p9_q1",
+    "type": "pertemuan",
+    "pertemuan": 9,
+    "category": "Latihan Pertemuan 9",
+    "question": "Di beberapa perusahaan, nama departemen/divisi yang bertanggung jawab terhadap pengadaan barang dan jasa adalah...",
+    "options": [
+      {
+        "text": "Departemen Administrasi",
+        "isCorrect": false,
+        "rationale": "Mengurusi berkas umum."
+      },
+      {
+        "text": "Departemen Pembelian",
+        "isCorrect": true,
+        "rationale": "Purchasing / Procurement Department dikenal juga sebagai Departemen Pembelian."
+      },
+      {
+        "text": "Departemen Penjualan",
+        "isCorrect": false,
+        "rationale": "Sales Department."
+      },
+      {
+        "text": "Departemen Inventori",
+        "isCorrect": false,
+        "rationale": "Mengurusi stok gudang."
+      },
+      {
+        "text": "Departemen Pemasaran",
+        "isCorrect": false,
+        "rationale": "Marketing Department."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p9_q2",
+    "type": "pertemuan",
+    "pertemuan": 9,
+    "category": "Latihan Pertemuan 9",
+    "question": "Bidang pengetahuan yang mengatur tata cara pembelian barang/jasa dari pihak ketiga di luar tim proyek adalah...",
+    "options": [
+      {
+        "text": "Project Quality Management",
+        "isCorrect": false,
+        "rationale": "Manajemen kualitas."
+      },
+      {
+        "text": "Project Human Resources Management",
+        "isCorrect": false,
+        "rationale": "Manajemen SDM."
+      },
+      {
+        "text": "Project Risk Management",
+        "isCorrect": false,
+        "rationale": "Manajemen risiko."
+      },
+      {
+        "text": "Project Procurement Management",
+        "isCorrect": true,
+        "rationale": "Project Procurement Management mengatur hubungan akuisisi barang/jasa dari eksternal."
+      },
+      {
+        "text": "Project Communication Management",
+        "isCorrect": false,
+        "rationale": "Manajemen komunikasi."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p9_q3",
+    "type": "pertemuan",
+    "pertemuan": 9,
+    "category": "Latihan Pertemuan 9",
+    "question": "Risiko yang timbul sehubungan dengan batasan eksternal yang dibebankan oleh manajemen atau pasar merupakan kategori risiko berdasarkan...",
+    "options": [
+      {
+        "text": "Ukuran produk",
+        "isCorrect": false,
+        "rationale": "Risiko teknis ukuran produk."
+      },
+      {
+        "text": "Pengaruh bisnis",
+        "isCorrect": true,
+        "rationale": "Business Impact (Pengaruh Bisnis) mencakup kendala pasar, keuangan, atau batasan kebijakan manajemen."
+      },
+      {
+        "text": "Karakteristik pelanggan",
+        "isCorrect": false,
+        "rationale": "Risiko terkait sifat klien."
+      },
+      {
+        "text": "Definisi proses",
+        "isCorrect": false,
+        "rationale": "Risiko terkait metodologi pengerjaan."
+      },
+      {
+        "text": "Lingkungan pengembangan",
+        "isCorrect": false,
+        "rationale": "Risiko terkait IDE/alat."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p9_q4",
+    "type": "pertemuan",
+    "pertemuan": 9,
+    "category": "Latihan Pertemuan 9",
+    "question": "Dokumen resmi BSI menyebutkan bahwa Project Procurement Management memiliki kaitan erat dengan pengadaan barang. Proses awalnya dimulai dari...",
+    "options": [
+      {
+        "text": "Conduct Procurements",
+        "isCorrect": false,
+        "rationale": "Proses pelaksanaan pengadaan."
+      },
+      {
+        "text": "Control Procurements",
+        "isCorrect": false,
+        "rationale": "Proses pengawasan pengadaan."
+      },
+      {
+        "text": "Close Procurements",
+        "isCorrect": false,
+        "rationale": "Proses penutupan pengadaan."
+      },
+      {
+        "text": "Plan Procurement Management",
+        "isCorrect": true,
+        "rationale": "Sesuai standar PMBOK, setiap area pengetahuan dimulai dengan perencanaan (Plan Procurement Management)."
+      },
+      {
+        "text": "Make-or-Buy Analysis",
+        "isCorrect": false,
+        "rationale": "Ini adalah teknik, bukan sub-proses utama."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p9_q5",
+    "type": "pertemuan",
+    "pertemuan": 9,
+    "category": "Latihan Pertemuan 9",
+    "question": "Berdasarkan PMBOK Edisi 5, berapakah jumlah sub-proses yang ada di dalam Project Risk Management?",
+    "options": [
+      {
+        "text": "6 Proses",
+        "isCorrect": true,
+        "rationale": "Memiliki 6 proses: Plan Risk Management, Identify Risks, Perform Qualitative Risk Analysis, Perform Quantitative Risk Analysis, Plan Risk Responses, dan Control Risks."
+      },
+      {
+        "text": "8 Proses",
+        "isCorrect": false,
+        "rationale": "Terlalu banyak."
+      },
+      {
+        "text": "10 Proses",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "11 Proses",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "12 Proses",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p10_q1",
+    "type": "pertemuan",
+    "pertemuan": 10,
+    "category": "Latihan Pertemuan 10",
+    "question": "Dalam konteks siklus hidup proyek (PLC), pelaksanaan fase SDLC (coding dan testing) secara fisik dilakukan pada kelompok proses...",
+    "options": [
+      {
+        "text": "Initiating",
+        "isCorrect": false,
+        "rationale": "Inisiasi proyek."
+      },
+      {
+        "text": "Planning",
+        "isCorrect": false,
+        "rationale": "Perancangan rencana."
+      },
+      {
+        "text": "Executing",
+        "isCorrect": true,
+        "rationale": "Pekerjaan konstruksi sistem secara fisik dikerjakan pada kelompok proses pelaksanaan (Executing)."
+      },
+      {
+        "text": "Monitor & Controlling",
+        "isCorrect": false,
+        "rationale": "Pengawasan deviasi."
+      },
+      {
+        "text": "Closing",
+        "isCorrect": false,
+        "rationale": "Penutupan dan serah terima."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p10_q2",
+    "type": "pertemuan",
+    "pertemuan": 10,
+    "category": "Latihan Pertemuan 10",
+    "question": "Fase SDLC yang berkonsentrasi pada bagaimana sistem dibangun untuk memenuhi spesifikasi kebutuhan pengguna adalah...",
+    "options": [
+      {
+        "text": "Analisis",
+        "isCorrect": false,
+        "rationale": "Analisis berfokus pada 'apa' kebutuhan pengguna."
+      },
+      {
+        "text": "Design",
+        "isCorrect": true,
+        "rationale": "Design (Perancangan) berfokus pada arsitektur, interface, dan spesifikasi 'bagaimana' sistem akan diimplementasikan."
+      },
+      {
+        "text": "Implementasi",
+        "isCorrect": false,
+        "rationale": "Implementasi berfokus pada coding dan deployment."
+      },
+      {
+        "text": "Planning",
+        "isCorrect": false,
+        "rationale": "Perencanaan kebutuhan bisnis awal."
+      },
+      {
+        "text": "Maintenance",
+        "isCorrect": false,
+        "rationale": "Pemeliharaan setelah sistem aktif."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p10_q3",
+    "type": "pertemuan",
+    "pertemuan": 10,
+    "category": "Latihan Pertemuan 10",
+    "question": "Istilah formal untuk siklus hidup proyek secara keseluruhan adalah...",
+    "options": [
+      {
+        "text": "DAD",
+        "isCorrect": false,
+        "rationale": "Data Flow Diagram (DFD/DAD)."
+      },
+      {
+        "text": "PERT",
+        "isCorrect": false,
+        "rationale": "Tiga titik estimasi."
+      },
+      {
+        "text": "SDLC",
+        "isCorrect": false,
+        "rationale": "Siklus hidup pengembangan software."
+      },
+      {
+        "text": "PLC",
+        "isCorrect": true,
+        "rationale": "PLC stands for Project Life Cycle (Siklus Hidup Proyek)."
+      },
+      {
+        "text": "PDM",
+        "isCorrect": false,
+        "rationale": "Metode diagram jaringan kerja."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p10_q4",
+    "type": "pertemuan",
+    "pertemuan": 10,
+    "category": "Latihan Pertemuan 10",
+    "question": "Metode konversi sistem di mana sistem lama langsung dihentikan dan sistem baru seketika diaktifkan sepenuhnya disebut...",
+    "options": [
+      {
+        "text": "Percontohan",
+        "isCorrect": false,
+        "rationale": "Konversi pilot (hanya di satu divisi)."
+      },
+      {
+        "text": "Serentak",
+        "isCorrect": true,
+        "rationale": "Konversi serentak (direct cutover/conversion) mengganti sistem lama secara instan. Cepat namun berisiko tinggi."
+      },
+      {
+        "text": "Bertahap",
+        "isCorrect": false,
+        "rationale": "Konversi bertahap per modul."
+      },
+      {
+        "text": "Paralel",
+        "isCorrect": false,
+        "rationale": "Menjalankan kedua sistem bersamaan."
+      },
+      {
+        "text": "Offline",
+        "isCorrect": false,
+        "rationale": "Bukan tipe konversi SDLC."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p10_q5",
+    "type": "pertemuan",
+    "pertemuan": 10,
+    "category": "Latihan Pertemuan 10",
+    "question": "Analisis kelayakan untuk menguji batasan waktu penyusunan sistem terhadap tenggat waktu (deadline) proyek termasuk dimensi kelayakan...",
+    "options": [
+      {
+        "text": "Teknik",
+        "isCorrect": false,
+        "rationale": "Menguji kemampuan teknologi."
+      },
+      {
+        "text": "Pengembalian Teknik",
+        "isCorrect": false,
+        "rationale": "Bukan istilah standar kelayakan."
+      },
+      {
+        "text": "Non-ekonomis",
+        "isCorrect": false,
+        "rationale": "Kelayakan sosial/hukum."
+      },
+      {
+        "text": "Hukum",
+        "isCorrect": false,
+        "rationale": "Menguji aspek regulasi."
+      },
+      {
+        "text": "Jadwal",
+        "isCorrect": true,
+        "rationale": "Kelayakan jadwal (schedule feasibility) menilai apakah proyek sistem dapat selesai dalam batas waktu yang ditentukan."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p14_q1",
+    "type": "pertemuan",
+    "pertemuan": 14,
+    "category": "Latihan Pertemuan 14",
+    "question": "Project Management Plan (PMP) dibuat oleh ... dan ditandatangani oleh ... sebagai dasar baseline proyek.",
+    "options": [
+      {
+        "text": "Project Manager, Key Stakeholder",
+        "isCorrect": true,
+        "rationale": "PMP dirancang oleh Manajer Proyek (PM) dan disetujui secara tertulis oleh Pemangku Kepentingan Kunci (Key Stakeholders)."
+      },
+      {
+        "text": "Multi value, Manager",
+        "isCorrect": false,
+        "rationale": "Bukan istilah resmi."
+      },
+      {
+        "text": "Owner, stakeholder",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "Stakeholder, manager",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "Manajer, project baseline",
+        "isCorrect": false,
+        "rationale": "Bukan pihak penandatangan."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p14_q2",
+    "type": "pertemuan",
+    "pertemuan": 14,
+    "category": "Latihan Pertemuan 14",
+    "question": "Scope baseline (Acuan Ruang Lingkup) di dalam rencana manajemen proyek terdiri atas dokumen...",
+    "options": [
+      {
+        "text": "Scope baseline",
+        "isCorrect": true,
+        "rationale": "Scope baseline memuat tiga komponen resmi: Project Scope Statement, WBS, dan WBS Dictionary."
+      },
+      {
+        "text": "Estimasi baseline",
+        "isCorrect": false,
+        "rationale": "Bukan komponen ruang lingkup."
+      },
+      {
+        "text": "Cost baseline",
+        "isCorrect": false,
+        "rationale": "Baseline biaya."
+      },
+      {
+        "text": "Schedule baseline",
+        "isCorrect": false,
+        "rationale": "Baseline jadwal."
+      },
+      {
+        "text": "Plan",
+        "isCorrect": false,
+        "rationale": "Rencana umum."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p14_q3",
+    "type": "pertemuan",
+    "pertemuan": 14,
+    "category": "Latihan Pertemuan 14",
+    "question": "Untuk menyederhanakan formulasi pengerjaan rencana manajemen proyek, kita dapat merangkum isinya menggunakan konsep...",
+    "options": [
+      {
+        "text": "4 W dan 1 H",
+        "isCorrect": false,
+        "rationale": "Kurang lengkap."
+      },
+      {
+        "text": "3 W dan 2 H",
+        "isCorrect": false,
+        "rationale": "Kurang lengkap."
+      },
+      {
+        "text": "2 W dan 3 H",
+        "isCorrect": false,
+        "rationale": "Kurang lengkap."
+      },
+      {
+        "text": "1 W dan 4 H",
+        "isCorrect": false,
+        "rationale": "Kurang lengkap."
+      },
+      {
+        "text": "5 W",
+        "isCorrect": true,
+        "rationale": "Modul BSI merangkum penyederhanaan PMP dengan 5 W: Who, What, When, Where, Why."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p14_q4",
+    "type": "pertemuan",
+    "pertemuan": 14,
+    "category": "Latihan Pertemuan 14",
+    "question": "Rencana Manajemen Proyek (Project Management Plan) ditandatangani untuk mendapatkan otorisasi oleh...",
+    "options": [
+      {
+        "text": "Manajer Proyek",
+        "isCorrect": false,
+        "rationale": "Manajer proyek adalah pembuat dokumen."
+      },
+      {
+        "text": "Key Stakeholder",
+        "isCorrect": true,
+        "rationale": "Key Stakeholder (termasuk Sponsor/Klien) menandatanganinya untuk menetapkan baseline formal."
+      },
+      {
+        "text": "Programmer",
+        "isCorrect": false,
+        "rationale": "Programmer bertindak sebagai pelaksana teknis."
+      },
+      {
+        "text": "Analys System",
+        "isCorrect": false,
+        "rationale": "Analis sistem bertindak sebagai desainer SI."
+      },
+      {
+        "text": "Team Proyek",
+        "isCorrect": false,
+        "rationale": "Tim proyek melaksanakan rencana."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p14_q5",
+    "type": "pertemuan",
+    "pertemuan": 14,
+    "category": "Latihan Pertemuan 14",
+    "question": "Paket acuan baseline ruang lingkup (Scope Baseline) terdiri atas komponen berikut, kecuali...",
+    "options": [
+      {
+        "text": "Schedule Baseline",
+        "isCorrect": true,
+        "rationale": "Schedule Baseline adalah acuan jadwal pengerjaan, terpisah dari Scope Baseline."
+      },
+      {
+        "text": "Project Scope Statement",
+        "isCorrect": false,
+        "rationale": "Merupakan bagian dari Scope Baseline."
+      },
+      {
+        "text": "WBS",
+        "isCorrect": false,
+        "rationale": "Merupakan bagian dari Scope Baseline."
+      },
+      {
+        "text": "WBS Dictionary",
+        "isCorrect": false,
+        "rationale": "Merupakan bagian dari Scope Baseline."
+      },
+      {
+        "text": "Opsi b, c dan d benar",
+        "isCorrect": false,
+        "rationale": "Opsi b, c, dan d memang bagian dari Scope Baseline, sehingga yang 'kecuali' adalah Schedule Baseline."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q1",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Pengertian manajemen adalah teknik untuk mencapai tujuan, menurut pendapat ahli...",
+    "options": [
+      {
+        "text": "Imam Heryanto",
+        "isCorrect": false,
+        "rationale": "Imam Heryanto adalah penulis buku MPSI Indonesia."
+      },
+      {
+        "text": "Totok Triwibowo",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "Tery & Stoner S Fayol",
+        "isCorrect": false,
+        "rationale": "Menekankan pada fungsi manajemen POAC."
+      },
+      {
+        "text": "Jogihanto",
+        "isCorrect": false,
+        "rationale": "Jogiyanto menulis buku analisis & desain sistem."
+      },
+      {
+        "text": "Peterson & Plowman",
+        "isCorrect": true,
+        "rationale": "Peterson dan Plowman menyatakan manajemen adalah teknik untuk mencapai tujuan kelompok tertentu."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q2",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Aktivitas yang bersifat temporer (sementara), selalu ada pembatasan dalam pelaksanaan dan juga skalanya disebut...",
+    "options": [
+      {
+        "text": "Proyek",
+        "isCorrect": true,
+        "rationale": "Proyek bersifat temporer (ada awal dan akhir) serta dibatasi oleh triple constraints (skala/scope, biaya, waktu)."
+      },
+      {
+        "text": "Manajemen",
+        "isCorrect": false,
+        "rationale": "Manajemen adalah proses pengelolaannya."
+      },
+      {
+        "text": "Sistem",
+        "isCorrect": false,
+        "rationale": "Sistem adalah kumpulan elemen yang saling berinteraksi."
+      },
+      {
+        "text": "Informasi",
+        "isCorrect": false,
+        "rationale": "Informasi adalah data yang diolah."
+      },
+      {
+        "text": "Data",
+        "isCorrect": false,
+        "rationale": "Data adalah fakta mentah."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q3",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Kumpulan lengkap pekerjaan, teknik, serta perangkat yang diaplikasikan selama pelaksanaan proyek disebut...",
+    "options": [
+      {
+        "text": "Proyek",
+        "isCorrect": false,
+        "rationale": "Proyek adalah usahanya."
+      },
+      {
+        "text": "Manajemen",
+        "isCorrect": false,
+        "rationale": "Manajemen adalah koordinasi umum."
+      },
+      {
+        "text": "Sistem",
+        "isCorrect": false,
+        "rationale": "Sistem adalah struktur interaksi."
+      },
+      {
+        "text": "Manajemen Proyek",
+        "isCorrect": true,
+        "rationale": "Manajemen Proyek mengaplikasikan pengetahuan, keterampilan, alat (tools), dan teknik untuk memenuhi kebutuhan proyek."
+      },
+      {
+        "text": "Informasi",
+        "isCorrect": false,
+        "rationale": "Informasi adalah output pengolahan data."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q4",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Suatu cara yang terorganisasi untuk mengumpulkan, input, proses, simpan, mengontrol data dan melaporkannya untuk mencapai tujuan disebut...",
+    "options": [
+      {
+        "text": "Proyek",
+        "isCorrect": false,
+        "rationale": "Usaha unik sementara."
+      },
+      {
+        "text": "Sistem Informasi",
+        "isCorrect": true,
+        "rationale": "Sistem Informasi adalah kombinasi terorganisir untuk mengolah data menjadi informasi bermanfaat bagi tujuan organisasi."
+      },
+      {
+        "text": "Sistem",
+        "isCorrect": false,
+        "rationale": "Kumpulan komponen umum."
+      },
+      {
+        "text": "Manajemen Proyek",
+        "isCorrect": false,
+        "rationale": "Metode mengelola proyek."
+      },
+      {
+        "text": "Informasi",
+        "isCorrect": false,
+        "rationale": "Data hasil pemrosesan."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q5",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Faktor terpenting dan pilar utama dalam model kematangan PM-CMM (People Management CMM) adalah...",
+    "options": [
+      {
+        "text": "Proses",
+        "isCorrect": false,
+        "rationale": "Proses adalah alur kerja."
+      },
+      {
+        "text": "Manusia",
+        "isCorrect": true,
+        "rationale": "People CMM (PM-CMM) berfokus pada peningkatan kemampuan manusia (human capital/people) dalam organisasi."
+      },
+      {
+        "text": "Sistem",
+        "isCorrect": false,
+        "rationale": "Sistem adalah infrastruktur pendukung."
+      },
+      {
+        "text": "Produk",
+        "isCorrect": false,
+        "rationale": "Produk adalah hasil kerja."
+      },
+      {
+        "text": "Informasi",
+        "isCorrect": false,
+        "rationale": "Informasi adalah data pendukung keputusan."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q6",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Manakah di bawah ini yang merupakan penyebab kegagalan proyek?",
+    "options": [
+      {
+        "text": "Implementasi tidak sesuai jadwal",
+        "isCorrect": false,
+        "rationale": "Ini adalah salah satu penyebab kegagalan."
+      },
+      {
+        "text": "Menghasilkan sesuatu yang baru",
+        "isCorrect": false,
+        "rationale": "Ini adalah tujuan umum proyek."
+      },
+      {
+        "text": "Terdiri dari sumber-sumber daya",
+        "isCorrect": false,
+        "rationale": "Ini adalah sifat dasar pengerjaan."
+      },
+      {
+        "text": "Sistem tidak efektif",
+        "isCorrect": false,
+        "rationale": "Ini juga salah satu penyebab kegagalan."
+      },
+      {
+        "text": "point a dan d benar",
+        "isCorrect": true,
+        "rationale": "Kedua hal tersebut (jadwal meleset dan sistem tidak efektif) adalah penyebab utama proyek gagal."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q7",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Yang merupakan batasan/wilayah bisnis sebuah proyek (boundaries) disebut...",
+    "options": [
+      {
+        "text": "Scope Proyek",
+        "isCorrect": true,
+        "rationale": "Scope (ruang lingkup) proyek mendefinisikan batasan wilayah kerja bisnis proyek."
+      },
+      {
+        "text": "Metode Proyek",
+        "isCorrect": false,
+        "rationale": "Metode adalah cara pengerjaan."
+      },
+      {
+        "text": "Tujuan Proyek",
+        "isCorrect": false,
+        "rationale": "Tujuan adalah hasil akhir."
+      },
+      {
+        "text": "Manajemen Proyek",
+        "isCorrect": false,
+        "rationale": "Sistem pengelolaan proyek."
+      },
+      {
+        "text": "Sponsor Proyek",
+        "isCorrect": false,
+        "rationale": "Pemberi dana."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q8",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Lima unsur pertanyaan penting terkait sumber daya/batasan proyek (Quintuple Constraints) meliputi...",
+    "options": [
+      {
+        "text": "Input, Output, Proses, Tujuan, Produk",
+        "isCorrect": false,
+        "rationale": "Ini elemen sistem."
+      },
+      {
+        "text": "Produk, Kualitas, Biaya, Waktu, Sumber Daya",
+        "isCorrect": true,
+        "rationale": "Merupakan lima batasan dasar proyek: Scope (Product), Quality, Cost, Time, dan Resources."
+      },
+      {
+        "text": "Input, Output, Proses, Produk, Sumber Daya",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "Produk, Kualitas, Biaya, Proses, Tujuan",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "Jadwal, Input, Proses, Output, Implementasi",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q9",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "People (Manusia), Services (Layanan), Facilities (Fasilitas), Supplies (Suplai), dan Money (Uang) terkait dengan...",
+    "options": [
+      {
+        "text": "Sumber Proyek",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "Sumber Sistem",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "Sumber Daya",
+        "isCorrect": true,
+        "rationale": "Ini adalah klasifikasi kategori Sumber Daya (Resources) dalam manajemen proyek."
+      },
+      {
+        "text": "Sumber Manajemen",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "Sumber Informasi",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q10",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Termasuk semua ruangan, infrastruktur, dan teknologi yang diperlukan untuk menyelesaikan sebuah proyek dikelompokkan ke dalam...",
+    "options": [
+      {
+        "text": "People",
+        "isCorrect": false,
+        "rationale": "Tenaga kerja manusia."
+      },
+      {
+        "text": "Services",
+        "isCorrect": false,
+        "rationale": "Layanan pihak ketiga."
+      },
+      {
+        "text": "Money",
+        "isCorrect": false,
+        "rationale": "Sumber daya finansial."
+      },
+      {
+        "text": "Facilities & Equipment",
+        "isCorrect": true,
+        "rationale": "Ruangan, lab, komputer, server, dan lisensi masuk dalam Facilities & Equipment."
+      },
+      {
+        "text": "Supplies & Materials",
+        "isCorrect": false,
+        "rationale": "Barang habis pakai."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q11",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Tanggung jawab pengelolaan proyek didelegasikan secara formal oleh organisasi kepada...",
+    "options": [
+      {
+        "text": "Team Proyek",
+        "isCorrect": false,
+        "rationale": "Tim proyek melaksanakan pekerjaan teknis."
+      },
+      {
+        "text": "Sistem Analis",
+        "isCorrect": false,
+        "rationale": "Analis merancang spesifikasi sistem."
+      },
+      {
+        "text": "Designer",
+        "isCorrect": false,
+        "rationale": "Mendesain UI/UX atau database."
+      },
+      {
+        "text": "Sumber Daya",
+        "isCorrect": false,
+        "rationale": "Sumber daya dikonsumsi oleh proyek."
+      },
+      {
+        "text": "Manager Proyek",
+        "isCorrect": true,
+        "rationale": "Tanggung jawab harian dan wewenang pengelolaan didelegasikan kepada Manajer Proyek (Project Manager)."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q12",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Setiap pemangku kepentingan (Stakeholder) mempunyai kepentingan atau keterlibatan langsung di dalam...",
+    "options": [
+      {
+        "text": "Sistem",
+        "isCorrect": false,
+        "rationale": "Sistem adalah alat."
+      },
+      {
+        "text": "Bisnis",
+        "isCorrect": false,
+        "rationale": "Bisnis adalah organisasi umum."
+      },
+      {
+        "text": "Proyek",
+        "isCorrect": true,
+        "rationale": "Stakeholder didefinisikan memiliki keterlibatan, pengaruh, atau kepemilikan kepentingan di dalam Proyek (Project)."
+      },
+      {
+        "text": "Pasukan",
+        "isCorrect": false,
+        "rationale": "Bukan istilah manajemen."
+      },
+      {
+        "text": "Jadwal",
+        "isCorrect": false,
+        "rationale": "Jadwal adalah elemen proyek."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q13",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Penerapan alat (tools), teknik, dan metode manajemen proyek diterapkan di dalam 10 area yang disebut...",
+    "options": [
+      {
+        "text": "Bisnis Area",
+        "isCorrect": false,
+        "rationale": "Fokus pemasaran/operasional."
+      },
+      {
+        "text": "Knowledge Area",
+        "isCorrect": true,
+        "rationale": "Tools dan teknik diaplikasikan pada 10 Knowledge Area (Area Pengetahuan) manajemen proyek."
+      },
+      {
+        "text": "Scope Area",
+        "isCorrect": false,
+        "rationale": "Hanya satu dari 10 area."
+      },
+      {
+        "text": "Sistem Area",
+        "isCorrect": false,
+        "rationale": "Bukan istilah PMBOK."
+      },
+      {
+        "text": "Plant Area",
+        "isCorrect": false,
+        "rationale": "Fokus manufaktur fisik."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q14",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Kelompok proses untuk mengenali, mendefinisikan, dan menyetujui secara resmi dimulainya proyek baru atau fase baru adalah...",
+    "options": [
+      {
+        "text": "Proses Inisialiasi",
+        "isCorrect": true,
+        "rationale": "Proses Inisiasi (Initiating Process Group) meresmikan kehadiran proyek baru atau fasenya."
+      },
+      {
+        "text": "Proses Perencanaan",
+        "isCorrect": false,
+        "rationale": "Merancang detail rencana."
+      },
+      {
+        "text": "Proses Pelaksanaan",
+        "isCorrect": false,
+        "rationale": "Mengeksekusi rencana."
+      },
+      {
+        "text": "Proses Pengendalian",
+        "isCorrect": false,
+        "rationale": "Mengawasi deviasi."
+      },
+      {
+        "text": "Proses Penutupan",
+        "isCorrect": false,
+        "rationale": "Mengakhiri proyek."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q15",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Pemantauan berkala pekerjaan proyek termasuk pengumpulan, pengukuran, dan penyebaran informasi kinerja kerja adalah...",
+    "options": [
+      {
+        "text": "Proses Inisialiasi",
+        "isCorrect": false,
+        "rationale": "Memulai proyek."
+      },
+      {
+        "text": "Proses Perencanaan",
+        "isCorrect": false,
+        "rationale": "Menyusun rencana kerja."
+      },
+      {
+        "text": "Proses Pelaksanaan",
+        "isCorrect": false,
+        "rationale": "Melaksanakan kerja."
+      },
+      {
+        "text": "Proses Pengendalian",
+        "isCorrect": true,
+        "rationale": "Monitoring & Controlling (Pengendalian) memantau, mengukur kemajuan, dan mengontrol varians."
+      },
+      {
+        "text": "Proses Penutupan",
+        "isCorrect": false,
+        "rationale": "Menutup fase/proyek."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q16",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Evaluasi kelayakan sistem baru serta pemeliharaan pasca-implementasi merupakan bagian dari...",
+    "options": [
+      {
+        "text": "Proyek",
+        "isCorrect": false,
+        "rationale": "Usaha temporer unik."
+      },
+      {
+        "text": "Manajemen Proyek",
+        "isCorrect": false,
+        "rationale": "Metodologi mengelola proyek."
+      },
+      {
+        "text": "Sistem",
+        "isCorrect": false,
+        "rationale": "Struktur logis."
+      },
+      {
+        "text": "Manajemen Sistem",
+        "isCorrect": false,
+        "rationale": "Mengelola server/operasi."
+      },
+      {
+        "text": "Siklus Pengembangan Sistem",
+        "isCorrect": true,
+        "rationale": "Siklus Pengembangan Sistem (SDLC) mencakup kelayakan, analisis, desain, coding, testing, hingga maintenance."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q17",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Siapa yang bertanggung jawab untuk menganalisis kesanggupan organisasi guna menyusun perencanaan SI berbasis komputer?",
+    "options": [
+      {
+        "text": "Designer",
+        "isCorrect": false,
+        "rationale": "Designer merancang tampilan/logika."
+      },
+      {
+        "text": "Operator",
+        "isCorrect": false,
+        "rationale": "Operator menjalankan sistem."
+      },
+      {
+        "text": "Programer",
+        "isCorrect": false,
+        "rationale": "Programmer menulis baris kode."
+      },
+      {
+        "text": "Analis",
+        "isCorrect": true,
+        "rationale": "Analis Sistem (System Analyst) bertindak sebagai jembatan analisis kebutuhan bisnis dan teknis."
+      },
+      {
+        "text": "Manager",
+        "isCorrect": false,
+        "rationale": "Manager menyetujui anggaran."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q18",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Menyusun suatu sistem baru untuk menggantikan atau memperbaiki sistem lama yang telah ada disebut dengan...",
+    "options": [
+      {
+        "text": "Sistem Baru",
+        "isCorrect": false,
+        "rationale": "Sistem baru adalah hasil akhirnya."
+      },
+      {
+        "text": "Laporan Sistem",
+        "isCorrect": false,
+        "rationale": "Dokumentasi luaran sistem."
+      },
+      {
+        "text": "Pengembangan Sistem",
+        "isCorrect": true,
+        "rationale": "Pengembangan Sistem (Systems Development) adalah proses modifikasi atau penggantian sistem untuk memecahkan masalah."
+      },
+      {
+        "text": "Sistem Informasi",
+        "isCorrect": false,
+        "rationale": "Aplikasi pengolah data."
+      },
+      {
+        "text": "Informasi Sistem",
+        "isCorrect": false,
+        "rationale": "Data status operasional."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q19",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Pembangunan SI harus diarahkan pada peningkatan keunggulan kompetitif organisasi, yang merupakan fokus pada...",
+    "options": [
+      {
+        "text": "Tahap Kelayakan",
+        "isCorrect": true,
+        "rationale": "Studi kelayakan (Feasibility Study) menilai apakah pembangunan sistem memberikan ROI kompetitif yang masuk akal bagi bisnis."
+      },
+      {
+        "text": "Tahap Perencanaan",
+        "isCorrect": false,
+        "rationale": "Merancang detail jadwal."
+      },
+      {
+        "text": "Tahap analisis",
+        "isCorrect": false,
+        "rationale": "Memetakan fungsi sistem."
+      },
+      {
+        "text": "Tahap Pelaksanaan",
+        "isCorrect": false,
+        "rationale": "Melakukan pemrograman."
+      },
+      {
+        "text": "Tahap Maintenance",
+        "isCorrect": false,
+        "rationale": "Memelihara bugs."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q20",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Urutan tahapan siklus hidup pengembangan sistem (SDLC) yang benar adalah...",
+    "options": [
+      {
+        "text": "Planning, Selection, Analysis, Design, Imp. & Maintenance",
+        "isCorrect": true,
+        "rationale": "Sesuai standard SDLC Hoffer: Planning & Selection, Analysis, Design, Implementation, dan Maintenance."
+      },
+      {
+        "text": "Selection, Analysis, Planning, Design, Imp. & Maintenance",
+        "isCorrect": false,
+        "rationale": "Urutan tidak logis."
+      },
+      {
+        "text": "Analysis, Planning, Design, Selection, Imp. & Maintenance",
+        "isCorrect": false,
+        "rationale": "Urutan tidak logis."
+      },
+      {
+        "text": "Planning, Analysis, Design, Selection, Imp. & Maintenance",
+        "isCorrect": false,
+        "rationale": "Selection seharusnya sebelum Analysis."
+      },
+      {
+        "text": "Analysis, Planning, Selection, Design, Imp. & Maintenance",
+        "isCorrect": false,
+        "rationale": "Urutan tidak logis."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q21",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Individu atau grup di dalam organisasi yang memberikan fasilitas, arahan strategis, dan pendanaan (finansial) proyek disebut...",
+    "options": [
+      {
+        "text": "Manager Proyek",
+        "isCorrect": false,
+        "rationale": "Mengelola proyek."
+      },
+      {
+        "text": "Costumer",
+        "isCorrect": false,
+        "rationale": "Menerima produk akhir."
+      },
+      {
+        "text": "Organisasi",
+        "isCorrect": false,
+        "rationale": "Wadah operasional."
+      },
+      {
+        "text": "Team",
+        "isCorrect": false,
+        "rationale": "Pelaksana pekerjaan."
+      },
+      {
+        "text": "Sponsor",
+        "isCorrect": true,
+        "rationale": "Sponsor Proyek menyediakan dukungan finansial, wewenang piagam, dan sumber daya tingkat tinggi."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q22",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Kategori sumber daya perangkat lunak (Software Resource) di mana spesifikasi sistem serupa dengan pengalaman yang sudah dimiliki saat ini adalah...",
+    "options": [
+      {
+        "text": "Off Self Components",
+        "isCorrect": false,
+        "rationale": "Komponen jadi dari luar."
+      },
+      {
+        "text": "New Components",
+        "isCorrect": false,
+        "rationale": "Komponen baru dari awal."
+      },
+      {
+        "text": "Partial Components",
+        "isCorrect": false,
+        "rationale": "Komponen modifikasi sebagian."
+      },
+      {
+        "text": "Partial Experience Components",
+        "isCorrect": false,
+        "rationale": "Pengalaman sebagian."
+      },
+      {
+        "text": "Full Experience Components",
+        "isCorrect": true,
+        "rationale": "Full Experience Components adalah komponen software di mana tim memiliki pengalaman penuh karena spesifikasinya serupa dengan proyek terdahulu."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q23",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Contoh organisasi yang mendapatkan keuntungan utamanya dari mengerjakan proyek-proyek (projectized firm) adalah...",
+    "options": [
+      {
+        "text": "Pabrik",
+        "isCorrect": false,
+        "rationale": "Pabrik berorientasi operasional manufaktur massal."
+      },
+      {
+        "text": "Sistem Finansial",
+        "isCorrect": false,
+        "rationale": "Sistem operasi perbankan."
+      },
+      {
+        "text": "Akunting",
+        "isCorrect": false,
+        "rationale": "Firma akunting bersifat administratif rutin."
+      },
+      {
+        "text": "Perusahaan Arsitektur",
+        "isCorrect": true,
+        "rationale": "Perusahaan arsitektur atau firma kontraktor mendapatkan pendapatan utama secara eksklusif dari pengerjaan proyek pesanan."
+      },
+      {
+        "text": "Firma",
+        "isCorrect": false,
+        "rationale": "Terlalu umum."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q24",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Software yang dibentuk dan ditulis kodenya dari awal (scratch) masuk ke dalam kategori resources...",
+    "options": [
+      {
+        "text": "Off Self Components",
+        "isCorrect": false,
+        "rationale": "Komponen beli jadi."
+      },
+      {
+        "text": "New Components",
+        "isCorrect": true,
+        "rationale": "New Components adalah perangkat lunak yang dirancang dan ditulis baru dari nol."
+      },
+      {
+        "text": "Full Components",
+        "isCorrect": false,
+        "rationale": "Bukan istilah COCOMO."
+      },
+      {
+        "text": "Partial Experience Components",
+        "isCorrect": false,
+        "rationale": "Modifikasi pengalaman sedang."
+      },
+      {
+        "text": "Full Experience Components",
+        "isCorrect": false,
+        "rationale": "Modifikasi pengalaman penuh."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q25",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Contoh tipe organisasi bisnis yang bukan berorientasi utama pada pengerjaan proyek (non-projectized) adalah...",
+    "options": [
+      {
+        "text": "Pabrik",
+        "isCorrect": true,
+        "rationale": "Pabrik beroperasi secara terus-menerus dan repetitif (operasional manufaktur massal), bukan berorientasi proyek unik."
+      },
+      {
+        "text": "Sistem Finansial",
+        "isCorrect": false,
+        "rationale": "Operasional rutin, namun bisa memiliki proyek TI."
+      },
+      {
+        "text": "Akunting",
+        "isCorrect": false,
+        "rationale": "Fungsi pendukung rutin."
+      },
+      {
+        "text": "Perusahaan Arsitektur",
+        "isCorrect": false,
+        "rationale": "Ini berorientasi proyek."
+      },
+      {
+        "text": "Konsultan Kontraktor",
+        "isCorrect": false,
+        "rationale": "Ini sangat berorientasi proyek."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q26",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Kegiatan utama yang berkaitan dengan pengelolaan faktor manusia dalam project management adalah...",
+    "options": [
+      {
+        "text": "Seleksi, Recruting, Training, Organisasi",
+        "isCorrect": true,
+        "rationale": "Manajemen SDM proyek meliputi perencanaan organisasi, rekrutmen/akuisisi staf, pelatihan (training), dan pembinaan tim."
+      },
+      {
+        "text": "Planning, Training, Implementasi",
+        "isCorrect": false,
+        "rationale": "Implementasi adalah eksekusi teknis."
+      },
+      {
+        "text": "Seleksi, Interview, Maintenance",
+        "isCorrect": false,
+        "rationale": "Maintenance adalah pemeliharaan sistem."
+      },
+      {
+        "text": "Planning, Rancangan, Pelaksanaan",
+        "isCorrect": false,
+        "rationale": "Ini adalah fase proyek umum."
+      },
+      {
+        "text": "Observasi, Wawancara, Library",
+        "isCorrect": false,
+        "rationale": "Ini metode pengumpulan data."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q27",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Manakah di bawah ini yang merupakan bagian dari strategi penjadwalan proyek?",
+    "options": [
+      {
+        "text": "Forward Schedulling",
+        "isCorrect": true,
+        "rationale": "Forward Scheduling (Penjadwalan Maju) menghitung tanggal penyelesaian tercepat berdasarkan tanggal mulai."
+      },
+      {
+        "text": "Backward Scheduling",
+        "isCorrect": false,
+        "rationale": "Penjadwalan mundur juga strategi, namun Forward adalah opsi utama yang benar."
+      },
+      {
+        "text": "Services Scheduling",
+        "isCorrect": false,
+        "rationale": "Bukan istilah standard."
+      },
+      {
+        "text": "First Scheduling",
+        "isCorrect": false,
+        "rationale": "Bukan istilah standard."
+      },
+      {
+        "text": "Last Scheduling",
+        "isCorrect": false,
+        "rationale": "Bukan istilah standard."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q28",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Berikut yang tidak termasuk di dalam 10 area pengetahuan (Knowledge Areas) pengelolaan proyek PMBOK adalah...",
+    "options": [
+      {
+        "text": "scope management",
+        "isCorrect": false,
+        "rationale": "Merupakan Knowledge Area."
+      },
+      {
+        "text": "quality management",
+        "isCorrect": false,
+        "rationale": "Merupakan Knowledge Area."
+      },
+      {
+        "text": "cost management",
+        "isCorrect": false,
+        "rationale": "Merupakan Knowledge Area."
+      },
+      {
+        "text": "planning management",
+        "isCorrect": true,
+        "rationale": "Planning adalah nama Process Group (Kelompok Proses), bukan Knowledge Area (Area Pengetahuan)."
+      },
+      {
+        "text": "time management",
+        "isCorrect": false,
+        "rationale": "Merupakan Knowledge Area."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q29",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Melakukan backup database, scanning virus secara berkala, dan pembersihan delete cookies termasuk dalam aktivitas SDLC tahap...",
+    "options": [
+      {
+        "text": "Perawatan Sistem",
+        "isCorrect": true,
+        "rationale": "Perawatan/Pemeliharaan Sistem (Systems Maintenance) mencakup backup, pembersihan, dan perbaikan minor pasca deployment."
+      },
+      {
+        "text": "Perencanaan Sistem",
+        "isCorrect": false,
+        "rationale": "Perancangan awal."
+      },
+      {
+        "text": "Implementasi Sistem",
+        "isCorrect": false,
+        "rationale": "Pemasangan software fisik."
+      },
+      {
+        "text": "Pelaksanaan Sistem",
+        "isCorrect": false,
+        "rationale": "Bukan istilah SDLC."
+      },
+      {
+        "text": "Seleksi Sistem",
+        "isCorrect": false,
+        "rationale": "Pemilihan sistem."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "q07_q30",
+    "type": "kuis",
+    "pertemuan": 7,
+    "category": "Kuis MPSI-P07 (Minggu Lalu)",
+    "question": "Berdasarkan COCOMO/estimasi, tiga tipe kategori utama sumber daya proyek (Project Resources) adalah...",
+    "options": [
+      {
+        "text": "Manusia, Komponen Software, Hardware",
+        "isCorrect": true,
+        "rationale": "Tiga tipe utama sumber daya proyek adalah Manusia (People), Komponen Software (Software), dan Perangkat Keras (Hardware)."
+      },
+      {
+        "text": "Produk, Komponen Software, Hardware",
+        "isCorrect": false,
+        "rationale": "Produk bukan input resources."
+      },
+      {
+        "text": "Manusia, Komponen Software, Brainware",
+        "isCorrect": false,
+        "rationale": "Manusia dan Brainware bermakna sama."
+      },
+      {
+        "text": "Produk, Komponen Software, Brainware",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      },
+      {
+        "text": "Produk, Brainware, Hardware",
+        "isCorrect": false,
+        "rationale": "Kurang tepat."
+      }
+    ],
+    "course": "mpsi"
+  }
+]

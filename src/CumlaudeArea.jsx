@@ -1,4 +1,5 @@
 import QUESTIONS_DATABASE from './questions.json';
+import PRACTICE_DATABASE from './practice_questions.json';
 import React, { useState, useEffect } from 'react';
 
 // ==========================================
@@ -313,6 +314,23 @@ const Footer = () => (
   </footer>
 );
 
+const PRACTICE_MEETINGS = [
+  { num: 1, title: "Konsep & Ciri Proyek", qCount: 5, active: true, type: "pertemuan" },
+  { num: 2, title: "Kelompok Proses & Area PMBOK", qCount: 5, active: true, type: "pertemuan" },
+  { num: 3, title: "Inisiasi & Project Charter", qCount: 5, active: true, type: "pertemuan" },
+  { num: 4, title: "Manajemen Scope & WBS", qCount: 5, active: true, type: "pertemuan" },
+  { num: 5, title: "Cost Estimation & EVM", qCount: 5, active: true, type: "pertemuan" },
+  { num: 6, title: "Struktur Organisasi Proyek", qCount: 5, active: true, type: "pertemuan" },
+  { num: 7, title: "Kuis P07 (Minggu Lalu)", qCount: 30, active: true, type: "kuis", isSpecial: true },
+  { num: 8, title: "UTS - Evaluasi Pembelajaran", qCount: 0, active: false, label: "Evaluasi/Tugas" },
+  { num: 9, title: "Manajemen Pengadaan", qCount: 5, active: true, type: "pertemuan" },
+  { num: 10, title: "Siklus PLC & SDLC", qCount: 5, active: true, type: "pertemuan" },
+  { num: 11, title: "Manajemen Risiko Proyek", qCount: 0, active: false, label: "Tugas Mandiri" },
+  { num: 12, title: "Analisis Risiko Kualitatif", qCount: 0, active: false, label: "Tugas Mandiri" },
+  { num: 13, title: "Konversi Sistem & Penutupan", qCount: 0, active: false, label: "Review Mandiri" },
+  { num: 14, title: "Project Management Plan (PMP)", qCount: 5, active: true, type: "pertemuan" }
+];
+
 export default function CumlaudeArea() {
   const [view, setView] = useState('dashboard'); // 'dashboard', 'quiz', 'result', 'materi'
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -323,6 +341,9 @@ export default function CumlaudeArea() {
   const [selectedCourse, setSelectedCourse] = useState('mpsi');
   const [selectedExamType, setSelectedExamType] = useState('uts');
   const [selectedLevel, setSelectedLevel] = useState(null);
+  const [isPracticeMode, setIsPracticeMode] = useState(false);
+  const [practiceType, setPracticeType] = useState(null); // 'pertemuan' or 'kuis'
+  const [practiceNum, setPracticeNum] = useState(null); // 1-14 or 7
 
   // States for interactive features
   const [timeLeft, setTimeLeft] = useState(0);
@@ -377,9 +398,11 @@ export default function CumlaudeArea() {
   }, [selectedCourse, selectedExamType]);
 
   // Derived state for questions
-  const activeQuestions = QUESTIONS_DATABASE.filter(
-    q => q.course === selectedCourse && q.examType === selectedExamType && (selectedLevel !== null ? q.level === selectedLevel : true)
-  );
+  const activeQuestions = isPracticeMode
+    ? PRACTICE_DATABASE.filter(q => q.course === selectedCourse && q.type === practiceType && q.pertemuan === practiceNum)
+    : QUESTIONS_DATABASE.filter(
+        q => q.course === selectedCourse && q.examType === selectedExamType && (selectedLevel !== null ? q.level === selectedLevel : true)
+      );
 
   const totalExamQuestions = QUESTIONS_DATABASE.filter(
     q => q.course === selectedCourse && q.examType === selectedExamType
@@ -423,8 +446,10 @@ export default function CumlaudeArea() {
           minute: '2-digit'
         }),
         course: selectedCourse.toUpperCase(),
-        examType: selectedExamType.toUpperCase(),
-        level: selectedLevel !== null ? `Level ${selectedLevel}` : 'Semua Level',
+        examType: isPracticeMode ? 'LATIHAN' : selectedExamType.toUpperCase(),
+        level: isPracticeMode 
+          ? (practiceType === 'kuis' ? 'Kuis P07 (Minggu Lalu)' : `Latihan Pertemuan ${practiceNum}`)
+          : (selectedLevel !== null ? `Level ${selectedLevel}` : 'Semua Level'),
         score: score,
         total: activeQuestions.length,
         percentage: percentage,
@@ -441,8 +466,8 @@ export default function CumlaudeArea() {
         return updated;
       });
 
-      // Auto unlock next level
-      if (selectedLevel !== null && isPassed) {
+      // Auto unlock next level (only for regular exam mode)
+      if (!isPracticeMode && selectedLevel !== null && isPassed) {
         const nextLevel = selectedLevel + 1;
         if (nextLevel <= 3 && !unlockedLevels.includes(nextLevel)) {
           const updatedLevels = [...unlockedLevels, nextLevel];
@@ -467,6 +492,9 @@ export default function CumlaudeArea() {
   };
 
   const startQuiz = (level = null) => {
+    setIsPracticeMode(false);
+    setPracticeType(null);
+    setPracticeNum(null);
     setSelectedLevel(level);
     setView('quiz');
     setCurrentQuestionIndex(0);
@@ -488,6 +516,26 @@ export default function CumlaudeArea() {
     else if (level === 3) secondsPerQuestion = 30;
 
     setTimeLeft(qCount * secondsPerQuestion);
+  };
+
+  const startPractice = (type, num) => {
+    setIsPracticeMode(true);
+    setPracticeType(type);
+    setPracticeNum(num);
+    setSelectedLevel(null);
+    setView('quiz');
+    setCurrentQuestionIndex(0);
+    setScore(0);
+    setSelectedOption(null);
+    setIsAnswered(false);
+    setUserAnswers({});
+    setExpandedReview({});
+    
+    const qCount = PRACTICE_DATABASE.filter(
+      q => q.course === selectedCourse && q.type === type && q.pertemuan === num
+    ).length;
+
+    setTimeLeft(qCount * 60); // 60 seconds per question for practice
   };
 
   const renderNavbar = (activeTab) => (
@@ -760,7 +808,7 @@ export default function CumlaudeArea() {
           <div className="nav-left">
             <img src="/cumlaude_logo.png" alt="Cumlaude Area Logo" className="navbar-logo" />
             <div className="nav-titles">
-              <span className="navbar-tagline">Simulasi Ujian MPSI</span>
+              <span className="navbar-tagline">{isPracticeMode ? 'Latihan Mandiri MPSI' : 'Simulasi Ujian MPSI'}</span>
             </div>
           </div>
           <div className="nav-center" style={{ gap: '15px' }}>
@@ -878,7 +926,9 @@ export default function CumlaudeArea() {
 
             <div className="result-actions">
               <button className="btn-outline" onClick={() => setView('dashboard')}>Ke Dashboard</button>
-              <button className="btn-primary" onClick={() => startQuiz(selectedLevel)}>Ulangi Ujian</button>
+              <button className="btn-primary" onClick={() => isPracticeMode ? startPractice(practiceType, practiceNum) : startQuiz(selectedLevel)}>
+                {isPracticeMode ? 'Ulangi Latihan' : 'Ulangi Ujian'}
+              </button>
             </div>
 
             {/* Detailed Review Section */}
@@ -1110,6 +1160,51 @@ export default function CumlaudeArea() {
           </div>
         </div>
 
+        {/* Latihan per Pertemuan & Kuis Section */}
+        <div className="practice-section-header">
+          <h3>Latihan per Pertemuan &amp; Kuis</h3>
+          <p>Lakukan latihan mandiri untuk memantapkan pemahaman per bab pertemuan kuliah atau kuis kelas.</p>
+        </div>
+
+        <div className="practice-grid">
+          {PRACTICE_MEETINGS.map((meeting) => {
+            const isQuiz = meeting.type === 'kuis';
+            const isActive = meeting.active;
+            
+            let cardClass = "practice-card glass-card";
+            if (isQuiz) cardClass += " special-kuis";
+            if (!isActive) cardClass += " inactive";
+
+            return (
+              <div key={meeting.num} className={cardClass}>
+                <div className="practice-card-badge">
+                  {isQuiz ? (
+                    <span className="badge-kuis">Kuis Kelas</span>
+                  ) : (
+                    <span className="badge-pertemuan">Pertemuan {meeting.num}</span>
+                  )}
+                </div>
+                <h4 className="practice-card-title">{meeting.title}</h4>
+                <div className="practice-card-footer">
+                  {isActive ? (
+                    <>
+                      <span className="practice-qcount">{meeting.qCount} Soal</span>
+                      <button 
+                        className="btn-practice-start"
+                        onClick={() => startPractice(meeting.type, meeting.num)}
+                      >
+                        Mulai Latihan
+                      </button>
+                    </>
+                  ) : (
+                    <span className="practice-inactive-label">{meeting.label || 'Tugas Mandiri'}</span>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
         {/* History Table */}
         <div className="history-section">
           <div className="history-card glass-panel">
@@ -1173,14 +1268,27 @@ export default function CumlaudeArea() {
             <div className="changelog-list">
               <div className="changelog-item">
                 <div className="changelog-meta">
-                  <span className="changelog-version">v1.3.0</span>
+                  <span className="changelog-version">v1.4.0</span>
                   <span className="changelog-date">21 Mei 2026</span>
                   <span className="changelog-tag current">Terbaru</span>
                 </div>
                 <ul className="changelog-details">
-                  <li><strong>Halaman Flashcards Interaktif & Filter:</strong> Menambahkan fitur pencarian real-time, filter tab berdasarkan tingkat kesulitan, dan status progress bar belajar yang tersimpan secara lokal.</li>
+                  <li><strong>Fitur Latihan per Pertemuan:</strong> Menyediakan bank soal latihan mandiri untuk Pertemuan 1, 2, 3, 4, 5, 6, 9, 10, dan 14 langsung dari materi bab buku teks BSI MPSI.</li>
+                  <li><strong>Latihan Kuis Kelas (P07):</strong> Integrasi bank soal Kuis MPSI Pertemuan 7 sebanyak 30 soal riil dengan kunci jawaban terverifikasi dan pembahasan terperinci.</li>
+                  <li><strong>Mode Latihan Terisolasi:</strong> Sesi latihan berjalan dalam mode terpisah sehingga tidak memengaruhi pencapaian kelulusan level ujian reguler (UTS/UAS).</li>
+                  <li><strong>Pembaruan Dashboard:</strong> Grid layout dinamis dan interaktif untuk akses cepat materi latihan, serta log aktivitas terperinci.</li>
+                </ul>
+              </div>
+
+              <div className="changelog-item">
+                <div className="changelog-meta">
+                  <span className="changelog-version">v1.3.0</span>
+                  <span className="changelog-date">21 Mei 2026</span>
+                </div>
+                <ul className="changelog-details">
+                  <li><strong>Halaman Flashcards Interaktif &amp; Filter:</strong> Menambahkan fitur pencarian real-time, filter tab berdasarkan tingkat kesulitan, dan status progress bar belajar yang tersimpan secara lokal.</li>
                   <li><strong>Ekspansi Materi UAS MPSI:</strong> Meningkatkan jumlah kartu materi UAS MPSI menjadi 12 kartu terstruktur untuk menyamai materi UTS dan mencakup seluruh indikator kompetensi utama.</li>
-                  <li><strong>Penyempurnaan Ujian & Responsivitas:</strong> Menambahkan penanda opsi huruf (A, B, C, D) dengan efek hover/active modern, status box jawaban (Benar/Salah) yang dinamis pada penjelasan, serta dialog konfirmasi keluar ujian.</li>
+                  <li><strong>Penyempurnaan Ujian &amp; Responsivitas:</strong> Menambahkan penanda opsi huruf (A, B, C, D) dengan efek hover/active modern, status box jawaban (Benar/Salah) yang dinamis pada penjelasan, serta dialog konfirmasi keluar ujian.</li>
                   <li><strong>Aksen Visual Premium:</strong> Optimalisasi tata letak grid dan keselarasan elemen visual pada berbagai perangkat seluler (smartphone).</li>
                 </ul>
               </div>
