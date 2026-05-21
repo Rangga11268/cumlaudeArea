@@ -2174,6 +2174,63 @@ input:checked + .slider:before { transform: translateX(18px); }
   }
 }
 
+/* STANDALONE CHANGELOG PAGE STYLES */
+.changelog-page-header {
+  padding: 30px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.changelog-page-header .badge {
+  margin-bottom: 12px;
+  background: #2563eb;
+}
+
+.changelog-page-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.changelog-page-desc {
+  color: #64748b;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.changelog-section.standalone {
+  margin-top: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.version-badge {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.version-badge:hover {
+  transform: translateY(-1px) scale(1.03);
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+@media (max-width: 768px) {
+  .changelog-page-header {
+    padding: 20px 15px;
+  }
+  
+  .changelog-page-title {
+    font-size: 1.4rem;
+  }
+  
+  .changelog-page-desc {
+    font-size: 0.9rem;
+  }
+}
+
 /* PRACTICE SECTION & GRID STYLES */
 .practice-section-header {
   margin-top: 35px;

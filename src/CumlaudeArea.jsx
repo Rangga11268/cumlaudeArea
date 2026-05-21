@@ -315,20 +315,20 @@ const Footer = () => (
 );
 
 const PRACTICE_MEETINGS = [
-  { num: 1, title: "Konsep & Ciri Proyek", qCount: 5, active: true, type: "pertemuan" },
-  { num: 2, title: "Kelompok Proses & Area PMBOK", qCount: 5, active: true, type: "pertemuan" },
-  { num: 3, title: "Inisiasi & Project Charter", qCount: 5, active: true, type: "pertemuan" },
-  { num: 4, title: "Manajemen Scope & WBS", qCount: 5, active: true, type: "pertemuan" },
-  { num: 5, title: "Cost Estimation & EVM", qCount: 5, active: true, type: "pertemuan" },
-  { num: 6, title: "Struktur Organisasi Proyek", qCount: 5, active: true, type: "pertemuan" },
+  { num: 1, title: "Konsep & Ciri Proyek", qCount: 8, active: true, type: "pertemuan" },
+  { num: 2, title: "Kelompok Proses & Area PMBOK", qCount: 8, active: true, type: "pertemuan" },
+  { num: 3, title: "Inisiasi & Project Charter", qCount: 8, active: true, type: "pertemuan" },
+  { num: 4, title: "Manajemen Scope & WBS", qCount: 8, active: true, type: "pertemuan" },
+  { num: 5, title: "Cost Estimation & EVM", qCount: 15, active: true, type: "pertemuan" },
+  { num: 6, title: "Struktur Organisasi Proyek", qCount: 8, active: true, type: "pertemuan" },
   { num: 7, title: "Kuis P07 (Minggu Lalu)", qCount: 30, active: true, type: "kuis", isSpecial: true },
   { num: 8, title: "UTS - Evaluasi Pembelajaran", qCount: 0, active: false, label: "Evaluasi/Tugas" },
-  { num: 9, title: "Manajemen Pengadaan", qCount: 5, active: true, type: "pertemuan" },
-  { num: 10, title: "Siklus PLC & SDLC", qCount: 5, active: true, type: "pertemuan" },
+  { num: 9, title: "Manajemen Pengadaan", qCount: 8, active: true, type: "pertemuan" },
+  { num: 10, title: "Siklus PLC & SDLC", qCount: 8, active: true, type: "pertemuan" },
   { num: 11, title: "Manajemen Risiko Proyek", qCount: 0, active: false, label: "Tugas Mandiri" },
   { num: 12, title: "Analisis Risiko Kualitatif", qCount: 0, active: false, label: "Tugas Mandiri" },
   { num: 13, title: "Konversi Sistem & Penutupan", qCount: 0, active: false, label: "Review Mandiri" },
-  { num: 14, title: "Project Management Plan (PMP)", qCount: 5, active: true, type: "pertemuan" }
+  { num: 14, title: "Project Management Plan (PMP)", qCount: 8, active: true, type: "pertemuan" }
 ];
 
 export default function CumlaudeArea() {
@@ -549,6 +549,7 @@ export default function CumlaudeArea() {
       <div className="nav-center">
         <button className={`nav-btn ${activeTab === 'dashboard' ? 'active' : ''}`} onClick={() => setView('dashboard')}>Dashboard</button>
         <button className={`nav-btn ${activeTab === 'materi' ? 'active' : ''}`} onClick={() => setView('materi')}>Flashcards Belajar</button>
+        <button className={`nav-btn ${activeTab === 'changelog' ? 'active' : ''}`} onClick={() => setView('changelog')}>Log Pembaruan</button>
       </div>
       <div className="nav-right">
         <div className="user-info">
@@ -989,6 +990,107 @@ export default function CumlaudeArea() {
     );
   }
 
+  if (view === 'changelog') {
+    return (
+      <div className="app-container fade-in">
+        {/* Navbar */}
+        {renderNavbar('changelog')}
+
+        <main className="main-content">
+          <div className="changelog-page-header glass-panel">
+            <span className="badge">Riwayat Pembaruan</span>
+            <h2 className="changelog-page-title">Log Pembaruan Aplikasi (Changelog)</h2>
+            <p className="changelog-page-desc">
+              Pantau fitur terbaru, perbaikan bug, dan peningkatan performa yang diimplementasikan pada Cumlaude Area.
+            </p>
+          </div>
+
+          <div className="changelog-section standalone">
+            <div className="changelog-card glass-panel">
+              <div className="changelog-list">
+                <div className="changelog-item">
+                  <div className="changelog-meta">
+                    <span className="changelog-version">v1.4.1</span>
+                    <span className="changelog-date">21 Mei 2026</span>
+                    <span className="changelog-tag current">Terbaru</span>
+                  </div>
+                  <ul className="changelog-details">
+                    <li><strong>Halaman Changelog Mandiri:</strong> Memisahkan log pembaruan aplikasi dari dashboard utama ke halaman mandiri yang bersih, responsif, dan interaktif.</li>
+                    <li><strong>Ekspansi Soal Latihan &amp; Studi Kasus EVM/PERT:</strong> Menambahkan 34 soal latihan mandiri baru berkualitas tinggi (total 109 soal latihan), termasuk 10 soal perhitungan studi kasus EVM, CPI, SPI, EAC, dan estimasi durasi PERT pada Pertemuan 5.</li>
+                  </ul>
+                </div>
+
+                <div className="changelog-item">
+                  <div className="changelog-meta">
+                    <span className="changelog-version">v1.4.0</span>
+                    <span className="changelog-date">21 Mei 2026</span>
+                  </div>
+                  <ul className="changelog-details">
+                    <li><strong>Fitur Latihan per Pertemuan:</strong> Menyediakan bank soal latihan mandiri untuk Pertemuan 1, 2, 3, 4, 5, 6, 9, 10, dan 14 langsung dari materi bab buku teks BSI MPSI.</li>
+                    <li><strong>Latihan Kuis Kelas (P07):</strong> Integrasi bank soal Kuis MPSI Pertemuan 7 sebanyak 30 soal riil dengan kunci jawaban terverifikasi dan pembahasan terperinci.</li>
+                    <li><strong>Mode Latihan Terisolasi:</strong> Sesi latihan berjalan dalam mode terpisah sehingga tidak memengaruhi pencapaian kelulusan level ujian reguler (UTS/UAS).</li>
+                    <li><strong>Pembaruan Dashboard:</strong> Grid layout dinamis dan interaktif untuk akses cepat materi latihan, serta log aktivitas terperinci.</li>
+                  </ul>
+                </div>
+
+                <div className="changelog-item">
+                  <div className="changelog-meta">
+                    <span className="changelog-version">v1.3.0</span>
+                    <span className="changelog-date">21 Mei 2026</span>
+                  </div>
+                  <ul className="changelog-details">
+                    <li><strong>Halaman Flashcards Interaktif &amp; Filter:</strong> Menambahkan fitur pencarian real-time, filter tab berdasarkan tingkat kesulitan, dan status progress bar belajar yang tersimpan secara lokal.</li>
+                    <li><strong>Ekspansi Materi UAS MPSI:</strong> Meningkatkan jumlah kartu materi UAS MPSI menjadi 12 kartu terstruktur untuk menyamai materi UTS dan mencakup seluruh indikator kompetensi utama.</li>
+                    <li><strong>Penyempurnaan Ujian &amp; Responsivitas:</strong> Menambahkan penanda opsi huruf (A, B, C, D) dengan efek hover/active modern, status box jawaban (Benar/Salah) yang dinamis pada penjelasan, serta dialog konfirmasi keluar ujian.</li>
+                    <li><strong>Aksen Visual Premium:</strong> Optimalisasi tata letak grid dan keselarasan elemen visual pada berbagai perangkat seluler (smartphone).</li>
+                  </ul>
+                </div>
+
+                <div className="changelog-item">
+                  <div className="changelog-meta">
+                    <span className="changelog-version">v1.2.0</span>
+                    <span className="changelog-date">21 Mei 2026</span>
+                  </div>
+                  <ul className="changelog-details">
+                    <li><strong>Penggabungan Bank Soal UTS:</strong> Soal dari Pertemuan 1-6 kini digabungkan per tingkat kesulitan (Level 1 - Mudah, Level 2 - Sedang, Level 3 - Sulit) untuk mempermudah pemahaman komprehensif.</li>
+                    <li><strong>Pembersihan Pertanyaan Placeholder:</strong> Menghapus seluruh 89 pertanyaan tambahan dummy dan menggantinya dengan 89 soal riil MPSI berkualitas tinggi (studi kasus EVM, penjadwalan CPM, PERT, dll.).</li>
+                    <li><strong>Panel Log Pembaruan Terintegrasi:</strong> Menambahkan panel log rilis aplikasi langsung di halaman utama Dashboard.</li>
+                    <li><strong>Penyempurnaan Tampilan Premium:</strong> Sentuhan efek visual modern, perbaikan layout responsif pada dialog pembahasan ujian, dan kartu tingkat kesulitan.</li>
+                  </ul>
+                </div>
+
+                <div className="changelog-item">
+                  <div className="changelog-meta">
+                    <span className="changelog-version">v1.1.0</span>
+                    <span className="changelog-date">20 Mei 2026</span>
+                  </div>
+                  <ul className="changelog-details">
+                    <li><strong>Skala Waktu Dinamis per Level:</strong> Level 1 (60 detik/soal), Level 2 (45 detik/soal), dan Level 3 (30 detik/soal) untuk menguji kecepatan berpikir.</li>
+                    <li><strong>Sistem Pembukaan Level Progresif:</strong> Mahasiswa harus mendapatkan skor minimal 60% pada level sebelumnya untuk membuka tingkat kesulitan berikutnya.</li>
+                    <li><strong>Opsi Bypass Buka Semua Level:</strong> Menyediakan tombol toggle &quot;Buka Semua Level&quot; di dashboard untuk memudahkan review.</li>
+                  </ul>
+                </div>
+
+                <div className="changelog-item">
+                  <div className="changelog-meta">
+                    <span className="changelog-version">v1.0.0</span>
+                    <span className="changelog-date">19 Mei 2026</span>
+                  </div>
+                  <ul className="changelog-details">
+                    <li><strong>Rilis Awal Simulasi Ujian:</strong> Simulasi ujian UTS &amp; UAS untuk mata kuliah Manajemen Proyek Sistem Informasi (MPSI).</li>
+                    <li><strong>Flashcards Belajar Interaktif:</strong> Kartu belajar balik (flipcards) untuk rangkuman materi kilat sebelum ujian.</li>
+                    <li><strong>Papan Statistik Kumulatif:</strong> Menghitung rata-rata nilai, jumlah keikutsertaan ujian, dan rasio kelulusan secara offline berbasis LocalStorage.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
   // Dashboard Locking Indicators
   const isLvl2Locked = !unlockAll && !unlockedLevels.includes(2);
   const isLvl3Locked = !unlockAll && !unlockedLevels.includes(3);
@@ -1036,7 +1138,12 @@ export default function CumlaudeArea() {
 
         <div className="hero-section glass-panel" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%)' }}>
           <div className="hero-content">
-            <span className="badge">Sistem Simulasi {selectedExamType.toUpperCase()} MPSI Resmi</span>
+            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '8px' }}>
+              <span className="badge">Sistem Simulasi {selectedExamType.toUpperCase()} MPSI Resmi</span>
+              <span className="badge version-badge" style={{ cursor: 'pointer', background: 'rgba(255, 255, 255, 0.15)', display: 'inline-flex', alignItems: 'center', gap: '4px' }} onClick={() => setView('changelog')}>
+                v1.4.1 (Terbaru)
+              </span>
+            </div>
             <h2 className="hero-title">Optimalkan Nilai {selectedExamType.toUpperCase()} Manajemen Proyek</h2>
             <p className="hero-desc">
               Uji pemahaman Anda terhadap PMBOK Edisi 5, modul BSI, perhitungan biaya Earned Value, dekomposisi WBS, dan penataan organisasi sistem informasi melalui {totalExamQuestions} soal terstandarisasi.
@@ -1255,80 +1362,11 @@ export default function CumlaudeArea() {
                 </table>
               )}
             </div>
-          </div>
-        </div>
-
-        {/* Update Log / Changelog Panel */}
-        <div className="changelog-section">
-          <div className="changelog-card glass-panel">
-            <div className="changelog-header-area">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="changelog-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              <h3>Log Pembaruan Aplikasi (Changelog)</h3>
-            </div>
-            <div className="changelog-list">
-              <div className="changelog-item">
-                <div className="changelog-meta">
-                  <span className="changelog-version">v1.4.0</span>
-                  <span className="changelog-date">21 Mei 2026</span>
-                  <span className="changelog-tag current">Terbaru</span>
-                </div>
-                <ul className="changelog-details">
-                  <li><strong>Fitur Latihan per Pertemuan:</strong> Menyediakan bank soal latihan mandiri untuk Pertemuan 1, 2, 3, 4, 5, 6, 9, 10, dan 14 langsung dari materi bab buku teks BSI MPSI.</li>
-                  <li><strong>Latihan Kuis Kelas (P07):</strong> Integrasi bank soal Kuis MPSI Pertemuan 7 sebanyak 30 soal riil dengan kunci jawaban terverifikasi dan pembahasan terperinci.</li>
-                  <li><strong>Mode Latihan Terisolasi:</strong> Sesi latihan berjalan dalam mode terpisah sehingga tidak memengaruhi pencapaian kelulusan level ujian reguler (UTS/UAS).</li>
-                  <li><strong>Pembaruan Dashboard:</strong> Grid layout dinamis dan interaktif untuk akses cepat materi latihan, serta log aktivitas terperinci.</li>
-                </ul>
-              </div>
-
-              <div className="changelog-item">
-                <div className="changelog-meta">
-                  <span className="changelog-version">v1.3.0</span>
-                  <span className="changelog-date">21 Mei 2026</span>
-                </div>
-                <ul className="changelog-details">
-                  <li><strong>Halaman Flashcards Interaktif &amp; Filter:</strong> Menambahkan fitur pencarian real-time, filter tab berdasarkan tingkat kesulitan, dan status progress bar belajar yang tersimpan secara lokal.</li>
-                  <li><strong>Ekspansi Materi UAS MPSI:</strong> Meningkatkan jumlah kartu materi UAS MPSI menjadi 12 kartu terstruktur untuk menyamai materi UTS dan mencakup seluruh indikator kompetensi utama.</li>
-                  <li><strong>Penyempurnaan Ujian &amp; Responsivitas:</strong> Menambahkan penanda opsi huruf (A, B, C, D) dengan efek hover/active modern, status box jawaban (Benar/Salah) yang dinamis pada penjelasan, serta dialog konfirmasi keluar ujian.</li>
-                  <li><strong>Aksen Visual Premium:</strong> Optimalisasi tata letak grid dan keselarasan elemen visual pada berbagai perangkat seluler (smartphone).</li>
-                </ul>
-              </div>
-
-              <div className="changelog-item">
-                <div className="changelog-meta">
-                  <span className="changelog-version">v1.2.0</span>
-                  <span className="changelog-date">21 Mei 2026</span>
-                </div>
-                <ul className="changelog-details">
-                  <li><strong>Penggabungan Bank Soal UTS:</strong> Soal dari Pertemuan 1-6 kini digabungkan per tingkat kesulitan (Level 1 - Mudah, Level 2 - Sedang, Level 3 - Sulit) untuk mempermudah pemahaman komprehensif.</li>
-                  <li><strong>Pembersihan Pertanyaan Placeholder:</strong> Menghapus seluruh 89 pertanyaan tambahan dummy dan menggantinya dengan 89 soal riil MPSI berkualitas tinggi (studi kasus EVM, penjadwalan CPM, PERT, dll.).</li>
-                  <li><strong>Panel Log Pembaruan Terintegrasi:</strong> Menambahkan panel log rilis aplikasi langsung di halaman utama Dashboard.</li>
-                  <li><strong>Penyempurnaan Tampilan Premium:</strong> Sentuhan efek visual modern, perbaikan layout responsif pada dialog pembahasan ujian, dan kartu tingkat kesulitan.</li>
-                </ul>
-              </div>
-
-              <div className="changelog-item">
-                <div className="changelog-meta">
-                  <span className="changelog-version">v1.1.0</span>
-                  <span className="changelog-date">20 Mei 2026</span>
-                </div>
-                <ul className="changelog-details">
-                  <li><strong>Skala Waktu Dinamis per Level:</strong> Level 1 (60 detik/soal), Level 2 (45 detik/soal), dan Level 3 (30 detik/soal) untuk menguji kecepatan berpikir.</li>
-                  <li><strong>Sistem Pembukaan Level Progresif:</strong> Mahasiswa harus mendapatkan skor minimal 60% pada level sebelumnya untuk membuka tingkat kesulitan berikutnya.</li>
-                  <li><strong>Opsi Bypass Buka Semua Level:</strong> Menyediakan tombol toggle &quot;Buka Semua Level&quot; di dashboard untuk memudahkan review.</li>
-                </ul>
-              </div>
-
-              <div className="changelog-item">
-                <div className="changelog-meta">
-                  <span className="changelog-version">v1.0.0</span>
-                  <span className="changelog-date">19 Mei 2026</span>
-                </div>
-                <ul className="changelog-details">
-                  <li><strong>Rilis Awal Simulasi Ujian:</strong> Simulasi ujian UTS &amp; UAS untuk mata kuliah Manajemen Proyek Sistem Informasi (MPSI).</li>
-                  <li><strong>Flashcards Belajar Interaktif:</strong> Kartu belajar balik (flipcards) untuk rangkuman materi kilat sebelum ujian.</li>
-                  <li><strong>Papan Statistik Kumulatif:</strong> Menghitung rata-rata nilai, jumlah keikutsertaan ujian, dan rasio kelulusan secara offline berbasis LocalStorage.</li>
-                </ul>
-              </div>
+            {/* Standalone Changelog Redirect Link */}
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px', marginBottom: '10px' }}>
+              <button className="btn-practice-start" style={{ padding: '8px 18px', borderRadius: '8px', cursor: 'pointer' }} onClick={() => setView('changelog')}>
+                Lihat Log Pembaruan Aplikasi (Changelog v1.4.1)
+              </button>
             </div>
           </div>
         </div>

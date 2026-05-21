@@ -2623,5 +2623,1195 @@
       }
     ],
     "course": "mpsi"
+  },
+  {
+    "id": "p1_q6",
+    "type": "pertemuan",
+    "pertemuan": 1,
+    "category": "Latihan Pertemuan 1",
+    "question": "Sebuah software house dikontrak oleh Bank ABC untuk membangun sistem e-banking dengan anggaran tetap dan waktu pengerjaan 6 bulan. Ini adalah contoh dari...",
+    "options": [
+      {
+        "text": "Proyek eksternal berbasis kontrak",
+        "isCorrect": true,
+        "rationale": "Proyek eksternal didasarkan pada hubungan kontrak formal antara organisasi pelaksana dengan pembeli eksternal."
+      },
+      {
+        "text": "Proyek internal swakelola",
+        "isCorrect": false,
+        "rationale": "Proyek internal swakelola dikerjakan sendiri oleh organisasi untuk kepentingan sendiri."
+      },
+      {
+        "text": "Kegiatan operasional rutin",
+        "isCorrect": false,
+        "rationale": "Membangun sistem e-banking baru bersifat temporer dan unik, bukan operasional harian."
+      },
+      {
+        "text": "Proyek penelitian murni",
+        "isCorrect": false,
+        "rationale": "Membangun e-banking komersil memiliki deliverable komersil yang jelas, bukan riset murni."
+      },
+      {
+        "text": "Proyek hibah tanpa kontrak",
+        "isCorrect": false,
+        "rationale": "Proyek untuk Bank ABC bermotif profit komersil dan terikat kontrak."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p1_q7",
+    "type": "pertemuan",
+    "pertemuan": 1,
+    "category": "Latihan Pertemuan 1",
+    "question": "Kendala tiga lipat (Triple Constraints) yang secara tradisional membatasi setiap pelaksanaan proyek meliputi...",
+    "options": [
+      {
+        "text": "Scope, Time, Cost",
+        "isCorrect": true,
+        "rationale": "Triple Constraints tradisional mencakup Ruang Lingkup (Scope), Waktu/Jadwal (Time), dan Anggaran/Biaya (Cost)."
+      },
+      {
+        "text": "Quality, Risk, Resources",
+        "isCorrect": false,
+        "rationale": "Ini adalah kendala tambahan PMBOK baru, bukan tiga lipat tradisional."
+      },
+      {
+        "text": "Plan, Execute, Control",
+        "isCorrect": false,
+        "rationale": "Ini merupakan bagian dari kelompok proses manajemen proyek."
+      },
+      {
+        "text": "Scope, Stakeholders, Procurement",
+        "isCorrect": false,
+        "rationale": "Scope adalah salah satu constraint, tetapi stakeholders dan procurement adalah area pengetahuan."
+      },
+      {
+        "text": "Communication, Time, Scope",
+        "isCorrect": false,
+        "rationale": "Biaya (Cost) adalah komponen penting yang hilang dari opsi ini."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p1_q8",
+    "type": "pertemuan",
+    "pertemuan": 1,
+    "category": "Latihan Pertemuan 1",
+    "question": "Perbedaan mendasar yang paling tepat antara kegiatan proyek dan kegiatan operasional harian perusahaan adalah...",
+    "options": [
+      {
+        "text": "Proyek bersifat temporer dan menghasilkan produk unik, sedangkan operasional bersifat rutin, kontinu, dan berulang",
+        "isCorrect": true,
+        "rationale": "Berdasarkan PMBOK, proyek bersifat sementara (temporary) dan unik, sedangkan kegiatan operasional rutin berjalan terus menerus (ongoing)."
+      },
+      {
+        "text": "Proyek tidak dibatasi oleh anggaran, sedangkan operasional sangat ketat dengan anggaran bulanan",
+        "isCorrect": false,
+        "rationale": "Kedua kegiatan tersebut dibatasi oleh anggaran."
+      },
+      {
+        "text": "Proyek dikerjakan secara perorangan, sedangkan operasional dilakukan secara berkelompok",
+        "isCorrect": false,
+        "rationale": "Proyek justru melibatkan tim lintas disiplin ilmu yang besar."
+      },
+      {
+        "text": "Proyek bertujuan mencari keuntungan finansial saja, sedangkan operasional bertujuan sosial",
+        "isCorrect": false,
+        "rationale": "Tujuan proyek sangat bervariasi, dari komersial hingga sosial atau infrastruktur."
+      },
+      {
+        "text": "Proyek tidak memiliki risiko kegagalan, sedangkan operasional memiliki risiko tinggi",
+        "isCorrect": false,
+        "rationale": "Proyek memiliki tingkat ketidakpastian dan risiko yang jauh lebih tinggi dibanding operasional rutin."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p2_q6",
+    "type": "pertemuan",
+    "pertemuan": 2,
+    "category": "Latihan Pertemuan 2",
+    "question": "Seorang Manajer Proyek sedang melakukan dekomposisi deliverable utama proyek menjadi komponen-komponen yang lebih kecil (WBS). Aktivitas ini masuk dalam Area Pengetahuan dan Kelompok Proses mana?",
+    "options": [
+      {
+        "text": "Project Scope Management pada Planning Process Group",
+        "isCorrect": true,
+        "rationale": "Pembuatan Work Breakdown Structure (WBS) merupakan proses inti dalam Project Scope Management pada tahap perencanaan (Planning)."
+      },
+      {
+        "text": "Project Time Management pada Planning Process Group",
+        "isCorrect": false,
+        "rationale": "Time Management berfokus pada durasi aktivitas, bukan dekomposisi deliverable."
+      },
+      {
+        "text": "Project Integration Management pada Executing Process Group",
+        "isCorrect": false,
+        "rationale": "Integration pada tahap eksekusi berfokus pada mengarahkan dan mengelola pekerjaan fisik."
+      },
+      {
+        "text": "Project Quality Management pada Monitoring Process Group",
+        "isCorrect": false,
+        "rationale": "Quality Management berfokus pada kepatuhan mutu produk."
+      },
+      {
+        "text": "Project Scope Management pada Initiating Process Group",
+        "isCorrect": false,
+        "rationale": "Tahap Initiating merumuskan Project Charter, bukan membuat WBS."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p2_q7",
+    "type": "pertemuan",
+    "pertemuan": 2,
+    "category": "Latihan Pertemuan 2",
+    "question": "Manajer Proyek bernegosiasi dan menyusun kontrak dengan penyedia eksternal untuk penyewaan server cloud AWS. Proses ini diatur dalam Knowledge Area...",
+    "options": [
+      {
+        "text": "Project Procurement Management",
+        "isCorrect": true,
+        "rationale": "Segala aktivitas seputar kontrak, pembelian, sewa barang/jasa dari pihak ketiga di luar tim masuk dalam Manajemen Pengadaan (Procurement)."
+      },
+      {
+        "text": "Project Integration Management",
+        "isCorrect": false,
+        "rationale": "Integration berfokus pada penyelarasan seluruh rencana."
+      },
+      {
+        "text": "Project Human Resource Management",
+        "isCorrect": false,
+        "rationale": "AWS server adalah infrastruktur komputasi, bukan sumber daya manusia."
+      },
+      {
+        "text": "Project Stakeholder Management",
+        "isCorrect": false,
+        "rationale": "Stakeholder Management mengelola ekspektasi dan keterlibatan pemangku kepentingan."
+      },
+      {
+        "text": "Project Cost Management",
+        "isCorrect": false,
+        "rationale": "Cost Management mengontrol anggaran total, bukan aktivitas kontrak pengadaannya."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p2_q8",
+    "type": "pertemuan",
+    "pertemuan": 2,
+    "category": "Latihan Pertemuan 2",
+    "question": "Kelompok proses manakah dalam PMBOK 5 yang bertugas membandingkan performa aktual proyek dengan rencana awal serta melakukan tindakan korektif jika terjadi deviasi?",
+    "options": [
+      {
+        "text": "Monitoring & Controlling Process Group",
+        "isCorrect": true,
+        "rationale": "Monitoring & Controlling bertujuan mengukur performa secara berkala, memantau deviasi dari baseline, dan merekomendasikan corrective action."
+      },
+      {
+        "text": "Planning Process Group",
+        "isCorrect": false,
+        "rationale": "Planning membuat acuan baseline, bukan memantau deviasinya secara real-time."
+      },
+      {
+        "text": "Executing Process Group",
+        "isCorrect": false,
+        "rationale": "Executing adalah pelaksanaan fisik pekerjaan."
+      },
+      {
+        "text": "Initiating Process Group",
+        "isCorrect": false,
+        "rationale": "Initiating adalah peresmian otorisasi proyek."
+      },
+      {
+        "text": "Closing Process Group",
+        "isCorrect": false,
+        "rationale": "Closing adalah mengakhiri kontrak dan serah terima hasil."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p3_q6",
+    "type": "pertemuan",
+    "pertemuan": 3,
+    "category": "Latihan Pertemuan 3",
+    "question": "Dokumen Project Charter telah ditandatangani oleh Sponsor Utama. Apakah implikasi hukum dan organisasional dari tanda tangan tersebut bagi Manajer Proyek?",
+    "options": [
+      {
+        "text": "Memberikan wewenang resmi bagi Manajer Proyek untuk menggunakan sumber daya organisasi dalam aktivitas proyek",
+        "isCorrect": true,
+        "rationale": "Tujuan utama Project Charter adalah secara formal menunjuk PM dan memberinya otoritas menggunakan aset/staf perusahaan demi kesuksesan proyek."
+      },
+      {
+        "text": "Memberikan hak bagi Manajer Proyek untuk menentukan harga jual produk secara mutlak tanpa persetujuan sponsor",
+        "isCorrect": false,
+        "rationale": "Harga jual atau kelayakan bisnis tetap menjadi domain sponsor dan dewan bisnis."
+      },
+      {
+        "text": "Memberikan wewenang untuk mengubah ruang lingkup proyek secara bebas tanpa melalui CCB",
+        "isCorrect": false,
+        "rationale": "Setiap perubahan baseline ruang lingkup setelah Charter disetujui harus melalui Change Control Board."
+      },
+      {
+        "text": "PM mendapatkan kekebalan penuh atas segala sanksi keterlambatan proyek",
+        "isCorrect": false,
+        "rationale": "Charter justru menegaskan tanggung jawab PM terhadap milestones waktu."
+      },
+      {
+        "text": "PM diizinkan untuk menandatangani kontrak pengadaan tanpa batasan nilai anggaran",
+        "isCorrect": false,
+        "rationale": "Pengadaan memiliki kebijakan limits of authority keuangan tersendiri."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p3_q7",
+    "type": "pertemuan",
+    "pertemuan": 3,
+    "category": "Latihan Pertemuan 3",
+    "question": "Di bawah ini yang merupakan input utama yang dibutuhkan dalam penyusunan dokumen Project Charter adalah...",
+    "options": [
+      {
+        "text": "Project Statement of Work (SOW), Business Case, & Kontrak",
+        "isCorrect": true,
+        "rationale": "Input untuk penyusunan Project Charter meliputi deskripsi pekerjaan (SOW), studi kelayakan ekonomi (Business Case), perjanjian/kontrak, faktor lingkungan organisasi, dan aset proses organisasi."
+      },
+      {
+        "text": "Work Breakdown Structure (WBS) & Kamus WBS",
+        "isCorrect": false,
+        "rationale": "WBS dibuat pada tahap Planning setelah Project Charter terbit."
+      },
+      {
+        "text": "Project Management Plan (PMP)",
+        "isCorrect": false,
+        "rationale": "PMP adalah output dari tahap perencanaan integrasi yang merangkum Project Charter."
+      },
+      {
+        "text": "Final Report & Dokumentasi Serah Terima",
+        "isCorrect": false,
+        "rationale": "Kedua dokumen ini digunakan pada tahap penutupan (Closing)."
+      },
+      {
+        "text": "Jadwal Proyek Metode CPM & Diagram Jaringan",
+        "isCorrect": false,
+        "rationale": "Jadwal detail baru disusun di tahap perencanaan jadwal."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p3_q8",
+    "type": "pertemuan",
+    "pertemuan": 3,
+    "category": "Latihan Pertemuan 3",
+    "question": "Siapakah pihak yang paling berwenang secara formal untuk menerbitkan dan menandatangani Project Charter di awal proyek?",
+    "options": [
+      {
+        "text": "Project Sponsor / Project Initiator",
+        "isCorrect": true,
+        "rationale": "Project Charter harus diterbitkan oleh pihak eksternal proyek seperti Sponsor, PMO, atau komite portofolio yang mendanai proyek tersebut."
+      },
+      {
+        "text": "Project Manager",
+        "isCorrect": false,
+        "rationale": "Project Manager ditunjuk oleh dokumen Charter tersebut, sehingga ia tidak bisa menerbitkannya sendiri."
+      },
+      {
+        "text": "System Analyst",
+        "isCorrect": false,
+        "rationale": "Analis sistem adalah bagian dari tim teknis proyek."
+      },
+      {
+        "text": "Project Team Members",
+        "isCorrect": false,
+        "rationale": "Anggota tim melaksanakan tugas teknis, tidak memiliki otoritas penerbitan otorisasi proyek."
+      },
+      {
+        "text": "End User / Pengguna Akhir saja",
+        "isCorrect": false,
+        "rationale": "Pengguna akhir menguji hasil, sedangkan otorisasi pendanaan ditandatangani oleh sponsor bisnis."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p4_q6",
+    "type": "pertemuan",
+    "pertemuan": 4,
+    "category": "Latihan Pertemuan 4",
+    "question": "Seorang PM memimpin tim untuk mendekomposisi total pekerjaan proyek ke dalam struktur hierarkis. Proses ini disebut sebagai pembuatan WBS. Mengapa pembuatan WBS sangat krusial?",
+    "options": [
+      {
+        "text": "Menyediakan kerangka kerja dasar untuk mengestimasi biaya, jadwal, dan alokasi sumber daya secara detail",
+        "isCorrect": true,
+        "rationale": "WBS memecah deliverable utama menjadi work package terkecil, sehingga estimasi biaya dan waktu di level bawah dapat digulung (rolled up) untuk akurasi rencana."
+      },
+      {
+        "text": "Berfungsi untuk menentukan kriteria kelulusan teknis sistem saat testing",
+        "isCorrect": false,
+        "rationale": "Kriteria testing berada di ranah Quality Assurance / Test Plan."
+      },
+      {
+        "text": "Untuk mengotomatisasi penulisan kode program oleh programmer",
+        "isCorrect": false,
+        "rationale": "WBS adalah pembagian lingkup kerja manajerial, bukan kode teknis."
+      },
+      {
+        "text": "Digunakan untuk menunjuk vendor pihak ketiga secara sepihak",
+        "isCorrect": false,
+        "rationale": "WBS memecah ruang lingkup, sedangkan pemilihan vendor menggunakan proses pengadaan."
+      },
+      {
+        "text": "Sebagai pengganti dokumen Project Charter",
+        "isCorrect": false,
+        "rationale": "Project Charter mendahului WBS dan memberikan dasar hukum bagi proyek."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p4_q7",
+    "type": "pertemuan",
+    "pertemuan": 4,
+    "category": "Latihan Pertemuan 4",
+    "question": "Tingkat pembagian kerja paling bawah (paling kecil) pada dekomposisi bagan Work Breakdown Structure (WBS) dinamakan...",
+    "options": [
+      {
+        "text": "Work Package (Paket Kerja)",
+        "isCorrect": true,
+        "rationale": "Berdasarkan PMBOK, tingkatan terbawah dari WBS di mana biaya dan durasi pekerjaan dapat diestimasi dan dikelola dengan andal disebut Paket Kerja (Work Package)."
+      },
+      {
+        "text": "Milestone (Tonggak Pencapaian)",
+        "isCorrect": false,
+        "rationale": "Milestone adalah penanda poin waktu penting dengan durasi nol, bukan aktivitas kerja."
+      },
+      {
+        "text": "Deliverable Utama",
+        "isCorrect": false,
+        "rationale": "Deliverable utama berada di tingkat atas WBS."
+      },
+      {
+        "text": "Control Account",
+        "isCorrect": false,
+        "rationale": "Control Account adalah titik integrasi manajemen di atas paket kerja."
+      },
+      {
+        "text": "WBS Dictionary",
+        "isCorrect": false,
+        "rationale": "Kamus WBS adalah dokumen pelengkap yang menjelaskan paket kerja."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p4_q8",
+    "type": "pertemuan",
+    "pertemuan": 4,
+    "category": "Latihan Pertemuan 4",
+    "question": "Dalam proyek pengembangan aplikasi HRIS, klien meminta penambahan modul penggajian (payroll) baru di tengah jalan tanpa memperbarui dokumen kontrak atau baseline waktu dan biaya. Fenomena ini disebut...",
+    "options": [
+      {
+        "text": "Scope Creep (Pemekaran Ruang Lingkup)",
+        "isCorrect": true,
+        "rationale": "Scope Creep adalah perluasan atau penambahan ruang lingkup proyek secara tidak terkendali tanpa penyesuaian waktu, biaya, atau sumber daya yang disepakati formal."
+      },
+      {
+        "text": "Gold Plating",
+        "isCorrect": false,
+        "rationale": "Gold Plating adalah tindakan tim proyek menambahkan fitur ekstra atas inisiatif sendiri tanpa diminta klien."
+      },
+      {
+        "text": "Scope Validation",
+        "isCorrect": false,
+        "rationale": "Scope Validation adalah proses formal penerimaan serah terima deliverable oleh klien."
+      },
+      {
+        "text": "Change Control System",
+        "isCorrect": false,
+        "rationale": "Ini adalah sistem formal untuk mengelola perubahan ruang lingkup secara terkendali."
+      },
+      {
+        "text": "Work Package Rollover",
+        "isCorrect": false,
+        "rationale": "Istilah ini tidak ada dalam metodologi PMBOK."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q6",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "[Studi Kasus EVM] Proyek pembuatan software HRIS memiliki total anggaran disetujui (BAC) Rp200.000.000. Pada minggu ke-8, Planned Value (PV) proyek direncanakan sebesar Rp100.000.000. Setelah dievaluasi, nilai hasil kerja aktual (EV) adalah Rp90.000.000 dan biaya riil yang dikeluarkan (AC) sebesar Rp110.000.000. Berapakah nilai Cost Variance (CV) dan Schedule Variance (SV) proyek tersebut?",
+    "options": [
+      {
+        "text": "CV = -Rp20.000.000; SV = -Rp10.000.000",
+        "isCorrect": true,
+        "rationale": "CV = EV - AC = Rp90.000.000 - Rp110.000.000 = -Rp20.000.000 (Over budget). SV = EV - PV = Rp90.000.000 - Rp100.000.000 = -Rp10.000.000 (Behind schedule)."
+      },
+      {
+        "text": "CV = -Rp10.000.000; SV = -Rp20.000.000",
+        "isCorrect": false,
+        "rationale": "Salah menghitung formula CV dan SV terbalik."
+      },
+      {
+        "text": "CV = Rp20.000.000; SV = Rp10.000.000",
+        "isCorrect": false,
+        "rationale": "CV dan SV bernilai negatif karena performa buruk, bukan positif."
+      },
+      {
+        "text": "CV = -Rp20.000.000; SV = Rp10.000.000",
+        "isCorrect": false,
+        "rationale": "SV bernilai negatif (-10jt), bukan positif."
+      },
+      {
+        "text": "CV = -Rp10.000.000; SV = -Rp10.000.000",
+        "isCorrect": false,
+        "rationale": "CV yang benar adalah -20jt (90jt - 110jt)."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q7",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "[Studi Kasus EVM] Berdasarkan data pada soal sebelumnya (BAC = Rp200.000.000, PV = Rp100.000.000, EV = Rp90.000.000, AC = Rp110.000.000), tentukan indeks kinerja biaya (CPI) dan indeks kinerja jadwal (SPI) proyek tersebut!",
+    "options": [
+      {
+        "text": "CPI = 0,818; SPI = 0,900",
+        "isCorrect": true,
+        "rationale": "CPI = EV / AC = 90.000.000 / 110.000.000 = 0,818. SPI = EV / PV = 90.000.000 / 100.000.000 = 0,900."
+      },
+      {
+        "text": "CPI = 0,900; SPI = 0,818",
+        "isCorrect": false,
+        "rationale": "Nilai indeks CPI dan SPI tertukar."
+      },
+      {
+        "text": "CPI = 1,222; SPI = 1,111",
+        "isCorrect": false,
+        "rationale": "Membagi AC/EV and PV/EV (terbalik)."
+      },
+      {
+        "text": "CPI = 0,818; SPI = 1,111",
+        "isCorrect": false,
+        "rationale": "SPI bernilai 0,900 karena EV lebih kecil dari PV."
+      },
+      {
+        "text": "CPI = 1,000; SPI = 1,000",
+        "isCorrect": false,
+        "rationale": "CPI dan SPI tidak bernilai 1 karena ada variansi biaya dan jadwal."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q8",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "[Studi Kasus EVM] Anggaran total proyek pembuatan website e-commerce (BAC) adalah Rp120.000.000. Saat ini proyek telah menghabiskan dana riil (AC) Rp60.000.000, sedangkan nilai kerja yang tercapai (EV) baru sebesar Rp50.000.000. Jika manajemen menganggap variansi biaya di masa lalu bersifat tidak khas (atypical) dan meyakini laju anggaran sisa akan kembali ke rencana awal, hitunglah Estimate at Completion (EAC) proyek!",
+    "options": [
+      {
+        "text": "Rp130.000.000",
+        "isCorrect": true,
+        "rationale": "Untuk variansi bersifat atypical (tidak khas), rumusnya: EAC = AC + (BAC - EV) = Rp60.000.000 + (Rp120.000.000 - Rp50.000.000) = Rp60.000.000 + Rp70.000.000 = Rp130.000.000."
+      },
+      {
+        "text": "Rp144.000.000",
+        "isCorrect": false,
+        "rationale": "Ini adalah hasil jika menggunakan rumus typical: EAC = BAC / CPI = 120jt / (50jt/60jt) = 144jt."
+      },
+      {
+        "text": "Rp110.000.000",
+        "isCorrect": false,
+        "rationale": "EAC tidak mungkin lebih kecil dari BAC (120jt) karena proyek saat ini sedang mengalami pemborosan."
+      },
+      {
+        "text": "Rp120.000.000",
+        "isCorrect": false,
+        "rationale": "EAC akan mengalami kenaikan dari BAC asli karena adanya pembengkakan biaya masa lalu."
+      },
+      {
+        "text": "Rp150.000.000",
+        "isCorrect": false,
+        "rationale": "Salah kalkulasi, formula yang tepat menghasilkan Rp130.000.000."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q9",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "[Studi Kasus EVM] Proyek pengembangan modul ERP memiliki BAC sebesar Rp300.000.000. Saat ini biaya aktual (AC) yang telah dibayarkan Rp120.000.000 untuk memperoleh nilai hasil kerja (EV) Rp100.000.000. Pihak manajemen memperkirakan kinerja biaya buruk yang terjadi saat ini akan terus berlangsung (typical) hingga proyek selesai. Berapakah perkiraan biaya total proyek saat selesai (EAC)?",
+    "options": [
+      {
+        "text": "Rp360.000.000",
+        "isCorrect": true,
+        "rationale": "Untuk variansi bersifat typical (khas/berlanjut), rumusnya: EAC = BAC / CPI. CPI = EV / AC = 100.000.000 / 120.000.000 = 0,8333. EAC = Rp300.000.000 / 0,8333 = Rp360.000.000."
+      },
+      {
+        "text": "Rp320.000.000",
+        "isCorrect": false,
+        "rationale": "Ini adalah hasil jika menggunakan rumus atypical: EAC = AC + (BAC - EV) = 120jt + (300jt - 100jt) = 320jt."
+      },
+      {
+        "text": "Rp300.000.000",
+        "isCorrect": false,
+        "rationale": "Ini adalah budget awal (BAC), tidak mencerminkan pembengkakan biaya."
+      },
+      {
+        "text": "Rp400.000.000",
+        "isCorrect": false,
+        "rationale": "Nilai terlalu tinggi karena pembagian atau perkalian yang tidak pas."
+      },
+      {
+        "text": "Rp340.000.000",
+        "isCorrect": false,
+        "rationale": "Salah kalkulasi, formula yang tepat menghasilkan Rp360.000.000."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q10",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "[Studi Kasus PERT] Estimator proyek melakukan Three-Point Estimating untuk tugas pembuatan modul payment gateway. Durasi optimis (O) adalah 4 hari, durasi paling mungkin (M) adalah 7 hari, dan durasi pesimis (P) adalah 16 hari. Hitunglah estimasi durasi rata-rata aktivitas tersebut dengan metode PERT (distribusi Beta)!",
+    "options": [
+      {
+        "text": "8 hari",
+        "isCorrect": true,
+        "rationale": "Rumus PERT Expected Duration: Te = (O + 4M + P) / 6 = (4 + 4(7) + 16) / 6 = (4 + 28 + 16) / 6 = 48 / 6 = 8 hari."
+      },
+      {
+        "text": "7 hari",
+        "isCorrect": false,
+        "rationale": "7 hari adalah nilai Modus (M) atau Most Likely, bukan rata-rata berbobot PERT."
+      },
+      {
+        "text": "9 hari",
+        "isCorrect": false,
+        "rationale": "Te yang benar adalah 8 hari."
+      },
+      {
+        "text": "10 hari",
+        "isCorrect": false,
+        "rationale": "Hasil pembagian salah."
+      },
+      {
+        "text": "6 hari",
+        "isCorrect": false,
+        "rationale": "Durasi tidak mungkin lebih kecil dari most likely (7 hari) karena bobot pesimis cukup besar (16 hari)."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q11",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "[Studi Kasus PERT] Berdasarkan data soal sebelumnya (optimis = 4 hari, pesimis = 16 hari), berapakah standar deviasi (Standard Deviation) untuk estimasi durasi tugas tersebut?",
+    "options": [
+      {
+        "text": "2,0 hari",
+        "isCorrect": true,
+        "rationale": "Rumus Standar Deviasi PERT: SD = (P - O) / 6. Maka, SD = (16 - 4) / 6 = 12 / 6 = 2,0 hari."
+      },
+      {
+        "text": "1,5 hari",
+        "isCorrect": false,
+        "rationale": "Nilai standar deviasi tidak tepat."
+      },
+      {
+        "text": "3,0 hari",
+        "isCorrect": false,
+        "rationale": "Menghitung SD dengan membagi dengan 4, bukan 6."
+      },
+      {
+        "text": "1,0 hari",
+        "isCorrect": false,
+        "rationale": "Kalkulasi salah."
+      },
+      {
+        "text": "2,5 hari",
+        "isCorrect": false,
+        "rationale": "Pembagian salah."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q12",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "[Studi Kasus EVM] Laporan status bulanan sebuah proyek menunjukkan nilai CPI = 1,12 dan SPI = 0,85. Bagaimanakah interpretasi yang tepat mengenai status kesehatan proyek tersebut?",
+    "options": [
+      {
+        "text": "Di bawah anggaran dan di belakang jadwal (Under budget & Behind schedule)",
+        "isCorrect": true,
+        "rationale": "CPI = 1,12 (> 1,0) berarti proyek di bawah anggaran (hemat/untung). SPI = 0,85 (< 1,0) berarti proyek di belakang jadwal (lambat/terlambat)."
+      },
+      {
+        "text": "Di atas anggaran dan di belakang jadwal (Over budget & Behind schedule)",
+        "isCorrect": false,
+        "rationale": "CPI > 1,0 menunjukkan hemat anggaran, bukan rugi/over budget."
+      },
+      {
+        "text": "Di bawah anggaran dan di depan jadwal (Under budget & Ahead of schedule)",
+        "isCorrect": false,
+        "rationale": "SPI < 1,0 menunjukkan keterlambatan, bukan ahead of schedule."
+      },
+      {
+        "text": "Di atas anggaran dan di depan jadwal (Over budget & Ahead of schedule)",
+        "isCorrect": false,
+        "rationale": "Kedua kondisi ini bertolak belakang dengan nilai CPI dan SPI proyek."
+      },
+      {
+        "text": "Kondisi proyek kritis dan harus dihentikan seketika",
+        "isCorrect": false,
+        "rationale": "Proyek hemat anggaran, hanya butuh akselerasi jadwal, tidak perlu dihentikan."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q13",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "[Studi Kasus EVM] Sebuah proyek memiliki BAC sebesar Rp150.000.000. Saat dievaluasi, AC = Rp80.000.000 and EV = Rp90.000.000. Jika pengerjaan proyek harus selesai tepat sesuai anggaran awal (BAC), berapakah indeks TCPI (To-Complete Performance Index) yang harus dicapai tim proyek pada sisa pekerjaan?",
+    "options": [
+      {
+        "text": "0,857",
+        "isCorrect": true,
+        "rationale": "Rumus TCPI berdasarkan BAC: TCPI = (BAC - EV) / (BAC - AC). Maka, TCPI = (150.000.000 - 90.000.000) / (150.000.000 - 80.000.000) = 60.000.000 / 70.000.000 = 0,857. Artinya, tim bisa bekerja dengan efisiensi biaya lebih santai (85.7% dari rencana) untuk memenuhi target BAC."
+      },
+      {
+        "text": "1,167",
+        "isCorrect": false,
+        "rationale": "Ini adalah pembagian (BAC-AC)/(BAC-EV) yang terbalik."
+      },
+      {
+        "text": "1,000",
+        "isCorrect": false,
+        "rationale": "Kalkulasi salah."
+      },
+      {
+        "text": "0,750",
+        "isCorrect": false,
+        "rationale": "Salah menghitung sisa pekerjaan."
+      },
+      {
+        "text": "0,950",
+        "isCorrect": false,
+        "rationale": "Kalkulasi pembagian salah."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q14",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "[Studi Kasus EVM] Proyek pembuatan database server terpusat telah menghabiskan AC = Rp75.000.000. Setelah diaudit, progress fisik proyek setara dengan EV = Rp70.000.000. Berapakah biaya tambahan (Estimate to Complete - ETC) yang dibutuhkan untuk menyelesaikan sisa proyek jika sisa pekerjaan dianggap akan berjalan sesuai dengan laju rencana awal (atypical)? Diketahui BAC = Rp100.000.000.",
+    "options": [
+      {
+        "text": "Rp30.000.000",
+        "isCorrect": true,
+        "rationale": "Untuk estimasi atypical, laju pekerjaan sisa adalah sesuai budget. Maka ETC = BAC - EV = Rp100.000.000 - Rp70.000.000 = Rp30.000.000."
+      },
+      {
+        "text": "Rp25.000.000",
+        "isCorrect": false,
+        "rationale": "Ini adalah BAC - AC, yang tidak memperhitungkan EV proyek."
+      },
+      {
+        "text": "Rp32.140.000",
+        "isCorrect": false,
+        "rationale": "Ini adalah hasil ETC khas (typical): ETC = (BAC - EV) / CPI = 30jt / (70/75) = 32,14jt."
+      },
+      {
+        "text": "Rp35.000.000",
+        "isCorrect": false,
+        "rationale": "Kalkulasi salah."
+      },
+      {
+        "text": "Rp40.000.000",
+        "isCorrect": false,
+        "rationale": "Nilai terlalu besar."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p5_q15",
+    "type": "pertemuan",
+    "pertemuan": 5,
+    "category": "Latihan Pertemuan 5",
+    "question": "Seorang manajer proyek memperkirakan biaya pengembangan modul e-learning dengan cara mengalikan jumlah halaman modul (80 halaman) dengan rata-rata biaya historis penulisan per halaman sebesar Rp250.000. Metode estimasi biaya yang digunakan manajer proyek adalah...",
+    "options": [
+      {
+        "text": "Estimasi Parametrik (Parametric Estimating)",
+        "isCorrect": true,
+        "rationale": "Estimasi Parametrik menggunakan hubungan statistik antara data historis dengan variabel proyek lain (seperti Rp250.000 dikali 80 halaman) untuk menghitung estimasi biaya."
+      },
+      {
+        "text": "Estimasi Analog (Analogous Estimating)",
+        "isCorrect": false,
+        "rationale": "Estimasi Analog membandingkan secara kasar dengan proyek masa lalu yang serupa secara keseluruhan tanpa variabel perkalian matematis terukur."
+      },
+      {
+        "text": "Estimasi Bottom-up",
+        "isCorrect": false,
+        "rationale": "Estimasi Bottom-up mengestimasi tiap paket kerja dari bawah WBS lalu menjumlahkannya ke atas."
+      },
+      {
+        "text": "Estimasi Three-Point",
+        "isCorrect": false,
+        "rationale": "Three-Point menggunakan durasi optimis, paling mungkin, dan pesimis."
+      },
+      {
+        "text": "Expert Judgment",
+        "isCorrect": false,
+        "rationale": "Expert Judgment mengandalkan opini subyektif tenaga ahli."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p6_q6",
+    "type": "pertemuan",
+    "pertemuan": 6,
+    "category": "Latihan Pertemuan 6",
+    "question": "Dalam proyek sistem informasi, seorang programmer dan analis sistem direkrut penuh untuk proyek tersebut. Mereka tidak memiliki tugas fungsional lain dan melapor langsung kepada Manajer Proyek yang memiliki kekuasaan penuh atas anggaran dan sumber daya. Struktur organisasi proyek yang diterapkan adalah...",
+    "options": [
+      {
+        "text": "Struktur Organisasi Proyek Terdedikasi (Projectized)",
+        "isCorrect": true,
+        "rationale": "Dalam struktur Projectized (Orientasi Proyek), anggota tim didedikasikan penuh untuk proyek, tidak memiliki departemen fungsional rumah, dan melapor langsung ke PM yang memiliki wewenang tertinggi."
+      },
+      {
+        "text": "Struktur Fungsional",
+        "isCorrect": false,
+        "rationale": "Dalam struktur Fungsional, staf dikelompokkan berdasarkan keahlian teknis (SDM, Keuangan) dan PM memiliki sedikit wewenang."
+      },
+      {
+        "text": "Struktur Matriks Lemah (Weak Matrix)",
+        "isCorrect": false,
+        "rationale": "Weak Matrix menempatkan PM sebagai koordinator atau ekspeditor saja dengan wewenang rendah."
+      },
+      {
+        "text": "Struktur Matriks Seimbang (Balanced Matrix)",
+        "isCorrect": false,
+        "rationale": "Dalam Balanced Matrix, PM membagi wewenang secara setara dengan manajer fungsional."
+      },
+      {
+        "text": "Struktur Organisasi Lini (Line)",
+        "isCorrect": false,
+        "rationale": "Organisasi Lini adalah hierarki militer klasik tanpa struktur proyek terpisah."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p6_q7",
+    "type": "pertemuan",
+    "pertemuan": 6,
+    "category": "Latihan Pertemuan 6",
+    "question": "Seorang anggota tim proyek melaporkan status pekerjaannya kepada dua atasan sekaligus: Manajer Departemen IT secara administratif fungsional, dan Manajer Proyek secara operasional tugas proyek. Karakteristik ini menunjukkan struktur...",
+    "options": [
+      {
+        "text": "Struktur Organisasi Matriks (Matrix Organization)",
+        "isCorrect": true,
+        "rationale": "Ciri utama organisasi Matriks adalah pelaporan ganda (dual reporting lines) di mana staf bekerja di departemen fungsional sekaligus diperbantukan di tim proyek."
+      },
+      {
+        "text": "Struktur Fungsional Murni",
+        "isCorrect": false,
+        "rationale": "Fungsional hanya memiliki satu pelaporan tunggal kepada manajer fungsional."
+      },
+      {
+        "text": "Struktur Projectized Murni",
+        "isCorrect": false,
+        "rationale": "Projectized murni hanya memiliki satu pelaporan tunggal kepada Manajer Proyek."
+      },
+      {
+        "text": "Struktur Ad-Hoc",
+        "isCorrect": false,
+        "rationale": "Ad-Hoc bersifat sementara dan tidak terstruktur ganda formal."
+      },
+      {
+        "text": "Struktur Birokratis",
+        "isCorrect": false,
+        "rationale": "Birokratis mengandalkan rantai komando vertikal tunggal."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p6_q8",
+    "type": "pertemuan",
+    "pertemuan": 6,
+    "category": "Latihan Pertemuan 6",
+    "question": "Kelemahan paling signifikan dari struktur organisasi fungsional murni saat digunakan untuk mengelola proyek sistem informasi lintas divisi adalah...",
+    "options": [
+      {
+        "text": "Komunikasi antar divisi lambat dan tidak ada personil yang fokus bertanggung jawab penuh atas kesuksesan proyek",
+        "isCorrect": true,
+        "rationale": "Pada struktur Fungsional, tidak ada PM berwewenang penuh. Komunikasi harus naik ke tingkat kepala divisi baru turun ke divisi lain (siloisasi), memperlambat proyek."
+      },
+      {
+        "text": "Anggota tim akan menganggur dan kehilangan pekerjaan setelah proyek selesai",
+        "isCorrect": false,
+        "rationale": "Ini adalah kelemahan struktur Projectized, bukan Fungsional (staf fungsional tetap kembali ke departemennya)."
+      },
+      {
+        "text": "Wewenang Manajer Proyek terlalu besar dan otoriter",
+        "isCorrect": false,
+        "rationale": "Pada Fungsional, wewenang PM justru sangat minim atau hampir tidak ada."
+      },
+      {
+        "text": "Biaya operasional tim sangat tinggi karena duplikasi peran staf",
+        "isCorrect": false,
+        "rationale": "Fungsional sangat efisien dalam penggunaan sumber daya karena tidak ada duplikasi staf untuk proyek terpisah."
+      },
+      {
+        "text": "Sulit menjaga standar kualitas keahlian teknis staf",
+        "isCorrect": false,
+        "rationale": "Fungsional justru paling kuat dalam membina spesialisasi teknis karena pengelompokan keahlian sejenis."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p9_q6",
+    "type": "pertemuan",
+    "pertemuan": 9,
+    "category": "Latihan Pertemuan 9",
+    "question": "[Studi Kasus Make-or-Buy] Proyek membutuhkan penyediaan 20 lisensi software manajemen database. Pihak vendor menawarkan lisensi seharga Rp10.000.000 per lisensi untuk pembelian permanen. Pilihan lainnya, vendor menawarkan sewa bulanan seharga Rp500.000 per lisensi. Proyek direncanakan berjalan selama 12 bulan. Berdasarkan analisis Make-or-Buy (Beli-atau-Sewa), pilihan manakah yang paling ekonomis bagi proyek?",
+    "options": [
+      {
+        "text": "Menyewa lisensi, karena total biaya sewa (Rp120.000.000) lebih murah dibanding biaya beli (Rp200.000.000)",
+        "isCorrect": true,
+        "rationale": "Biaya sewa: Rp500.000 * 12 bulan * 20 lisensi = Rp120.000.000. Biaya beli: Rp10.000.000 * 20 lisensi = Rp200.000.000. Menyewa menghemat Rp80.000.000."
+      },
+      {
+        "text": "Membeli lisensi, karena total biaya beli lebih murah dibanding sewa",
+        "isCorrect": false,
+        "rationale": "Kalkulasi salah, biaya beli Rp200jt sedangkan sewa hanya Rp120jt."
+      },
+      {
+        "text": "Menyewa lisensi, karena biaya sewa bernilai Rp200.000.000",
+        "isCorrect": false,
+        "rationale": "Nilai biaya sewa salah."
+      },
+      {
+        "text": "Membeli lisensi, karena lisensi akan disimpan sebagai aset tanpa melihat perbandingan biaya",
+        "isCorrect": false,
+        "rationale": "Analisis pengadaan harus mempertimbangkan kelayakan ekonomi dan batasan anggaran proyek."
+      },
+      {
+        "text": "Membatal modul database agar tidak perlu mengeluarkan biaya",
+        "isCorrect": false,
+        "rationale": "Membatalkan modul penting merusak performa deliverable proyek."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p9_q7",
+    "type": "pertemuan",
+    "pertemuan": 9,
+    "category": "Latihan Pertemuan 9",
+    "question": "Jenis kontrak pengadaan manakah yang memberikan risiko keuangan tertinggi bagi pembeli/klien (buyer) karena ketidakpastian biaya akhir?",
+    "options": [
+      {
+        "text": "Kontrak Pengembalian Biaya (Cost Reimbursable / Cost Plus Fee)",
+        "isCorrect": true,
+        "rationale": "Pada kontrak Cost Reimbursable, pembeli menanggung semua biaya aktual vendor yang diperkenankan + fee keuntungan vendor. Jika biaya vendor membengkak, pembeli wajib membayarnya, menjadikannya risiko tertinggi bagi pembeli."
+      },
+      {
+        "text": "Kontrak Harga Tetap (Firm Fixed Price - FFP)",
+        "isCorrect": false,
+        "rationale": "FFP memberikan risiko tertinggi bagi penjual karena harga sudah dikunci mati, pembeli aman dari kenaikan harga."
+      },
+      {
+        "text": "Kontrak Harga Tetap Insentif (Fixed Price Incentive Fee - FPIF)",
+        "isCorrect": false,
+        "rationale": "FPIF mengunci harga batas atas sehingga risiko pembeli tetap terkontrol."
+      },
+      {
+        "text": "Kontrak Waktu & Material (Time and Material - T&M) dengan batas atas",
+        "isCorrect": false,
+        "rationale": "T&M dengan batas atas (ceiling price) melindungi pembeli dari biaya tak terbatas."
+      },
+      {
+        "text": "Kontrak Harga Tetap Penyesuaian Ekonomi (FP-EPA)",
+        "isCorrect": false,
+        "rationale": "FP-EPA menyesuaikan harga hanya berdasarkan inflasi resmi, risiko terkendali."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p9_q8",
+    "type": "pertemuan",
+    "pertemuan": 9,
+    "category": "Latihan Pertemuan 9",
+    "question": "Dokumen formal yang diterbitkan oleh organisasi pembeli dan dikirimkan kepada calon vendor untuk meminta proposal penawaran harga dan detail teknis pengerjaan disebut...",
+    "options": [
+      {
+        "text": "Request for Proposal (RFP) / Request for Quotation (RFQ)",
+        "isCorrect": true,
+        "rationale": "RFP (Permintaan Proposal) digunakan untuk meminta penawaran solusi teknis lengkap dan harga, sedangkan RFQ (Permintaan Penawaran) fokus pada harga untuk barang/jasa standar."
+      },
+      {
+        "text": "Statement of Work (SOW)",
+        "isCorrect": false,
+        "rationale": "SOW adalah lampiran deskripsi pekerjaan yang dimasukkan di dalam RFP."
+      },
+      {
+        "text": "Purchase Order (PO)",
+        "isCorrect": false,
+        "rationale": "PO adalah dokumen pemesanan pembelian formal setelah vendor terpilih."
+      },
+      {
+        "text": "Project Charter",
+        "isCorrect": false,
+        "rationale": "Project Charter adalah dokumen inisiasi internal organisasi."
+      },
+      {
+        "text": "Source Selection Criteria",
+        "isCorrect": false,
+        "rationale": "Kriteria seleksi adalah parameter internal untuk menilai proposal vendor."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p10_q6",
+    "type": "pertemuan",
+    "pertemuan": 10,
+    "category": "Latihan Pertemuan 10",
+    "question": "Pernyataan yang paling tepat mendeskripsikan perbedaan konseptual antara Project Life Cycle (PLC) dan System Development Life Cycle (SDLC) adalah...",
+    "options": [
+      {
+        "text": "PLC berfokus pada fase manajemen proyek secara makro (inisiasi, perencanaan, hingga penutupan), sedangkan SDLC berfokus pada proses teknis konstruksi software secara mikro",
+        "isCorrect": true,
+        "rationale": "PLC adalah siklus hidup pengelolaan proyek secara umum (PMBOK), sedangkan SDLC adalah metodologi rekayasa sistem/software (seperti analisis, desain, coding, testing)."
+      },
+      {
+        "text": "PLC hanya digunakan untuk proyek konstruksi fisik, sedangkan SDLC khusus untuk software",
+        "isCorrect": false,
+        "rationale": "PLC berlaku untuk semua jenis proyek, termasuk software."
+      },
+      {
+        "text": "PLC merupakan bagian kecil di dalam siklus SDLC",
+        "isCorrect": false,
+        "rationale": "Sebaliknya, SDLC teknis biasanya berjalan di dalam fase Executing (pelaksanaan) dari PLC manajemen proyek."
+      },
+      {
+        "text": "PLC tidak memiliki batasan waktu akhir, sedangkan SDLC dibatasi kontrak waktu",
+        "isCorrect": false,
+        "rationale": "Proyek (PLC) didefinisikan memiliki batas waktu akhir yang jelas (temporer)."
+      },
+      {
+        "text": "Kedua istilah tersebut memiliki definisi dan tahapan proses yang persis sama",
+        "isCorrect": false,
+        "rationale": "PLC bersifat manajerial, SDLC bersifat rekayasa teknis."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p10_q7",
+    "type": "pertemuan",
+    "pertemuan": 10,
+    "category": "Latihan Pertemuan 10",
+    "question": "Proyek pengembangan aplikasi mobile menggunakan kerangka kerja Agile Scrum dengan sprint berdurasi 2 minggu untuk menghasilkan increment produk secara cepat. Model SDLC yang diimplementasikan adalah...",
+    "options": [
+      {
+        "text": "Model Iteratif dan Inkremental (Iterative & Incremental Model)",
+        "isCorrect": true,
+        "rationale": "Agile Scrum didasarkan pada pengembangan bertahap (incremental) dan berulang (iterative) melalui siklus sprint reguler untuk merespon perubahan secara adaptif."
+      },
+      {
+        "text": "Model Sekuensial Linier (Waterfall)",
+        "isCorrect": false,
+        "rationale": "Waterfall bersifat linier satu arah tanpa iterasi berkala."
+      },
+      {
+        "text": "Model Big Bang",
+        "isCorrect": false,
+        "rationale": "Big Bang tidak memiliki struktur perencanaan atau iterasi, langsung coding."
+      },
+      {
+        "text": "Model V-Shape (V-Model)",
+        "isCorrect": false,
+        "rationale": "V-Model menekankan pengujian paralel di setiap fase sekuensial."
+      },
+      {
+        "text": "Model Rencana Induk (Traditional Plan-driven)",
+        "isCorrect": false,
+        "rationale": "Plan-driven menetapkan seluruh kebutuhan di awal secara kaku."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p10_q8",
+    "type": "pertemuan",
+    "pertemuan": 10,
+    "category": "Latihan Pertemuan 10",
+    "question": "Pada tahapan SDLC manakah aktivitas utama penulisan kode program (coding) oleh programmer dan pembuatan struktur database (schema) dilakukan?",
+    "options": [
+      {
+        "text": "Fase Konstruksi / Implementasi (Construction / Implementation)",
+        "isCorrect": true,
+        "rationale": "Penulisan source code dan instalasi awal database masuk ke dalam fase Konstruksi/Implementasi rekayasa perangkat lunak."
+      },
+      {
+        "text": "Fase Analisis Kebutuhan (Requirements Analysis)",
+        "isCorrect": false,
+        "rationale": "Fase analisis mengumpulkan kebutuhan pengguna dan menyusun SRS."
+      },
+      {
+        "text": "Fase Perancangan Sistem (System Design)",
+        "isCorrect": false,
+        "rationale": "Fase desain membuat diagram DFD, ERD, mock-up UI, dan arsitektur."
+      },
+      {
+        "text": "Fase Pengujian (Testing / Verification)",
+        "isCorrect": false,
+        "rationale": "Fase pengujian memverifikasi bug dan fungsionalitas sistem."
+      },
+      {
+        "text": "Fase Pemeliharaan (Maintenance)",
+        "isCorrect": false,
+        "rationale": "Fase pemeliharaan dilakukan setelah sistem live / go-live."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p14_q6",
+    "type": "pertemuan",
+    "pertemuan": 14,
+    "category": "Latihan Pertemuan 14",
+    "question": "Project Management Plan (PMP) mengintegrasikan seluruh rencana pengelolaan anak (subsidiary plans). Di bawah ini komponen yang BUKAN merupakan subsidiary plan dari PMP adalah...",
+    "options": [
+      {
+        "text": "Struktur Organisasi Proyek & Matriks RACI (Project Organization Charts & RACI Matrix)",
+        "isCorrect": true,
+        "rationale": "Struktur organisasi dan matriks RACI adalah instrumen/diagram alat bantu, bukan rencana manajemen pengelolaan anak (subsidiary management plan) seperti Scope Plan, Schedule Plan, dll."
+      },
+      {
+        "text": "Scope Management Plan",
+        "isCorrect": false,
+        "rationale": "Merupakan subsidiary plan untuk mengelola ruang lingkup."
+      },
+      {
+        "text": "Schedule Management Plan",
+        "isCorrect": false,
+        "rationale": "Merupakan subsidiary plan untuk mengelola waktu/jadwal."
+      },
+      {
+        "text": "Risk Management Plan",
+        "isCorrect": false,
+        "rationale": "Merupakan subsidiary plan untuk mengelola risiko."
+      },
+      {
+        "text": "Communications Management Plan",
+        "isCorrect": false,
+        "rationale": "Merupakan subsidiary plan untuk mengelola distribusi informasi."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p14_q7",
+    "type": "pertemuan",
+    "pertemuan": 14,
+    "category": "Latihan Pertemuan 14",
+    "question": "Apakah yang dimaksud dengan 'Performance Measurement Baseline' (PMB) atau acuan pengukuran kinerja terintegrasi di dalam dokumen PMP?",
+    "options": [
+      {
+        "text": "Integrasi formal dari Scope Baseline, Schedule Baseline, dan Cost Baseline",
+        "isCorrect": true,
+        "rationale": "PMB adalah baseline terintegrasi (Scope, Time, Cost) yang digunakan sebagai acuan pembanding saat menghitung nilai kinerja Earned Value proyek."
+      },
+      {
+        "text": "Skema penilaian Key Performance Indicators (KPI) individu dari personil developer",
+        "isCorrect": false,
+        "rationale": "Rencana KPI individu merupakan bagian dari manajemen SDM internal."
+      },
+      {
+        "text": "Hasil audit laporan keuangan triwulan dari akuntan publik eksternal",
+        "isCorrect": false,
+        "rationale": "Audit keuangan adalah aktivitas pengendalian keuangan, bukan baseline PMB."
+      },
+      {
+        "text": "Log aktivitas harian (timesheet) yang diisi oleh programmer",
+        "isCorrect": false,
+        "rationale": "Timesheet adalah pelacak aktivitas kerja, bukan baseline rencana."
+      },
+      {
+        "text": "Daftar 10 risiko utama yang tercatat dalam Risk Register",
+        "isCorrect": false,
+        "rationale": "Risk Register mengelola risiko, bukan baseline integrasi performa."
+      }
+    ],
+    "course": "mpsi"
+  },
+  {
+    "id": "p14_q8",
+    "type": "pertemuan",
+    "pertemuan": 14,
+    "category": "Latihan Pertemuan 14",
+    "question": "Dokumen rencana anak di dalam PMP yang mengatur bagaimana setiap permintaan modifikasi terhadap baseline proyek akan diajukan, dianalisis dampaknya, disetujui/ditolak, dan dilacak adalah...",
+    "options": [
+      {
+        "text": "Change Control / Change Management Plan",
+        "isCorrect": true,
+        "rationale": "Change Management Plan mendefinisikan proses, alur kerja, wewenang CCB, dan formulir untuk mengendalikan perubahan baseline proyek."
+      },
+      {
+        "text": "Quality Management Plan",
+        "isCorrect": false,
+        "rationale": "Quality Management Plan mengatur standar mutu dan kualitas hasil kerja."
+      },
+      {
+        "text": "Staffing Management Plan",
+        "isCorrect": false,
+        "rationale": "Staffing Management Plan mengatur rekrutmen dan pelepasan staf."
+      },
+      {
+        "text": "Scope Baseline",
+        "isCorrect": false,
+        "rationale": "Scope baseline terdiri dari Scope Statement, WBS, dan Kamus WBS."
+      },
+      {
+        "text": "Risk Register",
+        "isCorrect": false,
+        "rationale": "Risk Register mencatat identifikasi risiko dan rencana responnya."
+      }
+    ],
+    "course": "mpsi"
   }
 ]
