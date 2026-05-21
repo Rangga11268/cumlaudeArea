@@ -8,64 +8,275 @@ import React, { useState, useEffect } from 'react';
 
 const MATERI_KILAT_UTS = [
   {
-    "title": "Level 1 (Mudah): Konsep Dasar, Kelompok Proses & Project Charter",
+    "id": "uts_lvl1_card1",
+    "level": 1,
+    "title": "1. Karakteristik & Konsep Proyek MPSI",
     "points": [
       "Proyek bersifat dinamis, non-rutin, relatif pendek, memiliki jadwal tetap, dan kebutuhan sumber daya berubah-ubah (5M).",
-      "Proyek internal (swakelola) dikerjakan langsung tanpa melalui proses tender/lelang kompetitif.",
-      "5 Kelompok Proses (Process Groups): Initiating, Planning, Executing, Monitoring & Controlling, dan Closing, dengan total 47 proses PMBOK Edisi 5.",
-      "Project Integration Management memiliki 6 proses utama berdasarkan PMBOK Edisi 5.",
-      "Create WBS adalah menjabarkan scope statement menjadi susunan deliverable hierarkis yang mudah dikelola."
+      "Proyek bersifat sementara (temporary endeavor) dengan batas awal dan akhir yang jelas untuk menghasilkan produk/jasa unik.",
+      "Sumber daya proyek (5M) meliputi: Man (Manusia), Money (Uang), Material (Bahan baku), Machine (Peralatan/Server), dan Method (Prosedur/Metodologi).",
+      "Proyek internal (swakelola) dikerjakan langsung secara internal oleh organisasi tanpa melalui proses tender/lelang kompetitif.",
+      "Triple Constraints proyek meliputi: Scope (Ruang Lingkup), Time (Waktu/Jadwal), dan Cost (Anggaran/Biaya)."
     ]
   },
   {
-    "title": "Level 2 (Sedang): Manajemen Scope, WBS, Dependensi & CPM",
+    "id": "uts_lvl1_card2",
+    "level": 1,
+    "title": "2. Proses & Kelompok Proses PMBOK Edisi 5",
     "points": [
-      "Inisiasi memiliki 2 proses utama: Develop Project Charter (Project Definition) dan Identify Stakeholders.",
-      "Tujuan pelaksanaan proyek (Executing) adalah mengoordinasikan staf dan sumber daya guna merealisasikan rencana manajemen proyek.",
-      "Work Result Guideline digunakan untuk memandu hasil pekerjaan proyek agar tetap sesuai standar saat eksekusi.",
-      "Problem Statement mendokumentasikan masalah bisnis secara kuantitatif berdasarkan pengukuran nyata.",
-      "Timeline (lini waktu) dalam Project Charter menjelaskan target tanggal penyelesaian setiap fase proyek.",
-      "Scope (ruang lingkup) mendefinisikan batasan kerja: apa yang masuk (in-scope) dan apa yang keluar/tidak termasuk (out-of-scope)."
+      "Terdapat 5 Kelompok Proses (Process Groups): Initiating, Planning, Executing, Monitoring & Controlling, dan Closing (total 47 sub-proses).",
+      "Terdapat 10 Area Pengetahuan (Knowledge Areas) di PMBOK Edisi 5 (ditambahkannya Project Stakeholder Management).",
+      "Kelompok proses Executing memakan waktu dan sumber daya organisasi terbesar dalam siklus hidup proyek.",
+      "Kelompok proses Monitoring & Controlling berfungsi mengukur kinerja aktual terhadap rencana baseline dan mengambil tindakan korektif jika terjadi deviasi.",
+      "Proses Identify Stakeholders masuk kelompok proses Initiating, mendampingi proses pembuatan Project Charter."
     ]
   },
   {
-    "title": "Level 3 (Sulit): Estimasi PERT/Tiga Titik, EVM & Struktur Organisasi",
+    "id": "uts_lvl1_card3",
+    "level": 1,
+    "title": "3. Otorisasi & Project Charter",
     "points": [
-      "Teknik estimasi biaya MPSI terdiri dari 3 metode: Analogous (Top-Down), Bottom-Up, dan Parametric Modeling.",
-      "Performa bermasalah jika indeks kinerja biaya (CPI) dan jadwal (SPI) kurang dari atau sama dengan 100% (1.0).",
-      "Actual Cost (AC) adalah biaya total yang dihabiskan. Planned Value (PV) adalah anggaran disetujui yang direncanakan untuk aktivitas.",
-      "Organisasi Proyek (OP) Murni memisahkan tim proyek secara mandiri, memberikan otoritas mutlak kepada Manajer Proyek.",
-      "OP Fungsional mengelompokkan staf berdasarkan fungsi spesialisasi divisi dengan jalur komando hierarki vertikal."
+      "Project Charter adalah dokumen awal yang meresmikan keberadaan proyek dan memberi wewenang hukum kepada Manajer Proyek (PM).",
+      "Project Charter biasanya ditandatangani dan diterbitkan oleh Sponsor Proyek atau Manajemen Senior.",
+      "Input utama pembuatan Project Charter meliputi Statement of Work (SOW), Kontrak, dan kasus bisnis (Business Case).",
+      "Elemen utama dalam Project Charter mencakup deskripsi proyek, sponsor proyek, penunjukan PM, target waktu (milestone), estimasi anggaran awal, dan kriteria sukses.",
+      "Pemangku kepentingan (Stakeholder) mencakup seluruh individu/organisasi yang terlibat aktif atau kepentingannya dipengaruhi oleh proyek."
+    ]
+  },
+  {
+    "id": "uts_lvl1_card4",
+    "level": 1,
+    "title": "4. Manajemen Scope & Dasar WBS",
+    "points": [
+      "Project Scope Management memastikan proyek hanya mengerjakan aktivitas yang diperlukan untuk mencapai tujuan akhir dengan sukses.",
+      "Aktivitas awal perencanaan scope meliputi penyusunan Project Scope Statement yang mendefinisikan batas kerja (in-scope dan out-of-scope).",
+      "Create WBS (Work Breakdown Structure) adalah proses membagi secara hierarkis deliverable proyek menjadi komponen yang lebih kecil dan mudah dikelola.",
+      "WBS memfokuskan pembagian pada deliverables (hasil kerja), bukan daftar aktivitas harian.",
+      "Kegagalan mendefinisikan scope dengan jelas di awal mengakibatkan pembengkakan biaya dan keterlambatan jadwal karena cost of changes yang meningkat eksponensial."
+    ]
+  },
+  {
+    "id": "uts_lvl2_card1",
+    "level": 2,
+    "title": "5. Aturan WBS & Work Package",
+    "points": [
+      "Aturan 100% (100% Rule): WBS harus mencakup 100% ruang lingkup proyek dan seluruh deliverable, tidak kurang dan tidak lebih.",
+      "Work Package is elemen terendah hasil dekomposisi WBS yang dapat diestimasi durasi & biayanya, serta dapat ditugaskan ke unit penanggung jawab.",
+      "WBS Dictionary adalah dokumen pendukung yang mendefinisikan secara detail deskripsi tugas, penanggung jawab, kriteria sukses, dan deliverable tiap elemen WBS.",
+      "WBS membantu mengidentifikasi semua pekerjaan fisik sehingga mencegah terjadinya scope creep (pemekaran ruang lingkup tanpa kontrol).",
+      "Dekomposisi WBS berhenti ketika komponen pekerjaan sudah cukup kecil untuk diestimasi biayanya secara akurat."
+    ]
+  },
+  {
+    "id": "uts_lvl2_card2",
+    "level": 2,
+    "title": "6. Ketergantungan (Sequencing & PDM/ADM)",
+    "points": [
+      "Finish-to-Start (FS): Aktivitas B baru bisa mulai setelah Aktivitas A selesai (tipe paling umum).",
+      "Start-to-Start (SS): Aktivitas B baru bisa mulai setelah Aktivitas A dimulai.",
+      "Finish-to-Finish (FF): Aktivitas B baru bisa selesai setelah Aktivitas A selesai.",
+      "Start-to-Finish (SF): Aktivitas B baru bisa selesai setelah Aktivitas A dimulai.",
+      "Precedence Diagramming Method (PDM / AON) menggambarkan aktivitas di dalam kotak (node) dan dependensi menggunakan anak panah.",
+      "Arrow Diagramming Method (ADM / AOA) menggambarkan aktivitas pada anak panah (arrow) dan lingkaran (node) sebagai penanda kejadian (event).",
+      "Aktivitas Dummy dalam diagram AOA digambarkan dengan garis putus-putus, berdurasi 0 hari, dan tidak mengonsumsi biaya/sumber daya; gunanya hanya mempertahankan logika dependensi."
+    ]
+  },
+  {
+    "id": "uts_lvl2_card3",
+    "level": 2,
+    "title": "7. Jalur Kritis (Critical Path Method - CPM)",
+    "points": [
+      "Jalur Kritis (Critical Path) adalah jalur terpanjang dalam diagram jaringan proyek yang menentukan waktu penyelesaian proyek tercepat.",
+      "Seluruh aktivitas yang berada di sepanjang Jalur Kritis memiliki nilai Float (Slack) = 0 (Nol).",
+      "Penundaan waktu pengerjaan pada aktivitas kritis akan langsung menunda tanggal penyelesaian akhir proyek secara keseluruhan.",
+      "Perhitungan Maju (Forward Pass) berjalan dari awal ke akhir untuk menghitung Early Start (ES) dan Early Finish (EF).",
+      "Perhitungan Mundur (Backward Pass) berjalan dari akhir ke awal untuk menghitung Late Start (LS) dan Late Finish (LF)."
+    ]
+  },
+  {
+    "id": "uts_lvl2_card4",
+    "level": 2,
+    "title": "8. Kelonggaran Waktu, Lag/Lead & Kompresi",
+    "points": [
+      "Total Float (Slack) adalah waktu kelonggaran aktivitas tanpa menunda tanggal penyelesaian akhir proyek keseluruhan. Rumus: Float = LS - ES atau Float = LF - EF.",
+      "Free Float adalah kelonggaran waktu aktivitas tanpa menunda tanggal Early Start dari aktivitas penerus (successor) terdekat.",
+      "Lag (Jeda Waktu) adalah waktu tunggu wajib (delay positif) di antara pendahulu dan penerus.",
+      "Lead (Waktu Mendahului) adalah waktu tumpang tindih (delay negatif) di antara dua aktivitas.",
+      "Crashing mempercepat jadwal dengan menambahkan sumber daya pada jalur kritis dengan konsekuensi peningkatan biaya.",
+      "Fast Tracking mempercepat jadwal dengan menjalankan aktivitas kritis secara paralel (meningkatkan risiko rework)."
+    ]
+  },
+  {
+    "id": "uts_lvl3_card1",
+    "level": 3,
+    "title": "9. Teknik Estimasi Biaya & Durasi",
+    "points": [
+      "Analogous Estimating (Top-Down) menggunakan biaya/durasi proyek historis serupa sebagai acuan. Cepat, murah, namun akurasinya rendah.",
+      "Bottom-Up Estimating menaksir biaya/durasi elemen WBS terendah lalu dijumlahkan ke atas. Sangat akurat namun memakan waktu dan biaya pengerjaan yang besar.",
+      "Parametric Modeling menggunakan algoritma matematis berdasarkan data historis dan variabel proyek (misal: jumlah baris kode x tarif programmer).",
+      "PERT (Program Evaluation and Review Technique) memperhitungkan ketidakpastian dengan 3 estimasi waktu: Optimistic (o), Most Likely (m), dan Pessimistic (p).",
+      "Rumus PERT Distribusi Beta (PMBOK): E = (o + 4m + p) / 6 dan standar deviasi dev = (p - o) / 6. Distribusi Triangular: E = (o + m + p) / 3."
+    ]
+  },
+  {
+    "id": "uts_lvl3_card2",
+    "level": 3,
+    "title": "10. Earned Value Management (EVM) - Indikator Dasar",
+    "points": [
+      "Planned Value (PV) / BCWS: Anggaran disetujui yang direncanakan untuk diselesaikan pada tanggal evaluasi.",
+      "Earned Value (EV) / BCWP: Nilai pekerjaan yang telah diselesaikan secara nyata hingga tanggal evaluasi.",
+      "Actual Cost (AC) / ACWP: Biaya aktual yang dihabiskan untuk menyelesaikan pekerjaan hingga tanggal evaluasi.",
+      "Cost Variance (CV): Selisih biaya aktual dengan hasil kerja nyata. Rumus: CV = EV - AC (CV < 0 berarti boros/over-budget).",
+      "Schedule Variance (SV): Selisih jadwal rencana dengan hasil kerja nyata. Rumus: SV = EV - PV (SV < 0 berarti terlambat/behind schedule)."
+    ]
+  },
+  {
+    "id": "uts_lvl3_card3",
+    "level": 3,
+    "title": "11. EVM - Indeks Kinerja & Prakiraan Lanjutan",
+    "points": [
+      "Cost Performance Index (CPI): Indeks kinerja efisiensi biaya. Rumus: CPI = EV / AC (CPI < 1.0 berarti biaya tidak efisien).",
+      "Schedule Performance Index (SPI): Indeks kinerja efisiensi waktu. Rumus: SPI = EV / PV (SPI < 1.0 berarti pengerjaan lambat).",
+      "Estimate at Completion (EAC): Prakiraan total biaya akhir proyek jika kinerja saat ini berlanjut. Rumus standar: EAC = BAC / CPI.",
+      "Estimate to Complete (ETC): Prakiraan biaya tambahan untuk menyelesaikan sisa pekerjaan. Rumus: ETC = EAC - AC atau ETC = (BAC - EV) / CPI.",
+      "To-Complete Performance Index (TCPI): Indeks kinerja biaya yang harus dicapai untuk menyelesaikan sisa proyek sesuai anggaran. Rumus: TCPI = (BAC - EV) / (BAC - AC)."
+    ]
+  },
+  {
+    "id": "uts_lvl3_card4",
+    "level": 3,
+    "title": "12. Struktur Organisasi Proyek (OP)",
+    "points": [
+      "Organisasi Proyek Murni (Projectized): Tim proyek dipisahkan secara mandiri, wewenang Manajer Proyek mutlak/penuh, dan staf tidak memiliki divisi asal (home-base).",
+      "Organisasi Fungsional: Staf dikelompokkan berdasarkan divisi spesialisasi fungsional vertikal, jalur koordinasi bersifat birokratis, dan PM memiliki wewenang sangat minim/nol.",
+      "Organisasi Matriks (Matrix Organization): Menggabungkan struktur fungsional dan fungsional proyek. Memiliki dua jalur komando (PM dan Manajer Fungsional).",
+      "Weak Matrix: PM bertindak sebagai koordinator/expediter dengan wewenang minim.",
+      "Balanced Matrix: PM dan Manajer Fungsional berbagi wewenang secara setara.",
+      "Strong Matrix: PM memiliki wewenang lebih dominan dibanding Manajer Fungsional."
     ]
   }
 ];
 
 const MATERI_KILAT_UAS = [
   {
-    "title": "Level 1 (Mudah): Pengadaan & Risiko Proyek",
+    "id": "uas_lvl1_card1",
+    "level": 1,
+    "title": "1. Manajemen Pengadaan (Project Procurement)",
     "points": [
-      "Departemen Pengadaan (Procurement) sering kali dinamakan Departemen Pembelian (Purchasing Department) di perusahaan.",
-      "Project Procurement Management adalah bidang yang mengatur pembelian/pengadaan barang dan jasa dari luar secara formal.",
-      "Risiko sehubungan dengan batasan yang dibebankan oleh manajemen atau pasar termasuk ke dalam kategori Pengaruh Bisnis (Business Influence).",
-      "Manajemen Risiko Proyek terdiri dari 6 proses utama berdasarkan PMBOK Edisi 5."
+      "Pengadaan (Procurement) mengatur hubungan kerja sama, pembelian, atau penyediaan barang & jasa dari pihak ketiga (vendor/supplier) secara formal.",
+      "4 Proses Utama Pengadaan (PMBOK 5): Plan Procurement Management, Conduct Procurements, Control Procurements, dan Close Procurements.",
+      "Make-or-Buy Analysis: Analisis kelayakan finansial & operasional untuk menentukan apakah organisasi membuat sendiri produk atau membelinya dari luar."
     ]
   },
   {
-    "title": "Level 2 (Sedang): Siklus Hidup & Penerapan SDLC",
+    "id": "uas_lvl1_card2",
+    "level": 1,
+    "title": "2. Tipe-Tipe Kontrak Pengadaan",
     "points": [
-      "Fase rekayasa sistem/software (SDLC) seperti coding, pengujian, dan penataan program dilaksanakan pada tahap pelaksanaan proyek (Executing).",
-      "Perancangan sistem berkonsentrasi pada bagaimana sistem dibangun (how) untuk memenuhi kebutuhan pada fase Design.",
-      "PLC stands for Project Life Cycle (Siklus Hidup Proyek).",
-      "Metode konversi serentak (direct cutover) menghentikan sistem lama seketika dan langsung mengaktifkan sistem baru.",
-      "Kelayakan jadwal (schedule feasibility) menganalisis batasan waktu penyusunan sistem."
+      "Fixed-Price (Lump Sum): Harga disepakati sejak awal, risiko biaya sepenuhnya ditanggung oleh penjual (vendor).",
+      "Cost-Reimbursable: Pembayaran biaya aktual dari pekerjaan ditambah keuntungan tetap (fee), risiko sepenuhnya ditanggung oleh pembeli (buyer).",
+      "Time and Material (T&M): Kontrak hibrida dengan tarif satuan (per jam/hari) yang disepakati untuk tenaga kerja dan material."
     ]
   },
   {
-    "title": "Level 3 (Sulit): Project Management Plan (PMP)",
+    "id": "uas_lvl1_card3",
+    "level": 1,
+    "title": "3. Manajemen Risiko Proyek (Project Risk)",
     "points": [
-      "PMP dirancang oleh Project Manager, ditandatangani Key Stakeholder sebagai otorisasi resmi baseline proyek.",
-      "Tiga dokumen utama (Scope Statement, WBS, WBS Dictionary) menyusun Scope Baseline (acuan dasar ruang lingkup).",
-      "Penyederhanaan PMP merujuk pada rumusan taktis 4W + 1H (What, Why, When, Who, How)."
+      "Risiko proyek adalah peristiwa/kondisi tidak pasti yang jika terjadi berdampak positif (opportunity) atau negatif (threat) pada tujuan proyek.",
+      "6 Proses Utama Risiko (PMBOK 5): Plan Risk Management, Identify Risks, Perform Qualitative Analysis, Perform Quantitative Analysis, Plan Risk Responses, dan Control Risks.",
+      "Risk Register: Dokumen sentral hasil identifikasi risiko yang mencakup daftar risiko, pemicu (triggers), respons, dan pemilik risiko (risk owners)."
+    ]
+  },
+  {
+    "id": "uas_lvl1_card4",
+    "level": 1,
+    "title": "4. Kategori & Pemicu Risiko",
+    "points": [
+      "Kategori Risiko Utama: Risiko Teknis (software/hardware), Project Management (estimasi buruk), Organisasi (kekurangan staf), dan Eksternal (perubahan hukum/pasar).",
+      "Business Influence: Pengaruh eksternal bisnis/pasar terhadap keberhasilan proyek, seperti fluktuasi ekonomi atau persaingan pasar.",
+      "Risk Triggers: Tanda-tanda peringatan dini (early warning signs) bahwa suatu risiko akan segera terjadi (misalnya kegagalan modul berkali-kali)."
+    ]
+  },
+  {
+    "id": "uas_lvl2_card1",
+    "level": 2,
+    "title": "5. Analisis Risiko Kualitatif & Kuantitatif",
+    "points": [
+      "Qualitative Risk Analysis: Menilai probabilitas & dampak tiap risiko menggunakan skala deskriptif (Low, Medium, High) untuk memprioritaskan risiko.",
+      "Quantitative Risk Analysis: Menganalisis dampak numerik dari risiko gabungan pada target proyek secara matematis.",
+      "Expected Monetary Value (EMV): Metode kuantitatif menghitung hasil rata-rata saat skenario masa depan tidak pasti. Rumus: EMV = Probability x Impact."
+    ]
+  },
+  {
+    "id": "uas_lvl2_card2",
+    "level": 2,
+    "title": "6. Strategi Respons Risiko (Threat & Opportunity)",
+    "points": [
+      "Respons Ancaman (Threats): Avoid (Menghindari risiko), Transfer (Memindahkan risiko ke pihak ketiga/asuransi), Mitigate (Mengurangi dampak), dan Accept (Menerima risiko).",
+      "Respons Peluang (Opportunities): Exploit (Memastikan peluang terjadi), Share (Membagi peluang dengan pihak ketiga), Enhance (Meningkatkan probabilitas), dan Accept (Menerima peluang)."
+    ]
+  },
+  {
+    "id": "uas_lvl2_card3",
+    "level": 2,
+    "title": "7. Project Life Cycle (PLC) vs SDLC",
+    "points": [
+      "Project Life Cycle (PLC): Rangkaian fase dari awal hingga penutupan proyek (Initiation, Planning, Execution, Monitoring, Closing).",
+      "Systems Development Life Cycle (SDLC): Metodologi pengembangan software untuk membangun produk sistem informasi.",
+      "Keterkaitan: Fase rekayasa teknis SDLC (analisis, desain, coding, testing) dieksekusi di dalam fase Execution dari PLC proyek."
+    ]
+  },
+  {
+    "id": "uas_lvl2_card4",
+    "level": 2,
+    "title": "8. Studi Kelayakan Pengembangan Sistem",
+    "points": [
+      "Technical Feasibility: Menilai kemampuan organisasi, teknologi, dan infrastruktur yang tersedia untuk membangun sistem.",
+      "Operational Feasibility: Mengukur apakah sistem baru dapat dioperasikan secara efektif dalam prosedur organisasi sehari-hari.",
+      "Economic Feasibility: Menganalisis keuntungan finansial (ROI, NPV, Payback Period) dibandingkan biaya pengembangan.",
+      "Schedule Feasibility: Menganalisis batasan waktu penyusunan dan pengiriman sistem apakah realistis atau tidak."
+    ]
+  },
+  {
+    "id": "uas_lvl3_card1",
+    "level": 3,
+    "title": "9. Metode Konversi Sistem (System Conversion)",
+    "points": [
+      "Direct Cutover: Penghentian total sistem lama secara instan dan langsung mengaktifkan sistem baru. Cepat, murah, namun memiliki risiko kegagalan tertinggi.",
+      "Parallel Conversion: Menjalankan sistem lama dan sistem baru secara bersamaan hingga sistem baru terbukti stabil. Paling aman, namun memakan biaya & tenaga ganda.",
+      "Phased Conversion: Migrasi sistem dilakukan secara bertahap berdasarkan modul atau divisi. Meminimalkan risiko dampak kegagalan sistemik.",
+      "Pilot Conversion: Menguji sistem baru hanya di satu divisi/lokasi percontohan sebelum disebarluaskan ke seluruh organisasi."
+    ]
+  },
+  {
+    "id": "uas_lvl3_card2",
+    "level": 3,
+    "title": "10. Project Management Plan (PMP) & 4W+1H",
+    "points": [
+      "Project Management Plan (PMP): Dokumen induk resmi yang mengintegrasikan seluruh rencana area pengetahuan untuk mengarahkan eksekusi dan kontrol proyek.",
+      "Formulasi PMP (4W + 1H): What (tujuan/deliverable), Why (alasan/kasus bisnis), When (milestone/jadwal), Who (tim/organisasi), dan How (metode/manajemen).",
+      "Persetujuan PMP: Harus ditandatangani oleh Sponsor Proyek dan Manajer Fungsional/Kunci sebagai tanda otorisasi resmi baseline proyek."
+    ]
+  },
+  {
+    "id": "uas_lvl3_card3",
+    "level": 3,
+    "title": "11. Scope Baseline & CCB",
+    "points": [
+      "Scope Baseline terdiri atas 3 dokumen utama: Project Scope Statement (deskripsi ruang lingkup), WBS (struktur dekomposisi), dan WBS Dictionary.",
+      "Change Control Board (CCB): Kelompok pemangku kepentingan formal yang bertanggung jawab meninjau, mengevaluasi, menyetujui, atau menolak perubahan baseline proyek.",
+      "Cost of Changes: Biaya untuk melakukan perubahan scope meningkat secara eksponensial seiring berjalannya fase proyek menuju akhir."
+    ]
+  },
+  {
+    "id": "uas_lvl3_card4",
+    "level": 3,
+    "title": "12. Penutupan Proyek & Serah Terima",
+    "points": [
+      "Close Project: Fase formal untuk memverifikasi seluruh deliverable telah selesai, diterima pelanggan, dan mendokumentasikan pelajaran berharga (lessons learned).",
+      "Administrative Closure: Pengarsipan file proyek, pembubaran tim proyek (release of resources), dan penyelesaian kewajiban kontrak vendor.",
+      "Acceptance Criteria: Kriteria formal tertulis yang disepakati dengan pelanggan untuk menyatakan bahwa deliverables memenuhi standar kualitas yang diinginkan."
     ]
   }
 ];
@@ -122,6 +333,36 @@ export default function CumlaudeArea() {
     const saved = localStorage.getItem(`unlockedLevels_${selectedCourse}_${selectedExamType}`);
     return saved ? JSON.parse(saved) : [1];
   });
+
+  // Flashcards state hooks
+  const [flashcardLevelFilter, setFlashcardLevelFilter] = useState('all');
+  const [flashcardSearchQuery, setFlashcardSearchQuery] = useState('');
+  const [studiedCards, setStudiedCards] = useState(() => {
+    const saved = localStorage.getItem('cumlaude_studied_cards');
+    try {
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      return [];
+    }
+  });
+
+  // Reset flashcard filters when course or exam type changes
+  useEffect(() => {
+    setFlashcardLevelFilter('all');
+    setFlashcardSearchQuery('');
+    setFlippedCards({});
+  }, [selectedCourse, selectedExamType]);
+
+  const toggleCardStudied = (cardId, e) => {
+    e.stopPropagation(); // Prevent card flipping on badge toggle click
+    setStudiedCards(prev => {
+      const updated = prev.includes(cardId)
+        ? prev.filter(id => id !== cardId)
+        : [...prev, cardId];
+      localStorage.setItem('cumlaude_studied_cards', JSON.stringify(updated));
+      return updated;
+    });
+  };
 
   // Local storage history state
   const [examHistory, setExamHistory] = useState(() => {
@@ -288,8 +529,8 @@ export default function CumlaudeArea() {
     }
   };
 
-  const toggleFlashcard = (idx) => {
-    setFlippedCards(prev => ({ ...prev, [idx]: !prev[idx] }));
+  const toggleFlashcard = (cardId) => {
+    setFlippedCards(prev => ({ ...prev, [cardId]: !prev[cardId] }));
   };
 
   const toggleReview = (idx) => {
@@ -302,7 +543,28 @@ export default function CumlaudeArea() {
   const avgScore = examHistory.length > 0 ? Math.round(examHistory.reduce((acc, item) => acc + item.percentage, 0) / examHistory.length) : 0;
 
   if (view === 'materi') {
-    const activeMateri = selectedExamType === 'uts' ? MATERI_KILAT_UTS : MATERI_KILAT_UAS;
+    const baseMateri = selectedExamType === 'uts' ? MATERI_KILAT_UTS : MATERI_KILAT_UAS;
+    
+    // Filter by Level
+    let filteredMateri = baseMateri;
+    if (flashcardLevelFilter !== 'all') {
+      const targetLevel = parseInt(flashcardLevelFilter, 10);
+      filteredMateri = filteredMateri.filter(m => m.level === targetLevel);
+    }
+    
+    // Filter by Search query
+    if (flashcardSearchQuery.trim() !== '') {
+      const query = flashcardSearchQuery.toLowerCase();
+      filteredMateri = filteredMateri.filter(m => 
+        m.title.toLowerCase().includes(query) || 
+        m.points.some(p => p.toLowerCase().includes(query))
+      );
+    }
+
+    const totalMateriCount = baseMateri.length;
+    const studiedMateriCount = baseMateri.filter(m => studiedCards.includes(m.id)).length;
+    const studiedPercentage = totalMateriCount > 0 ? Math.round((studiedMateriCount / totalMateriCount) * 100) : 0;
+
     return (
       <div className="app-container fade-in">
         {renderNavbar('materi')}
@@ -310,32 +572,165 @@ export default function CumlaudeArea() {
         <main className="quiz-main">
           <div className="materi-card glass-panel">
             <div className="materi-header">
+              <span className="category-badge" style={{ marginBottom: '12px', display: 'inline-block' }}>
+                Mode Belajar: {selectedExamType.toUpperCase()} MPSI
+              </span>
               <h2>Flashcards Belajar Interaktif</h2>
-              <p>Pilih dan klik kartu untuk membalik dan melihat ringkasan materi penting.</p>
-            </div>
-            
-            <div className="flashcards-container">
-              {activeMateri.map((materi, idx) => (
-                <div key={idx} className="flashcard-wrapper" onClick={() => toggleFlashcard(idx)}>
-                  <div className={`flashcard ${flippedCards[idx] ? 'flipped' : ''}`}>
-                    <div className="flashcard-face flashcard-front">
-                      <h3>{materi.title}</h3>
-                      <p style={{ marginTop: '15px', color: '#3b82f6', fontWeight: '500' }}>Klik untuk Membalik ➔</p>
-                    </div>
-                    <div className="flashcard-face flashcard-back">
-                      <h4>{materi.title}</h4>
-                      <ul>
-                        {materi.points.map((point, pIdx) => (
-                          <li key={pIdx}>{point}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              ))}
+              <p>Gunakan kartu belajar di bawah ini untuk meninjau ringkasan materi penting sebelum memulai simulasi ujian.</p>
             </div>
 
-            <div className="hero-actions" style={{marginTop: '40px', alignItems: 'center'}}>
+            {/* Progress Tracker Card */}
+            <div className="flashcard-progress-section glass-card">
+              <div className="progress-info">
+                <div className="progress-text-group">
+                  <span className="progress-label">Progress Belajar Anda:</span>
+                  <strong className="progress-value">{studiedMateriCount} dari {totalMateriCount} Kartu Dipelajari</strong>
+                </div>
+                <span className="progress-percentage">{studiedPercentage}%</span>
+              </div>
+              <div className="progress-bar-container">
+                <div className="progress-bar-fill" style={{ width: `${studiedPercentage}%` }}></div>
+              </div>
+            </div>
+
+            {/* Controls Bar: Filters & Search */}
+            <div className="flashcard-controls">
+              <div className="filter-tabs">
+                <button 
+                  className={`filter-tab ${flashcardLevelFilter === 'all' ? 'active' : ''}`}
+                  onClick={() => setFlashcardLevelFilter('all')}
+                >
+                  Semua
+                </button>
+                <button 
+                  className={`filter-tab ${flashcardLevelFilter === '1' ? 'active' : ''}`}
+                  onClick={() => setFlashcardLevelFilter('1')}
+                >
+                  Level 1 (Mudah)
+                </button>
+                <button 
+                  className={`filter-tab ${flashcardLevelFilter === '2' ? 'active' : ''}`}
+                  onClick={() => setFlashcardLevelFilter('2')}
+                >
+                  Level 2 (Sedang)
+                </button>
+                <button 
+                  className={`filter-tab ${flashcardLevelFilter === '3' ? 'active' : ''}`}
+                  onClick={() => setFlashcardLevelFilter('3')}
+                >
+                  Level 3 (Sulit)
+                </button>
+              </div>
+
+              <div className="search-bar-container">
+                <svg className="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input 
+                  type="text" 
+                  placeholder="Cari materi..." 
+                  className="flashcard-search" 
+                  value={flashcardSearchQuery}
+                  onChange={(e) => setFlashcardSearchQuery(e.target.value)}
+                />
+                {flashcardSearchQuery && (
+                  <button className="clear-search-btn" onClick={() => setFlashcardSearchQuery('')}>
+                    &times;
+                  </button>
+                )}
+              </div>
+            </div>
+            
+            {/* Flashcards Grid */}
+            {filteredMateri.length === 0 ? (
+              <div className="no-materi-results glass-card">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ color: '#94a3b8', marginBottom: '15px' }}>
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+                <h3>Materi tidak ditemukan</h3>
+                <p>Tidak ada kartu belajar yang cocok dengan filter atau kata kunci pencarian Anda.</p>
+                <button className="btn-outline" style={{ marginTop: '15px', padding: '8px 16px', fontSize: '0.9rem' }} onClick={() => { setFlashcardSearchQuery(''); setFlashcardLevelFilter('all'); }}>
+                  Reset Filter & Pencarian
+                </button>
+              </div>
+            ) : (
+              <div className="flashcards-container">
+                {filteredMateri.map((materi) => {
+                  const isFlipped = !!flippedCards[materi.id];
+                  const isStudied = studiedCards.includes(materi.id);
+                  
+                  let levelText = "Level 1 - Mudah";
+                  let levelClass = "level-1-accent";
+                  if (materi.level === 2) {
+                    levelText = "Level 2 - Sedang";
+                    levelClass = "level-2-accent";
+                  } else if (materi.level === 3) {
+                    levelText = "Level 3 - Sulit";
+                    levelClass = "level-3-accent";
+                  }
+
+                  return (
+                    <div key={materi.id} className="flashcard-wrapper" onClick={() => toggleFlashcard(materi.id)}>
+                      <div className={`flashcard ${isFlipped ? 'flipped' : ''} ${levelClass} ${isStudied ? 'studied-card' : ''}`}>
+                        
+                        {/* FRONT FACE */}
+                        <div className="flashcard-face flashcard-front">
+                          <div className="flashcard-badge-row">
+                            <span className={`card-level-badge ${levelClass}`}>{levelText}</span>
+                            {isStudied && <span className="studied-badge">✓ Dipelajari</span>}
+                          </div>
+                          
+                          <div className="card-front-content">
+                            <h3>{materi.title}</h3>
+                            <p className="tap-hint">Klik untuk Membalik ➔</p>
+                          </div>
+                          
+                          <div className="card-action-row">
+                            <button 
+                              className={`btn-studied-toggle ${isStudied ? 'studied' : ''}`}
+                              onClick={(e) => toggleCardStudied(materi.id, e)}
+                            >
+                              {isStudied ? '✓ Sudah Dipelajari' : 'Tandai Sudah Dipelajari'}
+                            </button>
+                          </div>
+                        </div>
+
+                        {/* BACK FACE */}
+                        <div className="flashcard-face flashcard-back">
+                          <div className="flashcard-badge-row">
+                            <span className={`card-level-badge ${levelClass}`}>{levelText}</span>
+                            {isStudied && <span className="studied-badge">✓ Dipelajari</span>}
+                          </div>
+                          
+                          <div className="card-back-content">
+                            <h4>{materi.title}</h4>
+                            <ul>
+                              {materi.points.map((point, pIdx) => (
+                                <li key={pIdx}>{point}</li>
+                              ))}
+                            </ul>
+                          </div>
+
+                          <div className="card-action-row">
+                            <button 
+                              className={`btn-studied-toggle ${isStudied ? 'studied' : ''}`}
+                              onClick={(e) => toggleCardStudied(materi.id, e)}
+                            >
+                              {isStudied ? '✓ Sudah Dipelajari' : 'Tandai Sudah Dipelajari'}
+                            </button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
+            <div className="hero-actions" style={{marginTop: '45px', alignItems: 'center'}}>
               <button className="btn-primary" onClick={() => startQuiz(null)}>Sudah Paham, Mulai Ujian ➔</button>
             </div>
           </div>
