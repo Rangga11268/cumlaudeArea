@@ -8,7 +8,7 @@ import React, { useState, useEffect } from 'react';
 
 const MATERI_KILAT_UTS = [
   {
-    "title": "Level 1 (Pertemuan 1 & 2): Konsep Dasar & Kelompok Proses",
+    "title": "Level 1 (Mudah): Konsep Dasar, Kelompok Proses & Project Charter",
     "points": [
       "Proyek bersifat dinamis, non-rutin, relatif pendek, memiliki jadwal tetap, dan kebutuhan sumber daya berubah-ubah (5M).",
       "Proyek internal (swakelola) dikerjakan langsung tanpa melalui proses tender/lelang kompetitif.",
@@ -18,7 +18,7 @@ const MATERI_KILAT_UTS = [
     ]
   },
   {
-    "title": "Level 2 (Pertemuan 3 & 4): Inisiasi, Project Charter & Scope",
+    "title": "Level 2 (Sedang): Manajemen Scope, WBS, Dependensi & CPM",
     "points": [
       "Inisiasi memiliki 2 proses utama: Develop Project Charter (Project Definition) dan Identify Stakeholders.",
       "Tujuan pelaksanaan proyek (Executing) adalah mengoordinasikan staf dan sumber daya guna merealisasikan rencana manajemen proyek.",
@@ -29,7 +29,7 @@ const MATERI_KILAT_UTS = [
     ]
   },
   {
-    "title": "Level 3 (Pertemuan 5 & 6): Estimasi Biaya & SDM Proyek",
+    "title": "Level 3 (Sulit): Estimasi PERT/Tiga Titik, EVM & Struktur Organisasi",
     "points": [
       "Teknik estimasi biaya MPSI terdiri dari 3 metode: Analogous (Top-Down), Bottom-Up, dan Parametric Modeling.",
       "Performa bermasalah jika indeks kinerja biaya (CPI) dan jadwal (SPI) kurang dari atau sama dengan 100% (1.0).",
@@ -42,7 +42,7 @@ const MATERI_KILAT_UTS = [
 
 const MATERI_KILAT_UAS = [
   {
-    "title": "Level 1 (Pertemuan 9): Pengadaan & Risiko Proyek",
+    "title": "Level 1 (Mudah): Pengadaan & Risiko Proyek",
     "points": [
       "Departemen Pengadaan (Procurement) sering kali dinamakan Departemen Pembelian (Purchasing Department) di perusahaan.",
       "Project Procurement Management adalah bidang yang mengatur pembelian/pengadaan barang dan jasa dari luar secara formal.",
@@ -51,7 +51,7 @@ const MATERI_KILAT_UAS = [
     ]
   },
   {
-    "title": "Level 2 (Pertemuan 10): Siklus Hidup & Penerapan SDLC",
+    "title": "Level 2 (Sedang): Siklus Hidup & Penerapan SDLC",
     "points": [
       "Fase rekayasa sistem/software (SDLC) seperti coding, pengujian, dan penataan program dilaksanakan pada tahap pelaksanaan proyek (Executing).",
       "Perancangan sistem berkonsentrasi pada bagaimana sistem dibangun (how) untuk memenuhi kebutuhan pada fase Design.",
@@ -61,7 +61,7 @@ const MATERI_KILAT_UAS = [
     ]
   },
   {
-    "title": "Level 3 (Pertemuan 14): Project Management Plan (PMP)",
+    "title": "Level 3 (Sulit): Project Management Plan (PMP)",
     "points": [
       "PMP dirancang oleh Project Manager, ditandatangani Key Stakeholder sebagai otorisasi resmi baseline proyek.",
       "Tiga dokumen utama (Scope Statement, WBS, WBS Dictionary) menyusun Scope Baseline (acuan dasar ruang lingkup).",
@@ -79,7 +79,7 @@ const COURSES = [
 
 const EXAM_TYPES = [
   { id: 'uts', name: 'UTS (Ujian Tengah Semester)', active: true },
-  { id: 'uas', name: 'UAS (Ujian Akhir Semester)', active: true }
+  { id: 'uas', name: 'UAS (Ujian Akhir Semester)', active: false }
 ];
 
 const Footer = () => (
@@ -635,26 +635,26 @@ export default function CumlaudeArea() {
         <div className="levels-grid">
           <div className="level-card glass-card">
             <div className="level-head">
-              <h4>Level 1 - Inisiasi</h4>
+              <h4>Level 1 - Mudah</h4>
               <span className="level-count">{lvl1Count} Soal</span>
             </div>
             <p>
               {selectedExamType === 'uts' 
-                ? 'Konsep Dasar, Proyek, dan Kelompok Proses.' 
-                : 'Departemen Pengadaan, Procurement, dan Risiko Proyek.'}
+                ? 'Konsep Dasar Proyek, Kelompok Proses, & Otorisasi Project Charter.' 
+                : 'Pengenalan Pengadaan Barang (Procurement) dan Manajemen Risiko Proyek.'}
             </p>
             <button className="btn-level outline" onClick={() => startQuiz(1)}>Mulai Level 1</button>
           </div>
           
           <div className={"level-card glass-card " + (isLvl2Locked ? "locked" : "")}>
             <div className="level-head">
-              <h4>Level 2 - Eksekusi</h4>
+              <h4>Level 2 - Sedang</h4>
               <span className="level-count">{lvl2Count} Soal</span>
             </div>
             <p>
               {selectedExamType === 'uts' 
-                ? 'Inisiasi, Sasaran Proyek, Project Charter, dan Scope.' 
-                : 'Siklus Hidup Proyek (PLC) dan Penerapan SDLC.'}
+                ? 'Manajemen Scope (WBS), Dependensi (FS/SS/FF/SF), & Critical Path Method.' 
+                : 'Project Life Cycle (PLC) & Metode Konversi Sistem dalam SDLC.'}
             </p>
             <button className="btn-level outline" disabled={isLvl2Locked} onClick={() => startQuiz(2)}>
               {isLvl2Locked ? (
@@ -668,13 +668,13 @@ export default function CumlaudeArea() {
 
           <div className={"level-card glass-card " + (isLvl3Locked ? "locked" : "")}>
             <div className="level-head">
-              <h4>Level 3 - Penutupan</h4>
+              <h4>Level 3 - Sulit</h4>
               <span className="level-count">{lvl3Count} Soal</span>
             </div>
             <p>
               {selectedExamType === 'uts' 
-                ? 'Estimasi Biaya (Analogous, Bottom-Up, Parametric), EVM, dan Struktur Organisasi.' 
-                : 'Project Management Plan (PMP), Scope Baseline, dan 4W+1H.'}
+                ? 'Estimasi Biaya PERT (Triangular/Beta), EVM (CPI/SPI/EAC), & Organisasi Proyek.' 
+                : 'Penyusunan Project Management Plan (PMP), Scope Baseline, & 4W+1H.'}
             </p>
             <button className="btn-level outline" disabled={isLvl3Locked} onClick={() => startQuiz(3)}>
               {isLvl3Locked ? (
@@ -736,6 +736,55 @@ export default function CumlaudeArea() {
                   </tbody>
                 </table>
               )}
+            </div>
+          </div>
+        </div>
+
+        {/* Update Log / Changelog Panel */}
+        <div className="changelog-section">
+          <div className="changelog-card glass-panel">
+            <div className="changelog-header-area">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="changelog-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              <h3>Log Pembaruan Aplikasi (Changelog)</h3>
+            </div>
+            <div className="changelog-list">
+              <div className="changelog-item">
+                <div className="changelog-meta">
+                  <span className="changelog-version">v1.2.0</span>
+                  <span className="changelog-date">21 Mei 2026</span>
+                  <span className="changelog-tag current">Terbaru</span>
+                </div>
+                <ul className="changelog-details">
+                  <li><strong>Penggabungan Bank Soal UTS:</strong> Soal dari Pertemuan 1-6 kini digabungkan per tingkat kesulitan (Level 1 - Mudah, Level 2 - Sedang, Level 3 - Sulit) untuk mempermudah pemahaman komprehensif.</li>
+                  <li><strong>Pembersihan Pertanyaan Placeholder:</strong> Menghapus seluruh 89 pertanyaan tambahan dummy dan menggantinya dengan 89 soal riil MPSI berkualitas tinggi (studi kasus EVM, penjadwalan CPM, PERT, dll.).</li>
+                  <li><strong>Panel Log Pembaruan Terintegrasi:</strong> Menambahkan panel log rilis aplikasi langsung di halaman utama Dashboard.</li>
+                  <li><strong>Penyempurnaan Tampilan Premium:</strong> Sentuhan efek visual modern, perbaikan layout responsif pada dialog pembahasan ujian, dan kartu tingkat kesulitan.</li>
+                </ul>
+              </div>
+
+              <div className="changelog-item">
+                <div className="changelog-meta">
+                  <span className="changelog-version">v1.1.0</span>
+                  <span className="changelog-date">20 Mei 2026</span>
+                </div>
+                <ul className="changelog-details">
+                  <li><strong>Skala Waktu Dinamis per Level:</strong> Level 1 (60 detik/soal), Level 2 (45 detik/soal), dan Level 3 (30 detik/soal) untuk menguji kecepatan berpikir.</li>
+                  <li><strong>Sistem Pembukaan Level Progresif:</strong> Mahasiswa harus mendapatkan skor minimal 60% pada level sebelumnya untuk membuka tingkat kesulitan berikutnya.</li>
+                  <li><strong>Opsi Bypass Buka Semua Level:</strong> Menyediakan tombol toggle &quot;Buka Semua Level&quot; di dashboard untuk memudahkan review.</li>
+                </ul>
+              </div>
+
+              <div className="changelog-item">
+                <div className="changelog-meta">
+                  <span className="changelog-version">v1.0.0</span>
+                  <span className="changelog-date">19 Mei 2026</span>
+                </div>
+                <ul className="changelog-details">
+                  <li><strong>Rilis Awal Simulasi Ujian:</strong> Simulasi ujian UTS &amp; UAS untuk mata kuliah Manajemen Proyek Sistem Informasi (MPSI).</li>
+                  <li><strong>Flashcards Belajar Interaktif:</strong> Kartu belajar balik (flipcards) untuk rangkuman materi kilat sebelum ujian.</li>
+                  <li><strong>Papan Statistik Kumulatif:</strong> Menghitung rata-rata nilai, jumlah keikutsertaan ujian, dan rasio kelulusan secara offline berbasis LocalStorage.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
