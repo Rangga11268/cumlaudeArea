@@ -240,6 +240,54 @@ const DashboardPage = ({
           startCustomExam={startCustomExam}
         />
 
+        {/* Interactive Tools Section */}
+        <div className="tools-banner-container glass-panel" style={{
+          marginTop: '25px',
+          marginBottom: '25px',
+          background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(124, 58, 237, 0.08) 100%)',
+          border: '1px solid var(--border-color)',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          gap: '20px',
+          padding: '22px 25px',
+          borderRadius: '16px',
+          flexWrap: 'wrap'
+        }}>
+          <div style={{ flex: '1 1 500px' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: 'rgba(37,99,235,0.12)', color: 'var(--primary-blue)', padding: '4px 10px', borderRadius: '20px', fontSize: '0.8rem', fontWeight: '700', marginBottom: '10px' }}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <line x1="9" y1="9" x2="15" y2="9"/>
+                <line x1="9" y1="13" x2="15" y2="13"/>
+                <line x1="9" y1="17" x2="15" y2="17"/>
+              </svg>
+              ALAT BANTU &amp; SOLVER MPSI
+            </div>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: '700', color: 'var(--text-strong)', marginBottom: '8px' }}>Kalkulator EVM &amp; PERT Interaktif</h3>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-darker)', margin: 0, lineHeight: '1.5' }}>
+              Hitung cepat metrik kinerja proyek seperti <strong>SPI, CPI, EV, PV, AC, CV, SV</strong> serta probabilitas durasi <strong>PERT</strong>. Lengkap dengan penjelasan langkah demi langkah dan <strong>Pencari Variabel (Rumus Balik)</strong> untuk persiapan UTS/UAS MPSI!
+            </p>
+          </div>
+          <button 
+            className="btn-primary" 
+            onClick={() => setView('calculator')}
+            style={{
+              padding: '12px 24px',
+              fontSize: '0.95rem',
+              fontWeight: '600',
+              boxShadow: '0 4px 14px rgba(37, 99, 235, 0.25)',
+              flexShrink: 0,
+              cursor: 'pointer'
+            }}
+          >
+            Buka Kalkulator MPSI
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: '8px', display: 'inline-block', verticalAlign: 'middle' }}>
+              <path d="m9 18 6-6-6-6"/>
+            </svg>
+          </button>
+        </div>
+
         {/* Latihan per Pertemuan */}
         <div className="practice-section-header">
           <h3>Latihan per Pertemuan &amp; Kuis</h3>

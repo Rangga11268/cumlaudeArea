@@ -2850,6 +2850,15 @@ input:checked + .slider:before { transform: translateX(18px); }
   background: rgba(239, 68, 68, 0.15);
   color: #ef4444;
 }
+.calc-card-disabled {
+  opacity: 0.55;
+  border: 1px dashed var(--border-color);
+  background: transparent;
+}
+.calc-status-missing {
+  background: rgba(107, 114, 128, 0.1);
+  color: var(--text-muted);
+}
 .calc-explanation-box {
   background: var(--input-bg);
   border: 1px solid var(--border-color);

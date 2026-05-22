@@ -4,31 +4,271 @@ const CalculatorView = ({ calcTab, setCalcTab, evmInputs, setEvmInputs, pertInpu
   // Local state for PERT target duration
   const [pertTarget, setPertTarget] = useState('');
 
-  // EVM Calculations
+  // Local state for EVM sub-mode
+  const [evmMode, setEvmMode] = useState('standard'); // 'standard' | 'inverse'
+  
+  // Local state for Inverse Solver
+  const [targetVar, setTargetVar] = useState('ev');
+  const [knownSet, setKnownSet] = useState('spi_pv');
+  const [inverseInputs, setInverseInputs] = useState({
+    pv: '',
+    ev: '',
+    ac: '',
+    bac: '',
+    spi: '',
+    cpi: '',
+    sv: '',
+    cv: '',
+    eac: '',
+    vac: ''
+  });
+
+  const getKnownSetOptions = (target) => {
+    switch (target) {
+      case 'ev':
+        return [
+          { id: 'spi_pv', name: 'SPI dan PV (Planned Value)' },
+          { id: 'cpi_ac', name: 'CPI dan AC (Actual Cost)' },
+          { id: 'sv_pv', name: 'SV (Schedule Variance) dan PV' },
+          { id: 'cv_ac', name: 'CV (Cost Variance) dan AC' }
+        ];
+      case 'pv':
+        return [
+          { id: 'spi_ev', name: 'SPI dan EV (Earned Value)' },
+          { id: 'sv_ev', name: 'SV (Schedule Variance) dan EV' }
+        ];
+      case 'ac':
+        return [
+          { id: 'cpi_ev', name: 'CPI dan EV (Earned Value)' },
+          { id: 'cv_ev', name: 'CV (Cost Variance) dan EV' }
+        ];
+      case 'bac':
+        return [
+          { id: 'eac_cpi', name: 'EAC (Estimate at Completion) dan CPI' },
+          { id: 'vac_eac', name: 'VAC (Variance at Completion) dan EAC' }
+        ];
+      default:
+        return [];
+    }
+  };
+
+  const getInverseFields = (knownSetId) => {
+    switch (knownSetId) {
+      case 'spi_pv':
+        return [
+          { key: 'spi', label: 'SPI (Schedule Performance Index)', placeholder: 'Contoh: 0.95' },
+          { key: 'pv', label: 'Planned Value (PV)', placeholder: 'Contoh: 150000' }
+        ];
+      case 'cpi_ac':
+        return [
+          { key: 'cpi', label: 'CPI (Cost Performance Index)', placeholder: 'Contoh: 1.05' },
+          { key: 'ac', label: 'Actual Cost (AC)', placeholder: 'Contoh: 120000' }
+        ];
+      case 'sv_pv':
+        return [
+          { key: 'sv', label: 'Schedule Variance (SV)', placeholder: 'Contoh: -15000' },
+          { key: 'pv', label: 'Planned Value (PV)', placeholder: 'Contoh: 150000' }
+        ];
+      case 'cv_ac':
+        return [
+          { key: 'cv', label: 'Cost Variance (CV)', placeholder: 'Contoh: 10000' },
+          { key: 'ac', label: 'Actual Cost (AC)', placeholder: 'Contoh: 120000' }
+        ];
+      case 'spi_ev':
+        return [
+          { key: 'spi', label: 'SPI (Schedule Performance Index)', placeholder: 'Contoh: 0.95' },
+          { key: 'ev', label: 'Earned Value (EV)', placeholder: 'Contoh: 142500' }
+        ];
+      case 'sv_ev':
+        return [
+          { key: 'sv', label: 'Schedule Variance (SV)', placeholder: 'Contoh: -15000' },
+          { key: 'ev', label: 'Earned Value (EV)', placeholder: 'Contoh: 135000' }
+        ];
+      case 'cpi_ev':
+        return [
+          { key: 'cpi', label: 'CPI (Cost Performance Index)', placeholder: 'Contoh: 1.05' },
+          { key: 'ev', label: 'Earned Value (EV)', placeholder: 'Contoh: 126000' }
+        ];
+      case 'cv_ev':
+        return [
+          { key: 'cv', label: 'Cost Variance (CV)', placeholder: 'Contoh: 10000' },
+          { key: 'ev', label: 'Earned Value (EV)', placeholder: 'Contoh: 130000' }
+        ];
+      case 'eac_cpi':
+        return [
+          { key: 'eac', label: 'Estimate at Completion (EAC)', placeholder: 'Contoh: 240000' },
+          { key: 'cpi', label: 'CPI (Cost Performance Index)', placeholder: 'Contoh: 0.95' }
+        ];
+      case 'vac_eac':
+        return [
+          { key: 'vac', label: 'Variance at Completion (VAC)', placeholder: 'Contoh: -20000' },
+          { key: 'eac', label: 'Estimate at Completion (EAC)', placeholder: 'Contoh: 220000' }
+        ];
+      default:
+        return [];
+    }
+  };
+
+  const handleTargetVarChange = (newTarget) => {
+    setTargetVar(newTarget);
+    const options = getKnownSetOptions(newTarget);
+    if (options.length > 0) {
+      setKnownSet(options[0].id);
+    }
+  };
+
+  // EVM Calculations (Dynamic & Partial support)
   const pvVal = parseFloat(evmInputs.pv);
   const evVal = parseFloat(evmInputs.ev);
   const acVal = parseFloat(evmInputs.ac);
   const bacVal = parseFloat(evmInputs.bac);
 
-  const isEvmValid = !isNaN(pvVal) && !isNaN(evVal) && !isNaN(acVal) && !isNaN(bacVal)
-    && pvVal >= 0 && acVal >= 0 && evVal >= 0 && bacVal >= 0;
+  const hasPv = !isNaN(pvVal) && pvVal >= 0;
+  const hasEv = !isNaN(evVal) && evVal >= 0;
+  const hasAc = !isNaN(acVal) && acVal >= 0;
+  const hasBac = !isNaN(bacVal) && bacVal >= 0;
+  const hasAnyEvmInput = hasPv || hasEv || hasAc || hasBac;
 
-  let evm = { cv: 0, sv: 0, cpi: 0, spi: 0, eac: 0, etc: 0, tcpi: 0, sci: 0, vac: 0, eacSci: 0 };
-  if (isEvmValid) {
+  let evm = {
+    cv: null,
+    sv: null,
+    cpi: null,
+    spi: null,
+    eac: null,
+    etc: null,
+    tcpi: null,
+    sci: null,
+    vac: null,
+    eacSci: null
+  };
+
+  if (hasEv && hasAc) {
     evm.cv = evVal - acVal;
-    evm.sv = evVal - pvVal;
     evm.cpi = acVal === 0 ? 0 : evVal / acVal;
-    evm.spi = pvVal === 0 ? 0 : evVal / pvVal;
-    evm.eac = evm.cpi === 0 ? 0 : bacVal / evm.cpi;
-    evm.etc = evm.eac - acVal;
-    const tcpiDenom = bacVal - acVal;
-    evm.tcpi = tcpiDenom <= 0 ? 0 : (bacVal - evVal) / tcpiDenom;
+  }
 
-    // Advanced EVM metrics
+  if (hasEv && hasPv) {
+    evm.sv = evVal - pvVal;
+    evm.spi = pvVal === 0 ? 0 : evVal / pvVal;
+  }
+
+  if (evm.cpi !== null && evm.spi !== null) {
     evm.sci = evm.cpi * evm.spi;
-    evm.vac = bacVal - evm.eac;
-    const compositeDenom = evm.cpi * evm.spi;
-    evm.eacSci = compositeDenom === 0 ? 0 : acVal + (bacVal - evVal) / compositeDenom;
+  }
+
+  if (hasBac) {
+    if (evm.cpi !== null) {
+      evm.eac = evm.cpi === 0 ? 0 : bacVal / evm.cpi;
+      evm.vac = bacVal - evm.eac;
+    }
+    if (evm.eac !== null && hasAc) {
+      evm.etc = evm.eac - acVal;
+    }
+    if (hasEv && hasAc) {
+      const tcpiDenom = bacVal - acVal;
+      evm.tcpi = tcpiDenom <= 0 ? 0 : (bacVal - evVal) / tcpiDenom;
+    }
+    if (hasAc && hasEv && evm.sci !== null) {
+      evm.eacSci = evm.sci === 0 ? 0 : acVal + (bacVal - evVal) / evm.sci;
+    }
+  }
+
+  // Inverse Calculations
+  let invRes = null;
+  let invFormula = '';
+  let invStepByStep = '';
+  const parseInv = (val) => parseFloat(val);
+
+  if (evmMode === 'inverse') {
+    if (targetVar === 'ev') {
+      if (knownSet === 'spi_pv') {
+        const spi = parseInv(inverseInputs.spi);
+        const pv = parseInv(inverseInputs.pv);
+        if (!isNaN(spi) && !isNaN(pv)) {
+          invRes = spi * pv;
+          invFormula = 'EV = SPI × PV';
+          invStepByStep = `EV = ${spi} × ${pv.toLocaleString('id-ID')} = ${invRes.toLocaleString('id-ID')}`;
+        }
+      } else if (knownSet === 'cpi_ac') {
+        const cpi = parseInv(inverseInputs.cpi);
+        const ac = parseInv(inverseInputs.ac);
+        if (!isNaN(cpi) && !isNaN(ac)) {
+          invRes = cpi * ac;
+          invFormula = 'EV = CPI × AC';
+          invStepByStep = `EV = ${cpi} × ${ac.toLocaleString('id-ID')} = ${invRes.toLocaleString('id-ID')}`;
+        }
+      } else if (knownSet === 'sv_pv') {
+        const sv = parseInv(inverseInputs.sv);
+        const pv = parseInv(inverseInputs.pv);
+        if (!isNaN(sv) && !isNaN(pv)) {
+          invRes = pv + sv;
+          invFormula = 'EV = PV + SV';
+          invStepByStep = `EV = ${pv.toLocaleString('id-ID')} + (${sv.toLocaleString('id-ID')}) = ${invRes.toLocaleString('id-ID')}`;
+        }
+      } else if (knownSet === 'cv_ac') {
+        const cv = parseInv(inverseInputs.cv);
+        const ac = parseInv(inverseInputs.ac);
+        if (!isNaN(cv) && !isNaN(ac)) {
+          invRes = ac + cv;
+          invFormula = 'EV = AC + CV';
+          invStepByStep = `EV = ${ac.toLocaleString('id-ID')} + (${cv.toLocaleString('id-ID')}) = ${invRes.toLocaleString('id-ID')}`;
+        }
+      }
+    } else if (targetVar === 'pv') {
+      if (knownSet === 'spi_ev') {
+        const spi = parseInv(inverseInputs.spi);
+        const ev = parseInv(inverseInputs.ev);
+        if (!isNaN(spi) && !isNaN(ev) && spi !== 0) {
+          invRes = ev / spi;
+          invFormula = 'PV = EV / SPI';
+          invStepByStep = `PV = ${ev.toLocaleString('id-ID')} / ${spi} = ${invRes.toLocaleString('id-ID')}`;
+        }
+      } else if (knownSet === 'sv_ev') {
+        const sv = parseInv(inverseInputs.sv);
+        const ev = parseInv(inverseInputs.ev);
+        if (!isNaN(sv) && !isNaN(ev)) {
+          invRes = ev - sv;
+          invFormula = 'PV = EV - SV';
+          invStepByStep = `PV = ${ev.toLocaleString('id-ID')} - (${sv.toLocaleString('id-ID')}) = ${invRes.toLocaleString('id-ID')}`;
+        }
+      }
+    } else if (targetVar === 'ac') {
+      if (knownSet === 'cpi_ev') {
+        const cpi = parseInv(inverseInputs.cpi);
+        const ev = parseInv(inverseInputs.ev);
+        if (!isNaN(cpi) && !isNaN(ev) && cpi !== 0) {
+          invRes = ev / cpi;
+          invFormula = 'AC = EV / CPI';
+          invStepByStep = `AC = ${ev.toLocaleString('id-ID')} / ${cpi} = ${invRes.toLocaleString('id-ID')}`;
+        }
+      } else if (knownSet === 'cv_ev') {
+        const cv = parseInv(inverseInputs.cv);
+        const ev = parseInv(inverseInputs.ev);
+        if (!isNaN(cv) && !isNaN(ev)) {
+          invRes = ev - cv;
+          invFormula = 'AC = EV - CV';
+          invStepByStep = `AC = ${ev.toLocaleString('id-ID')} - (${cv.toLocaleString('id-ID')}) = ${invRes.toLocaleString('id-ID')}`;
+        }
+      }
+    } else if (targetVar === 'bac') {
+      if (knownSet === 'eac_cpi') {
+        const eac = parseInv(inverseInputs.eac);
+        const cpi = parseInv(inverseInputs.cpi);
+        if (!isNaN(eac) && !isNaN(cpi) && cpi !== 0) {
+          invRes = eac * cpi;
+          invFormula = 'BAC = EAC × CPI';
+          invStepByStep = `BAC = ${eac.toLocaleString('id-ID')} × ${cpi} = ${invRes.toLocaleString('id-ID')}`;
+        }
+      } else if (knownSet === 'vac_eac') {
+        const vac = parseInv(inverseInputs.vac);
+        const eac = parseInv(inverseInputs.eac);
+        if (!isNaN(vac) && !isNaN(eac)) {
+          invRes = eac + vac;
+          invFormula = 'BAC = EAC + VAC';
+          invStepByStep = `BAC = ${eac.toLocaleString('id-ID')} + (${vac.toLocaleString('id-ID')}) = ${invRes.toLocaleString('id-ID')}`;
+        }
+      }
+    }
   }
 
   // PERT Calculations
@@ -103,183 +343,386 @@ const CalculatorView = ({ calcTab, setCalcTab, evmInputs, setEvmInputs, pertInpu
       </div>
 
       {calcTab === 'evm' ? (
-        <div className="calc-layout" style={{ marginTop: '25px' }}>
-          <div className="calc-form-panel">
-            <h3 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '15px', color: 'var(--text-strong)' }}>Input Parameter EVM</h3>
-
-            <div className="calc-input-row">
-              <div className="custom-exam-field">
-                <label htmlFor="evm-pv">Planned Value (PV):</label>
-                <input id="evm-pv" type="number" placeholder="Contoh: 100000" className="custom-exam-input"
-                  value={evmInputs.pv} onChange={(e) => setEvmInputs(p => ({ ...p, pv: e.target.value }))} />
-              </div>
-              <div className="custom-exam-field">
-                <label htmlFor="evm-ev">Earned Value (EV):</label>
-                <input id="evm-ev" type="number" placeholder="Contoh: 90000" className="custom-exam-input"
-                  value={evmInputs.ev} onChange={(e) => setEvmInputs(p => ({ ...p, ev: e.target.value }))} />
-              </div>
-            </div>
-
-            <div className="calc-input-row">
-              <div className="custom-exam-field">
-                <label htmlFor="evm-ac">Actual Cost (AC):</label>
-                <input id="evm-ac" type="number" placeholder="Contoh: 110000" className="custom-exam-input"
-                  value={evmInputs.ac} onChange={(e) => setEvmInputs(p => ({ ...p, ac: e.target.value }))} />
-              </div>
-              <div className="custom-exam-field">
-                <label htmlFor="evm-bac">Budget at Completion (BAC):</label>
-                <input id="evm-bac" type="number" placeholder="Contoh: 200000" className="custom-exam-input"
-                  value={evmInputs.bac} onChange={(e) => setEvmInputs(p => ({ ...p, bac: e.target.value }))} />
-              </div>
-            </div>
-
-            <div className="calc-explanation-box" style={{ marginTop: '10px' }}>
-              <h4>Keterangan Variabel:</h4>
-              <ul style={{ paddingLeft: '20px', fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                <li><strong>Planned Value (PV)</strong>: Anggaran yang direncanakan diselesaikan s/d tanggal evaluasi.</li>
-                <li><strong>Earned Value (EV)</strong>: Nilai pekerjaan nyata yang berhasil diselesaikan s/d tanggal evaluasi.</li>
-                <li><strong>Actual Cost (AC)</strong>: Pengeluaran biaya aktual untuk menyelesaikan pekerjaan s/d tanggal evaluasi.</li>
-                <li><strong>Budget at Completion (BAC)</strong>: Total estimasi anggaran proyek keseluruhan.</li>
-              </ul>
-            </div>
+        <div style={{ marginTop: '20px' }}>
+          {/* Sub-tab selection inside EVM */}
+          <div className="calc-sub-tabs" style={{ display: 'flex', gap: '10px', marginBottom: '20px', borderBottom: '1px solid var(--border-color)', paddingBottom: '10px' }}>
+            <button
+              type="button"
+              className={`calc-sub-tab-btn ${evmMode === 'standard' ? 'active' : ''}`}
+              onClick={() => setEvmMode('standard')}
+              style={{
+                background: evmMode === 'standard' ? 'var(--primary-blue)' : 'transparent',
+                color: evmMode === 'standard' ? '#fff' : 'var(--text-muted)',
+                border: 'none',
+                padding: '6px 12px',
+                borderRadius: '6px',
+                cursor: 'pointer',
+                fontSize: '0.85rem',
+                fontWeight: '600',
+                transition: 'all 0.2s'
+              }}
+            >
+              Kalkulator Standar (EVM)
+            </button>
+            <button
+              type="button"
+              className={`calc-sub-tab-btn ${evmMode === 'inverse' ? 'active' : ''}`}
+              onClick={() => setEvmMode('inverse')}
+              style={{
+                background: evmMode === 'inverse' ? 'var(--primary-blue)' : 'transparent',
+                color: evmMode === 'inverse' ? '#fff' : 'var(--text-muted)',
+                border: 'none',
+                padding: '6px 12px',
+                borderRadius: '6px',
+                cursor: 'pointer',
+                fontSize: '0.85rem',
+                fontWeight: '600',
+                transition: 'all 0.2s'
+              }}
+            >
+              Pencari Variabel (Rumus Balik)
+            </button>
           </div>
 
-          <div className="calc-results-panel">
-            <h3 style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--text-strong)' }}>Hasil Analisis Kinerja Biaya &amp; Jadwal</h3>
+          {evmMode === 'standard' ? (
+            <div className="calc-layout">
+              <div className="calc-form-panel">
+                <h3 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '15px', color: 'var(--text-strong)' }}>Input Parameter EVM</h3>
 
-            {!isEvmValid ? (
-              <div className="flex-center" style={{ minHeight: '200px', flexDirection: 'column', color: 'var(--text-muted)', fontSize: '0.9rem', textAlign: 'center' }}>
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: '10px' }}>
-                  <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
-                </svg>
-                Silakan isi semua parameter input di sebelah kiri dengan benar untuk menampilkan hasil perhitungan.
+                <div className="calc-input-row">
+                  <div className="custom-exam-field">
+                    <label htmlFor="evm-pv">Planned Value (PV):</label>
+                    <input id="evm-pv" type="number" placeholder="Contoh: 100000" className="custom-exam-input"
+                      value={evmInputs.pv} onChange={(e) => setEvmInputs(p => ({ ...p, pv: e.target.value }))} />
+                  </div>
+                  <div className="custom-exam-field">
+                    <label htmlFor="evm-ev">Earned Value (EV):</label>
+                    <input id="evm-ev" type="number" placeholder="Contoh: 90000" className="custom-exam-input"
+                      value={evmInputs.ev} onChange={(e) => setEvmInputs(p => ({ ...p, ev: e.target.value }))} />
+                  </div>
+                </div>
+
+                <div className="calc-input-row">
+                  <div className="custom-exam-field">
+                    <label htmlFor="evm-ac">Actual Cost (AC):</label>
+                    <input id="evm-ac" type="number" placeholder="Contoh: 110000" className="custom-exam-input"
+                      value={evmInputs.ac} onChange={(e) => setEvmInputs(p => ({ ...p, ac: e.target.value }))} />
+                  </div>
+                  <div className="custom-exam-field">
+                    <label htmlFor="evm-bac">Budget at Completion (BAC):</label>
+                    <input id="evm-bac" type="number" placeholder="Contoh: 200000" className="custom-exam-input"
+                      value={evmInputs.bac} onChange={(e) => setEvmInputs(p => ({ ...p, bac: e.target.value }))} />
+                  </div>
+                </div>
+
+                <div className="calc-explanation-box" style={{ marginTop: '10px' }}>
+                  <h4>Keterangan Variabel:</h4>
+                  <ul style={{ paddingLeft: '20px', fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                    <li><strong>Planned Value (PV)</strong>: Anggaran yang direncanakan diselesaikan s/d tanggal evaluasi.</li>
+                    <li><strong>Earned Value (EV)</strong>: Nilai pekerjaan nyata yang berhasil diselesaikan s/d tanggal evaluasi.</li>
+                    <li><strong>Actual Cost (AC)</strong>: Pengeluaran biaya aktual untuk menyelesaikan pekerjaan s/d tanggal evaluasi.</li>
+                    <li><strong>Budget at Completion (BAC)</strong>: Total estimasi anggaran proyek keseluruhan.</li>
+                  </ul>
+                </div>
               </div>
-            ) : (
-              <>
-                <div className="calc-result-metrics">
-                  <div className="calc-result-card">
-                    <span className="calc-result-label">Cost Variance (CV)</span>
-                    <span className="calc-result-value">{evm.cv.toLocaleString('id-ID')}</span>
-                    <span className={`calc-result-status ${evm.cv >= 0 ? 'calc-status-good' : 'calc-status-bad'}`}>
-                      {evm.cv >= 0 ? 'Hemat (Under Budget)' : 'Boros (Over Budget)'}
-                    </span>
+
+              <div className="calc-results-panel">
+                <h3 style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--text-strong)' }}>Hasil Analisis Kinerja Biaya &amp; Jadwal</h3>
+
+                {!hasAnyEvmInput ? (
+                  <div className="flex-center" style={{ minHeight: '200px', flexDirection: 'column', color: 'var(--text-muted)', fontSize: '0.9rem', textAlign: 'center' }}>
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: '10px' }}>
+                      <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+                    </svg>
+                    Masukkan setidaknya satu nilai input di sebelah kiri (misal: PV &amp; EV untuk status jadwal, atau EV &amp; AC untuk status biaya).
                   </div>
-                  <div className="calc-result-card">
-                    <span className="calc-result-label">Schedule Variance (SV)</span>
-                    <span className="calc-result-value">{evm.sv.toLocaleString('id-ID')}</span>
-                    <span className={`calc-result-status ${evm.sv >= 0 ? 'calc-status-good' : 'calc-status-bad'}`}>
-                      {evm.sv >= 0 ? 'Lebih Cepat (Ahead)' : 'Terlambat (Behind)'}
-                    </span>
-                  </div>
-                  <div className="calc-result-card">
-                    <span className="calc-result-label">CPI (Cost Performance Index)</span>
-                    <span className="calc-result-value">{evm.cpi.toFixed(3)}</span>
-                    <span className={`calc-result-status ${evm.cpi >= 1 ? 'calc-status-good' : 'calc-status-bad'}`}>
-                      {evm.cpi >= 1 ? 'Efisien' : 'Tidak Efisien'}
-                    </span>
-                  </div>
-                  <div className="calc-result-card">
-                    <span className="calc-result-label">SPI (Schedule Perf. Index)</span>
-                    <span className="calc-result-value">{evm.spi.toFixed(3)}</span>
-                    <span className={`calc-result-status ${evm.spi >= 1 ? 'calc-status-good' : 'calc-status-bad'}`}>
-                      {evm.spi >= 1 ? 'Efisien' : 'Tidak Efisien'}
-                    </span>
-                  </div>
+                ) : (
+                  <>
+                    <div className="calc-result-metrics">
+                      {/* CV Card */}
+                      <div className={`calc-result-card ${evm.cv === null ? 'calc-card-disabled' : ''}`}>
+                        <span className="calc-result-label">Cost Variance (CV)</span>
+                        <span className="calc-result-value">
+                          {evm.cv !== null ? evm.cv.toLocaleString('id-ID') : '—'}
+                        </span>
+                        <span className={`calc-result-status ${evm.cv === null ? 'calc-status-missing' : (evm.cv >= 0 ? 'calc-status-good' : 'calc-status-bad')}`}>
+                          {evm.cv === null ? 'Butuh EV & AC' : (evm.cv >= 0 ? 'Hemat (Under Budget)' : 'Boros (Over Budget)')}
+                        </span>
+                      </div>
+
+                      {/* SV Card */}
+                      <div className={`calc-result-card ${evm.sv === null ? 'calc-card-disabled' : ''}`}>
+                        <span className="calc-result-label">Schedule Variance (SV)</span>
+                        <span className="calc-result-value">
+                          {evm.sv !== null ? evm.sv.toLocaleString('id-ID') : '—'}
+                        </span>
+                        <span className={`calc-result-status ${evm.sv === null ? 'calc-status-missing' : (evm.sv >= 0 ? 'calc-status-good' : 'calc-status-bad')}`}>
+                          {evm.sv === null ? 'Butuh EV & PV' : (evm.sv >= 0 ? 'Lebih Cepat (Ahead)' : 'Terlambat (Behind)')}
+                        </span>
+                      </div>
+
+                      {/* CPI Card */}
+                      <div className={`calc-result-card ${evm.cpi === null ? 'calc-card-disabled' : ''}`}>
+                        <span className="calc-result-label">CPI (Cost Performance Index)</span>
+                        <span className="calc-result-value">
+                          {evm.cpi !== null ? evm.cpi.toFixed(3) : '—'}
+                        </span>
+                        <span className={`calc-result-status ${evm.cpi === null ? 'calc-status-missing' : (evm.cpi >= 1 ? 'calc-status-good' : 'calc-status-bad')}`}>
+                          {evm.cpi === null ? 'Butuh EV & AC' : (evm.cpi >= 1 ? 'Efisien' : 'Tidak Efisien')}
+                        </span>
+                      </div>
+
+                      {/* SPI Card */}
+                      <div className={`calc-result-card ${evm.spi === null ? 'calc-card-disabled' : ''}`}>
+                        <span className="calc-result-label">SPI (Schedule Perf. Index)</span>
+                        <span className="calc-result-value">
+                          {evm.spi !== null ? evm.spi.toFixed(3) : '—'}
+                        </span>
+                        <span className={`calc-result-status ${evm.spi === null ? 'calc-status-missing' : (evm.spi >= 1 ? 'calc-status-good' : 'calc-status-bad')}`}>
+                          {evm.spi === null ? 'Butuh EV & PV' : (evm.spi >= 1 ? 'Efisien' : 'Tidak Efisien')}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="calc-result-metrics" style={{ borderTop: '1px solid var(--border-color)', paddingTop: '15px' }}>
+                      {/* EAC Card */}
+                      <div className={`calc-result-card ${evm.eac === null ? 'calc-card-disabled' : ''}`}>
+                        <span className="calc-result-label">EAC (Estimate at Completion)</span>
+                        <span className="calc-result-value">
+                          {evm.eac !== null ? Math.round(evm.eac).toLocaleString('id-ID') : '—'}
+                        </span>
+                        <span className={`calc-result-status ${evm.eac === null ? 'calc-status-missing' : 'calc-status-good'}`} style={evm.eac !== null ? { background: 'rgba(37,99,235,0.1)', color: 'var(--primary-blue)' } : {}}>
+                          {evm.eac === null ? 'Butuh BAC & CPI' : 'Prakiraan Biaya (CPI)'}
+                        </span>
+                      </div>
+
+                      {/* EAC Composite Card */}
+                      <div className={`calc-result-card ${evm.eacSci === null ? 'calc-card-disabled' : ''}`}>
+                        <span className="calc-result-label">EAC Composite (SCI)</span>
+                        <span className="calc-result-value">
+                          {evm.eacSci !== null ? Math.round(evm.eacSci).toLocaleString('id-ID') : '—'}
+                        </span>
+                        <span className={`calc-result-status ${evm.eacSci === null ? 'calc-status-missing' : 'calc-status-good'}`} style={evm.eacSci !== null ? { background: 'rgba(37,99,235,0.1)', color: 'var(--primary-blue)' } : {}}>
+                          {evm.eacSci === null ? 'Butuh BAC, AC, EV, SCI' : 'Prakiraan Konservatif'}
+                        </span>
+                      </div>
+
+                      {/* TCPI Card */}
+                      <div className={`calc-result-card ${evm.tcpi === null ? 'calc-card-disabled' : ''}`}>
+                        <span className="calc-result-label">TCPI (To-Complete PI)</span>
+                        <span className="calc-result-value">
+                          {evm.tcpi !== null ? evm.tcpi.toFixed(3) : '—'}
+                        </span>
+                        <span className={`calc-result-status ${evm.tcpi === null ? 'calc-status-missing' : 'calc-status-good'}`} style={evm.tcpi !== null ? { background: 'rgba(37,99,235,0.1)', color: 'var(--primary-blue)' } : {}}>
+                          {evm.tcpi === null ? 'Butuh BAC, EV, AC' : 'Kinerja Target'}
+                        </span>
+                      </div>
+
+                      {/* SCI Card */}
+                      <div className={`calc-result-card ${evm.sci === null ? 'calc-card-disabled' : ''}`}>
+                        <span className="calc-result-label">SCI (Schedule Cost Index)</span>
+                        <span className="calc-result-value">
+                          {evm.sci !== null ? evm.sci.toFixed(3) : '—'}
+                        </span>
+                        <span className={`calc-result-status ${evm.sci === null ? 'calc-status-missing' : (evm.sci >= 1 ? 'calc-status-good' : 'calc-status-bad')}`}>
+                          {evm.sci === null ? 'Butuh CPI & SPI' : (evm.sci >= 1 ? 'Sehat (On Track)' : 'Kritis (Bermasalah)')}
+                        </span>
+                      </div>
+
+                      {/* VAC Card */}
+                      <div className={`calc-result-card calc-card-wide ${evm.vac === null ? 'calc-card-disabled' : ''}`}>
+                        <span className="calc-result-label">VAC (Variance at Completion)</span>
+                        <span className="calc-result-value">
+                          {evm.vac !== null ? evm.vac.toLocaleString('id-ID') : '—'}
+                        </span>
+                        <span className={`calc-result-status ${evm.vac === null ? 'calc-status-missing' : (evm.vac >= 0 ? 'calc-status-good' : 'calc-status-bad')}`}>
+                          {evm.vac === null ? 'Butuh BAC & EAC' : (evm.vac >= 0 ? 'Hemat (Surplus)' : 'Defisit (Deficit)')}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="calc-explanation-box">
+                      <h4>Penjelasan Langkah Perhitungan:</h4>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.85rem' }}>
+                        {evm.cv !== null && (
+                          <div>
+                            <strong>1. Varian Biaya (Cost Variance):</strong>
+                            <div className="calc-formula">CV = EV - AC</div>
+                            <p>CV = {evVal.toLocaleString('id-ID')} - {acVal.toLocaleString('id-ID')} = <strong>{evm.cv.toLocaleString('id-ID')}</strong>. {evm.cv >= 0 ? 'Nilai positif menandakan biaya yang dikeluarkan masih di bawah anggaran.' : 'Nilai negatif menandakan adanya pemborosan anggaran (over budget).'}</p>
+                          </div>
+                        )}
+                        {evm.sv !== null && (
+                          <div>
+                            <strong>2. Varian Jadwal (Schedule Variance):</strong>
+                            <div className="calc-formula">SV = EV - PV</div>
+                            <p>SV = {evVal.toLocaleString('id-ID')} - {pvVal.toLocaleString('id-ID')} = <strong>{evm.sv.toLocaleString('id-ID')}</strong>. {evm.sv >= 0 ? 'Nilai positif menandakan kemajuan pengerjaan proyek mendahului rencana awal.' : 'Nilai negatif menandakan pengerjaan proyek terlambat (behind schedule).'}</p>
+                          </div>
+                        )}
+                        {evm.cpi !== null && (
+                          <div>
+                            <strong>3. Indeks Kinerja Biaya (CPI):</strong>
+                            <div className="calc-formula">CPI = EV / AC</div>
+                            <p>CPI = {evVal.toLocaleString('id-ID')} / {acVal.toLocaleString('id-ID')} = <strong>{evm.cpi.toFixed(3)}</strong>. {evm.cpi >= 1 ? 'CPI >= 1 menandakan penggunaan biaya sangat efisien.' : 'CPI < 1 menandakan inefisiensi biaya (proyek berpotensi over budget).'}</p>
+                          </div>
+                        )}
+                        {evm.spi !== null && (
+                          <div>
+                            <strong>4. Indeks Kinerja Jadwal (SPI):</strong>
+                            <div className="calc-formula">SPI = EV / PV</div>
+                            <p>SPI = {evVal.toLocaleString('id-ID')} / {pvVal.toLocaleString('id-ID')} = <strong>{evm.spi.toFixed(3)}</strong>. {evm.spi >= 1 ? 'SPI >= 1 menandakan kemajuan jadwal efisien.' : 'SPI < 1 menandakan kecepatan pengerjaan proyek lambat dari rencana.'}</p>
+                          </div>
+                        )}
+                        {evm.eac !== null && (
+                          <div>
+                            <strong>5. Estimasi Biaya Akhir (EAC):</strong>
+                            <div className="calc-formula">EAC = BAC / CPI</div>
+                            <p>EAC = {bacVal.toLocaleString('id-ID')} / {evm.cpi.toFixed(3)} = <strong>{Math.round(evm.eac).toLocaleString('id-ID')}</strong>. Ini merupakan prediksi total biaya proyek pada saat selesai jika efisiensi biaya saat ini bertahan.</p>
+                          </div>
+                        )}
+                        {evm.tcpi !== null && (
+                          <div>
+                            <strong>6. Indeks Kinerja Target (TCPI):</strong>
+                            <div className="calc-formula">TCPI = (BAC - EV) / (BAC - AC)</div>
+                            <p>TCPI = ({bacVal.toLocaleString('id-ID')} - {evVal.toLocaleString('id-ID')}) / ({bacVal.toLocaleString('id-ID')} - {acVal.toLocaleString('id-ID')}) = <strong>{evm.tcpi.toFixed(3)}</strong>. Ini adalah efisiensi biaya yang harus dipertahankan s/d akhir proyek untuk dapat mencapai target anggaran BAC awal.</p>
+                          </div>
+                        )}
+                        {evm.sci !== null && (
+                          <div>
+                            <strong>7. Indeks Jadwal Biaya (Schedule Cost Index / SCI):</strong>
+                            <div className="calc-formula">SCI = CPI &times; SPI</div>
+                            <p>SCI = {evm.cpi.toFixed(3)} &times; {evm.spi.toFixed(3)} = <strong>{evm.sci.toFixed(3)}</strong>. {evm.sci >= 1 ? 'Indeks Komposit menunjukkan proyek secara keseluruhan berkinerja sehat.' : 'Indeks Komposit < 1 menunjukkan proyek berada dalam risiko tinggi karena kombinasi biaya boros dan waktu terlambat.'}</p>
+                          </div>
+                        )}
+                        {evm.vac !== null && (
+                          <div>
+                            <strong>8. Varians Saat Penyelesaian (Variance at Completion / VAC):</strong>
+                            <div className="calc-formula">VAC = BAC - EAC</div>
+                            <p>VAC = {bacVal.toLocaleString('id-ID')} - {Math.round(evm.eac).toLocaleString('id-ID')} = <strong>{evm.vac.toLocaleString('id-ID')}</strong>. {evm.vac >= 0 ? 'Proyek diproyeksikan selesai dengan sisa anggaran positif (surplus).' : 'Proyek diproyeksikan mengalami pembengkakan biaya (defisit) pada saat selesai.'}</p>
+                          </div>
+                        )}
+                        {evm.eacSci !== null && (
+                          <div>
+                            <strong>9. Estimasi Biaya Komposit (EAC Composite):</strong>
+                            <div className="calc-formula">EAC (Comp) = AC + (BAC - EV) / (CPI &times; SPI)</div>
+                            <p>EAC (Comp) = {acVal.toLocaleString('id-ID')} + ({bacVal.toLocaleString('id-ID')} - {evVal.toLocaleString('id-ID')}) / ({evm.cpi.toFixed(3)} &times; {evm.spi.toFixed(3)}) = <strong>{Math.round(evm.eacSci).toLocaleString('id-ID')}</strong>. Ini merupakan estimasi biaya total yang lebih konservatif dengan memperhitungkan tren inefisiensi biaya dan keterlambatan jadwal sekaligus.</p>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          ) : (
+            /* Inverse Solver Layout */
+            <div className="calc-layout">
+              <div className="calc-form-panel">
+                <h3 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '15px', color: 'var(--text-strong)' }}>Inverse Solver (Pencari Variabel)</h3>
+                
+                <div className="custom-exam-field" style={{ marginBottom: '15px' }}>
+                  <label htmlFor="inv-target" style={{ fontWeight: '600', fontSize: '0.85rem' }}>1. Variabel yang Ingin Dicari:</label>
+                  <select
+                    id="inv-target"
+                    className="custom-exam-input"
+                    value={targetVar}
+                    onChange={(e) => handleTargetVarChange(e.target.value)}
+                    style={{ background: 'var(--input-bg)', color: 'var(--text-strong)' }}
+                  >
+                    <option value="ev">Earned Value (EV)</option>
+                    <option value="pv">Planned Value (PV)</option>
+                    <option value="ac">Actual Cost (AC)</option>
+                    <option value="bac">Budget at Completion (BAC)</option>
+                  </select>
                 </div>
 
-                <div className="calc-result-metrics" style={{ borderTop: '1px solid var(--border-color)', paddingTop: '15px' }}>
-                  <div className="calc-result-card">
-                    <span className="calc-result-label">EAC (Estimate at Completion)</span>
-                    <span className="calc-result-value">{Math.round(evm.eac).toLocaleString('id-ID')}</span>
-                    <span className="calc-result-status calc-status-good" style={{ background: 'rgba(37,99,235,0.1)', color: 'var(--primary-blue)' }}>
-                      Prakiraan Biaya (CPI)
-                    </span>
-                  </div>
-                  <div className="calc-result-card">
-                    <span className="calc-result-label">EAC Composite (SCI)</span>
-                    <span className="calc-result-value">{Math.round(evm.eacSci).toLocaleString('id-ID')}</span>
-                    <span className="calc-result-status calc-status-good" style={{ background: 'rgba(37,99,235,0.1)', color: 'var(--primary-blue)' }}>
-                      Prakiraan Konservatif
-                    </span>
-                  </div>
-                  <div className="calc-result-card">
-                    <span className="calc-result-label">TCPI (To-Complete PI)</span>
-                    <span className="calc-result-value">{evm.tcpi.toFixed(3)}</span>
-                    <span className="calc-result-status calc-status-good" style={{ background: 'rgba(37,99,235,0.1)', color: 'var(--primary-blue)' }}>
-                      Kinerja Target
-                    </span>
-                  </div>
-                  <div className="calc-result-card">
-                    <span className="calc-result-label">SCI (Schedule Cost Index)</span>
-                    <span className="calc-result-value">{evm.sci.toFixed(3)}</span>
-                    <span className={`calc-result-status ${evm.sci >= 1 ? 'calc-status-good' : 'calc-status-bad'}`}>
-                      {evm.sci >= 1 ? 'Sehat (On Track)' : 'Kritis (Bermasalah)'}
-                    </span>
-                  </div>
-                  <div className="calc-result-card calc-card-wide">
-                    <span className="calc-result-label">VAC (Variance at Completion)</span>
-                    <span className="calc-result-value">{evm.vac.toLocaleString('id-ID')}</span>
-                    <span className={`calc-result-status ${evm.vac >= 0 ? 'calc-status-good' : 'calc-status-bad'}`}>
-                      {evm.vac >= 0 ? 'Hemat (Surplus)' : 'Defisit (Deficit)'}
-                    </span>
-                  </div>
+                <div className="custom-exam-field" style={{ marginBottom: '20px' }}>
+                  <label htmlFor="inv-known" style={{ fontWeight: '600', fontSize: '0.85rem' }}>2. Berdasarkan Parameter yang Diketahui:</label>
+                  <select
+                    id="inv-known"
+                    className="custom-exam-input"
+                    value={knownSet}
+                    onChange={(e) => setKnownSet(e.target.value)}
+                    style={{ background: 'var(--input-bg)', color: 'var(--text-strong)' }}
+                  >
+                    {getKnownSetOptions(targetVar).map((opt) => (
+                      <option key={opt.id} value={opt.id}>{opt.name}</option>
+                    ))}
+                  </select>
                 </div>
 
-                <div className="calc-explanation-box">
-                  <h4>Penjelasan Langkah Perhitungan:</h4>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.85rem' }}>
-                    <div>
-                      <strong>1. Varian Biaya (Cost Variance):</strong>
-                      <div className="calc-formula">CV = EV - AC</div>
-                      <p>CV = {evVal.toLocaleString('id-ID')} - {acVal.toLocaleString('id-ID')} = <strong>{evm.cv.toLocaleString('id-ID')}</strong>. {evm.cv >= 0 ? 'Nilai positif menandakan biaya yang dikeluarkan masih di bawah anggaran.' : 'Nilai negatif menandakan adanya pemborosan anggaran (over budget).'}</p>
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '15px' }}>
+                  <h4 style={{ fontSize: '0.9rem', fontWeight: '700', marginBottom: '12px', color: 'var(--text-strong)' }}>3. Masukkan Nilai Parameter:</h4>
+                  {getInverseFields(knownSet).map((field) => (
+                    <div key={field.key} className="custom-exam-field">
+                      <label htmlFor={`inv-input-${field.key}`}>{field.label}:</label>
+                      <input
+                        id={`inv-input-${field.key}`}
+                        type="number"
+                        step="any"
+                        placeholder={field.placeholder}
+                        className="custom-exam-input"
+                        value={inverseInputs[field.key]}
+                        onChange={(e) => setInverseInputs(p => ({ ...p, [field.key]: e.target.value }))}
+                      />
                     </div>
-                    <div>
-                      <strong>2. Varian Jadwal (Schedule Variance):</strong>
-                      <div className="calc-formula">SV = EV - PV</div>
-                      <p>SV = {evVal.toLocaleString('id-ID')} - {pvVal.toLocaleString('id-ID')} = <strong>{evm.sv.toLocaleString('id-ID')}</strong>. {evm.sv >= 0 ? 'Nilai positif menandakan kemajuan pengerjaan proyek mendahului rencana awal.' : 'Nilai negatif menandakan pengerjaan proyek terlambat (behind schedule).'}</p>
-                    </div>
-                    <div>
-                      <strong>3. Indeks Kinerja Biaya (CPI):</strong>
-                      <div className="calc-formula">CPI = EV / AC</div>
-                      <p>CPI = {evVal.toLocaleString('id-ID')} / {acVal.toLocaleString('id-ID')} = <strong>{evm.cpi.toFixed(3)}</strong>. {evm.cpi >= 1 ? 'CPI >= 1 menandakan penggunaan biaya sangat efisien.' : 'CPI < 1 menandakan inefisiensi biaya (proyek berpotensi over budget).'}</p>
-                    </div>
-                    <div>
-                      <strong>4. Indeks Kinerja Jadwal (SPI):</strong>
-                      <div className="calc-formula">SPI = EV / PV</div>
-                      <p>SPI = {evVal.toLocaleString('id-ID')} / {pvVal.toLocaleString('id-ID')} = <strong>{evm.spi.toFixed(3)}</strong>. {evm.spi >= 1 ? 'SPI >= 1 menandakan kemajuan jadwal efisien.' : 'SPI < 1 menandakan kecepatan pengerjaan proyek lambat dari rencana.'}</p>
-                    </div>
-                    <div>
-                      <strong>5. Estimasi Biaya Akhir (EAC):</strong>
-                      <div className="calc-formula">EAC = BAC / CPI</div>
-                      <p>EAC = {bacVal.toLocaleString('id-ID')} / {evm.cpi.toFixed(3)} = <strong>{Math.round(evm.eac).toLocaleString('id-ID')}</strong>. Ini merupakan prediksi total biaya proyek pada saat selesai jika efisiensi biaya saat ini bertahan.</p>
-                    </div>
-                    <div>
-                      <strong>6. Indeks Kinerja Target (TCPI):</strong>
-                      <div className="calc-formula">TCPI = (BAC - EV) / (BAC - AC)</div>
-                      <p>TCPI = ({bacVal.toLocaleString('id-ID')} - {evVal.toLocaleString('id-ID')}) / ({bacVal.toLocaleString('id-ID')} - {acVal.toLocaleString('id-ID')}) = <strong>{evm.tcpi.toFixed(3)}</strong>. Ini adalah efisiensi biaya yang harus dipertahankan s/d akhir proyek untuk dapat mencapai target anggaran BAC awal.</p>
-                    </div>
-                    <div>
-                      <strong>7. Indeks Jadwal Biaya (Schedule Cost Index / SCI):</strong>
-                      <div className="calc-formula">SCI = CPI &times; SPI</div>
-                      <p>SCI = {evm.cpi.toFixed(3)} &times; {evm.spi.toFixed(3)} = <strong>{evm.sci.toFixed(3)}</strong>. {evm.sci >= 1 ? 'Indeks Komposit menunjukkan proyek secara keseluruhan berkinerja sehat.' : 'Indeks Komposit < 1 menunjukkan proyek berada dalam risiko tinggi karena kombinasi biaya boros dan waktu terlambat.'}</p>
-                    </div>
-                    <div>
-                      <strong>8. Varians Saat Penyelesaian (Variance at Completion / VAC):</strong>
-                      <div className="calc-formula">VAC = BAC - EAC</div>
-                      <p>VAC = {bacVal.toLocaleString('id-ID')} - {Math.round(evm.eac).toLocaleString('id-ID')} = <strong>{evm.vac.toLocaleString('id-ID')}</strong>. {evm.vac >= 0 ? 'Proyek diproyeksikan selesai dengan sisa anggaran positif (surplus).' : 'Proyek diproyeksikan mengalami pembengkakan biaya (defisit) pada saat selesai.'}</p>
-                    </div>
-                    <div>
-                      <strong>9. Estimasi Biaya Komposit (EAC Composite):</strong>
-                      <div className="calc-formula">EAC (Comp) = AC + (BAC - EV) / (CPI &times; SPI)</div>
-                      <p>EAC (Comp) = {acVal.toLocaleString('id-ID')} + ({bacVal.toLocaleString('id-ID')} - {evVal.toLocaleString('id-ID')}) / ({evm.cpi.toFixed(3)} &times; {evm.spi.toFixed(3)}) = <strong>{Math.round(evm.eacSci).toLocaleString('id-ID')}</strong>. Ini merupakan estimasi biaya total yang lebih konservatif dengan memperhitungkan tren inefisiensi biaya dan keterlambatan jadwal sekaligus.</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
-              </>
-            )}
-          </div>
+              </div>
+
+              <div className="calc-results-panel">
+                <h3 style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--text-strong)' }}>Hasil Kalkulasi Rumus Balik</h3>
+
+                {invRes === null ? (
+                  <div className="flex-center" style={{ minHeight: '200px', flexDirection: 'column', color: 'var(--text-muted)', fontSize: '0.9rem', textAlign: 'center' }}>
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: '10px' }}>
+                      <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+                    </svg>
+                    Silakan isi semua parameter input di sebelah kiri untuk menghitung target variabel secara instan.
+                  </div>
+                ) : (
+                  <>
+                    <div className="calc-result-metrics" style={{ gridTemplateColumns: '1fr' }}>
+                      <div className="calc-result-card calc-card-wide" style={{ padding: '25px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                        <span className="calc-result-label" style={{ fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                          Nilai Hasil {targetVar.toUpperCase()}
+                        </span>
+                        <span className="calc-result-value" style={{ fontSize: '2.2rem', color: 'var(--primary-blue)' }}>
+                          {invRes.toLocaleString('id-ID')}
+                        </span>
+                        <span className="calc-result-status calc-status-good" style={{ background: 'rgba(37,99,235,0.1)', color: 'var(--primary-blue)', fontSize: '0.85rem' }}>
+                          Dihitung Sukses via {invFormula}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="calc-explanation-box" style={{ marginTop: '20px' }}>
+                      <h4>Rumus &amp; Langkah Pengerjaan Soal:</h4>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', fontSize: '0.88rem' }}>
+                        <div>
+                          <strong>Persamaan Matematika:</strong>
+                          <div className="calc-formula" style={{ margin: '8px 0', padding: '10px 15px', background: 'var(--card-bg)', fontSize: '1.05rem' }}>
+                            {invFormula}
+                          </div>
+                        </div>
+                        <div>
+                          <strong>Substitusi &amp; Perhitungan:</strong>
+                          <p style={{ margin: '8px 0', fontFamily: 'monospace', padding: '8px 12px', background: 'var(--input-bg)', borderRadius: '6px' }}>
+                            {invStepByStep}
+                          </p>
+                        </div>
+                        <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '12px', fontSize: '0.82rem', color: 'var(--text-muted)' }}>
+                          <strong>Keterangan:</strong> Rumus balik ini diturunkan langsung dari relasi definisi standar EVM (misal: karena <code>SPI = EV / PV</code>, maka <code>EV = SPI * PV</code>). Sering diujikan di soal UTS/UAS MPSI ketika salah satu indeks kinerja diketahui.
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          )}
         </div>
       ) : (
+        /* PERT Tab */
         <div className="calc-layout" style={{ marginTop: '25px' }}>
           <div className="calc-form-panel">
             <h3 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '15px', color: 'var(--text-strong)' }}>Input Parameter PERT</h3>
