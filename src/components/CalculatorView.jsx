@@ -38,7 +38,7 @@ const CalculatorView = ({ calcTab, setCalcTab, evmInputs, setEvmInputs, pertInpu
   }
 
   return (
-    <div className="calc-container glass-panel" style={{ width: '100%', padding: '25px', borderRadius: '16px' }}>
+    <div className="calc-container glass-panel">
       <span className="category-badge" style={{ marginBottom: '12px', display: 'inline-block' }}>SOLVER PERHITUNGAN</span>
       <h2 style={{ marginBottom: '10px' }}>Kalkulator EVM dan PERT Interaktif</h2>
       <p style={{ color: 'var(--text-muted)', marginBottom: '25px', fontSize: '0.95rem' }}>
@@ -258,7 +258,7 @@ const CalculatorView = ({ calcTab, setCalcTab, evmInputs, setEvmInputs, pertInpu
                 </div>
 
                 <div className="calc-result-metrics" style={{ borderTop: '1px solid var(--border-color)', paddingTop: '15px' }}>
-                  <div className="calc-result-card" style={{ gridColumn: 'span 2' }}>
+                  <div className="calc-result-card calc-card-wide">
                     <span className="calc-result-label">Variance (&sigma;&sup2;)</span>
                     <span className="calc-result-value">{pert.v.toFixed(3)}</span>
                     <span className="calc-result-status calc-status-good" style={{ background: 'rgba(107,114,128,0.1)', color: '#6b7280' }}>Variansi Aktivitas</span>
